@@ -1,12 +1,14 @@
-#import "lib.typ": questao, arc
+#import "lib.typ": arc, questao
 
 = LIMA CAMPOS - MA
-  \
+\
 == CONCURSO - 2025
 
 #line(length: 100%)
 #v(-1.1cm)
-#text(fill: rgb(0, 0, 255), weight: "bold")[#align(right)[#link("https://drive.google.com/file/d/14iC3ytZ2NF8fMXNAkkQtbmTD6KjaAYUx/view?usp=drive_link")[PDF]]]
+#text(fill: rgb(0, 0, 255), weight: "bold")[#align(right)[#link(
+  "https://drive.google.com/file/d/14iC3ytZ2NF8fMXNAkkQtbmTD6KjaAYUx/view?usp=drive_link",
+)[PDF]]]
 \
 
 #questao(
@@ -16,9 +18,9 @@
     [32],
     [90],
     [120],
-    [30]
+    [30],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -28,9 +30,9 @@
     [180],
     [240],
     [360],
-    [720]
+    [720],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -40,9 +42,9 @@
     [Divisível por 7.],
     [Divisível por 5.],
     [Divisível por 3.],
-    [Primo.]
+    [Primo.],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -52,9 +54,9 @@
     [3],
     [-- 2],
     [-- 4],
-    [-- 6]
+    [-- 6],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -64,9 +66,9 @@
     [2023],
     [2024],
     [2025],
-    [2026]
+    [2026],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -76,27 +78,27 @@
     [17],
     [16],
     [15],
-    [14]
+    [14],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Dê o somatório das afirmativas que estiverem corretas.
-
-  (01) $sin 2pi - sec (4pi)/3 - "cossec" (5pi)/6 = 1$.
-  (02) Se $sin 10degree = 17/100$ então o valor de $sec 80degree = 100/17$.
-  (04) $sin(x) dot sec(x) + cos(x) dot "cossec"(x) = sec(x) dot "cossec"(x)$.
-  (08) $tg(x) + "cotg"(x) = sec(x) dot "cossec"(x)$.
-  (16) Não existe $x$ para o qual se tenha $sin(x) dot cos(x) = 1$.],
+    
+    (01) $sin 2pi - sec (4pi)/3 - "cossec" (5pi)/6 = 1$.
+    (02) Se $sin 10degree = 17/100$ então o valor de $sec 80degree = 100/17$.
+    (04) $sin(x) dot sec(x) + cos(x) dot "cossec"(x) = sec(x) dot "cossec"(x)$.
+    (08) $tg(x) + "cotg"(x) = sec(x) dot "cossec"(x)$.
+    (16) Não existe $x$ para o qual se tenha $sin(x) dot cos(x) = 1$.],
   [#enum(
     [24],
     [22],
     [20],
     [14],
-    [12]
+    [12],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -106,9 +108,9 @@
     [Um número racional não inteiro.],
     [Um número irracional.],
     [Um número inteiro menor que 6 e par.],
-    [Um número primo.]
+    [Um número primo.],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -119,9 +121,9 @@
     [62°],
     [65°],
     [68°],
-    [74°]
+    [74°],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -131,48 +133,48 @@
     [2050],
     [2045],
     [2040],
-    [2035]
+    [2035],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Assinale a alternativa que corresponde ao valor da soma das raízes irracionais da equação abaixo:
-  $(2x + 1)^2 dot (x + 3) dot (x - 2) + 6 = 0$],
+    $(2x + 1)^2 dot (x + 3) dot (x - 2) + 6 = 0$],
   [#enum(
     [-1],
     [-2],
     [0],
     [$2 sqrt(6)$],
-    [$-2 sqrt(6)$]
+    [$-2 sqrt(6)$],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [O determinante da matriz abaixo é igual a:
-  $ A = mat(2, 2, 2; 11, 17, 25; 121, 289, 625) $],
+    $ A = mat(2, 2, 2; 11, 17, 25; 121, 289, 625) $],
   [#enum(
     [2.688],
     [1.344],
     [672],
     [448],
-    [0]
+    [0],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [O sistema linear nas incógnitas $x$, $y$ e $z$ é impossível se:
-  $ cases(x + y + m z = 1, 2x - 2y + z = -1, 3x - y + 3z = n) $],
+    $ cases(x + y + m z = 1, 2x - 2y + z = -1, 3x - y + 3z = n) $],
   [#enum(
     [$m != 2$],
     [$m = 2$ e $n = 0$],
     [$m = 2$ e $n != 0$],
     [$m != 2$ e $n = 0$],
-    [$m != 2$ e $n != 0$]
+    [$m != 2$ e $n != 0$],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -182,9 +184,9 @@
     [$z = -256 i$],
     [$z = -256$],
     [$z = 256$],
-    [$z = 256 - 256 i$]
+    [$z = 256 - 256 i$],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -194,22 +196,22 @@
     [Uma elipse.],
     [Uma hipérbole.],
     [Uma parábola.],
-    [Um ponto.]
+    [Um ponto.],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Quantas soluções reais possui a equação
-  $ log_9 ((x^2 - 5x + 6)/(x-2)) + log_3 (x-1) = 1? $],
+    $ log_9 ((x^2 - 5x + 6)/(x-2)) + log_3 (x-1) = 1? $],
   [#enum(
     [Nenhuma.],
     [Uma.],
     [Duas.],
     [Três.],
-    [Quatro.]
+    [Quatro.],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -219,9 +221,9 @@
     [1344],
     [1008],
     [512],
-    [256]
+    [256],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 

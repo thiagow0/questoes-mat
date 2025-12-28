@@ -1,12 +1,14 @@
-#import "lib.typ": questao, arc
+#import "lib.typ": arc, questao
 
 = FLORIANO
-  \
+\
 == CONCURSO - 2019?
 
 #line(length: 100%)
 #v(-1.1cm)
-#text(fill: rgb(0, 0, 255), weight: "bold")[#align(right)[#link("https://drive.google.com/file/d/1ZxFukAc7UoiaknyqAkCjkkjO0EMFDfmO/view?usp=drive_link")[PDF]]]
+#text(fill: rgb(0, 0, 255), weight: "bold")[#align(right)[#link(
+  "https://drive.google.com/file/d/1ZxFukAc7UoiaknyqAkCjkkjO0EMFDfmO/view?usp=drive_link",
+)[PDF]]]
 \
 
 #questao(
@@ -16,23 +18,23 @@
     [3],
     [7],
     [$sqrt{2} + 3$],
-    [$sqrt{7} - 2$]
+    [$sqrt{7} - 2$],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Sejam $x$, $y$ e $z$ números reais satisfazendo a condição:
-  $ x^2 + y^2 + z^2 - 4x + 6y + 2z + 14 = 0. $
-  É correto afirmar que:],
+    $ x^2 + y^2 + z^2 - 4x + 6y + 2z + 14 = 0. $
+    É correto afirmar que:],
   [#enum(
     [$x + y + z = 0$],
     [$x - y + z = 0$],
     [$x^y < z^y$],
     [$x^y > y^x$],
-    [$x > z > y$]
+    [$x > z > y$],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -42,9 +44,9 @@
     [ele é ímpar.],
     [ele não é múltiplo de 7.],
     [ele não é múltiplo de $3^6 + 1$.],
-    [ele é divisível por 13.]
+    [ele é divisível por 13.],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -54,9 +56,9 @@
     [R\$ 308,20],
     [R\$ 312,30],
     [R\$ 315,00],
-    [R\$ 318,00]
+    [R\$ 318,00],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -66,9 +68,9 @@
     [24],
     [15],
     [18],
-    [30]
+    [30],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -78,9 +80,9 @@
     [588],
     [896],
     [1680],
-    [420]
+    [420],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -90,9 +92,9 @@
     [$3/7$],
     [$1/7$],
     [$2/5$],
-    [$1/6$]
+    [$1/6$],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -102,27 +104,29 @@
     [Bissetriz é uma semirreta de mesma origem do ângulo e que divide o ângulo em dois ângulos congruentes.],
     [Os ângulos 20°, 30° e 40° são complementares.],
     [Ângulo excêntrico exterior é o ângulo que tem vértice externo a circunferência e seus lados são secantes ou tangentes a ela.],
-    [Seja ABCD um trapézio de bases AB e CD. Se M e N são os pontos médios de AD e BC, então $M N = (A B+C D)/2$.]
+    [Seja ABCD um trapézio de bases AB e CD. Se M e N são os pontos médios de AD e BC, então $M N = (A B+C D)/2$.],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Sobre o sistema de equações abaixo,
-  $ cases(
-    x + 3y + 2z = 5,
-    3x + 5y + 4z = 12,
-    5x - 3y + 4z = 6
-  ) $
-  é correto afirmar que:],
+    $
+      cases(
+        x + 3y + 2z = 5,
+        3x + 5y + 4z = 12,
+        5x - 3y + 4z = 6
+      )
+    $
+    é correto afirmar que:],
   [#enum(
     [Possui uma única solução.],
     [Possui infinitas soluções.],
     [Seu conjunto solução é vazio.],
     [As soluções formam uma reta no espaço que passa pela origem do sistema cartesiano tridimensional.],
-    [As soluções formam um plano no espaço que não passam pela origem.]
+    [As soluções formam um plano no espaço que não passam pela origem.],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -132,9 +136,9 @@
     [3,5 cm],
     [4 cm],
     [4,5 cm],
-    [5 cm]
+    [5 cm],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -144,9 +148,9 @@
     [4],
     [5],
     [6],
-    [7]
+    [7],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -156,9 +160,9 @@
     [38.000 L],
     [39.000 L],
     [40.000 L],
-    [41.000 L]
+    [41.000 L],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -168,9 +172,9 @@
     [Não tem raízes reais.],
     [Tem exatamente duas raízes reais distintas.],
     [Tem uma raiz real dupla e as outras duas são números complexos.],
-    [Tem exatamente três raízes reais distintas.]
+    [Tem exatamente três raízes reais distintas.],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -180,9 +184,9 @@
     [2 e [1,5]],
     [3 e \{1,5\}],
     [3 e [1,5]],
-    [2 e [-1,5]]
+    [2 e [-1,5]],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -192,26 +196,26 @@
     [R\$ 306,00],
     [R\$ 276,00],
     [R\$ 226,00],
-    [R\$ 216,00]
+    [R\$ 216,00],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Renata, Rosemary, Roberto e Rogério são primos. Sabe-se que dois deles têm a mesma idade. Além disso:
-  - Renata é mais velha do que Roberto.
-  - Rosemary é mais nova do que Roberto.
-  - Roberto é mais velho do que Rogério.
-  - Rogério é mais novo do que Rosemary.
-  
-  Quais deles têm a mesma idade?],
+    - Renata é mais velha do que Roberto.
+    - Rosemary é mais nova do que Roberto.
+    - Roberto é mais velho do que Rogério.
+    - Rogério é mais novo do que Rosemary.
+    
+    Quais deles têm a mesma idade?],
   [#enum(
     [Roberto e Rosemary],
     [Rosemary e Rogério],
     [Rogério e Renata],
     [Roberto e Renata],
-    [Roberto e Rogério]
+    [Roberto e Rogério],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 

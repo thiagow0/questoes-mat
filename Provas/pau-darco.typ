@@ -1,12 +1,14 @@
-#import "lib.typ": questao, arc
+#import "lib.typ": arc, questao
 
 = PAU D'ARCO DO PIAUÍ
-  \
+\
 == CONCURSO - 2015
 
 #line(length: 100%)
 #v(-1.1cm)
-#text(fill: rgb(0, 0, 255), weight: "bold")[#align(right)[#link("https://drive.google.com/file/d/15_jel9V6S_F0yUkxTfuMDZaTIr-occHg/view?usp=drive_link")[PDF]]]
+#text(fill: rgb(0, 0, 255), weight: "bold")[#align(right)[#link(
+  "https://drive.google.com/file/d/15_jel9V6S_F0yUkxTfuMDZaTIr-occHg/view?usp=drive_link",
+)[PDF]]]
 \
 
 #questao(
@@ -16,21 +18,15 @@
     [423],
     [424],
     [425],
-    [426]
+    [426],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Simplificando $(2015^2 - 25)/(2015^2 - 2015 - 30)$ obteremos:],
-  [#enum(spacing: 12pt,
-    [$2015/2016$],
-    [$2014/2015$],
-    [$2010/2009$],
-    [$2015/2014$],
-    [$2015/2017$]
-  )],
-  gabarito_explicacao: none
+  [#enum(spacing: 12pt, [$2015/2016$], [$2014/2015$], [$2010/2009$], [$2015/2014$], [$2015/2017$])],
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -40,22 +36,22 @@
     [120],
     [5040],
     [2160],
-    [720]
+    [720],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Seja $X$ uma matriz quadrada de ordem 4 tal que $3.X = X^2$. Se $X$ é inversível, então o determinante de $X^t$ é igual a:
-  Obs.: $X^t$ denota a transposta da matriz $X$.],
+    Obs.: $X^t$ denota a transposta da matriz $X$.],
   [#enum(
     [64],
     [81],
     [49],
     [100],
-    [12]
+    [12],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -65,9 +61,9 @@
     [R\$ 2.000,00],
     [R\$ 3.000,00],
     [R\$ 4.000,00],
-    [R\$ 5.000,00]
+    [R\$ 5.000,00],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -77,24 +73,25 @@
     [$(4x)/3 + 4/13$],
     [$-(3x)/4 + 13/4$],
     [$2x + 5$],
-    [$-2x + 7$]
+    [$-2x + 7$],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [O triângulo $A B C$ seguinte é retângulo em $A$. Se $A hat(B) C = alpha$, $A C = 3$ e $A B = tg alpha$, então o perímetro deste triângulo vale:
-  
-  [imagem]
+    
+    [imagem]
   ],
-  [#enum(spacing: 12pt,
+  [#enum(
+    spacing: 12pt,
     [$3(sqrt(3) + 1)$],
     [$2(sqrt(3) + 3)$],
     [$3(sqrt(3) - 1)/2$],
     [$3sqrt(3) + 3$],
-    [$3sqrt(2) + 3$]
+    [$3sqrt(2) + 3$],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -104,9 +101,9 @@
     [R\$ 148,00],
     [R\$ 152,00],
     [R\$ 155,00],
-    [R\$ 160,00]
+    [R\$ 160,00],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -116,9 +113,9 @@
     [25 kWh],
     [22 kWh],
     [18 kWh],
-    [15 kWh]
+    [15 kWh],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -128,9 +125,9 @@
     [9],
     [18],
     [27],
-    [81]
+    [81],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -140,9 +137,9 @@
     [20 cm],
     [25 cm],
     [30 cm],
-    [35 cm]
+    [35 cm],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -152,9 +149,9 @@
     [6 cm],
     [4 cm],
     [3 cm],
-    [4,5 cm]
+    [4,5 cm],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -164,9 +161,9 @@
     [$4 root(3, 4)$ cm],
     [$5 root(3, 4)$ cm],
     [$6 root(3, 4)$ cm],
-    [$7 root(3, 4)$ cm]
+    [$7 root(3, 4)$ cm],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -176,22 +173,22 @@
     [(0, 1)],
     [(1, -2)],
     [(1, 0)],
-    [(2, -2)]
+    [(2, -2)],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Assinale a alternativa que indica corretamente entre quais números inteiros consecutivos está o valor da expressão a seguir.
-  $ 30 [ (6/5)^(-1) - 0,4 ] [ (1,2 - 2^(-1))/(5 - 3,7) ] - sqrt(20) $],
+    $ 30 [ (6/5)^(-1) - 0,4 ] [ (1,2 - 2^(-1))/(5 - 3,7) ] - sqrt(20) $],
   [#enum(
     [0 e 1],
     [1 e 2],
     [2 e 3],
     [4 e 5],
-    [5 e 6]
+    [5 e 6],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -201,9 +198,9 @@
     [142],
     [144],
     [146],
-    [150]
+    [150],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -213,9 +210,9 @@
     [R\$ 4.800,00],
     [R\$ 5.000,00],
     [R\$ 5.500,00],
-    [R\$ 6.000,00]
+    [R\$ 6.000,00],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -225,8 +222,8 @@
     [A equação $4/x + 2/y = 1$, com $x$ e $y$ inteiros positivos possui 4 soluções.],
     [O número $N = 111 + 222^2 + 333^3 + 444^4 + 555^5 - 12345$ não é um quadrado perfeito.],
     [Se $( root(4, 9 + sqrt(9 + sqrt(9))) )^4 = a + b sqrt(3)$, então $a - b = 57$.],
-    [Em um grupo de 70 pessoas, há pelo menos 7 pessoas que nasceram no mesmo mês.]
+    [Em um grupo de 70 pessoas, há pelo menos 7 pessoas que nasceram no mesmo mês.],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 

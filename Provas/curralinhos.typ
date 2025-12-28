@@ -1,12 +1,14 @@
-#import "lib.typ": questao, arc
+#import "lib.typ": arc, questao
 
 = CURRALINHOS
-  \
+\
 == SELETIVO - 2014
 
 #line(length: 100%)
 #v(-1.1cm)
-#text(fill: rgb(0, 0, 255), weight: "bold")[#align(right)[#link("https://drive.google.com/file/d/1YEMH0TKv3lMWvvXHw9uuIQkYld7LTUDF/view?usp=drive_link")[PDF]]]
+#text(fill: rgb(0, 0, 255), weight: "bold")[#align(right)[#link(
+  "https://drive.google.com/file/d/1YEMH0TKv3lMWvvXHw9uuIQkYld7LTUDF/view?usp=drive_link",
+)[PDF]]]
 \
 
 #questao(
@@ -16,9 +18,9 @@
     [1,04km],
     [1,15km],
     [1,61km],
-    [1,87km]
+    [1,87km],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -28,9 +30,9 @@
     [6cm],
     [12cm],
     [14cm],
-    [20cm]
+    [20cm],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -40,22 +42,22 @@
     [24 e 2.],
     [2 e 12.],
     [2 e 24.],
-    [12 e 16.]
+    [12 e 16.],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [A solução do sistema de equações abaixo utilizando números reais é:
-  $ cases(x - y = 5, x^2 + y^2 = 1) $],
+    $ cases(x - y = 5, x^2 + y^2 = 1) $],
   [#enum(
     [(0,-1) e (1,-3)],
     [(2,-1) e (2,2)],
     [(3,-2) e (4,2)],
     [(2,-3) e (3,-2)],
-    [(-3,2) e (-1,3)]
+    [(-3,2) e (-1,3)],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -65,9 +67,9 @@
     [R\$ 150,00],
     [R\$ 200,00],
     [R\$ 250,00],
-    [R\$ 300,00]
+    [R\$ 300,00],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -77,9 +79,9 @@
     [R\$ 650,00],
     [R\$ 700,00],
     [R\$ 770,00],
-    [R\$ 800,00]
+    [R\$ 800,00],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -89,9 +91,9 @@
     [0],
     [$1/2$],
     [1],
-    [2]
+    [2],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -101,25 +103,25 @@
     [R\$ 8.780,00],
     [R\$ 10.603,00],
     [R\$ 12.402,00],
-    [R\$ 14.023,00]
+    [R\$ 14.023,00],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Uma pesquisa de opinião pública aponta o perfil do homem casado, observe o gráfico abaixo:
-  
-  [Gráfico com as seguintes informações: 25% Estudam; 60% Trabalham; 50% Estudam e Trabalham]
-  
-  De acordo com as informações do gráfico, determine a probabilidade de um homem casado escolhido ao acaso não estudar e não trabalhar.],
+    
+    [Gráfico com as seguintes informações: 25% Estudam; 60% Trabalham; 50% Estudam e Trabalham]
+    
+    De acordo com as informações do gráfico, determine a probabilidade de um homem casado escolhido ao acaso não estudar e não trabalhar.],
   [#enum(
     [6%],
     [9%],
     [12%],
     [13%],
-    [15%]
+    [15%],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -129,9 +131,9 @@
     [18],
     [18],
     [19],
-    [22]
+    [22],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -141,9 +143,9 @@
     [840],
     [900],
     [1010],
-    [2013]
+    [2013],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -153,39 +155,40 @@
     [5%],
     [7%],
     [9%],
-    [12%]
+    [12%],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Polígonos são figuras fechadas formadas por segmentos de reta, sendo caracterizados pelos seguintes elementos: ângulos, vértices, diagonais e lados. De acordo com o número de lados a figura é nomeada. Qual das alternativas abaixo expressa corretamente a fórmula do cálculo do número de diagonais de um polígono?],
-  [#enum(spacing: 12pt,
+  [#enum(
+    spacing: 12pt,
     [$d = (n(n-3))/2$],
     [$d = (n(n^2-3))/(2a)$],
     [$d = (a n(n-3))/(2b)$],
     [$d = (n(n-3))/(2c)$],
-    [$d = (n(n-2))/2$]
+    [$d = (n(n-2))/2$],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Jugue as afirmativas abaixo em verdadeiro (V) ou falso (F) e assinale a alternativa correta:
-  
-  ( ) Um triângulo é isósceles, se, e somente se, ele tiver 2 lados iguais.
-  
-  ( ) Todo triângulo escaleno tem os lados, dois a dois, de medidas diferentes; consequentemente os seus ângulos internos têm medidas diferentes.
-  
-  ( ) Em um triângulo obtusângulo, os lados que determinam o ângulo obtuso podem ser de mesma medida. Isto é, existe triângulo isósceles obtusângulo.],
+    
+    ( ) Um triângulo é isósceles, se, e somente se, ele tiver 2 lados iguais.
+    
+    ( ) Todo triângulo escaleno tem os lados, dois a dois, de medidas diferentes; consequentemente os seus ângulos internos têm medidas diferentes.
+    
+    ( ) Em um triângulo obtusângulo, os lados que determinam o ângulo obtuso podem ser de mesma medida. Isto é, existe triângulo isósceles obtusângulo.],
   [#enum(
     [F – V – F],
     [V – V – V],
     [V – F – F],
     [F – F – V],
-    [F – F – F]
+    [F – F – F],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -195,9 +198,9 @@
     [182km],
     [210km],
     [234km],
-    [243km]
+    [243km],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -207,9 +210,9 @@
     [2,8],
     [3,8],
     [4,8],
-    [5,2]
+    [5,2],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -219,9 +222,9 @@
     [$y = 3x$.],
     [$y = 4x - 12$.],
     [$y = 6x$.],
-    [$y = 2x - 5$]
+    [$y = 2x - 5$],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -231,9 +234,9 @@
     [Há nove anos.],
     [Há dez anos.],
     [Há onze anos.],
-    [Há doze anos.]
+    [Há doze anos.],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 

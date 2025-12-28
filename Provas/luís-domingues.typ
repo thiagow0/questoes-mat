@@ -1,12 +1,14 @@
-#import "lib.typ": questao, arc
+#import "lib.typ": arc, questao
 
 = LUÍS DOMINGUES
-  \
+\
 == CONCURSO - 2023
 
 #line(length: 100%)
 #v(-1.1cm)
-#text(fill: rgb(0, 0, 255), weight: "bold")[#align(right)[#link("https://drive.google.com/file/d/1NhB0ECYLxnswTPEjrkNdT23zP69fvol6/view?usp=drive_link")[PDF]]]
+#text(fill: rgb(0, 0, 255), weight: "bold")[#align(right)[#link(
+  "https://drive.google.com/file/d/1NhB0ECYLxnswTPEjrkNdT23zP69fvol6/view?usp=drive_link",
+)[PDF]]]
 \
 
 #questao(
@@ -16,9 +18,9 @@
     [$frac(3215, 900)$],
     [$frac(643, 198)$],
     [$frac(743, 198)$],
-    [$frac(643, 198)$]
+    [$frac(643, 198)$],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -28,9 +30,9 @@
     [9],
     [8],
     [6],
-    [3]
+    [3],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -40,27 +42,27 @@
     [2.000.000],
     [10.000.000],
     [20.000.000],
-    [90.000.000]
+    [90.000.000],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Considere as seguintes afirmações:
-
-  I. O número 379 é primo.
-  II. O número 3,14 é irracional.
-  III. $sqrt(1024)$ é um número natural.
-
-  Qual(is) dessas afirmações é(são) verdadeira(s)?],
+    
+    I. O número 379 é primo.
+    II. O número 3,14 é irracional.
+    III. $sqrt(1024)$ é um número natural.
+    
+    Qual(is) dessas afirmações é(são) verdadeira(s)?],
   [#enum(
     [Apenas I.],
     [Apenas II.],
     [Apenas III.],
     [Apenas I e III],
-    [Todas.]
+    [Todas.],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -70,9 +72,9 @@
     [$a$],
     [$b$],
     [$a - b$],
-    [$a + b$]
+    [$a + b$],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -82,43 +84,43 @@
     [-7],
     [9],
     [-9],
-    [-24]
+    [-24],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Qual o valor do complementar de $x$ na figura abaixo?
-  
-  (Figura exibe um triângulo com um ângulo externo medindo $3x - 30 degree$ e os dois ângulos internos não adjacentes medindo $x - 10 degree$ e $x + 30 degree$)],
+    
+    (Figura exibe um triângulo com um ângulo externo medindo $3x - 30 degree$ e os dois ângulos internos não adjacentes medindo $x - 10 degree$ e $x + 30 degree$)],
   [#enum(
     [$50 degree$],
     [$40 degree$],
     [$30 degree$],
     [$60 degree$],
-    [$130 degree$]
+    [$130 degree$],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Julgue as afirmações seguintes em verdadeiro (V) ou falso (F).
-
-  ( ) Se dois lados de um quadrilátero são congruentes, então ele é um paralelogramo.
-  ( ) As diagonais de um losango são congruentes.
-  ( ) O circuncentro é sempre interno ao triângulo.
-  ( ) Se um paralelogramo tem dois ângulos de vértices consecutivos congruentes, então ele é um retângulo.
-  ( ) Todo quadrado é retângulo e também é losango.
-
-  A sequência correta se encontra em:],
+    
+    ( ) Se dois lados de um quadrilátero são congruentes, então ele é um paralelogramo.
+    ( ) As diagonais de um losango são congruentes.
+    ( ) O circuncentro é sempre interno ao triângulo.
+    ( ) Se um paralelogramo tem dois ângulos de vértices consecutivos congruentes, então ele é um retângulo.
+    ( ) Todo quadrado é retângulo e também é losango.
+    
+    A sequência correta se encontra em:],
   [#enum(
     [F F F V F],
     [V F F V V],
     [V V F F F],
     [F F F V V],
-    [V F V F V]
+    [V F V F V],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -128,9 +130,9 @@
     [30],
     [390],
     [400],
-    [405]
+    [405],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -140,9 +142,9 @@
     [2 anos],
     [3 anos],
     [4 anos],
-    [5 anos]
+    [5 anos],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -152,9 +154,9 @@
     [-12],
     [24],
     [-38],
-    [36]
+    [36],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -164,23 +166,23 @@
     [150],
     [180],
     [240],
-    [360]
+    [360],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Qual a equação da cônica indicada na figura abaixo?
-  
-  (Figura mostra uma hipérbole com centro em $(5,4)$, vértices sobre a reta $y=4$ em $x=3$ e $x=7$)],
+    
+    (Figura mostra uma hipérbole com centro em $(5,4)$, vértices sobre a reta $y=4$ em $x=3$ e $x=7$)],
   [#enum(
     [$frac((x-5)^2, 4) - frac((y-4)^2, 12) = 1$],
     [$frac((y-4)^2, 12) - frac((x-5)^2, 4) = 1$],
     [$frac((y-5)^2, 4) - frac((x-4)^2, 12) = 1$],
     [$frac((x-4)^2, 4) - frac((y-5)^2, 12) = 1$],
-    [$frac((x-5)^2, 12) - frac((y-4)^2, 4) = 1$]
+    [$frac((x-5)^2, 12) - frac((y-4)^2, 4) = 1$],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -190,27 +192,27 @@
     [R\$ 172 800,00.],
     [R\$ 728 000,00.],
     [R\$ 822 800,00.],
-    [R\$ 1 728 000,00.]
+    [R\$ 1 728 000,00.],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
   [Assinale a alternativa que contém o somatório dos itens verdadeiros:
-
-  1 -- Há apenas cinco classes de poliedros de Platão.
-  2 -- Todo poliedro convexo é poliedro de Platão.
-  4 -- Todo poliedro regular é um poliedro de Platão.
-  8 -- Todo poliedro de Platão é regular.
-  16 -- O hexaedro regular tem faces hexagonais.],
+    
+    1 -- Há apenas cinco classes de poliedros de Platão.
+    2 -- Todo poliedro convexo é poliedro de Platão.
+    4 -- Todo poliedro regular é um poliedro de Platão.
+    8 -- Todo poliedro de Platão é regular.
+    16 -- O hexaedro regular tem faces hexagonais.],
   [#enum(
     [1],
     [3],
     [5],
     [15],
-    [31]
+    [31],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -220,9 +222,9 @@
     [9 horas e 30 minutos.],
     [9 horas e 24 minutos.],
     [9 horas e 12 minutos.],
-    [9 horas e 6 minutos.]
+    [9 horas e 6 minutos.],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
 
 #questao(
@@ -232,7 +234,7 @@
     [$- frac(2 sqrt(2), 9)$],
     [$- frac(sqrt(2), 3)$],
     [$frac(sqrt(2), 3)$],
-    [$- frac(2 sqrt(2), 3)$]
+    [$- frac(2 sqrt(2), 3)$],
   )],
-  gabarito_explicacao: none
+  gabarito_explicacao: none,
 )
