@@ -1,5 +1,6 @@
 #import "lib.typ": arc, questao
 
+#import "@preview/cetz:0.4.2": canvas, draw, angle
 = LUÍS DOMINGUES
 \
 == CONCURSO - 2023
@@ -66,7 +67,7 @@
 )
 
 #questao(
-  [Simplificando $frac(a^2 + a b, a b - b^2) times frac(a^2 - b^2, a^2 + b^2 + 2 a b)$, obtemos:],
+  [Simplificando $ frac(a^2 + a b, a b - b^2) times frac(a^2 - b^2, a^2 + b^2 + 2 a b), $obtemos:],
   [#enum(
     [$a / b$],
     [$a$],
@@ -91,8 +92,33 @@
 
 #questao(
   [Qual o valor do complementar de $x$ na figura abaixo?
-    
-    (Figura exibe um triângulo com um ângulo externo medindo $3x - 30 degree$ e os dois ângulos internos não adjacentes medindo $x - 10 degree$ e $x + 30 degree$)],
+
+  #align(center)[
+    #canvas(length: 0.8cm, {
+
+  let B = (0, 0)         
+  let C = (6, 1)         
+  let A = (2, 3.5)       
+  let D = (C.at(0) + 1.5, C.at(1) - 0.9)
+  let angle_fill = rgb("#ffad6080") 
+  let angle_stroke = rgb("#ed802d") 
+  let r = 0.6 
+  draw.line(A, B, C, close: true, stroke: 1pt)
+  draw.line(C, D, stroke: 1pt)
+  angle.angle(A, B, C, radius: r, fill: angle_fill, stroke: angle_stroke)
+  angle.angle(B, C, A, radius: r, fill: angle_fill, stroke: angle_stroke)
+
+  angle.angle(C, B, D, radius: r, fill: angle_fill, stroke: angle_stroke)
+
+  draw.content(A, [$x + 30 degree$], anchor: "south", padding: 0.1)
+
+  draw.content(B, [$x - 10 degree$], anchor: "north", padding: 0.1)
+
+  draw.content(C, [$3x - 30 degree$], anchor: "north", padding: 0.7)
+})
+  ]
+
+  ],
   [#enum(
     [$50 degree$],
     [$40 degree$],
@@ -107,9 +133,13 @@
   [Julgue as afirmações seguintes em verdadeiro (V) ou falso (F).
     
     ( ) Se dois lados de um quadrilátero são congruentes, então ele é um paralelogramo.
+
     ( ) As diagonais de um losango são congruentes.
+
     ( ) O circuncentro é sempre interno ao triângulo.
+
     ( ) Se um paralelogramo tem dois ângulos de vértices consecutivos congruentes, então ele é um retângulo.
+
     ( ) Todo quadrado é retângulo e também é losango.
     
     A sequência correta se encontra em:],
@@ -173,8 +203,12 @@
 
 #questao(
   [Qual a equação da cônica indicada na figura abaixo?
-    
-    (Figura mostra uma hipérbole com centro em $(5,4)$, vértices sobre a reta $y=4$ em $x=3$ e $x=7$)],
+
+  #align(center)[
+    #image("Imagens/q-hiperbole.png")
+  ]
+
+  ],
   [#enum(
     [$frac((x-5)^2, 4) - frac((y-4)^2, 12) = 1$],
     [$frac((y-4)^2, 12) - frac((x-5)^2, 4) = 1$],

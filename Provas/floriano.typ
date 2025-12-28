@@ -1,4 +1,5 @@
 #import "lib.typ": arc, questao
+#import "@preview/cetz:0.4.2": canvas, draw
 
 = FLORIANO
 \
@@ -12,13 +13,13 @@
 \
 
 #questao(
-  [Simplificando a expressão $sqrt{7} dot sqrt{3} + sqrt{2} dot sqrt{3} - sqrt{2}$, teremos:],
+  [Simplificando a expressão $sqrt(7) dot sqrt(3) + sqrt(2) dot sqrt(3) - sqrt(2)$, teremos:],
   [#enum(
     [2],
     [3],
     [7],
-    [$sqrt{2} + 3$],
-    [$sqrt{7} - 2$],
+    [$sqrt(2) + 3$],
+    [$sqrt(7) - 2$],
   )],
   gabarito_explicacao: none,
 )
@@ -154,7 +155,43 @@
 )
 
 #questao(
-  [Uma caixa d'água tem o formato de um tronco de pirâmide quadrangular regular, como indicado na figura abaixo. O lado da base menor dessa caixa mede 3 m, o da base maior mede 4 m e sua altura é igual a 5 m. Quantos litros de água, aproximadamente, cabem nessa caixa quando ela estiver com $2/3$ de sua capacidade cheia?],
+  [Uma caixa d'água tem o formato de um tronco de pirâmide quadrangular regular, como indicado na figura abaixo. O lado da base menor dessa caixa mede 3 m, o da base maior mede 4 m e sua altura é igual a 5 m. Quantos litros de água, aproximadamente, cabem nessa caixa quando ela estiver com $2/3$ de sua capacidade cheia?
+    
+    #align(center)[
+      #canvas(length: 1cm, {
+        import draw: *
+        
+        let b_fl = (-2.5, 0)
+        let b_fr = (2.5, 0)
+        let b_br = (3.5, 1.2)
+        let b_bl = (-1.5, 1.2)
+        let h = 3.5
+        let scale = 0.6
+        let t_fl = (-1.5, h)
+        let t_fr = (1.5, h)
+        let t_br = (2.1, h + 0.72)
+        let t_bl = (-0.9, h + 0.72)
+        let visible = (stroke: 1.5pt + black, join: "round")
+        let hidden = (stroke: (paint: black, dash: "dashed", thickness: 1pt))
+        let axis = (stroke: (paint: gray, dash: "dotted", thickness: 0.8pt))
+        let center_b = ((b_fl.at(0) + b_br.at(0)) / 2, (b_fl.at(1) + b_br.at(1)) / 2)
+        let center_t = ((t_fl.at(0) + t_br.at(0)) / 2, (t_fl.at(1) + t_br.at(1)) / 2)
+        
+        line(center_b, center_t, stroke: axis.stroke)
+        line(b_bl, b_br, stroke: axis.stroke)
+        line(b_fl, b_br, stroke: axis.stroke)
+        line(b_fl, b_bl, stroke: hidden.stroke)
+        line(b_bl, b_br, stroke: hidden.stroke)
+        line(b_bl, t_bl, stroke: hidden.stroke)
+        line(t_fl, t_fr, t_br, t_bl, close: true, stroke: visible.stroke)
+        line(b_fl, t_fl, stroke: visible.stroke)
+        line(b_fr, t_fr, stroke: visible.stroke)
+        line(b_br, t_br, stroke: visible.stroke)
+        line(b_fl, b_fr, stroke: visible.stroke)
+        line(b_fr, b_br, stroke: visible.stroke)
+      })
+    ]
+  ],
   [#enum(
     [37.000 L],
     [38.000 L],

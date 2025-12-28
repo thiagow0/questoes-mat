@@ -1,4 +1,5 @@
 #import "lib.typ": arc, questao
+#import "@preview/cetz:0.4.2": canvas, draw
 
 = SANTA ROSA DO PIAUÍ
 \
@@ -72,7 +73,50 @@
 )
 
 #questao(
-  [Na figura abaixo temos um bloco retangular onde as faces $A B C D$ e $E F G H$ são quadrados de lados iguais a $400sqrt(2)$ cm. As faces laterais são retângulos com um dos lados medindo 6 m. Qual a distância do ponto B ao ponto H?],
+  [Na figura abaixo temos um bloco retangular onde as faces $A B C D$ e $E F G H$ são quadrados de lados iguais a $400sqrt(2)$ cm. As faces laterais são retângulos com um dos lados medindo 6 m. Qual a distância do ponto B ao ponto H?
+  
+  #align(center)[
+    #canvas(length: 0.4cm,{
+
+  let vec_width = (6, 0)       
+  let vec_depth = (2.5, 2.5)   
+  let vec_height = (0, 7)      
+  let A = (0, 0)
+  let B = (A.at(0) + vec_width.at(0), A.at(1) + vec_width.at(1))
+  let D = (A.at(0) + vec_depth.at(0), A.at(1) + vec_depth.at(1))
+  let C = (B.at(0) + vec_depth.at(0), B.at(1) + vec_depth.at(1))
+  let E = (A.at(0) + vec_height.at(0), A.at(1) + vec_height.at(1))
+  let F = (B.at(0) + vec_height.at(0), B.at(1) + vec_height.at(1))
+  let G = (C.at(0) + vec_height.at(0), C.at(1) + vec_height.at(1))
+  let H = (D.at(0) + vec_height.at(0), D.at(1) + vec_height.at(1))
+  let hidden_style = (stroke: (dash: "dashed", paint: black))
+  draw.line(A, D, ..hidden_style)
+  draw.line(C, D, ..hidden_style)
+  draw.line(H, D, ..hidden_style)
+
+  let visible_style = (stroke: 1pt)
+
+  draw.line(A, B, ..visible_style)
+  draw.line(B, C, ..visible_style)
+  draw.line(E, F, ..visible_style)
+  draw.line(F, G, ..visible_style)
+  draw.line(G, H, ..visible_style)
+  draw.line(H, E, ..visible_style)
+  draw.line(A, E, ..visible_style)
+  draw.line(B, F, ..visible_style)
+  draw.line(C, G, ..visible_style)
+  draw.content(A, [A], anchor: "north", padding: 0.3)
+  draw.content(B, [B], anchor: "north", padding: 0.3)
+  draw.content(C, [C], anchor: "west", padding: 0.3)
+  draw.content(D, [D], anchor: "south-east", padding: 0.2) 
+  draw.content(E, [E], anchor: "east", padding: 0.3)
+  draw.content(F, [F], anchor: "west", padding: 0.3)
+  draw.content(G, [G], anchor: "south", padding: 0.3)
+  draw.content(H, [H], anchor: "south", padding: 0.3)
+})
+  ]
+  
+  ],
   [#enum(
     [9 m],
     [10 m],
@@ -84,7 +128,70 @@
 )
 
 #questao(
-  [A pirâmide regular a seguir tem apótema da base igual a 4 cm e altura da face lateral igual a $sqrt(52)$ cm. O volume dessa pirâmide, em $c m^3$, é igual a:],
+  [A pirâmide regular a seguir tem apótema da base igual a 4 cm e altura da face lateral igual a $sqrt(52)$ cm. O volume dessa pirâmide, em $c m^3$, é igual a:
+  
+  #align(center)[
+    
+    #canvas(length: 0.7cm,{
+  
+  
+  
+  let A = (0, 0)
+  let B = (4, 0)
+  let angle_depth = 45deg
+  let depth_len = 2.5
+  
+  
+  
+  let vec_depth = (depth_len * calc.cos(angle_depth), depth_len * calc.sin(angle_depth))
+  let C = (B.at(0) + vec_depth.at(0), B.at(1) + vec_depth.at(1))
+  let D = (A.at(0) + vec_depth.at(0), A.at(1) + vec_depth.at(1))
+  
+  
+  let center_x = (A.at(0) + C.at(0)) / 2
+  let center_y = (A.at(1) + C.at(1)) / 2
+  let height = 5.5
+  let E = (center_x, center_y + height)
+
+  
+
+  
+  draw.line(A, D, stroke: (dash: "dashed"))
+  draw.line(C, D, stroke: (dash: "dashed"))
+  draw.line(E, D, stroke: (dash: "dashed"))
+
+  
+  draw.line(A, B, stroke: 1pt) 
+  draw.line(B, C, stroke: 1pt) 
+  draw.line(E, A, stroke: 1pt) 
+  draw.line(E, B, stroke: 1pt) 
+  draw.line(E, C, stroke: 1pt) 
+
+  
+  
+  let draw_vertex(pt, label_txt, label_pos) = {
+    draw.circle(pt, radius: 0.08, fill: black)
+  }
+
+  draw_vertex(A, "A", "north") 
+  draw_vertex(B, "B", "north")
+  draw_vertex(C, "C", "north-west") 
+  draw_vertex(D, "D", "north-west") 
+  draw_vertex(E, "E", "south")
+
+  
+  
+  draw.content(A, [A], anchor: "north", padding: 0.2)
+  draw.content(B, [B], anchor: "north", padding: 0.2)
+  draw.content(C, [C], anchor: "west", padding: 0.2)
+  draw.content(D, [D], anchor: "north-west", padding: 0.2) 
+  draw.content(E, [E], anchor: "south", padding: 0.2)
+  
+})
+
+  ]
+
+  ],
   [#enum(
     [128],
     [128$sqrt(13)$],

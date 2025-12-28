@@ -1,4 +1,5 @@
 #import "lib.typ": arc, questao
+#import "@preview/cetz:0.4.2": canvas, draw
 
 = BURITI DOS LOPES
 \
@@ -84,7 +85,20 @@
   [Leve em consideração que o diâmetro da circunferência abaixo mede 5 cm e que $sqrt(2) = 1,4$. Qual a área do quadrado inscrito na mesma?
     
     #align(center)[
-      [Figura: Círculo com quadrado inscrito.]
+      #canvas(length: 0.8cm, {
+        import draw: *
+        let r = 2.5
+        
+        circle((0, 0), radius: r, stroke: 1pt)
+        line(
+          (r, 0),
+          (0, r),
+          (-r, 0),
+          (0, -r),
+          close: true,
+          stroke: 1pt,
+        )
+      })
     ]],
   
   [#enum(

@@ -1,4 +1,5 @@
 #import "lib.typ": questao
+#import "@preview/cetz:0.4.2": canvas, draw
 
 = ANGICAL DO PIAUÍ
 
@@ -660,7 +661,30 @@
   [Na figura abaixo temos um trapézio retângulo onde as bases medem 8 cm e 20 cm e a diagonal AC mede 10 cm. Qual a medida, em centímetros, do segmento BC?
     
     #align(center)[
-      #image("Imagens/q-trapézioretângulo.png", width: 70%)
+      
+      #import draw: *
+      #canvas(length: 0.8cm, {
+        let A = (0.0, 0.0)
+        let B = (6.0, 0.0)
+        let C = (2.5, 3.0)
+        let D = (0.0, 3.0)
+        
+        line(A, B, C, D, close: true, stroke: black + 1.5pt)
+        
+        let s = 0.4
+        let cor-marcador = orange.darken(10%)
+        
+        line((0, s), (s, s), (s, 0), stroke: cor-marcador + 1.5pt)
+        circle((s / 2, s / 2), radius: 0.04, fill: cor-marcador, stroke: none)
+        
+        line((0, 3.0 - s), (s, 3.0 - s), (s, 3.0), stroke: cor-marcador + 1.5pt)
+        circle((s / 2, 3.0 - s / 2), radius: 0.04, fill: cor-marcador, stroke: none)
+        
+        content(A, text(12pt, $A$), anchor: "north", padding: 0.2)
+        content(B, text(12pt, $B$), anchor: "north", padding: 0.2)
+        content(C, text(12pt, $C$), anchor: "south", padding: 0.2)
+        content(D, text(12pt, $D$), anchor: "south", padding: 0.2)
+      })
     ]],
   
   [#enum(
@@ -849,11 +873,14 @@
 
 #questao(
   [O sistema seguinte é homogêneo.
-    $cases(
-      x + 2y - 3z = a + c,
-      -3x + 2y + 5z = 1 - c,
-      x - 2y + 2z = a - b
-    )$
+    
+    $
+      cases(
+        x + 2y - 3z = a + c,
+        -3x + 2y + 5z = 1 - c,
+        x - 2y + 2z = a - b
+      )
+    $
     
     Qual o valor de $a + b + c$?],
   

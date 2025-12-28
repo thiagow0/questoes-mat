@@ -1,5 +1,7 @@
 #import "lib.typ": questao
 
+#import "@preview/cetz:0.4.2": canvas, draw
+
 #let drive_link = "https://drive.google.com/file/d/1YEA-TtaXAm5fpjX-HgYQqnEX4Wa5P-zo/view?usp=drive_link"
 
 = BERTOLÍNIA
@@ -38,7 +40,58 @@
   [A figura abaixo indica a planta de um bairro em uma cidade do interior do Piauí. O secretário de obras da prefeitura pediu para um engenheiro calcular os valores de $x$ e $y$, pois ele pretende fazer uma obra nesse trecho. Qual o valor, correto, encontrado para $x + y$ nos cálculos feitos pelo engenheiro?
     
     #align(center)[
-      #image("Imagens/q-plantabaixade.png", width: 70%)
+      #canvas(length: 0.7cm, {
+        import draw: *
+        
+        let x_pos = (0, 2, 4.5, 8.5)
+        
+        let top_y(x) = 0.25 * x + 3.0
+        
+        let x_min = -1
+        let x_max = 9.5
+        
+        line((x_min, 0), (x_max, 0), stroke: 1.5pt)
+        
+        line((x_min, -0.8), (x_max, -0.8), stroke: 1.5pt)
+        
+        line((x_min, top_y(x_min)), (x_max, top_y(x_max)), stroke: 1.5pt)
+        
+        line((x_min, top_y(x_min) + 0.8), (x_max, top_y(x_max) + 0.8), stroke: 1.5pt)
+        
+        let angle_size = 0.3
+        
+        for x in x_pos {
+          let p_bottom = (x, 0)
+          let p_top = (x, top_y(x))
+          
+          line(p_bottom, p_top, stroke: 1.5pt)
+          
+          line(
+            (x + angle_size, 0),
+            (x + angle_size, angle_size),
+            (x, angle_size),
+            stroke: 1pt,
+          )
+          circle((x + angle_size / 2, angle_size / 2), radius: 0.04, fill: black)
+        }
+        
+        
+        content(((x_min + x_max) / 2, top_y((x_min + x_max) / 2) + 0.4), [Rua A])
+        content(((x_min + x_max) / 2, -0.4), [Rua B])
+        
+        content(((x_pos.at(0) + x_pos.at(1)) / 2, 0), [20 m], anchor: "south", padding: 0.2)
+        content(((x_pos.at(1) + x_pos.at(2)) / 2, 0), [25 m], anchor: "south", padding: 0.2)
+        content(((x_pos.at(2) + x_pos.at(3)) / 2, 0), [40 m], anchor: "south", padding: 0.2)
+        
+        let mid_top(x1, x2) = {
+          let xm = (x1 + x2) / 2
+          (xm, top_y(xm))
+        }
+        
+        content(mid_top(x_pos.at(0), x_pos.at(1)), [28 m], anchor: "north", padding: 0.2)
+        content(mid_top(x_pos.at(1), x_pos.at(2)), [$x$], anchor: "north", padding: 0.2)
+        content(mid_top(x_pos.at(2), x_pos.at(3)), [$y$], anchor: "north", padding: 0.2)
+      })
     ]
   
   ],
@@ -56,7 +109,46 @@
   [Na figura seguinte o triângulo ABC é equilátero e DEFG é um quadrado de lado igual a 1 cm. O lado desse triângulo mede em centímetros:
     
     #align(center)[
-      #image("Imagens/q-trianguloequilaterodefg.png", width: 60%)
+      
+      #canvas(length: 2cm, {
+        import draw: *
+        
+        let lado_quadrado = 1.0
+        let metade_lado = lado_quadrado / 2
+        
+        let ad = 1 / calc.sqrt(3)
+        
+        let base_tri_metade = metade_lado + ad
+        
+        let altura_tri = (base_tri_metade * 2) * calc.sqrt(3) / 2
+        
+        let D = (-metade_lado, 0)
+        let E = (metade_lado, 0)
+        let A = (-base_tri_metade, 0)
+        let B = (base_tri_metade, 0)
+        
+        let G = (-metade_lado, lado_quadrado)
+        let F = (metade_lado, lado_quadrado)
+        
+        let C = (0, altura_tri)
+        
+        line(A, B, C, close: true, stroke: 1pt)
+        
+        line(D, G, F, E, stroke: 1pt)
+        
+        let vertices = (A, B, C, D, E, F, G)
+        for v in vertices {
+          circle(v, radius: 0.02, fill: black)
+        }
+        
+        content(A, [$A$], anchor: "north", padding: 0.15)
+        content(D, [$D$], anchor: "north", padding: 0.15)
+        content(E, [$E$], anchor: "north", padding: 0.15)
+        content(B, [$B$], anchor: "north", padding: 0.15)
+        content(C, [$C$], anchor: "south", padding: 0.15)
+        content(G, [$G$], anchor: "south-east", padding: 0.1)
+        content(F, [$F$], anchor: "south-west", padding: 0.1)
+      })
     ]
   
   ],

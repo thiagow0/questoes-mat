@@ -1,4 +1,5 @@
 #import "lib.typ": arc, questao
+#import "@preview/cetz:0.4.2": canvas, draw
 
 = BATALHA PI
 
@@ -416,7 +417,35 @@
     Sabendo que $A D = 4$ cm, $B C = 9$ cm e $C D = sqrt(34)$ cm, então o perímetro do triângulo ABD é igual a:
     
     #align(center)[
-      #image("Imagens/q-trapézio.png")
+      #canvas(length: 0.8cm, {
+        import draw: *
+        
+        let B = (0, 0)
+        let A = (0, 3)
+        let D = (4, 3)
+        let C = (8, 0)
+        
+        line(A, D, C, B, close: true, stroke: 1pt)
+        
+        let s = 0.4
+        
+        line((0, s), (s, s), (s, 0), stroke: 0.5pt)
+        circle((s / 2, s / 2), radius: 0.05, fill: black)
+        
+        line((0, 3 - s), (s, 3 - s), (s, 3), stroke: 0.5pt)
+        circle((s / 2, 3 - s / 2), radius: 0.05, fill: black)
+        
+        let r_dot = 0.06
+        circle(A, radius: r_dot, fill: black)
+        circle(B, radius: r_dot, fill: black)
+        circle(C, radius: r_dot, fill: black)
+        circle(D, radius: r_dot, fill: black)
+        
+        content(A, [$A$], anchor: "south-east", padding: 0.2)
+        content(B, [$B$], anchor: "north-east", padding: 0.2)
+        content(C, [$C$], anchor: "north-west", padding: 0.2)
+        content(D, [$D$], anchor: "south-west", padding: 0.2)
+      })
     ]
   ],
   
@@ -481,7 +510,49 @@
   [O valor de $sqrt(a)$ na figura abaixo é igual a:
     
     #align(center)[
-      #image("Imagens/q-funcaoafim.png", width: 90%)
+      
+      #canvas(length: 0.4cm, {
+        import draw: *
+        
+        
+        line((-1, 0), (16, 0), mark: (end: "stealth"), name: "xaxis", stroke: 1pt)
+        
+        line((0, -2), (0, 12), mark: (end: "stealth"), name: "yaxis", stroke: 1pt)
+        
+        content("xaxis.end", $x$, anchor: "north-east", padding: 0.2)
+        content("yaxis.end", $y$, anchor: "north-east", padding: 0.2)
+        content((-0.5, -0.5), $0$)
+        
+        let f(x) = x - 4
+        line((2, f(2)), (15, f(15)), stroke: (paint: blue, thickness: 1.5pt), name: "r")
+        content((15, f(15)), $r$, anchor: "north-west", padding: 0.2)
+        
+        let A = (11, 7)
+        let B = (13, 9)
+        
+        set-style(stroke: (dash: "dashed", thickness: 0.5pt))
+        
+        line((A.at(0), 0), A, (0, A.at(1)))
+        
+        line((B.at(0), 0), B, (0, B.at(1)))
+        
+        set-style(stroke: (dash: "solid"))
+        
+        circle(A, radius: 0.15, fill: black)
+        circle(B, radius: 0.15, fill: black)
+        
+        content(A, $A$, anchor: "south-east", padding: 0.2)
+        content(B, $B$, anchor: "south-east", padding: 0.2)
+        
+        content((11, 0), $\ 11$, anchor: "north")
+        content((13, 0), $\ 13$, anchor: "north")
+        content((0, 7), $7$, anchor: "east", padding: 0.2)
+        content((0, 9), $a$, anchor: "east", padding: 0.2)
+        
+        let vertex = (4, 0)
+        
+        content((vertex.at(0) + 2.5, 0.8), $45 degree$)
+      })
     ]],
   
   [#enum(
@@ -696,7 +767,7 @@
       #grid(
         columns: (auto, auto, auto),
         column-gutter: 0pt,
-        // Coluna da Esquerda: Restos
+        
         align(right)[
           $ 2x^4 - 4x^3 - x^2 + 3x $ \
           #v(-1cm)
@@ -718,11 +789,11 @@
           #v(-0.3cm)
           $ #text(fill: rgb("#008000"), weight: "bold")[$6x - 3$] $
         ],
-        // Coluna do Meio: Linha vertical da chave
+        
         align(center + top)[
           #line(start: (0pt, 4pt), end: (0pt, 24pt), stroke: 1pt)
         ],
-        // Coluna da Direita: Divisor e Quociente
+        
         align(left)[
           $ x^2 + x + 1 $
           #line(length: 100%, stroke: 1pt)

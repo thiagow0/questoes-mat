@@ -1,4 +1,5 @@
 #import "lib.typ": arc, questao
+#import "@preview/cetz:0.4.2": canvas, draw
 
 = COLÔNIA DO GURGUÉIA
 \
@@ -7,7 +8,7 @@
 #line(length: 100%)
 #v(-1.1cm)
 #text(fill: rgb(0, 0, 255), weight: "bold")[#align(right)[#link(
-  "https://drive.google.com/file/d/1YEA-TtaXAm5fpjX-HgYQqnEX4Wa5P-zo/view?usp=drive_link",
+  "https://drive.google.com/file/d/16ljaDxR095kfv__jSRbWoS75Z1tm1bG4/view?usp=drive_link",
 )[PDF]]]
 \
 
@@ -82,10 +83,103 @@
 
 #questao(
   [Na figura abaixo temos que B, C e D são colineares e $A C = C E$.
-    // Nota: A imagem mostra dois triângulos retângulos apoiados na reta BD.
-    // O triângulo da esquerda tem cateto vertical AB = 3 cm.
-    // O triângulo da direita tem cateto vertical ED = 5 cm.
-    // A hipotenusa AC do primeiro é igual à hipotenusa CE do segundo.
+    
+    #align(center)[
+      #canvas(length: 0.7cm, {
+  import draw: *
+
+  
+  let B = (0.0, 0.0)
+  let A = (0.0, 3.0)
+  let C = (5.0, 0.0)
+  let D = (8.0, 0.0)
+  let E = (8.0, 5.0)
+
+  line(B, D, stroke: 1pt)
+  line(B, A, stroke: 1pt)
+  line(D, E, stroke: 1pt)
+  line(A, C, stroke: 1pt)
+  line(C, E, stroke: 1pt)
+
+  circle(A, radius: 0.03, fill: black)
+  circle(B, radius: 0.03, fill: black)
+  circle(C, radius: 0.03, fill: black)
+  circle(D, radius: 0.03, fill: black)
+  circle(E, radius: 0.03, fill: black)
+
+  
+  let s = 0.4 
+
+  rect((0,0), (s, s), fill: gray.lighten(50%), stroke: 0.5pt)
+  circle((s/2, s/2), radius: 0.03, fill: black)
+
+  
+  rect(D, (D.at(0) - s, D.at(1) + s), fill: gray.lighten(50%), stroke: 0.5pt)
+  circle((D.at(0) - s/2, D.at(1) + s/2), radius: 0.03, fill: black)
+
+  
+  
+  let dx_ca = -5.0
+  let dy_ca = 3.0
+  let len = calc.sqrt(dx_ca*dx_ca + dy_ca*dy_ca)
+  let ux = dx_ca / len * s
+  let uy = dy_ca / len * s
+  
+  
+  let vx = -uy 
+  let vy = ux
+  
+  
+  let p1 = (C.at(0) + ux, C.at(1) + uy)
+  let p3 = (C.at(0) - vx, C.at(1) - vy) 
+  let p2 = (p1.at(0) - vx, p1.at(1) - vy) 
+  
+  line(C, p1, p2, p3, close: true, fill: gray.lighten(50%), stroke: 0.5pt)
+  circle(((C.at(0)+p2.at(0))/2, (C.at(1)+p2.at(1))/2), radius: 0.03, fill: black)
+
+  
+  
+  let draw-tick(start, end) = {
+    let mx = (start.at(0) + end.at(0)) / 2
+    let my = (start.at(1) + end.at(1)) / 2
+    
+    let dx = end.at(0) - start.at(0)
+    let dy = end.at(1) - start.at(1)
+    let dist = calc.sqrt(dx*dx + dy*dy)
+    
+    let nx = -dy / dist
+    let ny = dx / dist
+    
+    let tick-len = 0.15
+    let gap = 0.05
+    
+    
+    line(
+      (mx - nx*tick-len - dx*gap, my - ny*tick-len - dy*gap),
+      (mx + nx*tick-len - dx*gap, my + ny*tick-len - dy*gap),
+      stroke: 0.8pt
+    )
+    line(
+      (mx - nx*tick-len + dx*gap, my - ny*tick-len + dy*gap),
+      (mx + nx*tick-len + dx*gap, my + ny*tick-len + dy*gap),
+      stroke: 0.8pt
+    )
+  }
+
+  draw-tick(A, C)
+  draw-tick(C, E)
+
+  
+  content(A, [$A$], anchor: "south", padding: 0.2)
+  content(B, [$B$], anchor: "north", padding: 0.2)
+  content(C, [$C$], anchor: "north", padding: 0.2)
+  content(D, [$D$], anchor: "north", padding: 0.2)
+  content(E, [$E$], anchor: "south", padding: 0.2)
+
+  content((-0.1, 1.5), [$3 c m$], anchor: "east")
+  content((8.1, 2.5), [$5 c m$], anchor: "west")
+})
+    ]
     
     Qual a medida do segmento AE, em centímetros?],
   [#enum(
@@ -173,7 +267,7 @@
     [98.550],
     [98.650],
     [99.550],
-    [99.550], // Nota: O PDF repete este valor nas opções C e D, mantido conforme original
+    [99.550], 
     [100.000],
   )],
   gabarito_explicacao: none,
@@ -196,7 +290,7 @@
   [#enum(
     [valorizou 20% em relação ao dólar.],
     [valorizou 15% em relação ao dólar.],
-    [valorizou 10% em relação ao real.], // Nota: Texto original diz "em relação ao real", possivelmente erro de digitação no enunciado, mas transcrito fielmente. O sentido lógico seria "em relação ao dólar" ou apenas valorização cambial.
+    [valorizou 10% em relação ao real.], 
     [desvalorizou 20% em relação ao dólar.],
     [desvalorizou 25% em relação ao dólar.],
   )],

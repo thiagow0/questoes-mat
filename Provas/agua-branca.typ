@@ -1,4 +1,5 @@
 #import "lib.typ": questao
+#import "@preview/cetz:0.4.2": canvas, draw
 
 = ÁGUA BRANCA
 \
@@ -320,7 +321,34 @@
 #questao(
   [Na figura abaixo sabe-se que AS é uma bissetriz e o perímetro do triângulo ABC é igual a 77 m. Qual a medida do segmento SC, em metros?
     
-    #align(center)[#image("Imagens/q-trianguloaguabranca.png", width: 60%)]],
+    #align(center)[
+      #canvas(length: 0.8cm, {
+        import draw: *
+        
+        let B = (0.0, 0.0)
+        let S = (2.5, 0.0) 
+        
+        let A = (2.0, 4.5)
+        let C = (8.0, 0.0)
+        
+        line(B, A, C, close: true, stroke: 1.5pt)
+        
+        line(A, S, stroke: (dash: "dashed", thickness: 1pt))
+        
+        
+        content(A, [$A$], anchor: "south", padding: 0.2)
+        content(B, [$B$], anchor: "north", padding: 0.2)
+        content(C, [$C$], anchor: "north", padding: 0.2)
+        content(S, [$S$], anchor: "north", padding: 0.2)
+        
+        let mid_BS = ((B.at(0) + S.at(0)) / 2, 0)
+        content(mid_BS, [10 m], anchor: "south", padding: 0.2)
+        
+        let mid_AC = ((A.at(0) + C.at(0)) / 2, (A.at(1) + C.at(1)) / 2)
+        content(mid_AC, [30 m], anchor: "south-west", padding: 0.2)
+      })
+    ]
+  ],
   
   [#enum(
     [30],

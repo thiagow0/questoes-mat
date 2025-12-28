@@ -1,4 +1,5 @@
 #import "lib.typ": arc, questao
+#import "@preview/cetz:0.4.2": angle, canvas, draw
 
 = LIMA CAMPOS - MA
 \
@@ -115,6 +116,41 @@
 
 #questao(
   [Na figura abaixo sabendo que $overline(U V) = overline(U N)$, qual a medida do ângulo $hat(U V N)$?
+    
+    #canvas({
+      let S = (0, 0)
+      let P = (-0.5, 3)
+      let U = (2.7, 4)
+      let N = (5, 2.5)
+      let E = (4.5, -0.8)
+      let V = (5.35, 4.8)
+      let line_color = rgb("#005da4")
+      let fill_angle = rgb("#aeeeff")
+      let dot_radius = 0.08
+      draw.line(S, E, stroke: line_color)
+      draw.line(E, N, stroke: line_color)
+      draw.line(N, U, stroke: line_color)
+      draw.line(U, P, stroke: line_color)
+      draw.line(P, S, stroke: line_color)
+      draw.line(U, V, stroke: (paint: line_color, dash: "dashed"))
+      draw.line(V, N, stroke: (paint: line_color, dash: "dashed"))
+      angle.angle(S, E, P, radius: 0.7, fill: fill_angle, stroke: line_color, label: text(size: 8pt)[$120degree$])
+      angle.angle(P, S, U, radius: 0.7, fill: fill_angle, stroke: line_color, label: text(size: 8pt)[$102degree$])
+      angle.angle(E, N, S, radius: 0.7, fill: fill_angle, stroke: line_color, label: text(size: 8pt)[$76degree$])
+      angle.angle(U, P, N, radius: 0.7, fill: fill_angle, stroke: line_color, label: text(size: 8pt)[$x$])
+      let draw_point(pt, name, anchor_pos) = {
+        draw.circle(pt, radius: dot_radius, fill: line_color, stroke: black)
+        draw.content(pt, text(weight: "bold")[#name], anchor: anchor_pos, padding: 0.2)
+      }
+      
+      draw_point(S, "S", "north-east")
+      draw_point(P, "P", "east")
+      draw_point(U, "U", "south")
+      draw_point(N, "N", "west")
+      draw_point(E, "E", "north-west")
+      draw_point(V, "V", "south-west")
+    })
+  
   ],
   [#enum(
     [54°],

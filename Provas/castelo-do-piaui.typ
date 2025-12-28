@@ -1,4 +1,5 @@
 #import "lib.typ": arc, questao
+#import "@preview/cetz:0.4.2": canvas, draw
 
 = CASTELO DO PIAUÍ
 
@@ -484,7 +485,46 @@
   [O mapa (fora de escala) abaixo representa um parque no formato circular cortado por duas ruas retas representadas por $overline(A B)$ e $overline(C D)$, que se intersectam em E.
     
     #align(center)[
-      #image("Imagens/q-mapa.png", width: 50%)
+      #canvas(length: 1cm, {
+        import draw: *
+        
+        let R = 2.0
+        let O = (0.0, 0.0)
+        
+        let ang_a = 30deg
+        let ang_b = 200deg
+        let ang_c = 135deg
+        let ang_d = 345deg
+        
+        let p(ang) = (R * calc.cos(ang), R * calc.sin(ang))
+        
+        let A = p(ang_a)
+        let B = p(ang_b)
+        let C = p(ang_c)
+        let D = p(ang_d)
+        
+        let intersect(p1, p2, p3, p4) = {
+          let (x1, y1) = p1
+          let (x2, y2) = p2
+          let (x3, y3) = p3
+          let (x4, y4) = p4
+          let d = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4)
+          let t = ((x1 - x3) * (y3 - y4) - (y1 - y3) * (x3 - x4)) / d
+          return (x1 + t * (x2 - x1), y1 + t * (y2 - y1))
+        }
+        
+        let E = intersect(A, B, C, D)
+        
+        circle(O, radius: R, stroke: 1pt)
+        line(A, B, stroke: 1pt)
+        line(C, D, stroke: 1pt)
+        
+        content(A, [$A$], anchor: "south-west", padding: 0.2)
+        content(B, [$B$], anchor: "north-east", padding: 0.2)
+        content(C, [$C$], anchor: "south-east", padding: 0.2)
+        content(D, [$D$], anchor: "north-west", padding: 0.2)
+        content(E, [$E$], anchor: "south", padding: 0.2)
+      })
     ]
     
     Se $A E = 60$ m, $B E = 490$ m, $E D = 2x$ e $E C = 3x$, então qual o comprimento de $overline(E D)$?],

@@ -1,5 +1,7 @@
 #import "lib.typ": arc, questao
 
+#import "@preview/cetz:0.4.2": canvas, draw
+
 = JOSÉ DE FREITAS
 \
 == SELETIVO - 2017
@@ -278,7 +280,58 @@
 )
 
 #questao(
-  [Na figura abaixo temos um círculo inscrito em um triângulo isósceles de base BC, com todas as medidas em centímetros. Qual a área do triângulo AMN, sabendo que a reta $t$ é paralela ao lado BC do triângulo ABC?],
+  [Na figura abaixo temos um círculo inscrito em um triângulo isósceles de base BC, com todas as medidas em centímetros. Qual a área do triângulo AMN, sabendo que a reta $t$ é paralela ao lado BC do triângulo ABC?
+    
+    #align(center)[
+      #canvas(length: 0.9cm, {
+        import draw: *
+        
+        let P = (0, 0)
+        let B = (-3, 0)
+        let C = (3, 0)
+        let A = (0, 4)
+        let r = 1.5
+        let Center = (0, r)
+        let N = (0.75, 3)
+        let M = (-0.75, 3)
+        
+        line(B, C, A, close: true, stroke: 1pt)
+        
+        circle(Center, radius: r, stroke: 1pt)
+        circle(Center, radius: 0.05, fill: black)
+        
+        line(A, P, stroke: (dash: "dashed"))
+        line((-2.5, 3), (2.5, 3), stroke: (dash: "dashed"))
+        content((2.7, 3), [$t$], anchor: "west")
+        
+        let x_dim_h = -4.5
+        
+        line((-4, 0), (x_dim_h, 0), stroke: 0.5pt)
+        line((-1, 4), (x_dim_h, 4), stroke: 0.5pt)
+        
+        line((x_dim_h, 0), (x_dim_h, 4), mark: (start: ">", end: ">"), stroke: 1pt)
+        content((x_dim_h - 0.2, 2), [$4$])
+        
+        let y_dim_b = -0.8
+        
+        line(B, (-3, y_dim_b), stroke: 0.5pt)
+        line(P, (0, y_dim_b), stroke: 0.5pt)
+        
+        line((-3, y_dim_b), (0, y_dim_b), mark: (start: ">", end: ">"), stroke: 1pt)
+        content((-1.5, y_dim_b - 0.2), [$3$])
+        
+        content(A, [$A$], anchor: "south", padding: 0.2)
+        content(B, [$B$], anchor: "east", padding: 0.2)
+        content(C, [$C$], anchor: "west", padding: 0.2)
+        content(P, [$P$], anchor: "north", padding: 0.2)
+        content(M, [$M$], anchor: "south-east", padding: 0.15)
+        content(N, [$N$], anchor: "south-west", padding: 0.15)
+        content((0, 0.75), [$r$], anchor: "west", padding: 0.1)
+        content((0, 2.25), [$r$], anchor: "west", padding: 0.1)
+      })
+    ]
+  
+  ],
   [#enum(
     [1],
     [0,8],
@@ -812,7 +865,49 @@
 
 #questao(
   [Na figura seguinte temos dois círculos, de centros nos pontos O e E, tangentes no ponto F e inscritos em um quadrado de lado 4 cm. Qual o valor do raio do círculo de centro E?
-    #align(center)[#image("Imagens/e-questão4.png", width: 60%)]],
+    #align(center)[
+      #canvas({
+        let L = 4
+        let R = L / 2
+        let r_math = R * (3 - 2 * calc.sqrt(2))
+        let r_small = r_math
+        let A = (0, L)
+        let B = (0, 0)
+        let C = (L, 0)
+        let D = (L, L)
+        let center_O = (R, R)
+        let center_E = (r_small, L - r_small)
+        draw.rect(B, D, stroke: 1pt)
+        draw.circle(center_O, radius: R, stroke: 1pt)
+        draw.content(center_O, [$dot$], size: 0.8em)
+        draw.content(center_O, [O], anchor: "north", padding: 0.2)
+        draw.circle(center_E, radius: r_small, stroke: 1pt)
+        draw.content(center_E, $dot$, size: 0.6em)
+        
+        let F_pos = (center_E.at(0) + 0.5, center_E.at(1) - 0.3)
+        draw.content(F_pos, [F], size: 10pt)
+        
+        draw.content(A, [A], anchor: "south-east", padding: 0.15)
+        draw.content(B, [B], anchor: "north", padding: 0.2)
+        draw.content(C, [C], anchor: "north", padding: 0.2)
+        draw.content(D, [D], anchor: "south", padding: 0.2)
+        
+        let arrow_tip = center_E
+        let arrow_start = (center_E.at(0) + 0.5, center_E.at(1) + 1.2)
+        
+        draw.content(arrow_start, [E], fill: rgb("#D35400"), anchor: "south-west", padding: 0.1)
+        
+        
+        draw.line(
+          arrow_start,
+          (center_E.at(0) + 0.35, center_E.at(1) + 0.8),
+          (center_E.at(0) + 0.55, center_E.at(1) + 0.5),
+          arrow_tip,
+          stroke: (paint: rgb("#D35400"), thickness: 1pt),
+          mark: (end: ">", fill: rgb("#D35400"), size: 0.15),
+        )
+      })
+    ]],
   
   [#enum(
     [$2(3 - 2sqrt(2))$],
@@ -892,7 +987,54 @@
 
 #questao(
   [Na figura que segue o diâmetro $A E = 30$ cm e todas as outras medidas indicadas estão também em centímetros. Qual a mediada do segmento BD?
-    #align(center)[#image("Imagens/q-questão5.png", width: 70%)]],
+    #align(center)[
+      #canvas(length: 0.6cm, {
+        let R = 4
+        let xa = -1.2
+        let ya = 3.81
+        let y_bc = 0.5
+        let A = (xa, ya)
+        let E = (-xa, -ya)
+        let D = (xa, y_bc)
+        let O = (0, 0)
+        let x_chord = calc.sqrt(R * R - y_bc * y_bc)
+        let B = (-x_chord, y_bc)
+        let C = (x_chord, y_bc)
+        
+        draw.circle((0, 0), radius: R, stroke: 1pt)
+        draw.line(A, E, stroke: 1pt)
+        draw.line(A, B, stroke: 1pt)
+        draw.line(A, C, stroke: 1pt)
+        draw.line(B, C, stroke: 1pt)
+        draw.line(A, D, stroke: 1pt)
+        draw.circle(O, radius: 0.05, fill: black)
+        
+        let d_size = 0.3
+        draw.rect((xa - d_size, y_bc), (xa, y_bc + d_size), stroke: 0.5pt)
+        draw.circle((xa - d_size / 2, y_bc + d_size / 2), radius: 0.03, fill: black)
+        draw.content(A, [A], anchor: "south", padding: 0.2)
+        draw.content(B, [B], anchor: "east", padding: 0.2)
+        draw.content(C, [C], anchor: "west", padding: 0.2)
+        draw.content(E, [E], anchor: "north", padding: 0.2)
+        draw.content(D, [D], anchor: "north", padding: 0.3)
+        
+        let mid_ac = ((xa + x_chord) / 2, (ya + y_bc) / 2)
+        draw.content(mid_ac, [10], anchor: "south-west", padding: 0.15)
+        
+        let mid_ab = ((xa - x_chord) / 2, (ya + y_bc) / 2)
+        let lbl_6_pos = (-3.5, 3.5)
+        
+        draw.content(lbl_6_pos, [6], name: "lbl6")
+        
+        draw.line(
+          "lbl6.south-east",
+          mid_ab,
+          stroke: (paint: orange, thickness: 1.5pt),
+          mark: (end: ">", fill: orange),
+        )
+      })
+    ]
+  ],
   
   [#enum(
     [$5sqrt(2)$],
@@ -1674,7 +1816,11 @@
 
 #questao(
   [Na figura seguinte temos um canteiro triangular onde as divisões são todas paralelas à base $overline(A B)$ do triângulo ABC.
-    #emph[(Nota: A imagem do triângulo com transversais e medidas associadas não foi reproduzida aqui).]
+    
+    #align(center)[
+      #image("Imagens/q-ttales.png")
+    ]
+    
     Qual o valor da medida x + y nesse canteiro?],
   
   [#enum(

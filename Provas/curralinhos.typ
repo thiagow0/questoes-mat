@@ -111,7 +111,7 @@
 #questao(
   [Uma pesquisa de opinião pública aponta o perfil do homem casado, observe o gráfico abaixo:
     
-    [Gráfico com as seguintes informações: 25% Estudam; 60% Trabalham; 50% Estudam e Trabalham]
+    #image("Imagens/pesquisa.png")
     
     De acordo com as informações do gráfico, determine a probabilidade de um homem casado escolhido ao acaso não estudar e não trabalhar.],
   [#enum(

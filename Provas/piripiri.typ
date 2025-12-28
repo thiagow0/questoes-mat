@@ -1,4 +1,5 @@
 #import "lib.typ": arc, questao
+#import "@preview/cetz:0.4.2": canvas, draw
 
 = PIRIPIRI
 \
@@ -598,6 +599,46 @@
   
   gabarito_letra: [C],
   gabarito_explicacao: [
+    
+    #align(center)[
+      #canvas(length: 0.6cm, {
+        import draw: *
+        
+        let D = (0.0, 0.0)
+        let B = (-4.0, 0.0)
+        let A = (9.0, 0.0)
+        let C = (0.0, 6.0)
+        
+        line(B, C, A, close: true, stroke: 2pt)
+        line(C, D, stroke: 2pt)
+        
+        let s = 0.5
+        line((0, s), (s, s), (s, 0), stroke: 1.5pt)
+        circle((s / 2, s / 2), radius: 0.05, fill: black)
+        
+        let s_c = 0.5
+        let k_cb = s_c / calc.sqrt(16 + 36)
+        let k_ca = s_c / calc.sqrt(81 + 36)
+        
+        let p1 = (C.at(0) - 4 * k_cb, C.at(1) - 6 * k_cb)
+        let p3 = (C.at(0) + 9 * k_ca, C.at(1) - 6 * k_ca)
+        let p2 = (p1.at(0) + (p3.at(0) - C.at(0)), p1.at(1) + (p3.at(1) - C.at(1)))
+        
+        line(p1, p2, p3, stroke: 1.5pt)
+        circle(((C.at(0) + p2.at(0)) / 2, (C.at(1) + p2.at(1)) / 2), radius: 0.05, fill: black)
+        
+        content(B, [$B$], anchor: "north-east", padding: 0.2)
+        content(A, [$A$], anchor: "north-west", padding: 0.2)
+        
+        content(D, [$D$], anchor: "north", padding: 0.2)
+        content(C, [$C$], anchor: "south", padding: 0.2)
+        
+        content((-2.0, 0.0), [$4$], anchor: "north", padding: 0.2)
+        content((4.5, 0.0), [$9$], anchor: "north", padding: 0.2)
+        content((0.0, 3.0), [$h$], anchor: "west", padding: 0.2)
+      })
+    ]
+    
     #block(fill: luma(240), inset: 10pt, width: 100%, radius: 4pt, stroke: (left: 2pt + yellow))[
       *Relação Métrica* \
       A altura ao quadrado é igual ao produto das projeções dos catetos sobre a hipotenusa:

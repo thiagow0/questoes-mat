@@ -1,5 +1,7 @@
 #import "lib.typ": arc, questao
 
+#import "@preview/cetz:0.4.2": canvas, draw
+
 = SANTA HELENA
 \
 == CONCURSO - 2024
@@ -166,7 +168,24 @@
 #questao(
   [Encontre o valor de $x$ sabendo que $y$ é igual a um terço de 9.
     
-    // Descrição da figura para contexto: Duas retas (cordas) se cruzam. Na primeira reta, os segmentos a partir da interseção medem 4 e $x+2$. Na segunda reta, os segmentos medem $y-3$ e 3.
+    #align(center)[
+      #canvas(length: 0.8cm, {
+        let x_max = 2
+        let y_max = 2.5
+        let TL = (-x_max, y_max)
+        let TR = (x_max, y_max)
+        let BL = (-x_max, -y_max)
+        let BR = (x_max, -y_max)
+        
+        draw.line(TL, BR, stroke: 1pt)
+        draw.line(BL, TR, stroke: 1pt)
+        
+        draw.content((-1, 1.2), text(size: 14pt)[$y-3$], anchor: "east", padding: 0.2)
+        draw.content((1, 1.2), text(size: 14pt)[$x+2$], anchor: "west", padding: 0.2)
+        draw.content((-1, -1.2), text(size: 14pt)[$4$], anchor: "east", padding: 0.2)
+        draw.content((1, -1.2), text(size: 14pt)[$3$], anchor: "west", padding: 0.2)
+      })
+    ]
   ],
   [#enum(
     [$x = 2$],
