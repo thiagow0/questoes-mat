@@ -1,5 +1,7 @@
 #import "lib.typ": arc, questao
 
+#import "@preview/cetz:0.4.2": canvas, draw
+
 = PAU D'ARCO DO PIAUÍ
 \
 == CONCURSO - 2015
@@ -24,8 +26,8 @@
 )
 
 #questao(
-  [Simplificando $(2015^2 - 25)/(2015^2 - 2015 - 30)$ obteremos:],
-  [#enum(spacing: 12pt, [$2015/2016$], [$2014/2015$], [$2010/2009$], [$2015/2014$], [$2015/2017$])],
+  [Simplificando $ (2015^2 - 25)/(2015^2 - 2015 - 30) $ obteremos:],
+  [#enum(spacing: 12pt, [$ 2015/2016 $], [$ 2014/2015 $], [$ 2010/2009 $], [$ 2015/2014 $], [$ 2015/2017 $])],
   gabarito_explicacao: none,
 )
 
@@ -43,6 +45,7 @@
 
 #questao(
   [Seja $X$ uma matriz quadrada de ordem 4 tal que $3.X = X^2$. Se $X$ é inversível, então o determinante de $X^t$ é igual a:
+    
     Obs.: $X^t$ denota a transposta da matriz $X$.],
   [#enum(
     [64],
@@ -81,7 +84,36 @@
 #questao(
   [O triângulo $A B C$ seguinte é retângulo em $A$. Se $A hat(B) C = alpha$, $A C = 3$ e $A B = tg alpha$, então o perímetro deste triângulo vale:
     
-    [imagem]
+    #align(center)[
+      #canvas(length: 1cm, {
+        import draw: *
+        
+        let A = (0.0, 0.0)
+        let C = (0.0, 3.0)
+        let B = (5.5, 0.0)
+        
+        line(A, B, C, close: true, stroke: 1pt)
+        
+        let s = 0.3
+        line((0, s), (s, s), (s, 0), stroke: 1pt)
+        circle((s / 2, s / 2), radius: 0.04, fill: black)
+        
+        let dx = C.at(0) - B.at(0)
+        let dy = C.at(1) - B.at(1)
+        let angle_start = 180deg
+        let angle_end = calc.atan2(dx, dy)
+        
+        arc((4.5, 0.0), start: angle_start, stop: angle_end, radius: 1.0, name: "alpha_arc")
+        
+        content((B.at(0) - 1.3, 0.35), [$alpha$])
+        content((0, 1.5), [$3$], anchor: "east", padding: 0.2)
+        content((2.5, 0), [$op("tg") alpha$], anchor: "north", padding: 0.2)
+        content(C, [$C$], anchor: "east", padding: 0.1)
+        content(A, [$A$], anchor: "east", padding: 0.1)
+        content(B, [$B$], anchor: "west", padding: 0.1)
+      })
+    ]
+  
   ],
   [#enum(
     spacing: 12pt,
@@ -217,11 +249,11 @@
 
 #questao(
   [Assinale a alternativa incorreta:],
-  [#enum(
+  [#enum(spacing: 12pt,
     [Quando $10^2015 - 2015$ é desenvolvido, a soma de seus algarismos é igual a 18128.],
     [A equação $4/x + 2/y = 1$, com $x$ e $y$ inteiros positivos possui 4 soluções.],
-    [O número $N = 111 + 222^2 + 333^3 + 444^4 + 555^5 - 12345$ não é um quadrado perfeito.],
-    [Se $( root(4, 9 + sqrt(9 + sqrt(9))) )^4 = a + b sqrt(3)$, então $a - b = 57$.],
+    [O número $ N = 111 + 222^2 + 333^3 + 444^4 + 555^5 - 12345 $ não é um quadrado perfeito.],
+    [Se $ ( root(4, 9 + sqrt(9 + sqrt(9))) )^4 = a + b sqrt(3), $ então $a - b = 57$.],
     [Em um grupo de 70 pessoas, há pelo menos 7 pessoas que nasceram no mesmo mês.],
   )],
   gabarito_explicacao: none,

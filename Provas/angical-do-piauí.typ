@@ -17,10 +17,10 @@
   [Assinale a alternativa INCORRETA:],
   [#enum(
     [A equação $2^x = x^2$ possui 3 soluções reais.],
-    [Se $x, y$ são inteiros positivos e $x + y + x y = 34$, então $x + y = 11$.],
+    [Se $x, y$ são inteiros positivos e $ x + y + x y = 34, $ então $x + y = 11$.],
     [$root(3, 3) > root(4, 4)$],
     [Não existe número inteiro tal que $ (x^2 - 5x + 6)(-x^2 + 5x - 4) > 0. $],
-    [Se $x_1$ e $x_2$ são raízes da equação $x^2 - 4x + 5 = 0$, então $1/x_1 + 1/x_2 = 4/5$.],
+    [Se $x_1$ e $x_2$ são raízes da equação $ x^2 - 4x + 5 = 0, $ então $1/x_1 + 1/x_2 = 4/5$.],
   )],
   gabarito_explicacao: none,
 )
@@ -96,7 +96,59 @@
 #questao(
   [Qual a razão entre o volume do cilindro e do cone indicados na figura abaixo?
     
-    (Considere que o cilindro tem raio $r$ e altura $h$, e o cone invertido tem raio $r$ e altura $h/2$ conforme indicado na figura original).],
+    #align(center)[
+      #canvas(length: 0.9cm, {
+        import draw: *
+        
+        let r = 1.5
+        let h = 3.0
+        let h_cone = h / 2
+        let ry = 0.3
+        let gap = 4.0
+        let color_fill = luma(180)
+        let c_base = (0, 0)
+        let c_top = (0, h)
+        
+        line((r, 0), (r, h), (-r, h), (-r, 0), close: true, fill: color_fill, stroke: none)
+        circle(c_top, radius: (r, ry), fill: color_fill, stroke: none)
+        circle(c_base, radius: (r, ry), fill: color_fill, stroke: none)
+        line((-r, 0), (-r, h), stroke: 1pt)
+        line((r, 0), (r, h), stroke: 1pt)
+        arc((1.5, 0), start: 0deg, stop: 180deg, radius: (r, ry), stroke: (dash: "dotted"))
+        arc((-1.5, 0), start: 180deg, stop: 360deg, radius: (r, ry), stroke: 1pt)
+        circle(c_top, radius: (r, ry), stroke: 1pt)
+        line(c_top, (r, h), stroke: 1.2pt)
+        content((r / 2, h), [#v(-0.7cm)$r$], anchor: "north", padding: 0.1)
+        let dim_x = -r - 0.5
+        line((dim_x, 0), (dim_x, h), mark: (start: ">", end: ">"), stroke: 1pt)
+        line((-r, 0), (dim_x, 0), stroke: (dash: "dashed"))
+        line((-r, h), (dim_x, h), stroke: (dash: "dashed"))
+        content((dim_x, h / 2), [$h$], anchor: "east", padding: 0.1)
+        
+        let cone_tip = (gap, 0)
+        let cone_base_c = (gap, h_cone)
+        
+        line((gap - r, h_cone), cone_tip, (gap + r, h_cone), close: true, fill: color_fill, stroke: none)
+        circle(cone_base_c, radius: (r, ry), fill: color_fill, stroke: none)
+        
+        line((gap - r, h_cone), cone_tip, stroke: 1pt)
+        line((gap + r, h_cone), cone_tip, stroke: 1pt)
+        
+        circle(cone_base_c, radius: (r, ry), stroke: 1pt)
+        
+        line(cone_base_c, (gap + r, h_cone), stroke: 1.2pt)
+        content((gap + r / 2, h_cone), [#v(-0.4cm)$r$], anchor: "south", padding: 0.1)
+        
+        let dim_x_cone = gap - r - 0.5
+        line((dim_x_cone, 0), (dim_x_cone, h_cone), mark: (start: ">", end: ">"), stroke: 1pt)
+        
+        line(cone_tip, (dim_x_cone, 0), stroke: (dash: "dashed"))
+        line((gap - r, h_cone), (dim_x_cone, h_cone), stroke: (dash: "dashed"))
+        content((dim_x_cone, h_cone / 2), [$h/2$], anchor: "east", padding: 0.1)
+      })
+    ]
+  
+  ],
   [#enum(
     [5],
     [6],
@@ -110,7 +162,39 @@
 #questao(
   [Se AB é o diâmetro do semicírculo de centro O e raio 4 cm, então a área e o perímetro do triângulo COB, são respectivamente:
     
-    (Considere pela figura que o ângulo $C hat(A) B = 60^degree$).],
+    #align(center)[
+      #canvas(length: 0.6cm, {
+        import draw: *
+        
+        let r = 4.0
+        let angle_start = 0deg
+        let angle_end = 180deg
+        
+        let O = (0.0, 0.0)
+        let A = (-r, 0.0)
+        let B = (r, 0.0)
+        
+        let angle_C = 120deg
+        let C = (r * calc.cos(angle_C), r * calc.sin(angle_C))
+        
+        arc(B, radius: r, start: 0deg, stop: 180deg, stroke: 1.5pt + gray)
+        line(A, B, stroke: 1.5pt + gray)
+        
+        line(A, C, stroke: 1.5pt + gray)
+        line(C, O, stroke: 1.5pt + gray)
+        line(C, B, stroke: 1.5pt + gray)
+        
+        arc((-3.2, 0.0), radius: 0.8, start: 0deg, stop: 60deg, stroke: 1pt)
+        content((-2.6, 0.7), text(size: 10pt)[$60 degree$])
+        
+        content(A, text(size: 12pt, weight: "bold")[$A$], anchor: "north-east", padding: 0.15)
+        content(B, text(size: 12pt, weight: "bold")[$B$], anchor: "north-west", padding: 0.15)
+        content(O, text(size: 12pt, weight: "bold")[$O$], anchor: "north", padding: 0.15)
+        content(C, text(size: 12pt, weight: "bold")[$C$], anchor: "south-east", padding: 0.15)
+      })
+    ]
+  
+  ],
   [#enum(
     [$4 "cm"^2$ e $4 sqrt(3) "cm"$],
     [$4 sqrt(3) "cm"^2$ e $12 "cm"$],
@@ -136,7 +220,7 @@
 
 #questao(
   [Se $x, y, z$ são números reais não nulos e
-    $ cases(x+y+z=9, 1/x + 1/y + 1/z = 1, x y + x z + y z = 27) $, então $x - y - z$ é igual a:],
+    $ cases(x+y+z=9, 1/x + 1/y + 1/z = 1, x y + x z + y z = 27) $então $x - y - z$ é igual a:],
   [#enum(
     [6],
     [5],
@@ -151,8 +235,11 @@
   [Analise as sentenças seguintes:
     
     1 - A palavra BRASILEIRA possui 211680 anagramas que não começam por vogal.
+    
     2 - Pode-se sortear 3 viagens para um grupo de 10 pessoas, para lugares diferentes, de 720 modos distintos.
+    
     4 - Se uma matriz é invertível, então seu determinante é nulo.
+    
     8 - Se X é uma matriz quadrada de ordem 3 e det(X) = 4, então det(2X) = 8.
     
     Qual o somatório dos itens verdadeiros:],
@@ -169,7 +256,7 @@
 #questao(
   [Os números positivos a,b e c, cuja soma é 15, são termos consecutivos de uma progressão aritmética. Adicionando 1, 4 e 19, respectivamente, a cada um deles, obtêm-se os três primeiros termos de uma progressão geométrica (PG). Qual a soma dos 100 primeiros termos dessa PG?],
   [#enum(
-    spacing: 12pt,
+    spacing: 14pt,
     [$(3(3^101 - 1))/2$],
     [$(3(3^100 - 1))/4$],
     [$(3(3^100 - 1))/2$],
@@ -214,7 +301,7 @@
 )
 
 #questao(
-  [A piscina da casa de seu José é retangular de 4,00m x 8,00m e está com água até a altura de 1,50m. Para a limpeza da água ele mistura um produto químico em pó à razão de um pacote para cada 4000 litros. Qual o número de pacotes desse produto que deve ser usado para a limpeza da água?],
+  [A piscina da casa de seu José é retangular de $4,00m times 8,00m$ e está com água até a altura de $1,50m$. Para a limpeza da água ele mistura um produto químico em pó à razão de um pacote para cada 4000 litros. Qual o número de pacotes desse produto que deve ser usado para a limpeza da água?],
   [#enum(
     [9],
     [10],
@@ -260,7 +347,6 @@
   )],
   gabarito_explicacao: none,
 )
-
 
 \
 == CONCURSO - 2023
@@ -571,7 +657,6 @@
         *Resposta: (B)*
       ]
     ]
-    
   
   ],
 )
@@ -788,7 +873,6 @@
       A_("cubo") & = 6 dot a^2 \
                  & = 6 dot 4^2 = 6 dot 16 = 96 "cm"^2
     $
-    
     
     $ R = A_("cubo") / A_("esfera") = 96 / (50,24) approx 1,91 $
     
