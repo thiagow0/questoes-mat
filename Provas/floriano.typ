@@ -173,7 +173,7 @@
         let t_bl = (-0.9, h + 0.72)
         let visible = (stroke: 1.5pt + black, join: "round")
         let hidden = (stroke: (paint: black, dash: "dashed", thickness: 1pt))
-        let axis = (stroke: (paint: gray, dash: "dotted", thickness: 0.8pt))
+        let axis = (stroke: (paint: gray, dash: "dotted", thickness: 0.1pt))
         let center_b = ((b_fl.at(0) + b_br.at(0)) / 2, (b_fl.at(1) + b_br.at(1)) / 2)
         let center_t = ((t_fl.at(0) + t_br.at(0)) / 2, (t_fl.at(1) + t_br.at(1)) / 2)
         

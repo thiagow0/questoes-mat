@@ -897,7 +897,6 @@
         
         draw.content(arrow_start, [E], fill: rgb("#D35400"), anchor: "south-west", padding: 0.1)
         
-        
         draw.line(
           arrow_start,
           (center_E.at(0) + 0.35, center_E.at(1) + 0.8),
@@ -1083,7 +1082,6 @@
             (B D)^2 & = 36 - 4 \
             (B D)^2 & = 32
     $
-    
     
     $ B D = sqrt(32) = sqrt(16 dot 2) = 4 sqrt(2) "cm" $
     
@@ -1277,7 +1275,6 @@
     $ P(x) = Q(x) dot d(x) + r(x) $
     $ P(x) = Q(x) dot (x-3)(x+2) + r(x) $
     
-    
     Como o divisor $d(x)$ tem grau 2, o resto $r(x)$ deve ter grau no máximo 1.
     Logo, definimos o resto na forma genérica:
     $ r(x) = a x + b $
@@ -1443,7 +1440,6 @@
     
     Podemos colocar $1/3 pi r^2$ em evidência, somando as alturas (que resulta na hipotenusa total $a = 10$):
     $ V = 1/3 pi r^2 (h_1 + h_2) =1/3 pi (4,8)^2 dot 10 $
-    
     
     Transformando $4,8$ em fração para facilitar: $4,8 = 48/10$.
     $
@@ -1756,7 +1752,9 @@
   [Analise as proposições seguintes:
     
     I. $(x-1)(x-2)/(x-1) = x - 2$, para todo x real.
+
     II. $sqrt(x^2) = |x|$, para todo x real.
+    
     III. $|x| = |-x|$, para todo x real.
     
     Podemos afirmar corretamente que:],
@@ -1865,7 +1863,7 @@
 )
 
 #questao(
-  [Se o sistema linear $cases(3x + y = 7, m x + 3y = n)$ é possível e indeterminado, então m + n é:],
+  [Se o sistema linear $ cases(3x + y = 7, m x + 3y = n) $ é possível e indeterminado, então m + n é:],
   
   [#enum(
     [30],

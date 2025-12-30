@@ -405,7 +405,6 @@
       
       Fatorando os polinômios (Divisão dos termos):
       
-      
       $
         a^3 + 3a^2 - 4a - 12 & = a^2(a+3) - 4(a+3) \
                              & = (a^2 - 4)(a + 3) \
@@ -415,14 +414,12 @@
       Trinômio quadrado (Soma = -1, Produto = -6 $arrow$ raízes 2 e -3).
       $ a^2 + a - 6 = (a - 2)(a + 3) $
       
-      
       Substituindo os polinômios fatorados na fração:
       
       $ E = 2/3 dot ((a-2)(a+2)(a+3)) / ((a-2)(a+3)) $
       
       Cancelamos os termos comuns $(a-2)$ e $(a+3)$ no numerador e denominador:
       $ E = 2/3 dot (a + 2) $
-      
       
       Para $a = 2023$:
       $

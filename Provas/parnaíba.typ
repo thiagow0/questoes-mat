@@ -27,9 +27,12 @@
   [Julgue as afirmativas a seguir como verdadeiras ou falsas em seguida assinale a alternativa que apresenta a sequência correta.
     
     I. ${0,1,2,3,4,5,...} = NN^*$
+
     II. $ZZ_+ = NN$
+
     III. $ZZ^*_(-) = {...,-3,-2,-1}$
-    IV. $N_i = {0,2,4,6,...}$],
+
+    IV. $NN = {0,2,4,6,...}$],
   [#enum(
     [F-V-V-F],
     [V-V-V-F],
@@ -118,7 +121,7 @@
     [3736,25],
     [3825,40],
     [4225,50],
-    [2880, 37],
+    [2880,37],
     [3909,89],
   )],
   gabarito_explicacao: none,

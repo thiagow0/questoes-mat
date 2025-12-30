@@ -1,6 +1,6 @@
 #import "lib.typ": arc, questao
 
-#import "@preview/cetz:0.4.2": canvas, draw, angle
+#import "@preview/cetz:0.4.2": angle, canvas, draw
 = LUÍS DOMINGUES
 \
 == CONCURSO - 2023
@@ -15,6 +15,8 @@
 #questao(
   [A fração geratriz da dízima periódica $3,2474747...$ é igual a:],
   [#enum(
+    spacing: 12pt,
+
     [$frac(3215, 1980)$],
     [$frac(3215, 900)$],
     [$frac(643, 198)$],
@@ -25,7 +27,7 @@
 )
 
 #questao(
-  [O valor da expressão numérica $(3^2023 - 3^2022 - 3^2021 + 3^2020)/ (3^2021 - 3^2020)$ é:],
+  [O valor da expressão numérica $ (3^2023 - 3^2022 - 3^2021 + 3^2020)/ (3^2021 - 3^2020) $ é:],
   [#enum(
     [10],
     [9],
@@ -52,7 +54,9 @@
   [Considere as seguintes afirmações:
     
     I. O número 379 é primo.
+
     II. O número 3,14 é irracional.
+    
     III. $sqrt(1024)$ é um número natural.
     
     Qual(is) dessas afirmações é(são) verdadeira(s)?],
@@ -92,32 +96,31 @@
 
 #questao(
   [Qual o valor do complementar de $x$ na figura abaixo?
-
-  #align(center)[
-    #canvas(length: 0.8cm, {
-
-  let B = (0, 0)         
-  let C = (6, 1)         
-  let A = (2, 3.5)       
-  let D = (C.at(0) + 1.5, C.at(1) - 0.9)
-  let angle_fill = rgb("#ffad6080") 
-  let angle_stroke = rgb("#ed802d") 
-  let r = 0.6 
-  draw.line(A, B, C, close: true, stroke: 1pt)
-  draw.line(C, D, stroke: 1pt)
-  angle.angle(A, B, C, radius: r, fill: angle_fill, stroke: angle_stroke)
-  angle.angle(B, C, A, radius: r, fill: angle_fill, stroke: angle_stroke)
-
-  angle.angle(C, B, D, radius: r, fill: angle_fill, stroke: angle_stroke)
-
-  draw.content(A, [$x + 30 degree$], anchor: "south", padding: 0.1)
-
-  draw.content(B, [$x - 10 degree$], anchor: "north", padding: 0.1)
-
-  draw.content(C, [$3x - 30 degree$], anchor: "north", padding: 0.7)
-})
-  ]
-
+    
+    #align(center)[
+      #canvas(length: 0.8cm, {
+        let B = (0, 0)
+        let C = (6, 1)
+        let A = (2, 3.5)
+        let D = (C.at(0) + 1.5, C.at(1) - 0.9)
+        let angle_fill = rgb("#ffad6080")
+        let angle_stroke = rgb("#ed802d")
+        let r = 0.6
+        draw.line(A, B, C, close: true, stroke: 1pt)
+        draw.line(C, D, stroke: 1pt)
+        angle.angle(A, B, C, radius: r, fill: angle_fill, stroke: angle_stroke)
+        angle.angle(B, C, A, radius: r, fill: angle_fill, stroke: angle_stroke)
+        
+        angle.angle(C, B, D, radius: r, fill: angle_fill, stroke: angle_stroke)
+        
+        draw.content(A, [$x + 30 degree$], anchor: "south", padding: 0.1)
+        
+        draw.content(B, [$x - 10 degree$], anchor: "north", padding: 0.1)
+        
+        draw.content(C, [$3x - 30 degree$], anchor: "north", padding: 0.7)
+      })
+    ]
+  
   ],
   [#enum(
     [$50 degree$],
@@ -133,13 +136,13 @@
   [Julgue as afirmações seguintes em verdadeiro (V) ou falso (F).
     
     ( ) Se dois lados de um quadrilátero são congruentes, então ele é um paralelogramo.
-
+    
     ( ) As diagonais de um losango são congruentes.
-
+    
     ( ) O circuncentro é sempre interno ao triângulo.
-
+    
     ( ) Se um paralelogramo tem dois ângulos de vértices consecutivos congruentes, então ele é um retângulo.
-
+    
     ( ) Todo quadrado é retângulo e também é losango.
     
     A sequência correta se encontra em:],
@@ -178,7 +181,10 @@
 )
 
 #questao(
-  [O determinante $D = mat(12, -5, 7; 15, 4, 19; 3, -16, -13)$ vale:],
+  [
+    #set math.mat(delim: "|")
+    O determinante $D = mat(12, -5, 7; 15, 4, 19; 3, -16, -13)$ vale:
+  ],
   [#enum(
     [0],
     [-12],
@@ -203,18 +209,18 @@
 
 #questao(
   [Qual a equação da cônica indicada na figura abaixo?
-
-  #align(center)[
-    #image("Imagens/q-hiperbole.png")
-  ]
-
+    
+    #align(center)[
+      #image("Imagens/q-hiperbole.png")
+    ]
+  
   ],
   [#enum(
-    [$frac((x-5)^2, 4) - frac((y-4)^2, 12) = 1$],
-    [$frac((y-4)^2, 12) - frac((x-5)^2, 4) = 1$],
-    [$frac((y-5)^2, 4) - frac((x-4)^2, 12) = 1$],
-    [$frac((x-4)^2, 4) - frac((y-5)^2, 12) = 1$],
-    [$frac((x-5)^2, 12) - frac((y-4)^2, 4) = 1$],
+    [$ frac((x-5)^2, 4) - frac((y-4)^2, 12) = 1 $],
+    [$ frac((y-4)^2, 12) - frac((x-5)^2, 4) = 1 $],
+    [$ frac((y-5)^2, 4) - frac((x-4)^2, 12) = 1 $],
+    [$ frac((x-4)^2, 4) - frac((y-5)^2, 12) = 1 $],
+    [$ frac((x-5)^2, 12) - frac((y-4)^2, 4) = 1 $],
   )],
   gabarito_explicacao: none,
 )
@@ -235,9 +241,13 @@
   [Assinale a alternativa que contém o somatório dos itens verdadeiros:
     
     1 -- Há apenas cinco classes de poliedros de Platão.
+
     2 -- Todo poliedro convexo é poliedro de Platão.
+
     4 -- Todo poliedro regular é um poliedro de Platão.
+
     8 -- Todo poliedro de Platão é regular.
+    
     16 -- O hexaedro regular tem faces hexagonais.],
   [#enum(
     [1],
@@ -264,6 +274,7 @@
 #questao(
   [Se $x in [pi/2, pi]$ e $"sen" x = 1/3$, qual o valor do $"cos" x$?],
   [#enum(
+    spacing: 12pt,
     [$frac(2 sqrt(2), 3)$],
     [$- frac(2 sqrt(2), 9)$],
     [$- frac(sqrt(2), 3)$],
