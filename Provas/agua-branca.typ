@@ -81,6 +81,8 @@
     [Prejuízo de R\$ 12,00],
     [Lucro de R\$ 120,00],
   )],
+
+  gabarito_letra: [A],
   
   gabarito_explicacao: [
     Calculamos o resultado financeiro individual de cada item:
@@ -113,6 +115,8 @@
     [28],
     [25],
   )],
+
+  gabarito_letra: [B],
   
   gabarito_explicacao: [
     Sejam $a$ o número de acertos e $e$ o número de erros. Temos o seguinte sistema:
@@ -158,6 +162,8 @@
     [10],
     [8],
   )],
+
+  gabarito_letra: [C],
   
   gabarito_explicacao: [
     Na divisão inversamente proporcional, o produto entre a quantidade de livros e a idade é constante ($k$).
@@ -201,6 +207,7 @@
     [3],
     [2],
   )],
+  gabarito_letra: [D],
   
   gabarito_explicacao: [
     A equação da reta é dada por $a x + b y = 6$.
@@ -324,26 +331,18 @@
     #align(center)[
       #canvas(length: 0.8cm, {
         import draw: *
-        
         let B = (0.0, 0.0)
-        let S = (2.5, 0.0) 
-        
+        let S = (3.2, 0.0)
         let A = (2.0, 4.5)
         let C = (8.0, 0.0)
-        
         line(B, A, C, close: true, stroke: 1.5pt)
-        
         line(A, S, stroke: (dash: "dashed", thickness: 1pt))
-        
-        
         content(A, [$A$], anchor: "south", padding: 0.2)
         content(B, [$B$], anchor: "north", padding: 0.2)
         content(C, [$C$], anchor: "north", padding: 0.2)
         content(S, [$S$], anchor: "north", padding: 0.2)
-        
         let mid_BS = ((B.at(0) + S.at(0)) / 2, 0)
         content(mid_BS, [10 m], anchor: "south", padding: 0.2)
-        
         let mid_AC = ((A.at(0) + C.at(0)) / 2, (A.at(1) + C.at(1)) / 2)
         content(mid_AC, [30 m], anchor: "south-west", padding: 0.2)
       })
@@ -671,7 +670,7 @@
 )
 
 #questao(
-  [Qual o módulo do número complexo $z = (2 + i) dot 3 - 2 dot (1 - 2i) - i$?],
+  [Qual o módulo do número complexo $ z = (2 + i) dot 3 - 2 dot (1 - 2i) - i? $],
   
   [#enum(
     [$3sqrt(7)$],
@@ -710,7 +709,7 @@
     
     4 – Se $i = sqrt(-1)$, então $(1 + i)^100 = 2^50$.
     
-    8 – A equação $"sen"x + "cos"x = -1$ tem infinitas soluções em IR.
+    8 – A equação $"sen"x + "cos"x = -1$ tem infinitas soluções em $RR$.
     
     16 – Para todo x real temos que $("cotg"^2 x) / (1 + "cotg"^2 x) = "cos"^2 x$.],
   
