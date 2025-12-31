@@ -296,10 +296,8 @@
         let M = (-0.75, 3)
         
         line(B, C, A, close: true, stroke: 1pt)
-        
         circle(Center, radius: r, stroke: 1pt)
         circle(Center, radius: 0.05, fill: black)
-        
         line(A, P, stroke: (dash: "dashed"))
         line((-2.5, 3), (2.5, 3), stroke: (dash: "dashed"))
         content((2.7, 3), [$t$], anchor: "west")
@@ -308,22 +306,21 @@
         
         line((-4, 0), (x_dim_h, 0), stroke: 0.5pt)
         line((-1, 4), (x_dim_h, 4), stroke: 0.5pt)
-        
-        line((x_dim_h, 0), (x_dim_h, 4), mark: (start: ">", end: ">"), stroke: 1pt)
+        line((x_dim_h, 0), (x_dim_h, 4), mark: (start: ">", end: ">", fill: black, scale: 0.7), stroke: 1pt)
         content((x_dim_h - 0.2, 2), [$4$])
         
         let y_dim_b = -0.8
         
         line(B, (-3, y_dim_b), stroke: 0.5pt)
+        line(C, (3, y_dim_b), stroke: 0.5pt)
         line(P, (0, y_dim_b), stroke: 0.5pt)
-        
-        line((-3, y_dim_b), (0, y_dim_b), mark: (start: ">", end: ">"), stroke: 1pt)
+        line((-3, y_dim_b), (0, y_dim_b), mark: (start: ">", end: ">", fill: black, scale: 0.7), stroke: 1pt)
+        line((3, y_dim_b), (0, y_dim_b), mark: (start: ">", end: ">", fill: black, scale: 0.7), stroke: 1pt)
         content((-1.5, y_dim_b - 0.2), [$3$])
-        
         content(A, [$A$], anchor: "south", padding: 0.2)
         content(B, [$B$], anchor: "east", padding: 0.2)
         content(C, [$C$], anchor: "west", padding: 0.2)
-        content(P, [$P$], anchor: "north", padding: 0.2)
+        content((0, -0.8), [$P$], anchor: "north", padding: 0.1)
         content(M, [$M$], anchor: "south-east", padding: 0.15)
         content(N, [$N$], anchor: "south-west", padding: 0.15)
         content((0, 0.75), [$r$], anchor: "west", padding: 0.1)
@@ -866,7 +863,7 @@
 #questao(
   [Na figura seguinte temos dois círculos, de centros nos pontos O e E, tangentes no ponto F e inscritos em um quadrado de lado 4 cm. Qual o valor do raio do círculo de centro E?
     #align(center)[
-      #canvas({
+      #canvas(padding: -0.3, {
         let L = 4
         let R = L / 2
         let r_math = R * (3 - 2 * calc.sqrt(2))
@@ -879,14 +876,13 @@
         let center_E = (r_small, L - r_small)
         draw.rect(B, D, stroke: 1pt)
         draw.circle(center_O, radius: R, stroke: 1pt)
-        draw.content(center_O, [$dot$], size: 0.8em)
+        draw.circle(center_O, radius: 0.02, fill: black)
         draw.content(center_O, [O], anchor: "north", padding: 0.2)
         draw.circle(center_E, radius: r_small, stroke: 1pt)
-        draw.content(center_E, $dot$, size: 0.6em)
+        draw.circle(center_E, radius: 0.02, fill: black)
         
         let F_pos = (center_E.at(0) + 0.5, center_E.at(1) - 0.3)
         draw.content(F_pos, [F], size: 10pt)
-        
         draw.content(A, [A], anchor: "south-east", padding: 0.15)
         draw.content(B, [B], anchor: "north", padding: 0.2)
         draw.content(C, [C], anchor: "north", padding: 0.2)
@@ -895,7 +891,7 @@
         let arrow_tip = center_E
         let arrow_start = (center_E.at(0) + 0.5, center_E.at(1) + 1.2)
         
-        draw.content(arrow_start, [E], fill: rgb("#D35400"), anchor: "south-west", padding: 0.1)
+        draw.content(arrow_start, [E], fill: rgb("#D35400"), anchor: "south-west", padding: 0.01)
         
         draw.line(
           arrow_start,
@@ -987,7 +983,7 @@
 #questao(
   [Na figura que segue o diâmetro $A E = 30$ cm e todas as outras medidas indicadas estão também em centímetros. Qual a mediada do segmento BD?
     #align(center)[
-      #canvas(length: 0.6cm, {
+      #canvas(length: 0.6cm, padding: -0.5, {
         let R = 4
         let xa = -1.2
         let ya = 3.81
@@ -1752,7 +1748,7 @@
   [Analise as proposições seguintes:
     
     I. $(x-1)(x-2)/(x-1) = x - 2$, para todo x real.
-
+    
     II. $sqrt(x^2) = |x|$, para todo x real.
     
     III. $|x| = |-x|$, para todo x real.

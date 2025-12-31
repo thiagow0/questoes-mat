@@ -748,7 +748,7 @@
     #align(center)[
       
       #import draw: *
-      #canvas(length: 0.8cm, {
+      #canvas(length: 0.8cm, padding: -0.5, {
         let A = (0.0, 0.0)
         let B = (6.0, 0.0)
         let C = (2.5, 3.0)
@@ -783,7 +783,31 @@
   gabarito_explicacao: [
     Temos um trapézio com base menor 8, base maior 20 e diagonal menor 10 (formando um triângulo retângulo com a altura).
     
-    #align(center)[#image("Imagens/r-trapézioretângulo.png", width: 40%)]
+    #align(center)[
+      
+      #import draw: *
+      #canvas(length: 0.8cm, padding: -0.5, {
+        let A = (0.0, 0.0)
+        let B = (6.0, 0.0)
+        let C = (2.5, 3.0)
+        let D = (0.0, 3.0)
+        line(A, B, C, D, close: true, stroke: black + 1.5pt)
+        line(C, (2.5, 0), stroke: (paint: red, thickness: 1pt))
+        line(C, (0, 0), stroke: (paint: red, thickness: 1pt))
+        let s = 0.4
+        let cor-marcador = orange.darken(10%)
+        line((2.5, s), (2.5 - s, s), (2.5 - s, 0), stroke: red + 1pt)
+        circle((2.3, s / 2), radius: 0.04, fill: red, stroke: none)
+        line((0, s), (s, s), (s, 0), stroke: cor-marcador + 1.5pt)
+        circle((s / 2, s / 2), radius: 0.04, fill: cor-marcador, stroke: none)
+        line((0, 3.0 - s), (s, 3.0 - s), (s, 3.0), stroke: cor-marcador + 1.5pt)
+        circle((s / 2, 3.0 - s / 2), radius: 0.04, fill: cor-marcador, stroke: none)
+        content(A, text(12pt, $A$), anchor: "north", padding: 0.2)
+        content(B, text(12pt, $B$), anchor: "north", padding: 0.2)
+        content(C, text(12pt, $C$), anchor: "south", padding: 0.2)
+        content(D, text(12pt, $D$), anchor: "south", padding: 0.2)
+      })
+    ]
     
     No triângulo retângulo formado pela altura e a projeção da base menor:
     $

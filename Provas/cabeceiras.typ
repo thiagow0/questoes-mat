@@ -52,7 +52,7 @@
     
     #pad(y: 5pt)[
       #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
-        *Resposta do gabarito_explicacao: (C)*
+        *Resposta: (C)*
       ]
     ]
   ],

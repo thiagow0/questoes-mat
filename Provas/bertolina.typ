@@ -40,7 +40,7 @@
   [A figura abaixo indica a planta de um bairro em uma cidade do interior do Piauí. O secretário de obras da prefeitura pediu para um engenheiro calcular os valores de $x$ e $y$, pois ele pretende fazer uma obra nesse trecho. Qual o valor, correto, encontrado para $x + y$ nos cálculos feitos pelo engenheiro?
     
     #align(center)[
-      #canvas(length: 0.7cm, {
+      #canvas(length: 0.7cm, padding: -0.4, {
         import draw: *
         let x_pos = (0, 2, 4.5, 8.5)
         let top_y(x) = 0.25 * x + 3.0
@@ -96,7 +96,7 @@
     
     #align(center)[
       
-      #canvas(length: 2cm, {
+      #canvas(length: 2cm, padding: -0.2, {
         import draw: *
         
         let lado_quadrado = 1.0

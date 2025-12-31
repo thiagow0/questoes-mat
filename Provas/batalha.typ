@@ -1,8 +1,7 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, fonte-mat, questao
 #import "@preview/cetz:0.4.2": canvas, draw
 
 = BATALHA PI
-
 
 == CONCURSO - 2023
 
@@ -11,16 +10,12 @@
 #text(fill: rgb(0, 0, 255), weight: "bold")[#align(right)[#link(
   "https://drive.google.com/file/d/1KYNv46bBktF3aeAujL_SZlYwpCo_nPpL/view?usp=drive_link",
 )[PDF]]]
+\
+
 #questao(
-  [O valor de $(2023^2 - 4) / (2023^2 + 2023 - 2)$ é igual a:],
+  [O valor de #text(size: fonte-mat)[$(2023^2 - 4) / (2023^2 + 2023 - 2)$] é igual a:],
   
-  [#enum(
-    [$2021/2022$],
-    [$2022/2023$],
-    [$2021/2023$],
-    [$2023/2022$],
-    [$2023/2021$],
-  )],
+  [#enum(spacing: 12pt, [$2021/2022$], [$2022/2023$], [$2021/2023$], [$2023/2022$], [$2023/2021$])],
   
   gabarito_explicacao: [
     
@@ -417,7 +412,7 @@
     Sabendo que $A D = 4$ cm, $B C = 9$ cm e $C D = sqrt(34)$ cm, então o perímetro do triângulo ABD é igual a:
     
     #align(center)[
-      #canvas(length: 0.8cm, {
+      #canvas(length: 0.8cm, padding: -0.4, {
         import draw: *
         
         let B = (0, 0)
@@ -490,7 +485,6 @@
     $
     _(Trata-se do triângulo pitagórico 3, 4, 5)._
     
-    
     O perímetro do triângulo $A B D$ é a soma de seus lados:
     $
       P & = A B + B D + A D \
@@ -511,16 +505,15 @@
     
     #align(center)[
       
-      #canvas(length: 0.4cm, {
+      #canvas(length: 0.4cm, padding: -0.4, {
         import draw: *
-        
         
         line((-1, 0), (16, 0), mark: (end: "stealth"), name: "xaxis", stroke: 1pt)
         
         line((0, -2), (0, 12), mark: (end: "stealth"), name: "yaxis", stroke: 1pt)
         
         content("xaxis.end", $x$, anchor: "north-east", padding: 0.2)
-        content("yaxis.end", $y$, anchor: "north-east", padding: 0.2)
+        content("yaxis.end", $y$, anchor: "north-east", padding: 0.3)
         content((-0.5, -0.5), $0$)
         
         let f(x) = x - 4
@@ -691,7 +684,90 @@
   [Qual a medida do ângulo A do triângulo ABC indicado na figura seguinte?
     
     #align(center)[
-      #image("Imagens/q-triangulo.png", width: 90%)
+      #canvas(length: 0.85cm, padding: -0.4, {
+        import draw: *
+        
+        let mark-angle(p1, o, p2, radius: 0.5, ..style) = {
+          let v1 = (p1.at(0) - o.at(0), p1.at(1) - o.at(1))
+          let v2 = (p2.at(0) - o.at(0), p2.at(1) - o.at(1))
+          let a1 = calc.atan2(v1.at(0), v1.at(1))
+          let a2 = calc.atan2(v2.at(0), v2.at(1))
+          
+          arc(o, start: a1, stop: a2, radius: radius, mode: "PIE", ..style)
+        }
+        let r = 2.5
+        let x_deg = 18
+        let to-pt(deg) = (r * calc.cos(deg * 1deg), r * calc.sin(deg * 1deg))
+        let ang_L = 90
+        let ang_R = 0
+        let ang_Q = -36
+        let ang_P = -144
+        let ang_N = -162
+        let ang_M = 126
+        let L = to-pt(ang_L)
+        let R = to-pt(ang_R)
+        let Q = to-pt(ang_Q)
+        let P = to-pt(ang_P)
+        let N = to-pt(ang_N)
+        let M = to-pt(ang_M)
+        let O = (0, 0)
+        let intersect-lines(p1, p2, p3, p4) = {
+          let (x1, y1) = p1
+          let (x2, y2) = p2
+          let (x3, y3) = p3
+          let (x4, y4) = p4
+          let denom = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4)
+          if denom == 0 { (0, 0) } else {
+            let px = ((x1 * y2 - y1 * x2) * (x3 - x4) - (x1 - x2) * (x3 * y4 - y3 * x4)) / denom
+            let py = ((x1 * y2 - y1 * x2) * (y3 - y4) - (y1 - y2) * (x3 * y4 - y3 * x4)) / denom
+            (px, py)
+          }
+        }
+        let A = intersect-lines(M, N, R, L)
+        let B = intersect-lines(M, N, P, Q)
+        let C = intersect-lines(P, Q, R, L)
+        let gray-fill = gray.lighten(50%)
+        
+        mark-angle(B, (-1.1, 3.2), (3.7, -1.46), radius: 0.3, fill: gray-fill, stroke: none)
+        mark-angle(C, (-2.299, -1.467), (-0.74, 3.49), radius: 0.3, fill: gray-fill, stroke: none)
+        mark-angle((-23, -1), (3.67, -1.47), (1.26, 1), radius: 0.3, fill: gray-fill, stroke: none)
+        mark-angle(B, (-1.08, 3.2), (3.6, -1.46), radius: 0.3)
+        mark-angle(C, (-2.299, -1.467), (-0.74, 3.49), radius: 0.3)
+        mark-angle((-23, -1), (3.67, -1.47), (1.26, 1), radius: 0.3)
+        
+        line(A, B, C, close: true, stroke: 1pt)
+        circle(O, radius: r, stroke: 1pt)
+        
+        for pt in (A, B, C, L, M, N, P, Q, R, O) {
+          circle(pt, radius: 0.05, fill: black)
+        }
+        
+        let pad = 0.2
+        content(A, [$A$], anchor: "south", padding: pad)
+        content(B, [$B$], anchor: "north-east", padding: pad)
+        content(C, [$C$], anchor: "north-west", padding: 0.05)
+        content(L, [$L$], anchor: "south-west", padding: 0.15)
+        content(M, [$M$], anchor: "south-east", padding: 0.1)
+        content(N, [$N$], anchor: "east", padding: 0.15)
+        content(P, [$P$], anchor: "north", padding: 0.2)
+        content(Q, [$Q$], anchor: "north", padding: 0.15)
+        content(R, [$R$], anchor: "west", padding: 0.2)
+        content(O, [$O$], anchor: "south", padding: 0.15)
+        
+        let label-arc(deg1, deg2, text-content) = {
+          let mid = (deg1 + deg2) / 2
+          if (calc.abs(deg1 - deg2) > 180) { mid = mid + 180 }
+          let pos = (r * 1.15 * calc.cos(mid * 1deg), r * 1.15 * calc.sin(mid * 1deg))
+          content(pos, text-content)
+        }
+        
+        label-arc(ang_L, ang_R, [$5x$])
+        content((2.1, -0.7), $2x$)
+        content((0, -2.7), $6x$)
+        content((-2.05, -1), $x$)
+        content((-2.7, 0.8), [$4x$])
+        content((-0.6, 2.2), $2x$)
+      })
     ]],
   
   [#enum(
@@ -832,7 +908,6 @@
       ]
     ]
     
-    
     Dado o polinômio $P(x) = x^4 - 4x^3 + 6x^2 - 4x + 1$, queremos calcular $P(1+i)$.
     
     Sabemos que $(1+i)^2 = 1 + 2i + i^2 = 1 + 2i - 1 = 2i$.
@@ -859,7 +934,6 @@
       P(1+i) & = 1 + 0i \
       P(1+i) & = 1
     $
-    
     
     #pad(y: 10pt)[
       #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
