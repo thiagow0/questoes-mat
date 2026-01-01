@@ -20,7 +20,7 @@
     [$R_(-) = {x in RR | x <= 0} arrow$ conjunto dos números reais não-positivos],
     [$R^*_+ = {x in RR | x > 0} arrow$ conjunto dos números reais não-negativos],
   )],
-  assunto: "placeholder",
+  assunto: "Conjuntos numéricos",
   gabarito_letra: none,
   gabarito_explicacao: none,
 )
