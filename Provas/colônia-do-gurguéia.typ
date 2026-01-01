@@ -21,6 +21,8 @@
     [R\$ 1.885,00],
     [R\$ 1.881,00],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -33,12 +35,16 @@
     [11],
     [12],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
 #questao(
   [Qual o valor da expressão $ (x^3+x^2-x-1) / (x^3-x^2-x+1) $ para $x = 2024$?],
   [#enum(spacing: 12pt, [1], [$2025/2023$], [$2023/2025$], [$1025/1023$], [$1023/1025$])],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -51,6 +57,8 @@
     [3 horas],
     [2 horas],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -66,6 +74,8 @@
     [$3/2$],
     [2],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -78,6 +88,8 @@
     [72 cm],
     [76 cm],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -86,99 +98,97 @@
     
     #align(center)[
       #canvas(length: 0.7cm, {
-  import draw: *
-
-  
-  let B = (0.0, 0.0)
-  let A = (0.0, 3.0)
-  let C = (5.0, 0.0)
-  let D = (8.0, 0.0)
-  let E = (8.0, 5.0)
-
-  line(B, D, stroke: 1pt)
-  line(B, A, stroke: 1pt)
-  line(D, E, stroke: 1pt)
-  line(A, C, stroke: 1pt)
-  line(C, E, stroke: 1pt)
-
-  circle(A, radius: 0.03, fill: black)
-  circle(B, radius: 0.03, fill: black)
-  circle(C, radius: 0.03, fill: black)
-  circle(D, radius: 0.03, fill: black)
-  circle(E, radius: 0.03, fill: black)
-
-  
-  let s = 0.4 
-
-  rect((0,0), (s, s), fill: gray.lighten(50%), stroke: 0.5pt)
-  circle((s/2, s/2), radius: 0.03, fill: black)
-
-  
-  rect(D, (D.at(0) - s, D.at(1) + s), fill: gray.lighten(50%), stroke: 0.5pt)
-  circle((D.at(0) - s/2, D.at(1) + s/2), radius: 0.03, fill: black)
-
-  
-  
-  let dx_ca = -5.0
-  let dy_ca = 3.0
-  let len = calc.sqrt(dx_ca*dx_ca + dy_ca*dy_ca)
-  let ux = dx_ca / len * s
-  let uy = dy_ca / len * s
-  
-  
-  let vx = -uy 
-  let vy = ux
-  
-  
-  let p1 = (C.at(0) + ux, C.at(1) + uy)
-  let p3 = (C.at(0) - vx, C.at(1) - vy) 
-  let p2 = (p1.at(0) - vx, p1.at(1) - vy) 
-  
-  line(C, p1, p2, p3, close: true, fill: gray.lighten(50%), stroke: 0.5pt)
-  circle(((C.at(0)+p2.at(0))/2, (C.at(1)+p2.at(1))/2), radius: 0.03, fill: black)
-
-  
-  
-  let draw-tick(start, end) = {
-    let mx = (start.at(0) + end.at(0)) / 2
-    let my = (start.at(1) + end.at(1)) / 2
-    
-    let dx = end.at(0) - start.at(0)
-    let dy = end.at(1) - start.at(1)
-    let dist = calc.sqrt(dx*dx + dy*dy)
-    
-    let nx = -dy / dist
-    let ny = dx / dist
-    
-    let tick-len = 0.15
-    let gap = 0.05
-    
-    
-    line(
-      (mx - nx*tick-len - dx*gap, my - ny*tick-len - dy*gap),
-      (mx + nx*tick-len - dx*gap, my + ny*tick-len - dy*gap),
-      stroke: 0.8pt
-    )
-    line(
-      (mx - nx*tick-len + dx*gap, my - ny*tick-len + dy*gap),
-      (mx + nx*tick-len + dx*gap, my + ny*tick-len + dy*gap),
-      stroke: 0.8pt
-    )
-  }
-
-  draw-tick(A, C)
-  draw-tick(C, E)
-
-  
-  content(A, [$A$], anchor: "south", padding: 0.2)
-  content(B, [$B$], anchor: "north", padding: 0.2)
-  content(C, [$C$], anchor: "north", padding: 0.2)
-  content(D, [$D$], anchor: "north", padding: 0.2)
-  content(E, [$E$], anchor: "south", padding: 0.2)
-
-  content((-0.1, 1.5), [$3 c m$], anchor: "east")
-  content((8.1, 2.5), [$5 c m$], anchor: "west")
-})
+        import draw: *
+        
+        
+        let B = (0.0, 0.0)
+        let A = (0.0, 3.0)
+        let C = (5.0, 0.0)
+        let D = (8.0, 0.0)
+        let E = (8.0, 5.0)
+        
+        line(B, D, stroke: 1pt)
+        line(B, A, stroke: 1pt)
+        line(D, E, stroke: 1pt)
+        line(A, C, stroke: 1pt)
+        line(C, E, stroke: 1pt)
+        
+        circle(A, radius: 0.03, fill: black)
+        circle(B, radius: 0.03, fill: black)
+        circle(C, radius: 0.03, fill: black)
+        circle(D, radius: 0.03, fill: black)
+        circle(E, radius: 0.03, fill: black)
+        
+        
+        let s = 0.4
+        
+        rect((0, 0), (s, s), fill: gray.lighten(50%), stroke: 0.5pt)
+        circle((s / 2, s / 2), radius: 0.03, fill: black)
+        
+        
+        rect(D, (D.at(0) - s, D.at(1) + s), fill: gray.lighten(50%), stroke: 0.5pt)
+        circle((D.at(0) - s / 2, D.at(1) + s / 2), radius: 0.03, fill: black)
+        
+        
+        let dx_ca = -5.0
+        let dy_ca = 3.0
+        let len = calc.sqrt(dx_ca * dx_ca + dy_ca * dy_ca)
+        let ux = dx_ca / len * s
+        let uy = dy_ca / len * s
+        
+        
+        let vx = -uy
+        let vy = ux
+        
+        
+        let p1 = (C.at(0) + ux, C.at(1) + uy)
+        let p3 = (C.at(0) - vx, C.at(1) - vy)
+        let p2 = (p1.at(0) - vx, p1.at(1) - vy)
+        
+        line(C, p1, p2, p3, close: true, fill: gray.lighten(50%), stroke: 0.5pt)
+        circle(((C.at(0) + p2.at(0)) / 2, (C.at(1) + p2.at(1)) / 2), radius: 0.03, fill: black)
+        
+        
+        let draw-tick(start, end) = {
+          let mx = (start.at(0) + end.at(0)) / 2
+          let my = (start.at(1) + end.at(1)) / 2
+          
+          let dx = end.at(0) - start.at(0)
+          let dy = end.at(1) - start.at(1)
+          let dist = calc.sqrt(dx * dx + dy * dy)
+          
+          let nx = -dy / dist
+          let ny = dx / dist
+          
+          let tick-len = 0.15
+          let gap = 0.05
+          
+          
+          line(
+            (mx - nx * tick-len - dx * gap, my - ny * tick-len - dy * gap),
+            (mx + nx * tick-len - dx * gap, my + ny * tick-len - dy * gap),
+            stroke: 0.8pt,
+          )
+          line(
+            (mx - nx * tick-len + dx * gap, my - ny * tick-len + dy * gap),
+            (mx + nx * tick-len + dx * gap, my + ny * tick-len + dy * gap),
+            stroke: 0.8pt,
+          )
+        }
+        
+        draw-tick(A, C)
+        draw-tick(C, E)
+        
+        
+        content(A, [$A$], anchor: "south", padding: 0.2)
+        content(B, [$B$], anchor: "north", padding: 0.2)
+        content(C, [$C$], anchor: "north", padding: 0.2)
+        content(D, [$D$], anchor: "north", padding: 0.2)
+        content(E, [$E$], anchor: "south", padding: 0.2)
+        
+        content((-0.1, 1.5), [$3 c m$], anchor: "east")
+        content((8.1, 2.5), [$5 c m$], anchor: "west")
+      })
     ]
     
     Qual a medida do segmento AE, em centímetros?],
@@ -189,6 +199,8 @@
     [$3 sqrt(17)$],
     [$8 + sqrt(34)$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -213,6 +225,8 @@
     [30],
     [31],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -225,6 +239,8 @@
     [7],
     [8],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -240,6 +256,8 @@
     [200],
     [210],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -258,6 +276,8 @@
     [Apenas II e III.],
     [I, II e III.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -267,9 +287,11 @@
     [98.550],
     [98.650],
     [99.550],
-    [99.550], 
+    [99.550],
     [100.000],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -282,6 +304,8 @@
     [55%],
     [52%],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -290,10 +314,12 @@
   [#enum(
     [valorizou 20% em relação ao dólar.],
     [valorizou 15% em relação ao dólar.],
-    [valorizou 10% em relação ao real.], 
+    [valorizou 10% em relação ao real.],
     [desvalorizou 20% em relação ao dólar.],
     [desvalorizou 25% em relação ao dólar.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -306,6 +332,8 @@
     [56],
     [24],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -318,6 +346,8 @@
     [4],
     [infinitas],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -330,6 +360,8 @@
     [8],
     [7],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 

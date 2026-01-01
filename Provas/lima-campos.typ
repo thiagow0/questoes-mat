@@ -21,6 +21,8 @@
     [120],
     [30],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -33,6 +35,8 @@
     [360],
     [720],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -45,6 +49,8 @@
     [Divisível por 3.],
     [Primo.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -57,6 +63,8 @@
     [-- 4],
     [-- 6],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -69,6 +77,8 @@
     [2025],
     [2026],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -81,6 +91,8 @@
     [15],
     [14],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -99,6 +111,8 @@
     [14],
     [12],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -111,6 +125,8 @@
     [Um número inteiro menor que 6 e par.],
     [Um número primo.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -165,6 +181,8 @@
     [68°],
     [74°],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -177,6 +195,8 @@
     [2040],
     [2035],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -190,6 +210,8 @@
     [$2 sqrt(6)$],
     [$-2 sqrt(6)$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -203,6 +225,8 @@
     [448],
     [0],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -216,6 +240,8 @@
     [$m != 2$ e $n = 0$],
     [$m != 2$ e $n != 0$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -228,6 +254,8 @@
     [$z = 256$],
     [$z = 256 - 256 i$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -240,6 +268,8 @@
     [Uma parábola.],
     [Um ponto.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -253,6 +283,8 @@
     [Três.],
     [Quatro.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -265,6 +297,8 @@
     [512],
     [256],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 

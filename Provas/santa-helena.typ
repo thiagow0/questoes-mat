@@ -1,6 +1,6 @@
 #import "lib.typ": arc, questao
 
-#import "@preview/cetz:0.4.2": canvas, draw
+#import "@preview/cetz:0.4.2": *
 
 = SANTA HELENA
 \
@@ -23,6 +23,8 @@
     [-67],
     [67],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -35,6 +37,8 @@
     [2 m],
     [3 m],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -47,6 +51,8 @@
     [Um determinante positivo resulta em duas raízes irracionais],
     [Um determinante nulo resulta em uma raiz real],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -59,6 +65,8 @@
     [3,4],
     [10,7],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -71,6 +79,8 @@
     [4],
     [5],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -83,6 +93,8 @@
     [40],
     [-180],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -95,6 +107,8 @@
     [60 graus],
     [120 graus],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -107,6 +121,8 @@
     [60],
     [30],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -119,6 +135,8 @@
     [42 m³],
     [81 m³],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -131,6 +149,8 @@
     [Aproximadamente 2.538 páginas],
     [Aproximadamente 2.240 páginas],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -143,6 +163,8 @@
     [R\$ 338,00],
     [R\$ 331,63],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -162,6 +184,8 @@
     [942],
     [948],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -194,6 +218,8 @@
     [$x = -2$],
     [$x = -4$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -206,6 +232,8 @@
     [a11 = 32],
     [a11 = 3],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -218,6 +246,8 @@
     [$a_1 = 6$],
     [$a_1 = 7$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -230,6 +260,8 @@
     [R\$ 162,00],
     [R\$ 130,00],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -244,6 +276,8 @@
     [49],
     [25],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 

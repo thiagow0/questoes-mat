@@ -23,6 +23,8 @@
     [$frac(743, 198)$],
     [$frac(643, 198)$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -35,6 +37,8 @@
     [6],
     [3],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -47,6 +51,8 @@
     [20.000.000],
     [90.000.000],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -67,6 +73,8 @@
     [Apenas I e III],
     [Todas.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -79,6 +87,8 @@
     [$a - b$],
     [$a + b$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -91,6 +101,8 @@
     [-9],
     [-24],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -129,6 +141,8 @@
     [$60 degree$],
     [$130 degree$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -153,6 +167,8 @@
     [F F F V V],
     [V F V F V],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -165,6 +181,8 @@
     [400],
     [405],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -177,6 +195,8 @@
     [4 anos],
     [5 anos],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -192,6 +212,8 @@
     [-38],
     [36],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -204,6 +226,8 @@
     [240],
     [360],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -211,7 +235,64 @@
   [Qual a equação da cônica indicada na figura abaixo?
     
     #align(center)[
-      #image("Imagens/q-hiperbole.png")
+      #canvas(length: 0.5cm, {
+        import draw: *
+        
+        let h = 5
+        let k = 4
+        let a = 2
+        let c = 4
+        let b = calc.sqrt(c * c - a * a)
+        
+        line((0, -0.5), (0, 8.5), mark: (end: "stealth", fill: black), stroke: 1pt, name: "y-axis")
+        content((0, 8.5), $y$, anchor: "east", padding: 0.1)
+        
+        line((-0.5, 0), (10.5, 0), mark: (end: "stealth", fill: black), stroke: 1pt, name: "x-axis")
+        content((10.5, 0), $x$, anchor: "north", padding: 0.1)
+        
+        content((0, 0), $O$, anchor: "north-east", padding: 0.1)
+        
+        line((h, 0), (h, 8), stroke: (thickness: 0.5pt), mark: (end: "stealth", fill: black))
+        content((h, 8), $x=5$, anchor: "west", padding: 0.1)
+        
+        line((0, k), (10, k), stroke: (thickness: 0.5pt), mark: (end: "stealth", fill: black))
+        content((10, k), $y=4$, anchor: "north-west", padding: 0.1)
+        
+        let draw-hyperbola-branch(sign_x) = {
+          let points = ()
+          let t-max = 0.9
+          let steps = 20
+          
+          for i in range(0, steps + 1) {
+            let t = -t-max + (i * 2 * t-max / steps)
+            let x = h + sign_x * a * calc.cosh(t)
+            let y = k + b * calc.sinh(t)
+            points.push((x, y))
+          }
+          line(..points, stroke: (thickness: 1pt))
+        }
+        
+        draw-hyperbola-branch(-1)
+        draw-hyperbola-branch(1)
+        
+        let F1 = (h - c, k)
+        let A1 = (h - a, k)
+        let A2 = (h + a, k)
+        let F2 = (h + c, k)
+        let radius_pt = 0.08
+        
+        for p in (F1, A1, A2, F2) {
+          circle(p, radius: radius_pt, fill: black)
+        }
+        
+        content(F1, $F_1$, anchor: "north", padding: 0.2)
+        content(A1, $A_1$, anchor: "north-west", padding: 0.2)
+        content(A2, $A_2$, anchor: "south-east", padding: 0.2)
+        content(F2, $F_2$, anchor: "south", padding: 0.2)
+        
+        content((8, 3.5), [$2$])
+        content((6, 3.5), [$2$])
+      })
     ]
   
   ],
@@ -222,6 +303,8 @@
     [$ frac((x-4)^2, 4) - frac((y-5)^2, 12) = 1 $],
     [$ frac((x-5)^2, 12) - frac((y-4)^2, 4) = 1 $],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -234,6 +317,8 @@
     [R\$ 822 800,00.],
     [R\$ 1 728 000,00.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -256,6 +341,8 @@
     [15],
     [31],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -268,6 +355,8 @@
     [9 horas e 12 minutos.],
     [9 horas e 6 minutos.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -281,5 +370,7 @@
     [$frac(sqrt(2), 3)$],
     [$- frac(2 sqrt(2), 3)$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )

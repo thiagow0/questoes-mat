@@ -21,6 +21,8 @@
     [$sqrt(2) + 3$],
     [$sqrt(7) - 2$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -35,6 +37,8 @@
     [$x^y > y^x$],
     [$x > z > y$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -47,6 +51,8 @@
     [ele não é múltiplo de $3^6 + 1$.],
     [ele é divisível por 13.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -59,6 +65,8 @@
     [R\$ 315,00],
     [R\$ 318,00],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -71,6 +79,8 @@
     [18],
     [30],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -83,6 +93,8 @@
     [1680],
     [420],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -95,6 +107,8 @@
     [$2/5$],
     [$1/6$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -107,6 +121,8 @@
     [Ângulo excêntrico exterior é o ângulo que tem vértice externo a circunferência e seus lados são secantes ou tangentes a ela.],
     [Seja ABCD um trapézio de bases AB e CD. Se M e N são os pontos médios de AD e BC, então $M N = (A B+C D)/2$.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -127,6 +143,8 @@
     [As soluções formam uma reta no espaço que passa pela origem do sistema cartesiano tridimensional.],
     [As soluções formam um plano no espaço que não passam pela origem.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -139,6 +157,8 @@
     [4,5 cm],
     [5 cm],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -151,6 +171,8 @@
     [6],
     [7],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -199,6 +221,8 @@
     [40.000 L],
     [41.000 L],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -211,6 +235,8 @@
     [Tem uma raiz real dupla e as outras duas são números complexos.],
     [Tem exatamente três raízes reais distintas.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -223,6 +249,8 @@
     [3 e [1,5]],
     [2 e [-1,5]],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -235,6 +263,8 @@
     [R\$ 226,00],
     [R\$ 216,00],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -253,6 +283,8 @@
     [Roberto e Renata],
     [Roberto e Rogério],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 

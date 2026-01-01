@@ -20,6 +20,8 @@
     [1,61km],
     [1,87km],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -32,6 +34,8 @@
     [14cm],
     [20cm],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -44,6 +48,8 @@
     [2 e 24.],
     [12 e 16.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -57,6 +63,8 @@
     [(2,-3) e (3,-2)],
     [(-3,2) e (-1,3)],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -69,6 +77,8 @@
     [R\$ 250,00],
     [R\$ 300,00],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -81,6 +91,8 @@
     [R\$ 770,00],
     [R\$ 800,00],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -93,6 +105,8 @@
     [1],
     [2],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -105,6 +119,8 @@
     [R\$ 12.402,00],
     [R\$ 14.023,00],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -121,6 +137,8 @@
     [13%],
     [15%],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -133,6 +151,8 @@
     [19],
     [22],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -145,6 +165,8 @@
     [1010],
     [2013],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -157,6 +179,8 @@
     [9%],
     [12%],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -170,6 +194,8 @@
     [$d = (n(n-3))/(2c)$],
     [$d = (n(n-2))/2$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -188,6 +214,8 @@
     [F – F – V],
     [F – F – F],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -200,6 +228,8 @@
     [234km],
     [243km],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -212,6 +242,8 @@
     [4,8],
     [5,2],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -224,6 +256,8 @@
     [$y = 6x$.],
     [$y = 2x - 5$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -236,6 +270,8 @@
     [Há onze anos.],
     [Há doze anos.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 

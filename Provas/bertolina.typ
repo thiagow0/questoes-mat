@@ -21,7 +21,22 @@
     [6,0],
     [6,5],
   )],
-  gabarito_explicacao: none,
+  
+  gabarito_letra: [C],
+  
+  gabarito_explicacao: [
+    Substituindo na fórmula:
+    $ "Média" & = (2 dot 5 + 3 dot 4 + 4 dot 7) / 9 = (10 + 12 + 28) / 9 = 50 / 9 $
+    
+    Ao realizar a divisão:
+    $ 50 div 9 approx 5,5 $
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: c) 5,5*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -33,14 +48,27 @@
     [48],
     [42],
   )],
-  gabarito_explicacao: none,
+  gabarito_letra: [E],
+  gabarito_explicacao: [
+    $ 28/100 dot 150 $
+    
+    Simplificando a fração (cancelando os zeros finais):
+    
+    $ (28 dot 15) / 10 = 420 / 10 = 42 $
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (E) 42*
+      ]
+    ]
+  ],
 )
 
 #questao(
   [A figura abaixo indica a planta de um bairro em uma cidade do interior do Piauí. O secretário de obras da prefeitura pediu para um engenheiro calcular os valores de $x$ e $y$, pois ele pretende fazer uma obra nesse trecho. Qual o valor, correto, encontrado para $x + y$ nos cálculos feitos pelo engenheiro?
     
     #align(center)[
-      #canvas(length: 0.7cm, padding: -0.4, {
+      #canvas(length: 0.7cm, padding: -0.3, {
         import draw: *
         let x_pos = (0, 2, 4.5, 8.5)
         let top_y(x) = 0.25 * x + 3.0
@@ -88,7 +116,38 @@
     [91 m],
     [97 m],
   )],
-  gabarito_explicacao: none,
+  gabarito_letra: [D],
+  gabarito_explicacao: [
+    Primeiro, calculamos a razão de proporcionalidade com os valores conhecidos (20 m e 28 m):
+    $ k = 20 / 28 = 5 / 7 $
+    
+    Agora, igualamos essa razão para encontrar os valores de $x$ e $y$.
+    
+    #columns(2)[
+      $
+        25 / x = 5 / 7 arrow.double 5 x = 25 dot 7 \
+        x = 175 / 5 \
+        x = 35 "m"
+      $
+      
+      #colbreak()
+      
+      $
+        40 / y = 5 / 7 arrow.double 5 y = 40 dot 7 \
+        y = 280 / 5 \
+        y = 56 "m"
+      $
+    
+    ]
+    
+    $ x + y = 35 + 56 = 91 "m" $
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (D) 91 m*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -139,7 +198,77 @@
     [ $(3+2sqrt(3))/2$],
     [ $(3+2sqrt(3))/5$],
   )],
-  gabarito_explicacao: none,
+  gabarito_letra: [A],
+  gabarito_explicacao: [
+    
+    #align(center)[
+      
+      #canvas(length: 2cm, padding: -0.2, {
+        import draw: *
+        
+        let lado_quadrado = 1.0
+        let metade_lado = lado_quadrado / 2
+        let ad = 1 / calc.sqrt(3)
+        let base_tri_metade = metade_lado + ad
+        let altura_tri = (base_tri_metade * 2) * calc.sqrt(3) / 2
+        let D = (-metade_lado, 0)
+        let E = (metade_lado, 0)
+        let A = (-base_tri_metade, 0)
+        let B = (base_tri_metade, 0)
+        let G = (-metade_lado, lado_quadrado)
+        let F = (metade_lado, lado_quadrado)
+        let C = (0, altura_tri)
+        
+        line(A, B, C, close: true, stroke: 1pt)
+        line(D, G, F, E, stroke: 1pt)
+        
+        let vertices = (A, B, C, D, E, F, G)
+        for v in vertices {
+          circle(v, radius: 0.02, fill: black)
+        }
+        
+        content(A, [$A$], anchor: "north", padding: 0.15)
+        content(D, [$D$], anchor: "north", padding: 0.15)
+        content(E, [$E$], anchor: "north", padding: 0.15)
+        content(B, [$B$], anchor: "north", padding: 0.15)
+        content(C, [$C$], anchor: "south", padding: 0.15)
+        content(G, [$G$], anchor: "south-east", padding: 0.1)
+        content(F, [$F$], anchor: "south-west", padding: 0.1)
+        
+        line(B, E, F, close: true, stroke: (paint: red, thickness: 1.5pt))
+        line(A, D, G, close: true, stroke: (paint: red, thickness: 1.5pt))
+        
+        content((0, -0.2), [1])
+        content((-0.8, -0.25), [$sqrt(3)/3$])
+        content((0.8, -0.25), [$sqrt(3)/3$])
+      })
+    ]
+    
+    Como o triângulo $A B C$ é equilátero, todos os seus ângulos internos medem $60 degree$. Portanto, $hat(A) = hat(B) = 60 degree$.
+    
+    Considerando o triângulo retângulo $F E B$ (no canto direito): O ângulo $hat(B) = 60 degree$; O cateto oposto $F E$ é o lado do quadrado, logo $F E = 1$; O cateto adjacente é o segmento $E B$, que chamaremos de $x$.
+    
+    Aplicamos a tangente de $60 degree$:
+    $ tan(60 degree) = ("oposto")/("adjacente") => sqrt(3) = 1/x => x = 1/sqrt(3) $
+    
+    Racionalizando o denominador:
+    $ x = sqrt(3)/3 $
+    
+    Analogamente, para o triângulo $G D A$ no lado esquerdo, temos que $A D = sqrt(3)/3$.
+    O segmento central $D E$ é a base do quadrado, logo $D E = 1$.
+    
+    O lado total do triângulo ($A B$) será:
+    $ A B & = A D + D E + E B = sqrt(3)/3 + 1 + sqrt(3)/3 = (2sqrt(3))/3 + 1 $
+    
+    Calculando o MMC:
+    $ A B = (2sqrt(3) + 3)/3 $
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (A)*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -152,7 +281,38 @@
     [$x = plus.minus 1/2$],
     [$x = plus.minus 1/3$],
   )],
-  gabarito_explicacao: none,
+  gabarito_letra: [A],
+  gabarito_explicacao: [
+    Dada a matriz $A = mat(x, 4; 0, x)$, determinamos sua transposta:
+    $A^t = mat(x, 0; 4, x)$
+    
+    Calculamos a matriz soma $S = A + A^t$:
+    $ S = mat(x, 4; 0, x) + mat(x, 0; 4, x) = mat(2x, 4; 4, 2x) $
+    
+    #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
+      Uma matriz quadrada é *não invertível* (ou singular) se, e somente se, o seu determinante for igual a zero.
+    ]
+    
+    Aplicando a definição ao determinante da matriz soma:
+    $
+                       det(S) & = 0 \
+      (2x dot 2x) - (4 dot 4) & = 0 \
+                    4x^2 - 16 & = 0
+    $
+    
+    Resolvendo a equação:
+    $
+      4x^2 & = 16 \
+       x^2 & = 4 \
+         x & = plus.minus 2
+    $
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (A)*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -164,7 +324,47 @@
     [169],
     [196],
   )],
-  gabarito_explicacao: none,
+  gabarito_letra: [B],
+  gabarito_explicacao: [
+    #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
+      *Relações de Girard (Grau 3)*
+      
+      Sejam $x_1, x_2, x_3$ as raízes do polinômio $a x^3 + b x^2 + c x + d = 0$. Temos:
+      $ x_1 + x_2 + x_3 = -b/a $
+      $ x_1 x_2 + x_1 x_3 + x_2 x_3 = c/a $
+      $ x_1 x_2 x_3 = -d/a $
+    ]
+    
+    Como as raízes estão em PA de razão $r$, podemos denotá-las como:
+    $ y - r, quad y, quad y + r $
+    
+    Aplicando a relação da soma das raízes ($x_1 + x_2 + x_3 = -b/a$):
+    $
+      (y - r) + y + (y + r) & = -6/1 \
+                         3y & = -6 \
+                          y & = -2
+    $
+    
+    Dessa forma, concluímos que $-2$ é uma das raízes do polinômio. Se $-2$ é raiz, então $P(-2) = 0$. Substituímos esse valor na equação original:
+    $
+      (-2)^3 + 6(-2)^2 - m(-2) + 6 & = 0 \
+                -8 + 6(4) + 2m + 6 & = 0 \
+                  -8 + 24 + 2m + 6 & = 0 \
+                           22 + 2m & = 0 \
+                                2m & = -22 \
+                                 m & = -11
+    $
+    
+    
+    
+    $ m^2 = (-11)^2 = 121 $
+    
+    #pad(y: 10pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (B) 121*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -176,11 +376,37 @@
     [5/7],
     [3/7],
   )],
-  gabarito_explicacao: none,
+  gabarito_letra: [D],
+  gabarito_explicacao: [
+    Dada a equação inicial:
+    $ x/y + y/x = 5 $
+    
+    Realizando o mínimo múltiplo comum para unificar as frações:
+    $ (x^2 + y^2) / (x y) = 5 arrow.double x^2 + y^2 = 5x y $
+    
+    O objetivo é calcular o valor da expressão:
+    $ (x^2 + y^2) / ((x + y)^2) $
+    
+    Substituindo $x^2 + y^2 = 5x y$ na expansão do denominador:
+    $
+      (x+y)^2 & = (x^2 + y^2) + 2x y \
+      (x+y)^2 & = 5x y + 2x y \
+      (x+y)^2 & = 7x y
+    $
+    
+    Agora, substituímos o numerador e o denominador na fração original:
+    $ (x^2 + y^2) / ((x + y)^2) = (5x y) / (7x y) =5/7 $
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (D) 5/7*
+      ]
+    ]
+  ],
 )
 
 #questao(
-  [Se $x != 0, x != 2$ e $ (2x-1)/(x^2-2x) = m/x + n/(x-2), $ então m – n é igual a:],
+  [Se $x != 0, x != 2$ e $ (2x-1)/(x^2-2x) = m/x + n/(x-2), $ então $m – n$ é igual a:],
   [#enum(
     [1],
     [-1],
@@ -188,7 +414,37 @@
     [-2],
     [3],
   )],
-  gabarito_explicacao: none,
+  gabarito_letra: [B],
+  gabarito_explicacao: [
+    Primeiro, igualamos os denominadores. Note que $x^2 - 2x = x(x-2)$. Realizando a soma das frações no lado direito:
+    $ (2x - 1) / (x(x-2)) = (m(x-2) + n x) / (x(x-2)) $
+    
+    Simplificando os numeradores:
+    $ 2x - 1 = m x - 2m + n x = (m + n)x - 2m $
+    
+    Montando o sistema linear comparando os coeficientes de $x$ e os termos independentes:
+    $
+      cases(
+        m + n = 2,
+        -2m = -1
+      )
+    $
+    
+    Da segunda equação:
+    $ -2m = -1 arrow.double m = 1/2 $
+    
+    Substituindo na primeira equação:
+    $ 1/2 + n = 2 arrow.double n = 2 - 1/2 arrow.double n = 3/2 $
+    
+    Calculando a diferença solicitada ($m - n$):
+    $ m - n = 1/2 - 3/2 = (-2)/2 = -1 $
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (B) -1*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -272,7 +528,22 @@
     [$ 412 pi med c m^3 $],
     [$ 432 pi med c m^3 $],
   )],
-  gabarito_explicacao: none,
+  gabarito_letra: [C],
+  gabarito_explicacao: [
+    
+    Dado que o raio $r = 6$ cm, a base do retângulo da seção meridiana mede $12$ cm.
+    Sabendo que a área da seção é $132 "cm"^2$:
+    $ 12 dot h = 132 arrow.double h = 132 / 12 = 11 "cm" $
+    
+    A fórmula do volume do cilindro é $V = pi r^2 h$. Substituindo os valores encontrados:
+    $ V & = pi dot 6^2 dot 11 = pi dot 36 dot 11 = 396 pi "cm"^3 $
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (C) $396 pi "cm"^3$*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -285,6 +556,8 @@
     [hipérbole, com focos em (0, -6) e (0, 6).],
     [circunferência de raio 1.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -298,7 +571,30 @@
     [#text(size: fonte-mat)[$1/5$]],
     [#text(size: fonte-mat)[$1/25$]],
   )],
-  gabarito_explicacao: none,
+  gabarito_letra: [E],
+  gabarito_explicacao: [
+    $ 25^(n+2) = (5^2)^(n+2) = 5^(2n+4) $
+    
+    Assim, o denominador torna-se:
+    $ 5^(2n+4) - 5^(2n+2) => 5^(2n) dot 5^4 - 5^(2n) dot 5^2 $
+    Colocando $5^(2n) dot 5^2$ em evidência:
+    $ 5^(2n) dot 5^2 dot (5^2 - 1) = 5^(2n) dot 25 dot 24 $
+    
+    Decompondo 600 em fatores primos ou observando seus componentes:
+    $ 600 = 6 dot 100 = 6 dot 4 dot 25 = 24 dot 25 $
+    
+    Voltando à raiz original:
+    $ root(n, (24 dot 25) / (5^(2n) dot 25 dot 24)) $
+    
+    Cancelamos os termos $24$ e $25$ que aparecem tanto no numerador quanto no denominador:
+    $ root(n, 1 / 5^(2n)) = 1 / 5^((2n)/n) = 1 / 5^2 = 1 / 25 $
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (E) * $1/25$
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -310,7 +606,23 @@
     [126],
     [210],
   )],
-  gabarito_explicacao: none,
+  gabarito_letra: [E],
+  gabarito_explicacao: [
+    Calculando $C_(10, 6)$ (escolha do grupo do Nordeste):
+    $ C_(10, 6) = C_(10, 4) $
+    
+    Utilizaremos o cálculo de $C_{10, 4}$ pois envolve fatoriais menores, facilitando a conta (conforme feito na imagem):
+    
+    $ C_(10, 4) = (10 dot 9 dot 8 dot 7) / (4 dot 3 dot 2 dot 1) = 10 dot 3 dot 7 = 210 $
+    
+    O segundo grupo é formado pelos restantes ($C_(4,4) = 1$), logo o total é $210 dot 1 = 210$.
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (E) 210*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -323,7 +635,36 @@
     [8],
     [7],
   )],
-  gabarito_explicacao: none,
+  gabarito_letra: [C],
+  gabarito_explicacao: [
+    $ 2^(1/2) dot (2^(1/2))^2 dot (2^(1/2))^3 dots (2^(1/2))^n = 2^(33) $
+    $ 2^(1/2) dot 2^(2/2) dot 2^(3/2) dots 2^(n/2) = 2^(33) $
+    
+    Igualando os expoentes:
+    $ 1/2 + 2/2 + 3/2 + dots + n/2 = 33 $
+    
+    Identificamos a soma de uma progressão aritmética de razão 1:
+    $ 1/2 dot underbrace((1 + 2 + 3 + dots + n), "Soma da P.A.") = 33 $
+    
+    Substituindo a fórmula na equação:
+    $
+      1/2 dot (n(n+1))/2 = 33 \
+      (n(n+1))/4 = 33 \
+      n(n+1) = 33 dot 4 = 132
+    $
+    
+    Devemos encontrar dois números inteiros consecutivos cujo produto seja 132.
+    Ao analisar as opções ou fatorar:
+    $ 11 dot 12 = 132 $
+    
+    Logo, $n = 11$.
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (C) 11*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -337,7 +678,35 @@
     [p = –6 e m $!=$ 1],
     [Nunca],
   )],
-  gabarito_explicacao: none,
+  gabarito_letra: [A],
+  gabarito_explicacao: [
+    #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
+      *Condição para SPI (Sistema Possível e Indeterminado):* \
+      Um sistema linear $2 times 2$ é indeterminado (possui infinitas soluções) quando os coeficientes das incógnitas e os termos independentes são proporcionais:
+      $ a_1/a_2 = b_1/b_2 = c_1/c_2 $
+    ]
+    
+    O sistema fornecido é:
+    $ cases(1x + 3y = m, 2x - p y = 2) $
+    
+    Aplicando a condição de proporcionalidade:
+    $ 1/2 = 3/(-p) = m/2 $
+    
+    Calculando o valor de $p$:
+    $ 1/2 = 3/(-p) arrow.double -p = 6 arrow.double p = -6 $
+    
+    Calculando o valor de $m$:
+    $ 1/2 = m/2 arrow.double 2m = 2 arrow.double m = 1 $
+    
+    Se $p = -6$ e $m = 1$, as equações passam a ser proporcionais, tornando o sistema indeterminado.
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (A) p = -6 e m = 1*
+      ]
+    ]
+  
+  ],
 )
 
 #questao(
@@ -350,6 +719,8 @@
     [#text(size: 11pt)[$sin 12x - cos 10x$]],
     [#text(size: 11pt)[$1/2 . (sin 10x - sin 12x)$]],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -425,7 +796,29 @@
     [5 cm],
     [1 cm],
   )],
-  gabarito_explicacao: none,
+  gabarito_letra: [A],
+  gabarito_explicacao: [
+    Sendo a aresta $a = 7$ cm:
+    $ V_"total" = 7^3 = 7 dot 7 dot 7 = 343 "cm"^3 $
+    
+    
+    Sabemos que o volume de líquido é $196$ mL ($196 "cm"^3$). A diferença entre o volume total e o volume ocupado é o volume vazio:
+    
+    $ V_"vazio" = 343 - 196 = 147 "cm"^3 $
+    
+    A parte vazia tem a forma de um paralelepípedo com a mesma base do cubo ($7 times 7$) e altura $d$.
+    $
+      V_"vazio" & = A_"base" dot d \
+            147 & = (7 dot 7) dot d = 49 dot d \
+              d & = 147 / 49 = 3 "cm"
+    $
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (A) 3 cm*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -437,6 +830,28 @@
     [63],
     [64],
   )],
-  gabarito_explicacao: none,
+  gabarito_letra: [C],
+  gabarito_explicacao: [
+    Transformando o decimal $0,0625$ em fração:
+    $ 0,0625 = 625/10000 = 25/400 = 1/16 = 1/2^4 = 2^(-4) $
+    
+    Transformando $1/25$ em potência de 5:
+    $ 1/25 = 1/5^2 = 5^(-2) $
+    
+    Substituindo na expressão original:
+    $ (2^(-4))^(-16) dot (5^(-2))^(-30) & = 2^((-4) dot (-16)) dot 5^((-2) dot (-30)) = 2^64 dot 5^60 $
+    
+    
+    Para criar a base 10, precisamos de expoentes iguais para as bases 2 e 5. Desmembramos $2^64$:
+    $ 2^4 dot 2^60 dot 5^60 = 2^4 dot (2 dot 5)^60 = 16 dot 10^60 $
+    
+    O número $16 dot 10^60$ corresponde ao número 16 seguido de 60 zeros. Total de algarismos: $2 + 60 = 62$.
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (C) 62*
+      ]
+    ]
+  ],
 )
 

@@ -22,6 +22,7 @@
     [Não existe número inteiro tal que $ (x^2 - 5x + 6)(-x^2 + 5x - 4) > 0. $],
     [Se $x_1$ e $x_2$ são raízes da equação $ x^2 - 4x + 5 = 0, $ então $1/x_1 + 1/x_2 = 4/5$.],
   )],
+  assunto: "Aritmética e álgebra",
   gabarito_explicacao: none,
 )
 
@@ -34,6 +35,7 @@
     [15 litros de água.],
     [20 litros de água.],
   )],
+  assunto: "Aritmética e álgebra",
   gabarito_explicacao: none,
 )
 
@@ -46,6 +48,7 @@
     [55 dias],
     [60 dias],
   )],
+  assunto: "Aritmética e álgebra",
   gabarito_explicacao: none,
 )
 
@@ -58,6 +61,7 @@
     [R\$ 131,36],
     [R\$ 135,87],
   )],
+  assunto: "Matemática financeira",
   gabarito_explicacao: none,
 )
 
@@ -78,6 +82,7 @@
     [apenas II, III],
     [I, II, III],
   )],
+  assunto: "Aritmética e álgebra",
   gabarito_explicacao: none,
 )
 
@@ -90,6 +95,7 @@
     [$36 pi sqrt(3) "cm"^3$],
     [$72 pi sqrt(3) "cm"^3$],
   )],
+  assunto: "Geometria espacial",
   gabarito_explicacao: none,
 )
 
@@ -156,6 +162,7 @@
     [4],
     [3],
   )],
+  assunto: "Geometria espacial",
   gabarito_explicacao: none,
 )
 
@@ -202,6 +209,7 @@
     [$4 sqrt(3) "cm"^2$ e $4 sqrt(3) "cm"$],
     [$6 "cm"^2$ e $(8 + 4 sqrt(3)) "cm"$],
   )],
+  assunto: "Geometria plana",
   gabarito_explicacao: none,
 )
 
@@ -215,6 +223,7 @@
     [$(sqrt(5) - 1)/2$],
     [$(1 - sqrt(5))/2$],
   )],
+  assunto: "Trigonometria",
   gabarito_explicacao: none,
 )
 
@@ -228,6 +237,7 @@
     [3],
     [2],
   )],
+  assunto: "Aritmética e álgebra",
   gabarito_explicacao: none,
 )
 
@@ -250,6 +260,7 @@
     [7],
     [11],
   )],
+  assunto: "Sequências e progressões",
   gabarito_explicacao: none,
 )
 
@@ -263,6 +274,8 @@
     [$(3(3^101 - 1))/4$],
     [$(3(3^99 - 1))/2$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -275,6 +288,7 @@
     [${m in RR; m < -1 "ou" m > 3/4}$],
     [${m in RR; m < 0 "ou" m > 3/4}$],
   )],
+  assunto: "Geometria analítica",
   gabarito_explicacao: none,
 )
 
@@ -297,6 +311,7 @@
     [FFFV],
     [VVFF],
   )],
+  assunto: "Geometria analítica",
   gabarito_explicacao: none,
 )
 
@@ -309,6 +324,7 @@
     [12],
     [13],
   )],
+  assunto: "Geometria espacial",
   gabarito_explicacao: none,
 )
 
@@ -321,6 +337,7 @@
     [R\$ 5.315,90],
     [R\$ 5.381,60],
   )],
+  assunto: "Matemática financeira",
   gabarito_explicacao: none,
 )
 
@@ -333,6 +350,7 @@
     [$-10^5$],
     [$-10^5$],
   )],
+  assunto: "Aritmética e álgebra",
   gabarito_explicacao: none,
 )
 
@@ -345,6 +363,7 @@
     [14],
     [15],
   )],
+  assunto: "Trigonometria",
   gabarito_explicacao: none,
 )
 
@@ -382,6 +401,7 @@
     [$220$ reais],
   )],
   
+  assunto: "Aritmética e álgebra",
   gabarito_explicacao: [
     Calculamos o saldo final somando os créditos e subtraindo os débitos a partir do saldo inicial de R\$ 480,00.
     
@@ -419,6 +439,7 @@
     [80],
   )],
   
+  assunto: "Aritmética e álgebra",
   gabarito_explicacao: [
     O número $X$ deve satisfazer as seguintes condições:
     O último algarismo deve ser *5*; O primeiro algarismo (centena) pode ser *1* ou *2*; A soma dos algarismos, dividida por 9, deve deixar resto 3.
@@ -457,7 +478,7 @@
     [13],
     [12],
   )],
-  
+  assunto: "Aritmética e álgebra",
   gabarito_explicacao: [
     Organizando as grandezas para determinar o número de artesãos ($x$):
     
@@ -506,6 +527,7 @@
     [14,00 %],
   )],
   
+  assunto: "Matemática financeira",
   gabarito_explicacao: [
     Para facilitar o cálculo de aumentos sucessivos, podemos arbitrar um valor inicial de $100$.
     
@@ -541,6 +563,7 @@
     [240],
   )],
   
+  assunto: "Matemática financeira",
   gabarito_explicacao: [
     Taxa ($i$) = $0,5\% = 0,005$ ao mês.
     
@@ -596,6 +619,7 @@
     [1 400.000],
   )],
   
+  assunto: "Aritmética e álgebra",
   gabarito_explicacao: [
     O objetivo é calcular o valor da soma utilizando a fatoração (colocando termos em evidência) para simplificar o cálculo.
     
@@ -634,6 +658,7 @@
     [$(2 + sqrt(13)) / 3$],
   )],
   
+  assunto: "Aritmética e álgebra",
   gabarito_explicacao: [
     Dada a expressão $x = sqrt(3 + sqrt(3 + sqrt(3 + dots)))$, notamos que o termo dentro da primeira raiz é igual ao próprio $x$.
     
@@ -672,6 +697,7 @@
     [1,5],
   )],
   
+  assunto: "Sequências e progressões",
   gabarito_explicacao: [
     A expressão dada é $S = 5 + 2 + 1/2 + 1/4 + 1/8 + dots$.
     Podemos separar a soma em uma parte inteira e uma Progressão Geométrica (PG) infinita.
@@ -712,6 +738,7 @@
     [5],
   )],
   
+  assunto: "Aritmética e álgebra",
   gabarito_explicacao: [
     Queremos encontrar o menor inteiro positivo $x$ a ser somado ao produto de quatro inteiros consecutivos: $P = a(a+1)(a+2)(a+3)$.
     
@@ -779,7 +806,7 @@
     [$4sqrt(7)$],
     [$6sqrt(5)$],
   )],
-  
+  assunto: "Geometria plana",
   gabarito_explicacao: [
     Temos um trapézio com base menor 8, base maior 20 e diagonal menor 10 (formando um triângulo retângulo com a altura).
     
@@ -847,6 +874,7 @@
     [480.700],
   )],
   
+  assunto: "Análise combinatória",
   gabarito_explicacao: [
     O problema pede o número de maneiras de escolher 18 números dentre 25. A ordem não importa, então usamos combinação simples.
     
@@ -880,7 +908,7 @@
     [0,48],
     [0,36],
   )],
-  
+  assunto: "Geometria espacial",
   gabarito_explicacao: [
     Dados: aresta do cubo $a = 4 "cm"$.
     Como a esfera está inscrita, seu diâmetro é igual à aresta do cubo. Logo, o raio $r = 2 "cm"$.
@@ -918,7 +946,7 @@
     [3],
     [2],
   )],
-  
+  assunto: "Geometria analítica",
   gabarito_explicacao: [
     Para encontrar o raio, organizamos a equação da circunferência completando os quadrados:
     
@@ -956,6 +984,7 @@
     [1,2 m],
   )],
   
+  assunto: "Trigonometria",
   gabarito_explicacao: [
     A função dada é $h(t) = 1,8 + 0,6 sin(2pi t - pi/3)$.
     Sabemos que a função seno varia no intervalo $[-1, 1]$.
@@ -999,7 +1028,7 @@
     [-2],
     [2],
   )],
-  
+  assunto: "Álgebra linear",
   gabarito_explicacao: [
     #align(center)[#block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
       Um sistema linear é homogêneo quando todos os seus termos independentes (aqueles após o sinal de igualdade) são nulos.
@@ -1045,7 +1074,7 @@
     [R\$ 1500,00],
     [R\$ 1600,00],
   )],
-  
+  assunto: "Aritmética e álgebra",
   gabarito_explicacao: [
     O problema apresenta um sistema de equações envolvendo os valores de Eurípedes ($E$) e Florentino ($F$):
     
@@ -1087,6 +1116,7 @@
     [1014],
   )],
   
+  assunto: "Aritmética e álgebra",
   gabarito_explicacao: [
     Dada a equação $a^2 - b^2 = 2^2023$ com $a, b in NN$. Fatorando a diferença de quadrados:
     $ (a+b)(a-b) = 2^2023 $

@@ -19,6 +19,8 @@
     [7],
     [9],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -31,6 +33,8 @@
     [1000],
     [59.049],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -43,6 +47,8 @@
     [$ (206 pi) / 3 "cm"^3 $],
     [$ (200 pi) / 3 "cm"^3 $],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -55,6 +61,8 @@
     [24 cm],
     [30 cm],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -67,6 +75,8 @@
     [Em todo triângulo a medida de um ângulo externo é menor do que a medida de qualquer ângulo interno não adjacente a ele.],
     [Todo quadrilátero cujas diagonais se cortam ao meio é um paralelogramo.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -79,6 +89,8 @@
     [$-4x$],
     [$x - 2$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -91,6 +103,8 @@
     [658],
     [640],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -103,6 +117,8 @@
     [$ 9/10 $],
     [$ 3/5 $],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -115,6 +131,8 @@
     [10],
     [9],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -128,6 +146,8 @@
     [30],
     [0],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -140,6 +160,8 @@
     [-2],
     [-1],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -152,6 +174,8 @@
     [480],
     [720],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -164,6 +188,8 @@
     [160],
     [170],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -176,6 +202,8 @@
     [não é múltiplo de 7],
     [não é divisível por $3^12 + 1$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -188,6 +216,8 @@
     [$2^1012 dot i$],
     [$2^1012$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -200,6 +230,8 @@
     [$ 4/3 $],
     [$ -4/3 $],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -220,6 +252,8 @@
     [15],
     [28],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 

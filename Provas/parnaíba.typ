@@ -20,6 +20,8 @@
     [$R_(-) = {x in RR | x <= 0} arrow.r$ conjunto dos números reais não-positivos.],
     [$R^*_+ = {x in RR | x > 0} arrow.r$ conjunto dos números reais não-negativos],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -27,11 +29,11 @@
   [Julgue as afirmativas a seguir como verdadeiras ou falsas em seguida assinale a alternativa que apresenta a sequência correta.
     
     I. ${0,1,2,3,4,5,...} = NN^*$
-
+    
     II. $ZZ_+ = NN$
-
+    
     III. $ZZ^*_(-) = {...,-3,-2,-1}$
-
+    
     IV. $NN = {0,2,4,6,...}$],
   [#enum(
     [F-V-V-F],
@@ -40,6 +42,8 @@
     [V-V-F-V],
     [F-V-V-V],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -52,6 +56,8 @@
     [8,25],
     [8,57],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -64,6 +70,8 @@
     [$(x + sqrt(3))^2 + y^2 = 4$],
     [$x^2 + (y-2)^2 = 16$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -76,6 +84,8 @@
     [22 cm],
     [24 cm],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -88,6 +98,8 @@
     [3876],
     [1125],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -100,6 +112,8 @@
     [120],
     [560],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -112,6 +126,8 @@
     [1/2],
     [-7/4],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -124,6 +140,8 @@
     [2880,37],
     [3909,89],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -136,6 +154,8 @@
     [675,00],
     [1800,00],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -148,6 +168,8 @@
     [10 m],
     [12 m],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -160,6 +182,8 @@
     [135],
     [140],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -172,6 +196,8 @@
     [7],
     [6],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -190,6 +216,8 @@
     [F-V-V-V-F],
     [V-F-V-F-V],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 

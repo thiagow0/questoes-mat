@@ -20,6 +20,8 @@
     [$R_(-) = {x in RR | x <= 0} arrow$ conjunto dos números reais não-positivos],
     [$R^*_+ = {x in RR | x > 0} arrow$ conjunto dos números reais não-negativos],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -37,6 +39,8 @@
     [V-V-F-V],
     [F-V-V-V],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -49,6 +53,8 @@
     [$x < 3/2$ ou $x > 7/2$],
     [$3/2 < x < 7/2$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -61,6 +67,8 @@
     [$(x + sqrt(3))^2 + y^2 = 4$],
     [$x^2 + (y-2)^2 = 16$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -73,6 +81,8 @@
     [22 cm],
     [24 cm],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -85,6 +95,8 @@
     [3876],
     [1125],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -97,6 +109,8 @@
     [120],
     [560],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -109,6 +123,8 @@
     [1/2],
     [-7/4],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -121,6 +137,8 @@
     [2880,37],
     [3909,89],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -133,6 +151,8 @@
     [$1^(-22)$],
     [$10^(-22)$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -159,6 +179,8 @@
     [5%],
     [6%],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -171,6 +193,8 @@
     [135],
     [140],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -183,6 +207,8 @@
     [7],
     [6],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -201,6 +227,8 @@
     [F-V-V-V-F],
     [V-F-V-F-V],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 

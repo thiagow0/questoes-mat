@@ -20,6 +20,7 @@
     [$RR without QQ$],
     [$CC without RR$],
   )],
+  assunto: "Conjuntos numéricos",
   gabarito_explicacao: [
     Desenvolvendo o produto notável $(a-b)^2 = a^2 - 2a b + b^2$:
     $
@@ -38,13 +39,8 @@
 
 #questao(
   [Após dois aumentos sucessivos de 10% e 20% e um desconto de 15% sobre o preço resultante, a razão exata entre o preço final e o preço inicial de uma mercadoria é:],
-  [#enum(
-    [$529/500$],
-    [$561/500$],
-    [$567/500$],
-    [$11/10$],
-    [$547/500$],
-  )],
+  [#enum(spacing: 12pt, [$529/500$], [$561/500$], [$567/500$], [$11/10$], [$547/500$])],
+  assunto: "Matemática financeira",
   gabarito_explicacao: [
     Supondo que a mercadoria custava R\$ 100,00:
     Aumento de 10%: $100 + 10 = 110$.
@@ -72,6 +68,7 @@
     [10],
     [12],
   )],
+  assunto: "Aritmética e álgebra",
   gabarito_explicacao: [
     Organizando as grandezas em relação aos *Dias* ($x$):
     #align(center)[
@@ -111,6 +108,7 @@
     [$(x^2 + 1)(x^2 - 9)$],
     [$(x - 3)(x - 1)(x + 1)(x + 3)$],
   )],
+  assunto: "Polinômios",
   gabarito_explicacao: [
     Fazendo a substituição $y = x^2$, temos $y^2 - 10y + 9 = 0$.
     As raízes são $y_1 = 9$ e $y_2 = 1$.
@@ -135,6 +133,7 @@
     [2.160],
     [2.400],
   )],
+  assunto: "Análise combinatória",
   gabarito_explicacao: [
     Para garantir que as moças não fiquem juntas, organizamos primeiro os rapazes e usamos os espaços entre eles.
     Espaços disponíveis ($underline(space)$):
@@ -160,6 +159,7 @@
     [$5/3$],
     [$7/3$],
   )],
+  assunto: "Aritmética e álgebra",
   gabarito_explicacao: [
     Desenvolvendo a expressão:
     $ 1/alpha + 1/beta = (alpha + beta) / (alpha beta) $
@@ -184,6 +184,7 @@
     [48],
     [60],
   )],
+  assunto: "Geometria plana",
   gabarito_explicacao: [
     *Quadrado:*
     $ 4a = 48 arrow.double a = 12 $
@@ -212,6 +213,7 @@
     [14],
     [15],
   )],
+  assunto: "Geometria plana",
   gabarito_explicacao: [
     
     #align(center)[
@@ -240,6 +242,7 @@
     [$20/3$],
     [$14/5$],
   )],
+  assunto: "Geometria plana",
   gabarito_explicacao: [
     Pelo Teorema da Bissetriz Interna, os segmentos determinados no lado oposto são proporcionais aos lados adjacentes:
     
@@ -275,6 +278,7 @@
     [126],
     [132],
   )],
+  assunto: "Geometria plana",
   gabarito_explicacao: [
     A razão entre as áreas é o quadrado da razão de semelhança (perímetros).
     $ k = 3/4 arrow.double k^2 = 9/16 $
@@ -297,6 +301,7 @@
     [11],
     [12],
   )],
+  assunto: "Geometria plana",
   gabarito_explicacao: [
     $
       5^2 + h^2 = 13^2 \
@@ -321,11 +326,10 @@
     [10],
     [12],
   )],
+  assunto: "Álgebra linear",
   gabarito_explicacao: [
     $ det mat(2, 1, 0; 1, 3, 1; 0, 1, 2) = 2(6-1) - 1(2-0) + 0 = 10 - 2 = 8 $
     #pad(y: 5pt)[#rect(stroke: 1pt, radius: 4pt, inset: 10pt)[*Resposta: (B) 8*]]
-    
-  
   ],
 )
 
@@ -339,6 +343,7 @@
     [$11/4$],
     [$7/3$],
   )],
+  assunto: "Álgebra linear",
   gabarito_explicacao: [
     Para encontrar $x$ no sistema $ cases(2x+y=7, 3x-2y=4) $
     $ D = det mat(2, 1; 3, -2) = -4 - 3 = -7 $
@@ -357,6 +362,7 @@
     [$40 sqrt(3)$],
     [$48 sqrt(3)$],
   )],
+  assunto: "Geometria espacial",
   gabarito_explicacao: [
     Área da base (hexágono):
     $ A_b = 6 dot (l^2 sqrt(3)) / 4 = 6 dot (4 sqrt(3)) / 4 = 6 sqrt(3) $
@@ -377,6 +383,7 @@
     [$2x - 3y - 8 = 0$],
     [$3x - 2y - 7 = 0$],
   )],
+  assunto: "Geometria analítica",
   gabarito_explicacao: [
     Coeficiente angular da reta dada ($r$):
     $ 2y = 3x + 5 arrow.double m_r = 3/2 $
@@ -406,6 +413,7 @@
     [$sqrt(5) / 4$],
     [$(sqrt(6) + sqrt(2)) / 4$],
   )],
+  assunto: "Trigonometria",
   gabarito_explicacao: [
     $
       sin(75 degree) = sin(45 degree + 30 degree) & = sin 45 cos 30 + sin 30 cos 45 \
@@ -426,6 +434,7 @@
     [880],
     [920],
   )],
+  assunto: "Sequências e progressões",
   gabarito_explicacao: [
     Encontrando a razão $r$:
     $ a_15 = a_10 + 5r arrow.double 60 = 40 + 5r arrow.double 5r = 20 arrow.double r = 4 $

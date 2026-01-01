@@ -22,6 +22,7 @@
     [22],
     [20],
   )],
+  assunto: "Aritmética e álgebra",
   gabarito_letra: "E",
   
   gabarito_explicacao: [
@@ -81,7 +82,8 @@
     [Prejuízo de R\$ 12,00],
     [Lucro de R\$ 120,00],
   )],
-
+  
+  assunto: "Matemática financeira",
   gabarito_letra: [A],
   
   gabarito_explicacao: [
@@ -115,7 +117,7 @@
     [28],
     [25],
   )],
-
+  assunto: "Aritmética e álgebra",
   gabarito_letra: [B],
   
   gabarito_explicacao: [
@@ -162,9 +164,8 @@
     [10],
     [8],
   )],
-
+  assunto: "Aritmética e álgebra",
   gabarito_letra: [C],
-  
   gabarito_explicacao: [
     Na divisão inversamente proporcional, o produto entre a quantidade de livros e a idade é constante ($k$).
     
@@ -207,6 +208,7 @@
     [3],
     [2],
   )],
+  assunto: "Geometria analítica",
   gabarito_letra: [D],
   
   gabarito_explicacao: [
@@ -241,6 +243,8 @@
     [divisível por 4],
     [maior que 12],
   )],
+  assunto: "Geometria analítica",
+  gabarito_letra: "A",
   
   gabarito_explicacao: [
     Dada a equação geral $x^2 - 6x + y^2 - 8y + 23 = 0$, devemos encontrar a equação reduzida completando os quadrados.
@@ -285,6 +289,8 @@
     [12],
     [13],
   )],
+  assunto: "Geometria plana",
+  gabarito_letra: "C",
   
   gabarito_explicacao: [
     Sejam $a$ e $b$ as dimensões do retângulo.
@@ -356,7 +362,8 @@
     [18],
     [13],
   )],
-  
+  assunto: "Geometria plana",
+  gabarito_letra: "C",
   gabarito_explicacao: [
     
     #align(center)[
@@ -401,6 +408,8 @@
     [81],
     [$- 81$],
   )],
+  assunto: "Álgebra linear",
+  gabarito_letra: "D",
   
   gabarito_explicacao: [
     Dada a equação matricial $M^3 + 3M^2 = 0$, isolamos o termo cúbico:
@@ -446,6 +455,8 @@
     [$1296 "cm"^2$],
     [$1536 "cm"^2$],
   )],
+  assunto: "Geometria espacial",
+  gabarito_letra: "E",
   
   gabarito_explicacao: [
     Dados: aresta da base $l = 24$ cm e Volume $V = 3072 "cm"^3$.
@@ -486,6 +497,8 @@
     [21],
     [22],
   )],
+  assunto: "Matemática financeira",
+  gabarito_letra: "B",
   
   gabarito_explicacao: [
     Capital inicial $C = 2000$, Montante $M = 6000$ (triplo), taxa $i = 0,06$.
@@ -525,6 +538,8 @@
     [4,5 m],
     [4 m],
   )],
+  assunto: "Sequências e progressões",
+  gabarito_letra: "E",
   
   gabarito_explicacao: [
     As medidas das alturas dos cubos formam uma Progressão Geométrica (PG) infinita, onde o primeiro termo é $a_1 = 2$ e a razão é $q = 1/2$.
@@ -560,11 +575,12 @@
     [792],
     [210],
   )],
+  assunto: "Análise combinatória",
+  gabarito_letra: "A",
   
   gabarito_explicacao: [
     O objetivo é formar anagramas com 5 letras distintas, escolhidas dentre as 12 primeiras do alfabeto, com a restrição de que 3 delas devem pertencer ao conjunto $A = \{A, B, C, D, E\}$ (5 elementos).
     
-    *Passo 1: Escolher as letras*
     1. Escolher 3 letras dentre as 5 do conjunto especial:
       $ C_5^3 = (5 dot 4 dot 3) / (3 dot 2 dot 1) = 10 "modos" $
     
@@ -573,7 +589,6 @@
     
     Total de combinações de letras: $10 dot 21 = 210$ conjuntos de letras.
     
-    *Passo 2: Permutar as letras*
     Para cada conjunto de 5 letras escolhido, podemos formar anagramas permutando-as:
     $ P_5 = 5! = 120 $
     
@@ -598,6 +613,8 @@
     [336],
     [224],
   )],
+  assunto: "Análise combinatória",
+  gabarito_letra: "D",
   
   gabarito_explicacao: [
     Temos 8 homens e 4 mulheres. Queremos formar comissões de 5 pessoas com exatamente 3 homens e 2 mulheres. A ordem de escolha não importa (Combinação).
@@ -630,6 +647,8 @@
     [$-x + 4$],
     [$2x - 3$],
   )],
+  assunto: "Polinômios",
+  gabarito_letra: "B",
   
   gabarito_explicacao: [
     Pelo Teorema do Resto:
@@ -680,6 +699,9 @@
     [$7sqrt(2)$],
   )],
   
+  assunto: "Números complexos",
+  gabarito_letra: "B",
+  
   gabarito_explicacao: [
     Simplificando a expressão $z$:
     $
@@ -721,29 +743,31 @@
     [31],
   )],
   
+  gabarito_letra: "C",
+  
   gabarito_explicacao: [
-    *1 - A soma dos 20 primeiros termos da PA (12, 10, 8...) é -140.*
+    1 - A soma dos 20 primeiros termos da PA (12, 10, 8...) é -140.
     $ a_20 = 12 + 19(-2) = 12 - 38 = -26 $
     $ S_20 = (12 + (-26)) dot 20 / 2 = -14 dot 10 = -140 $
     *(Verdadeiro)*
     
-    *2 - $(20%)^2 + (30%)^2 = 13%$.*
+    2 - $(20%)^2 + (30%)^2 = 13%$.
     $ 0,04 + 0,09 = 13% $
     *(Falso)*
     
-    *4 - Se $i = sqrt(-1)$, então $(1+i)^100 = 2^50$.*
+    4 - Se $i = sqrt(-1)$, então $(1+i)^100 = 2^50$.
     $ (1+i)^2 = 2i $
     $ (1+i)^100 = [(1+i)^2]^50 = (2i)^50 = 2^50 dot i^50 $
     Como $i^50 = i^48 dot i^2 = 1 dot (-1) = -1$, temos $-2^50$.
     
     *(Falso)*
     
-    *8 - A equação $sin x + cos x = -1$ tem infinitas soluções.*
+    8 - A equação $sin x + cos x = -1$ tem infinitas soluções.
     
     Sim, devido à periodicidade das funções trigonométricas.
     *(Verdadeiro)*
     
-    *16 - Para todo $x$ real, $("cotg"^2 x)/(1 + "cotg"^2 x) = cos^2 x$.*
+    16 - Para todo $x$ real, $("cotg"^2 x)/(1 + "cotg"^2 x) = cos^2 x$.
     $ (cos^2/sin^2) / (csc^2) = (cos^2/sin^2) dot sin^2 = cos^2 x $
     *(Verdadeiro)*
     

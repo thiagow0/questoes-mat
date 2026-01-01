@@ -22,6 +22,8 @@
     [-10],
     [-12],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -34,6 +36,8 @@
     [cos200º > sen300º],
     [sen30º < cos210º],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -46,6 +50,8 @@
     [$2x + 3y - 13 = 0$],
     [$2x + 13y = 0$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -58,6 +64,8 @@
     [30],
     [80],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -70,6 +78,8 @@
     [7 anos],
     [8 anos],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -82,6 +92,8 @@
     [56],
     [68],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -99,6 +111,8 @@
     [Ao todo as quatro amigas gastaram R\$ 2460,00.],
     [Ao todo as quatro amigas gastaram R\$ 2100,00],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -111,6 +125,8 @@
     [15],
     [18],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -123,6 +139,8 @@
     [1000],
     [1250],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -135,6 +153,8 @@
     [Uma 5ª feira],
     [Uma 6ª feira],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -147,6 +167,8 @@
     [4h50 min],
     [5h],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -159,6 +181,8 @@
     [36],
     [37],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -171,6 +195,8 @@
     [6],
     [8],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -183,6 +209,8 @@
     [1],
     [2],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -195,6 +223,8 @@
     [40 cm],
     [50 cm],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -207,6 +237,8 @@
     [O desvio padrão e a moda],
     [A moda e a mediana],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -219,6 +251,8 @@
     [é onde valor da imagem será sempre o mesmo, independentemente do valor da variável],
     [é uma função cujo domínio é um conjunto vazio],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -240,6 +274,8 @@
     [100!],
     [-1],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -252,6 +288,8 @@
     [35],
     [15],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -264,6 +302,8 @@
     [360],
     [720],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -276,6 +316,8 @@
     [3],
     [mais de 3.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -336,6 +378,8 @@
     [0,7],
     [0,6],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -348,6 +392,8 @@
     [12],
     [15],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -361,6 +407,8 @@
     [sábado],
     [domingo],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -373,6 +421,8 @@
     [20],
     [18],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -385,6 +435,8 @@
     [tem infinitas raízes reais.],
     [tem apenas raízes irracionais.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -398,6 +450,8 @@
     [10],
     [11],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -410,6 +464,8 @@
     [$4sqrt(7)$],
     [$5sqrt(7)$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -422,6 +478,8 @@
     [180],
     [150],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -434,6 +492,8 @@
     [$16/23$],
     [$4/11$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -446,6 +506,8 @@
     [um número racional não inteiro.],
     [um número irracional.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -458,6 +520,8 @@
     [$7sqrt(2)$],
     [8,2],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -470,6 +534,8 @@
     [6],
     [7],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -482,6 +548,8 @@
     [4],
     [3],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 

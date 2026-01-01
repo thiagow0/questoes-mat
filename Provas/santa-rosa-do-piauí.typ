@@ -21,6 +21,8 @@
     [12],
     [18],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -33,6 +35,8 @@
     [4045],
     [6045],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -45,6 +49,8 @@
     [um múltiplo de 5.],
     [um cubo perfeito.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -57,6 +63,8 @@
     [12],
     [13],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -69,52 +77,53 @@
     [12],
     [15],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
 #questao(
   [Na figura abaixo temos um bloco retangular onde as faces $A B C D$ e $E F G H$ são quadrados de lados iguais a $400sqrt(2)$ cm. As faces laterais são retângulos com um dos lados medindo 6 m. Qual a distância do ponto B ao ponto H?
-  
-  #align(center)[
-    #canvas(length: 0.4cm,{
-
-  let vec_width = (6, 0)       
-  let vec_depth = (2.5, 2.5)   
-  let vec_height = (0, 7)      
-  let A = (0, 0)
-  let B = (A.at(0) + vec_width.at(0), A.at(1) + vec_width.at(1))
-  let D = (A.at(0) + vec_depth.at(0), A.at(1) + vec_depth.at(1))
-  let C = (B.at(0) + vec_depth.at(0), B.at(1) + vec_depth.at(1))
-  let E = (A.at(0) + vec_height.at(0), A.at(1) + vec_height.at(1))
-  let F = (B.at(0) + vec_height.at(0), B.at(1) + vec_height.at(1))
-  let G = (C.at(0) + vec_height.at(0), C.at(1) + vec_height.at(1))
-  let H = (D.at(0) + vec_height.at(0), D.at(1) + vec_height.at(1))
-  let hidden_style = (stroke: (dash: "dashed", paint: black))
-  draw.line(A, D, ..hidden_style)
-  draw.line(C, D, ..hidden_style)
-  draw.line(H, D, ..hidden_style)
-
-  let visible_style = (stroke: 1pt)
-
-  draw.line(A, B, ..visible_style)
-  draw.line(B, C, ..visible_style)
-  draw.line(E, F, ..visible_style)
-  draw.line(F, G, ..visible_style)
-  draw.line(G, H, ..visible_style)
-  draw.line(H, E, ..visible_style)
-  draw.line(A, E, ..visible_style)
-  draw.line(B, F, ..visible_style)
-  draw.line(C, G, ..visible_style)
-  draw.content(A, [A], anchor: "north", padding: 0.3)
-  draw.content(B, [B], anchor: "north", padding: 0.3)
-  draw.content(C, [C], anchor: "west", padding: 0.3)
-  draw.content(D, [D], anchor: "south-east", padding: 0.2) 
-  draw.content(E, [E], anchor: "east", padding: 0.3)
-  draw.content(F, [F], anchor: "west", padding: 0.3)
-  draw.content(G, [G], anchor: "south", padding: 0.3)
-  draw.content(H, [H], anchor: "south", padding: 0.3)
-})
-  ]
+    
+    #align(center)[
+      #canvas(length: 0.4cm, {
+        let vec_width = (6, 0)
+        let vec_depth = (2.5, 2.5)
+        let vec_height = (0, 7)
+        let A = (0, 0)
+        let B = (A.at(0) + vec_width.at(0), A.at(1) + vec_width.at(1))
+        let D = (A.at(0) + vec_depth.at(0), A.at(1) + vec_depth.at(1))
+        let C = (B.at(0) + vec_depth.at(0), B.at(1) + vec_depth.at(1))
+        let E = (A.at(0) + vec_height.at(0), A.at(1) + vec_height.at(1))
+        let F = (B.at(0) + vec_height.at(0), B.at(1) + vec_height.at(1))
+        let G = (C.at(0) + vec_height.at(0), C.at(1) + vec_height.at(1))
+        let H = (D.at(0) + vec_height.at(0), D.at(1) + vec_height.at(1))
+        let hidden_style = (stroke: (dash: "dashed", paint: black))
+        draw.line(A, D, ..hidden_style)
+        draw.line(C, D, ..hidden_style)
+        draw.line(H, D, ..hidden_style)
+        
+        let visible_style = (stroke: 1pt)
+        
+        draw.line(A, B, ..visible_style)
+        draw.line(B, C, ..visible_style)
+        draw.line(E, F, ..visible_style)
+        draw.line(F, G, ..visible_style)
+        draw.line(G, H, ..visible_style)
+        draw.line(H, E, ..visible_style)
+        draw.line(A, E, ..visible_style)
+        draw.line(B, F, ..visible_style)
+        draw.line(C, G, ..visible_style)
+        draw.content(A, [A], anchor: "north", padding: 0.3)
+        draw.content(B, [B], anchor: "north", padding: 0.3)
+        draw.content(C, [C], anchor: "west", padding: 0.3)
+        draw.content(D, [D], anchor: "south-east", padding: 0.2)
+        draw.content(E, [E], anchor: "east", padding: 0.3)
+        draw.content(F, [F], anchor: "west", padding: 0.3)
+        draw.content(G, [G], anchor: "south", padding: 0.3)
+        draw.content(H, [H], anchor: "south", padding: 0.3)
+      })
+    ]
   
   ],
   [#enum(
@@ -124,73 +133,66 @@
     [12 m],
     [13 m],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
 #questao(
   [A pirâmide regular a seguir tem apótema da base igual a 4 cm e altura da face lateral igual a $sqrt(52)$ cm. O volume dessa pirâmide, em $c m^3$, é igual a:
-  
-  #align(center)[
     
-    #canvas(length: 0.7cm,{
+    #align(center)[
+      
+      #canvas(length: 0.7cm, {
+        let A = (0, 0)
+        let B = (4, 0)
+        let angle_depth = 45deg
+        let depth_len = 2.5
+        
+        
+        let vec_depth = (depth_len * calc.cos(angle_depth), depth_len * calc.sin(angle_depth))
+        let C = (B.at(0) + vec_depth.at(0), B.at(1) + vec_depth.at(1))
+        let D = (A.at(0) + vec_depth.at(0), A.at(1) + vec_depth.at(1))
+        
+        
+        let center_x = (A.at(0) + C.at(0)) / 2
+        let center_y = (A.at(1) + C.at(1)) / 2
+        let height = 5.5
+        let E = (center_x, center_y + height)
+        
+        
+        draw.line(A, D, stroke: (dash: "dashed"))
+        draw.line(C, D, stroke: (dash: "dashed"))
+        draw.line(E, D, stroke: (dash: "dashed"))
+        
+        
+        draw.line(A, B, stroke: 1pt)
+        draw.line(B, C, stroke: 1pt)
+        draw.line(E, A, stroke: 1pt)
+        draw.line(E, B, stroke: 1pt)
+        draw.line(E, C, stroke: 1pt)
+        
+        
+        let draw_vertex(pt, label_txt, label_pos) = {
+          draw.circle(pt, radius: 0.08, fill: black)
+        }
+        
+        draw_vertex(A, "A", "north")
+        draw_vertex(B, "B", "north")
+        draw_vertex(C, "C", "north-west")
+        draw_vertex(D, "D", "north-west")
+        draw_vertex(E, "E", "south")
+        
+        
+        draw.content(A, [A], anchor: "north", padding: 0.2)
+        draw.content(B, [B], anchor: "north", padding: 0.2)
+        draw.content(C, [C], anchor: "west", padding: 0.2)
+        draw.content(D, [D], anchor: "north-west", padding: 0.2)
+        draw.content(E, [E], anchor: "south", padding: 0.2)
+      })
+    
+    ]
   
-  
-  
-  let A = (0, 0)
-  let B = (4, 0)
-  let angle_depth = 45deg
-  let depth_len = 2.5
-  
-  
-  
-  let vec_depth = (depth_len * calc.cos(angle_depth), depth_len * calc.sin(angle_depth))
-  let C = (B.at(0) + vec_depth.at(0), B.at(1) + vec_depth.at(1))
-  let D = (A.at(0) + vec_depth.at(0), A.at(1) + vec_depth.at(1))
-  
-  
-  let center_x = (A.at(0) + C.at(0)) / 2
-  let center_y = (A.at(1) + C.at(1)) / 2
-  let height = 5.5
-  let E = (center_x, center_y + height)
-
-  
-
-  
-  draw.line(A, D, stroke: (dash: "dashed"))
-  draw.line(C, D, stroke: (dash: "dashed"))
-  draw.line(E, D, stroke: (dash: "dashed"))
-
-  
-  draw.line(A, B, stroke: 1pt) 
-  draw.line(B, C, stroke: 1pt) 
-  draw.line(E, A, stroke: 1pt) 
-  draw.line(E, B, stroke: 1pt) 
-  draw.line(E, C, stroke: 1pt) 
-
-  
-  
-  let draw_vertex(pt, label_txt, label_pos) = {
-    draw.circle(pt, radius: 0.08, fill: black)
-  }
-
-  draw_vertex(A, "A", "north") 
-  draw_vertex(B, "B", "north")
-  draw_vertex(C, "C", "north-west") 
-  draw_vertex(D, "D", "north-west") 
-  draw_vertex(E, "E", "south")
-
-  
-  
-  draw.content(A, [A], anchor: "north", padding: 0.2)
-  draw.content(B, [B], anchor: "north", padding: 0.2)
-  draw.content(C, [C], anchor: "west", padding: 0.2)
-  draw.content(D, [D], anchor: "north-west", padding: 0.2) 
-  draw.content(E, [E], anchor: "south", padding: 0.2)
-  
-})
-
-  ]
-
   ],
   [#enum(
     [128],
@@ -199,6 +201,8 @@
     [64],
     [32],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -211,6 +215,8 @@
     [243000],
     [729000],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -223,6 +229,8 @@
     [6240],
     [6420],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -235,6 +243,8 @@
     [$0 < N < 2$],
     [$0 < N < 1$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -247,6 +257,8 @@
     [5040],
     [30240],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -259,6 +271,8 @@
     [2],
     [-2],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -271,6 +285,8 @@
     [8,4%],
     [7,2%],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -283,6 +299,8 @@
     [4],
     [5],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -295,6 +313,8 @@
     [circunferência de centro (0, 1) e raio 1.],
     [circunferência de centro (0, -2) e raio 2.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -307,6 +327,8 @@
     [3,3 m],
     [4 m],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -319,6 +341,8 @@
     [2,5],
     [3,0],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 

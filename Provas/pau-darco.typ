@@ -22,12 +22,16 @@
     [425],
     [426],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
 #questao(
   [Simplificando $ (2015^2 - 25)/(2015^2 - 2015 - 30) $ obteremos:],
   [#enum(spacing: 12pt, [$ 2015/2016 $], [$ 2014/2015 $], [$ 2010/2009 $], [$ 2015/2014 $], [$ 2015/2017 $])],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -40,6 +44,8 @@
     [2160],
     [720],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -54,6 +60,8 @@
     [100],
     [12],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -66,6 +74,8 @@
     [R\$ 4.000,00],
     [R\$ 5.000,00],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -78,6 +88,8 @@
     [$2x + 5$],
     [$-2x + 7$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -123,6 +135,8 @@
     [$3sqrt(3) + 3$],
     [$3sqrt(2) + 3$],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -135,6 +149,8 @@
     [R\$ 155,00],
     [R\$ 160,00],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -147,6 +163,8 @@
     [18 kWh],
     [15 kWh],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -159,6 +177,8 @@
     [27],
     [81],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -171,6 +191,8 @@
     [30 cm],
     [35 cm],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -183,6 +205,8 @@
     [3 cm],
     [4,5 cm],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -195,6 +219,8 @@
     [$6 root(3, 4)$ cm],
     [$7 root(3, 4)$ cm],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -207,6 +233,8 @@
     [(1, 0)],
     [(2, -2)],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -220,6 +248,8 @@
     [4 e 5],
     [5 e 6],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -232,6 +262,8 @@
     [146],
     [150],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -244,18 +276,23 @@
     [R\$ 5.500,00],
     [R\$ 6.000,00],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
 #questao(
   [Assinale a alternativa incorreta:],
-  [#enum(spacing: 12pt,
+  [#enum(
+    spacing: 12pt,
     [Quando $10^2015 - 2015$ é desenvolvido, a soma de seus algarismos é igual a 18128.],
     [A equação $4/x + 2/y = 1$, com $x$ e $y$ inteiros positivos possui 4 soluções.],
     [O número $ N = 111 + 222^2 + 333^3 + 444^4 + 555^5 - 12345 $ não é um quadrado perfeito.],
     [Se $ ( root(4, 9 + sqrt(9 + sqrt(9))) )^4 = a + b sqrt(3), $ então $a - b = 57$.],
     [Em um grupo de 70 pessoas, há pelo menos 7 pessoas que nasceram no mesmo mês.],
   )],
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
