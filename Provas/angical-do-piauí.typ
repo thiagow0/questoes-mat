@@ -229,7 +229,7 @@
 
 #questao(
   [Se $x, y, z$ são números reais não nulos e
-    $ cases(x+y+z=9, 1/x + 1/y + 1/z = 1, x y + x z + y z = 27) $então $x - y - z$ é igual a:],
+    $ cases(x+y+z=9, 1/x + 1/y + 1/z = 1, x y + x z + y z = 27) $então $x dot y - z$ é igual a:],
   [#enum(
     [6],
     [5],
