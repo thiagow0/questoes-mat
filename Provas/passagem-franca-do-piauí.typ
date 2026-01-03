@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 
 = PASSAGEM FRANCA DO PIAUÍ
 \
@@ -12,7 +12,7 @@
 \
 
 #questao(
-  [Um investidor aplicou R\$ 8.000,00 a juros compostos, durante um certo período, a uma taxa de 2% ao mês. Se ele tivesse aplicado o mesmo capital à taxa de 1,5% ao mês, pelo mesmo tempo, o montante seria R\$ 361,33 menor.
+  [Um investidor aplicou R\$ 8.000,00 a #idx(("juros", "compostos")), durante um certo período, a uma taxa de 2% ao mês. Se ele tivesse aplicado o mesmo capital à taxa de 1,5% ao mês, pelo mesmo tempo, o montante seria R\$ 361,33 menor.
     Com base nessas informações, a equação que determina o tempo da aplicação, em meses, é dada por:],
   [#enum(
     [$(1,02)^t - (1,015)^t = 0,045$],
@@ -311,7 +311,7 @@
     A condição dada ($B C + D A = A B + C D$) refere-se à propriedade dos quadriláteros circunscritíveis.
     
     #block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow), width: 100%)[
-      *Teorema de Pitot:* \
+      #idx(("Teorema", "de Pitot")): \
       Um quadrilátero convexo pode circunscrever uma circunferência se, e somente se, a soma das medidas de seus lados opostos for igual.
     ]
     
@@ -333,7 +333,7 @@
     [8],
   )],
   gabarito_explicacao: [
-    Como $D E \/\/ B C$, aplicamos o Teorema de Tales:
+    Como $D E \/\/ B C$, aplicamos o #idx(("Teorema", "de Tales")):
     $ (A D) / (D B) = (A E) / (E C) $
     
     Substituindo os valores ($A D=6, D B=4, A E=9, E C=x$):
@@ -499,7 +499,7 @@
     Calculamos o determinante de A: $det(A) = 3(2) - 2(1) = 4$.
     
     #block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow), width: 100%)[
-      *Matriz Inversa (2x2):* \
+      *#idx(("Matriz", "inversa")) (2x2):* \
       
       $ A^(-1) = 1/det(A) mat(d, -b; -c, a) $
     ]
@@ -518,8 +518,8 @@
 )
 
 #questao(
-  [Um reservatório em forma de cone reto é usado em uma fazenda para armazenar água de chuva. O reservatório tem raio da base igual a 3 m. Durante uma forte chuva ele foi preenchido completamente e o volume de água no cone atingiu $36 pi space m^3$.
-    O fazendeiro quer saber a altura da coluna de água dentro do cone. Qual a altura $h$ (em metros) da água no reservatório?],
+  [Um reservatório em forma de  #idx(("cone")) reto é usado em uma fazenda para armazenar água de chuva. O reservatório tem raio da base igual a 3 m. Durante uma forte chuva ele foi preenchido completamente e o volume de água no  #idx(("cone")) atingiu $36 pi space m^3$.
+    O fazendeiro quer saber a altura da coluna de água dentro do  #idx(("cone")). Qual a altura $h$ (em metros) da água no reservatório?],
   [#enum(
     [6 m],
     [9 m],
@@ -528,7 +528,7 @@
     [15 m],
   )],
   gabarito_explicacao: [
-    Volume do cone $V = 1/3 pi r^2 h$. Temos $V = 36pi$ e $r = 3$.
+    Volume do  #idx(("cone")) $V = 1/3 pi r^2 h$. Temos $V = 36pi$ e $r = 3$.
     
     $
       36pi & = 1/3 pi (3)^2 h \

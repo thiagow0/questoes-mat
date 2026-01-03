@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 
 = PARNAÍBA
 \
@@ -48,7 +48,7 @@
 )
 
 #questao(
-  [Em uma prova que Carlos realizou haviam 10 questões de Português, cuja peso era 3; 5 de Raciocínio Lógico e 5 de Informática, cujo pesos também eram 3; e 20 de Conhecimentos Específicos, cujo peso era 5; e a nota final seria a média ponderada de seus acertos. Supondo que Carlos acertou 9 questões de Português, 3 de Raciocínio Lógico e 3 de Informática, além de 15 de Conhecimentos Específicos, qual foi sua nota?],
+  [Em uma prova que Carlos realizou haviam 10 questões de Português, cuja peso era 3; 5 de Raciocínio Lógico e 5 de Informática, cujo pesos também eram 3; e 20 de Conhecimentos Específicos, cujo peso era 5; e a nota final seria a #idx(("média", "ponderada")) de seus acertos. Supondo que Carlos acertou 9 questões de Português, 3 de Raciocínio Lógico e 3 de Informática, além de 15 de Conhecimentos Específicos, qual foi sua nota?],
   [#enum(
     [7,5],
     [6,67],
@@ -62,7 +62,7 @@
 )
 
 #questao(
-  [A equação da circunferência que circunscreve o triângulo equilátero ABC, cujo lado mede $4sqrt(3)$ unidades, sabendo que o eixo $y$ contém a altura relativa ao lado AB, é:],
+  [A equação da circunferência que circunscreve o triângulo  #idx(("equilátero")) ABC, cujo lado mede $4sqrt(3)$ unidades, sabendo que o eixo $y$ contém a altura relativa ao lado AB, é:],
   [#enum(
     [$x^2 + (y-2)^2 = 4$],
     [$(x - sqrt(3))^2 + y^2 = 16$],
@@ -76,7 +76,7 @@
 )
 
 #questao(
-  [Em um triângulo escaleno ABC com lados AB=$x$, AC=15cm, BC=20cm e o ângulo de C=$60degree$, qual o valor de X?],
+  [Em um triângulo  #idx(("escaleno")) ABC com lados AB=$x$, AC=15cm, BC=20cm e o ângulo de C=$60degree$, qual o valor de X?],
   [#enum(
     [12 cm],
     [15 cm],
@@ -132,7 +132,7 @@
 )
 
 #questao(
-  [Carlos comprou uma geladeira em 30 vezes a juros compostos onde seu valor original era de 3500 reais, como juros anuais de 4,5%. Qual o valor total que ele pagou pela geladeira?],
+  [Carlos comprou uma geladeira em 30 vezes a #idx(("juros", "compostos")) onde seu valor original era de 3500 reais, como juros anuais de 4,5%. Qual o valor total que ele pagou pela geladeira?],
   [#enum(
     [3736,25],
     [3825,40],
@@ -146,7 +146,7 @@
 )
 
 #questao(
-  [Lúcia pegou um empréstimo com sua irmã no valor de 7500 reais, elas combinaram que ela pagaria daqui a 3 anos, com uma taxa de juros simples de 3% ao mês. Quantos reais Lúcia pagou de juros a sua irmã?],
+  [Lúcia pegou um empréstimo com sua irmã no valor de 7500 reais, elas combinaram que ela pagaria daqui a 3 anos, com uma taxa de #idx(("juros", "simples")) de 3% ao mês. Quantos reais Lúcia pagou de juros a sua irmã?],
   [#enum(
     [900,00],
     [2700,00],
@@ -205,9 +205,13 @@
   [Em relação a temática retas, julgue as afirmativas a seguir como verdadeiras ou falsas e assinale a alternativa que contém a sequência correta.
     
     I. Retas concorrentes não possuem um ponto em comum
+
     II. Um segmento de reta é limitado por dois pontos da reta
+
     III. As retas podem estar em duas posições: Horizontal e Vertical
+
     IV. Retas perpendiculares formam um ponto em comum, o qual forma um ângulo reto
+    
     V. Retas transversais possuem todos os pontos em comum],
   [#enum(
     [V-F-F-V-V],

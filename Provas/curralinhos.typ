@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 
 = CURRALINHOS
 \
@@ -69,7 +69,7 @@
 )
 
 #questao(
-  [A reserva de Maria foi aplicada a juros simples de 12% ao mês, durante 10 meses e, em seguida, o montante foi aplicado durante mais 10 meses, a juros simples de 8% ao mês. No final dos 20 meses, o novo montante foi de R\$ 594,00. Qual o valor da quantia aplicada inicialmente?],
+  [A reserva de Maria foi aplicada a #idx(("juros", "simples")) de 12% ao mês, durante 10 meses e, em seguida, o montante foi aplicado durante mais 10 meses, a #idx(("juros", "simples")) de 8% ao mês. No final dos 20 meses, o novo montante foi de R\$ 594,00. Qual o valor da quantia aplicada inicialmente?],
   [#enum(
     [R\$ 100,00],
     [R\$ 150,00],
@@ -129,7 +129,7 @@
     
     #image("Imagens/pesquisa.png")
     
-    De acordo com as informações do gráfico, determine a probabilidade de um homem casado escolhido ao acaso não estudar e não trabalhar.],
+    De acordo com as informações do gráfico, determine a #idx(("probabilidade")) de um homem casado escolhido ao acaso não estudar e não trabalhar.],
   [#enum(
     [6%],
     [9%],
@@ -171,7 +171,7 @@
 )
 
 #questao(
-  [Maria aplicou seu salário de R\$ 660,00 em um fundo de investimento que opera no regime de juros simples. Após 24 meses o investidor verificou que o montante era de R\$ 1.820,00. Qual a taxa de juros desse fundo de investimento aproximadamente?],
+  [Maria aplicou seu salário de R\$ 660,00 em um fundo de investimento que opera no regime de #idx(("juros", "simples")). Após 24 meses o investidor verificou que o montante era de R\$ 1.820,00. Qual a taxa de juros desse fundo de investimento aproximadamente?],
   [#enum(
     [2%],
     [5%],
@@ -202,11 +202,11 @@
 #questao(
   [Jugue as afirmativas abaixo em verdadeiro (V) ou falso (F) e assinale a alternativa correta:
     
-    ( ) Um triângulo é isósceles, se, e somente se, ele tiver 2 lados iguais.
+    ( ) Um triângulo é  #idx(("isósceles")), se, e somente se, ele tiver 2 lados iguais.
     
-    ( ) Todo triângulo escaleno tem os lados, dois a dois, de medidas diferentes; consequentemente os seus ângulos internos têm medidas diferentes.
+    ( ) Todo triângulo  #idx(("escaleno")) tem os lados, dois a dois, de medidas diferentes; consequentemente os seus ângulos internos têm medidas diferentes.
     
-    ( ) Em um triângulo obtusângulo, os lados que determinam o ângulo obtuso podem ser de mesma medida. Isto é, existe triângulo isósceles obtusângulo.],
+    ( ) Em um triângulo obtusângulo, os lados que determinam o ângulo obtuso podem ser de mesma medida. Isto é, existe triângulo  #idx(("isósceles")) obtusângulo.],
   [#enum(
     [F – V – F],
     [V – V – V],

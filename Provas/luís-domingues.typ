@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 
 #import "@preview/cetz:0.4.2": angle, canvas, draw
 = LUÍS DOMINGUES
@@ -173,7 +173,7 @@
 )
 
 #questao(
-  [Um polígono regular possui 30 lados. Quantas diagonais desse polígono não passam pelo seu centro?],
+  [Um polígono #idx(("regular")) possui 30 lados. Quantas diagonais desse polígono não passam pelo seu centro?],
   [#enum(
     [15],
     [30],
@@ -325,15 +325,15 @@
 #questao(
   [Assinale a alternativa que contém o somatório dos itens verdadeiros:
     
-    1 -- Há apenas cinco classes de poliedros de Platão.
+    1 -- Há apenas cinco classes de #idx(("poliedros")) de Platão.
     
     2 -- Todo poliedro convexo é poliedro de Platão.
     
-    4 -- Todo poliedro regular é um poliedro de Platão.
+    4 -- Todo poliedro #idx(("regular")) é um poliedro de Platão.
     
-    8 -- Todo poliedro de Platão é regular.
+    8 -- Todo poliedro de Platão é #idx(("regular")).
     
-    16 -- O hexaedro regular tem faces hexagonais.],
+    16 -- O hexaedro #idx(("regular")) tem faces hexagonais.],
   [#enum(
     [1],
     [3],

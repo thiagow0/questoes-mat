@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 
 #import "@preview/cetz:0.4.2": *
 
@@ -99,7 +99,7 @@
 )
 
 #questao(
-  [Um polígono regular que possui 9 diagonais, possuirá também um ângulo externo igual a:],
+  [Um polígono #idx(("regular")) que possui 9 diagonais, possuirá também um ângulo externo igual a:],
   [#enum(
     [20 graus],
     [30 graus],
@@ -127,7 +127,7 @@
 )
 
 #questao(
-  [Um cilindro tem uma altura, em metros, que equivale ao oposto da raiz da equação $4x - 6(4 - x) = 10 + 8(2x + 1)$ e um raio de 2 metros. Qual é o volume desse cilindro? Considere que $pi$ (pi) é igual a 3.],
+  [Um  #idx(("cilindro")) tem uma altura, em metros, que equivale ao oposto da raiz da equação $4x - 6(4 - x) = 10 + 8(2x + 1)$ e um raio de 2 metros. Qual é o volume desse  #idx(("cilindro"))? Considere que $pi$ (pi) é igual a 3.],
   [#enum(
     [84 m³],
     [294 m³],
@@ -252,7 +252,7 @@
 )
 
 #questao(
-  [Se um investidor aplicar o valor de R\$ 6.500,00 a uma taxa de juros simples de 3% ao ano, quanto receberá de juros ao final de 8 meses?],
+  [Se um investidor aplicar o valor de R\$ 6.500,00 a uma taxa de #idx(("juros", "simples")) de 3% ao ano, quanto receberá de juros ao final de 8 meses?],
   [#enum(
     [R\$ 1.560,00],
     [R\$ 1.300,00],

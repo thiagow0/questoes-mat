@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 #import "@preview/cetz:0.4.2": canvas, draw
 
 = SANTA ROSA DO PIAUÍ
@@ -139,7 +139,7 @@
 )
 
 #questao(
-  [A pirâmide regular a seguir tem apótema da base igual a 4 cm e altura da face lateral igual a $sqrt(52)$ cm. O volume dessa pirâmide, em $c m^3$, é igual a:
+  [A #idx(("pirâmide")) #idx(("regular")) a seguir tem apótema da base igual a 4 cm e altura da face lateral igual a $sqrt(52)$ cm. O volume dessa #idx(("pirâmide")), em $c m^3$, é igual a:
     
     #align(center)[
       
@@ -305,7 +305,7 @@
 )
 
 #questao(
-  [Representando no plano de Argand-Gauss o subconjunto dos complexos ($CC$), dado por $A = {z in CC; |z - i| = 2}$, obtemos:],
+  [Representando no plano de Argand-Gauss o subconjunto dos  #idx(("complexos")) ($CC$), dado por $A = {z in CC; |z - i| = 2}$, obtemos:],
   [#enum(
     [circunferência de centro (0, -1) e raio 2.],
     [circunferência de centro (0, 1) e raio 2.],

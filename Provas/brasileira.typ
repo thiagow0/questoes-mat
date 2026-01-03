@@ -1,4 +1,4 @@
-#import "lib.typ": questao
+#import "lib.typ": questao, idx
 
 #let drive_link = "https://drive.google.com/file/d/1kBE1dSJxscyVnm7A62wxLD0WiEjOK_3U/view?usp=drive_link"
 
@@ -15,7 +15,7 @@
   [A divisão do número 30 por 0,12121212.... resulta em um número],
   [#enum(
     [irracional.],
-    [complexo não real.],
+    [ #idx(("complexo")) não real.],
     [racional.],
     [natural ímpar.],
     [natural par.],
@@ -152,7 +152,7 @@
 )
 
 #questao(
-  [Lucas deixou de ganhar R\$ 37.500,00 com uma aplicação, para emprestar os R\$125.000,00 que investiria a seu cunhado, com juros compostos de 6% ao ano, por 2 anos. O que podemos afirmar sobre essas transações?],
+  [Lucas deixou de ganhar R\$ 37.500,00 com uma aplicação, para emprestar os R\$125.000,00 que investiria a seu cunhado, com #idx(("juros", "compostos")) de 6% ao ano, por 2 anos. O que podemos afirmar sobre essas transações?],
   [#enum(
     [A quantia recebida de juros em cada uma das operações seria a mesma.],
     [Lucas ganhou R\$ 23.120,00 a mais de juros.],
@@ -161,7 +161,7 @@
     [Lucas ganhou R\$ 15.450,00 a mais de juros.],
   )],
   gabarito_explicacao: [
-    Cálculo do rendimento que Lucas obteve emprestando o dinheiro ($6\%$ a.a. por 2 anos, juros compostos):
+    Cálculo do rendimento que Lucas obteve emprestando o dinheiro ($6\%$ a.a. por 2 anos, #idx(("juros", "compostos"))):
     $
       M & = C dot (1 + i)^t \
       M & = 125.000 dot (1,06)^2 \
@@ -389,7 +389,7 @@
 )
 
 #questao(
-  [Considere a função $f(x) = sec(x)$. Qual sua função inversa?],
+  [Considere a função $f(x) = sec(x)$. Qual sua #idx(("função", "inversa"))?],
   [#enum(
     [$y(x) = sec^2(x)$],
     [$y(x) = sec(x^2)$],
@@ -398,7 +398,7 @@
     [$y(x) = "arcsec"(x)$],
   )],
   gabarito_explicacao: [
-    A função inversa da secante ($sec x$) é o arco secante ($"arcsec" x$).
+    A #idx(("função", "inversa")) da secante ($sec x$) é o arco secante ($"arcsec" x$).
     
     #pad(y: 5pt)[
       #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
@@ -450,7 +450,7 @@
     [31],
   )],
   gabarito_explicacao: [
-    Para saber o número de algarismos de $16^16$, calculamos seu logaritmo na base 10.
+    Para saber o número de algarismos de $16^16$, calculamos seu #idx(("logaritmo")) na base 10.
     Dado: $log 2 = 0,3$.
     
     $
@@ -461,7 +461,7 @@
       x & = 19,2
     $
     
-    O número de algarismos é a parte inteira do logaritmo (característica) mais 1:
+    O número de algarismos é a parte inteira do #idx(("logaritmo")) (característica) mais 1:
     $ "Algarismos" = 19 + 1 = 20 $
     
     #pad(y: 5pt)[

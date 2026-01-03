@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 
 = BURITI BRAVO
 \
@@ -39,7 +39,7 @@
 )
 
 #questao(
-  [Duas esferas de raio 4 cm e 2 cm são tangentes externamente e estão inscritas em um cone. O volume do sólido compreendido entre o cone e essas duas esferas é igual a:],
+  [Duas esferas de raio 4 cm e 2 cm são tangentes externamente e estão inscritas em um  #idx(("cone")). O volume do sólido compreendido entre o  #idx(("cone")) e essas duas esferas é igual a:],
   [#enum(
     [$ (224 pi) / 3 "cm"^3 $],
     [$ (218 pi) / 3 "cm"^3 $],
@@ -53,7 +53,7 @@
 )
 
 #questao(
-  [Um trapézio isósceles tem base média igual a 9 cm e um lado lateral igual a 6 cm. Qual o perímetro desse trapézio?],
+  [Um trapézio  #idx(("isósceles")) tem base média igual a 9 cm e um lado lateral igual a 6 cm. Qual o perímetro desse trapézio?],
   [#enum(
     [14 cm],
     [18 cm],
@@ -71,7 +71,7 @@
   [#enum(
     [Ângulo reto é um ângulo que é congruente a todo ângulo que lhe é suplementar.],
     [Se as bissetrizes de dois adjacentes formam um ângulo reto, então os dois ângulos são suplementares.],
-    [Um segmento que tem uma extremidade num vértice e a outra no ponto médio do lado oposto tem o nome de mediana do triângulo.],
+    [Um segmento que tem uma extremidade num vértice e a outra no ponto médio do lado oposto tem o nome de #idx(("mediana")) do triângulo.],
     [Em todo triângulo a medida de um ângulo externo é menor do que a medida de qualquer ângulo interno não adjacente a ele.],
     [Todo quadrilátero cujas diagonais se cortam ao meio é um paralelogramo.],
   )],
@@ -180,7 +180,7 @@
 )
 
 #questao(
-  [Diagonal de um polígono é um segmento de reta que liga dois vértices não consecutivos desse polígono, por exemplo, um triângulo não possui diagonal, mas um quadrilátero tem duas diagonais. Quantas diagonais de um icoságono regular não passam pelo seu centro?],
+  [Diagonal de um polígono é um segmento de reta que liga dois vértices não consecutivos desse polígono, por exemplo, um triângulo não possui diagonal, mas um quadrilátero tem duas diagonais. Quantas diagonais de um icoságono #idx(("regular")) não passam pelo seu centro?],
   [#enum(
     [10],
     [20],
@@ -238,10 +238,14 @@
 #questao(
   [Julgue os itens seguintes em verdadeiro ou falso:
     
-    1 – ( ) A média aritmética dos divisores positivos de 24 é um divisor de 36.
+    1 – ( ) A #idx(("média", "aritmética")) dos divisores positivos de 24 é um divisor de 36.
+
     2 – ( ) A quantidade de divisores positivos de 120 é 50% menor que a quantidade de divisores positivos de 240.
+
     4 – ( ) Em 15 meses um capital aplicado a juro composto de 5% ao mês duplica de valor. (Se necessário, utilize $log 2 = 0,3$ e $log 1,05 = 0,02$).
+
     8 – ( ) Se o ponto $P = (5, 8)$ pertence ao gráfico da função $f(x) = 2^(x - T)$, então $f(2T)$ é um quadrado perfeito.
+
     16 – ( ) O circuncentro de um triângulo é sempre interno ao triângulo.
     
     O somatório dos itens verdadeiros é igual a:],

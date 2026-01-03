@@ -1,6 +1,6 @@
 // Arquivo base para novas provas
 
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 #import "@preview/cetz:0.4.2": *
 
 = CIDADE

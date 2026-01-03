@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 
 #import "@preview/cetz:0.4.2": canvas, draw
 
@@ -197,7 +197,7 @@
 )
 
 #questao(
-  [Qual é a medida do raio de uma circunferência circunscrita a um triângulo isósceles cuja base BC e a altura a ela relativa medem 8 cm?],
+  [Qual é a medida do raio de uma circunferência circunscrita a um triângulo  #idx(("isósceles")) cuja base BC e a altura a ela relativa medem 8 cm?],
   [#enum(
     [5 cm],
     [6 cm],
@@ -211,7 +211,7 @@
 )
 
 #questao(
-  [A que distância do vértice de uma pirâmide de altura 10 cm deve passar um plano paralelo à sua base, para que se obtenha uma pirâmide e um tronco de mesmo volume?],
+  [A que distância do vértice de uma #idx(("pirâmide")) de altura 10 cm deve passar um plano paralelo à sua base, para que se obtenha uma #idx(("pirâmide")) e um tronco de mesmo volume?],
   [#enum(
     [$3 root(3, 4)$ cm],
     [$4 root(3, 4)$ cm],

@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 #import "@preview/cetz:0.4.2": canvas, draw
 
 = BURITI DOS LOPES
@@ -130,7 +130,7 @@
 )
 
 #questao(
-  [Em um triângulo escaleno ABC com lados $A B = x$, $A C = 15 "cm"$, $B C = 20 "cm"$ e o ângulo de $C = 60degree$, qual o valor de X?],
+  [Em um triângulo  #idx(("escaleno")) ABC com lados $A B = x$, $A C = 15 "cm"$, $B C = 20 "cm"$ e o ângulo de $C = 60degree$, qual o valor de X?],
   
   [#enum(
     [12 cm],
@@ -305,7 +305,7 @@
     
     $ log_2 16 + log_12 1728 $
     
-    Resolvendo separadamente cada logaritmo:
+    Resolvendo separadamente cada #idx(("logaritmo")):
     
     $ log_2 16 = x arrow.double 2^x = 16 arrow.double 2^x = 2^4 arrow.double x = 4 $
     
@@ -370,7 +370,7 @@
 )
 
 #questao(
-  [Assinale a alternativa que melhor descreve uma função identidade],
+  [Assinale a alternativa que melhor descreve uma #idx(("função", "identidade"))],
   
   [#enum(
     [é uma função que dá como imagem de cada elemento o próprio elemento.],
@@ -381,7 +381,7 @@
   )],
   
   gabarito_explicacao: [
-    A função identidade é aquela que associa cada elemento do seu domínio ao próprio elemento na imagem.
+    A #idx(("função", "identidade")) é aquela que associa cada elemento do seu domínio ao próprio elemento na imagem.
     Matematicamente, é definida por:
     
     #align(center)[
@@ -453,8 +453,8 @@
   [O desvio padrão de uma amostra é],
   
   [#enum(
-    [o quadrado do somatório da média aritmética da amostra.],
-    [a raiz quadrada da variância amostral.],
+    [o quadrado do somatório da #idx(("média", "aritmética")) da amostra.],
+    [a raiz quadrada da #idx(("variância")) amostral.],
     [o somatório do valor médio das diferenças quadradas da média da amostra.],
     [a diferença entre o somatório dos pontos médios da amostra e suas médias aritméticas.],
     [a soma dos pontos médios da amostra.],
@@ -462,15 +462,15 @@
   
   gabarito_explicacao: [
     A questão solicita a definição do desvio padrão.
-    Em estatística, a *variância* ($sigma^2$ ou $S^2$) é a média dos quadrados dos desvios. O *desvio padrão* ($sigma$ ou $S$) é definido como a raiz quadrada da variância, trazida para a mesma unidade de medida dos dados originais.
+    Em estatística, a *#idx(("variância"))* ($sigma^2$ ou $S^2$) é a média dos quadrados dos desvios. O *desvio padrão* ($sigma$ ou $S$) é definido como a raiz quadrada da #idx(("variância")), trazida para a mesma unidade de medida dos dados originais.
     
     #align(center)[
-      $ "Desvio Padrão" = sqrt("Variância") $
+      $ #idx(("desvio padrão")) = sqrt(#idx(("variância"))) $
     ]
     
     #pad(y: 5pt)[
       #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
-        *Resposta: (B) a raiz quadrada da variância amostral.*
+        *Resposta: (B) a raiz quadrada da #idx(("variância")) amostral.*
       ]
     ]
   ],

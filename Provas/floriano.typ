@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 #import "@preview/cetz:0.4.2": canvas, draw
 
 = FLORIANO
@@ -99,7 +99,7 @@
 )
 
 #questao(
-  [Dois dados, semelhantes aos mostrados abaixo, são lançados e observa-se as faces voltadas para cima. Qual a probabilidade de se obter a soma dos pontos igual a 7, sabendo que saiu soma das faces menor do que oito?],
+  [Dois dados, semelhantes aos mostrados abaixo, são lançados e observa-se as faces voltadas para cima. Qual a #idx(("probabilidade")) de se obter a soma dos pontos igual a 7, sabendo que saiu soma das faces menor do que oito?],
   [#enum(
     [$2/7$],
     [$3/7$],
@@ -115,10 +115,10 @@
 #questao(
   [Assinale a alternativa falsa:],
   [#enum(
-    [Num triângulo retângulo a mediana relativa à hipotenusa é igual à metade da medida da hipotenusa.],
+    [Num triângulo retângulo a #idx(("mediana")) relativa à hipotenusa é igual à metade da medida da hipotenusa.],
     [Bissetriz é uma semirreta de mesma origem do ângulo e que divide o ângulo em dois ângulos congruentes.],
     [Os ângulos 20°, 30° e 40° são complementares.],
-    [Ângulo excêntrico exterior é o ângulo que tem vértice externo a circunferência e seus lados são secantes ou tangentes a ela.],
+    [#idx(("Ângulo", "excêntrico")) exterior é o ângulo que tem vértice externo a circunferência e seus lados são secantes ou tangentes a ela.],
     [Seja ABCD um trapézio de bases AB e CD. Se M e N são os pontos médios de AD e BC, então $M N = (A B+C D)/2$.],
   )],
   assunto: "placeholder",
@@ -149,7 +149,7 @@
 )
 
 #questao(
-  [Um cilindro circular reto tem raio da base e altura iguais a 4 cm. Qual a medida do raio de uma esfera cuja área é igual a área total desse cilindro?],
+  [Um  #idx(("cilindro")) circular reto tem raio da base e altura iguais a 4 cm. Qual a medida do raio de uma  #idx(("esfera")) cuja área é igual a área total desse  #idx(("cilindro"))?],
   [#enum(
     [3 cm],
     [3,5 cm],
@@ -177,7 +177,7 @@
 )
 
 #questao(
-  [Uma caixa d'água tem o formato de um tronco de pirâmide quadrangular regular, como indicado na figura abaixo. O lado da base menor dessa caixa mede 3 m, o da base maior mede 4 m e sua altura é igual a 5 m. Quantos litros de água, aproximadamente, cabem nessa caixa quando ela estiver com $2/3$ de sua capacidade cheia?
+  [Uma caixa d'água tem o formato de um tronco de #idx(("pirâmide")) quadrangular #idx(("regular")), como indicado na figura abaixo. O lado da base menor dessa caixa mede 3 m, o da base maior mede 4 m e sua altura é igual a 5 m. Quantos litros de água, aproximadamente, cabem nessa caixa quando ela estiver com $2/3$ de sua capacidade cheia?
     
     #align(center)[
       #canvas(length: 1cm, {
@@ -232,7 +232,7 @@
     [Todas são números reais distintos.],
     [Não tem raízes reais.],
     [Tem exatamente duas raízes reais distintas.],
-    [Tem uma raiz real dupla e as outras duas são números complexos.],
+    [Tem uma raiz real dupla e as outras duas são números  #idx(("complexos")).],
     [Tem exatamente três raízes reais distintas.],
   )],
   assunto: "placeholder",
@@ -255,7 +255,7 @@
 )
 
 #questao(
-  [Ana tomou R\$ 1000,00 emprestado a uma taxa de juros compostos de 10% ao mês. Um mês depois pagou R\$ 500,00 e, dois meses após esse pagamento, liquidou seu empréstimo. Quanto Ana pagou de juros por esse empréstimo?],
+  [Ana tomou R\$ 1000,00 emprestado a uma taxa de #idx(("juros", "compostos")) de 10% ao mês. Um mês depois pagou R\$ 500,00 e, dois meses após esse pagamento, liquidou seu empréstimo. Quanto Ana pagou de juros por esse empréstimo?],
   [#enum(
     [R\$ 331,00],
     [R\$ 306,00],

@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 
 = CODÓ
 \
@@ -59,7 +59,7 @@
 )
 
 #questao(
-  [A equação da circunferência que circunscreve o triângulo equilátero ABC, cujo lado mede $4sqrt(3)$ unidades, sabendo que o eixo $y$ contém a altura relativa ao lado AB, é:],
+  [A equação da circunferência que circunscreve o triângulo  #idx(("equilátero")) ABC, cujo lado mede $4sqrt(3)$ unidades, sabendo que o eixo $y$ contém a altura relativa ao lado AB, é:],
   [#enum(
     [$x^2 + (y-2)^2 = 4$],
     [$(x - sqrt(3))^2 + y^2 = 16$],
@@ -73,7 +73,7 @@
 )
 
 #questao(
-  [Em um triângulo escaleno ABC com lados $A B=x$, $A C=15 "cm"$, $B C=20 "cm"$ e o ângulo de $C=60degree$, qual o valor de X?],
+  [Em um triângulo  #idx(("escaleno")) ABC com lados $A B=x$, $A C=15 "cm"$, $B C=20 "cm"$ e o ângulo de $C=60degree$, qual o valor de X?],
   [#enum(
     [12 cm],
     [15 cm],
@@ -129,7 +129,7 @@
 )
 
 #questao(
-  [Carlos comprou uma geladeira em 30 vezes a juros compostos onde seu valor original era de 3500 reais, como juros anuais de 4,5%. Qual o valor total que ele pagou pela geladeira?],
+  [Carlos comprou uma geladeira em 30 vezes a #idx(("juros", "compostos")) onde seu valor original era de 3500 reais, como juros anuais de 4,5%. Qual o valor total que ele pagou pela geladeira?],
   [#enum(
     [3736,25],
     [3825,40],
@@ -157,7 +157,7 @@
 )
 
 #questao(
-  [Um investimento de R\$ 16.600,00 a uma taxa fixa mensal de juros compostos, rendeu, em 9 meses, R\$ 3.154,00.
+  [Um investimento de R\$ 16.600,00 a uma taxa fixa mensal de #idx(("juros", "compostos")), rendeu, em 9 meses, R\$ 3.154,00.
     
     *Valores aproximados de potências*
     #table(

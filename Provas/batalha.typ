@@ -1,4 +1,4 @@
-#import "lib.typ": arc, fonte-mat, questao
+#import "lib.typ": arc, fonte-mat, questao, idx
 #import "@preview/cetz:0.4.2": canvas, draw
 
 = BATALHA PI
@@ -146,7 +146,7 @@
 )
 
 #questao(
-  [A equação $|2x - 4| = 10$ tem como solução dois números reais. Qual a média aritmética desses números?],
+  [A equação $|2x - 4| = 10$ tem como solução dois números reais. Qual a #idx(("média", "aritmética")) desses números?],
   
   [#enum(
     [-3],
@@ -247,7 +247,7 @@
       x_2 = (3 - 13) / 2 = (-10)/2 = -5
     $
     
-    Como a concavidade da parábola é voltada para cima ($a > 0$), a função assume valores negativos (menores que zero) no intervalo *entre* as raízes.
+    Como a concavidade da #idx(("parábola")) é voltada para cima ($a > 0$), a função assume valores negativos (menores que zero) no intervalo *entre* as raízes.
     
     Logo, o intervalo solução é:
     $ -5 < x < 8 $
