@@ -1629,7 +1629,7 @@
     Dada a equação:
     $ (a-2)^4 + (b+3)^2 + (c-5)^6 = 0 $
     
-    Observa-se que os expoentes de todas as parcelas são números pares ($4, 2$ e $6$). No conjunto dos números reais, qualquer termo elevado a um expoente par é sempre *maior ou igual a zero* (não negativo). Para que a soma de números não negativos resulte em zero, é condição necessária e suficiente que *cada uma das parcelas seja igual a zero*.
+    Observa-se que os expoentes de todas as parcelas são números pares ($4, 2$ e $6$). No conjunto dos números reais, qualquer termo elevado a um expoente par é sempre maior ou igual a zero (não negativo). Para que a soma de números não negativos resulte em zero, é condição necessária e suficiente que cada uma das parcelas seja igual a zero.
     
     Portanto, igualamos cada base a zero:
     

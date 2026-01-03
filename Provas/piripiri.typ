@@ -97,9 +97,11 @@
   
   gabarito_letra: "E",
   gabarito_explicacao: [
-    #align(center)[#block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
-      $P(A|B) = (P(B|A) P(A)) / P(B)$
-    ]]
+    #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
+      *#idx(("Teorema", "de Bayes"))*
+
+      $ P(A|B) = (P(B|A) P(A)) / P(B) $
+    ]
     
     Probabilidades das máquinas ($M$) e defeitos ($D$):
     

@@ -312,6 +312,7 @@
     
     #block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow), width: 100%)[
       #idx(("Teorema", "de Pitot")): \
+      
       Um quadrilátero convexo pode circunscrever uma circunferência se, e somente se, a soma das medidas de seus lados opostos for igual.
     ]
     
@@ -391,7 +392,6 @@
     [1500],
   )],
   gabarito_explicacao: [
-    #columns(2)[
       
       Desejamos calcular o valor de $E$ para $a = 2023$:
       $ E = (6a^3 + 18a^2 - 24a - 72) / (9a^2 + 9a - 54) $
@@ -424,9 +424,7 @@
       Para $a = 2023$:
       $
         E & = 2/3 dot (2023 + 2) \
-        E & = 2/3 dot 2025 \
-        E & = 2 dot (2025 / 3) \
-        E & = 2 dot 675 \
+        & = 2/3 dot 2025 = 2 dot (2025 / 3) = 2 dot 675 \
         E & = 1350
       $
       
@@ -436,7 +434,6 @@
         ]
       ]
     
-    ]
   ],
 )
 
