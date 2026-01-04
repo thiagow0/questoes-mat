@@ -876,7 +876,26 @@
     [13],
   )],
   assunto: "Geometria espacial",
-  gabarito_explicacao: none,
+  gabarito_letra: "D",
+  gabarito_explicacao: [
+    O primeiro passo é calcular o volume da piscina retangular multiplicando suas três dimensões: comprimento, largura e altura (profundidade).
+
+$ V = 4,00 dot 8,00 dot 1,50 $
+$ V = 32 dot 1,5 $
+$ V = 48 m^3 $
+
+Convertemos o volume da piscina para litros, resultando em $48 dot 1000 = 48.000$ litros. Para finalizar, dividimos o volume total pela capacidade de tratamento de um único pacote para encontrar a quantidade necessária.
+
+$ n = 48000 / 4000 $
+$ n = 48 / 4 $
+$ n = 12 "pacotes" $
+
+#pad(y: 5pt)[
+  #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+    *Resposta: (D) 12*
+  ]
+]
+  ],
 )
 
 #questao(
@@ -889,7 +908,37 @@
     [R\$ 5.381,60],
   )],
   assunto: "Matemática financeira",
-  gabarito_explicacao: none,
+  gabarito_letra: "E",
+  gabarito_explicacao: [
+    Substituímos os valores fornecidos na fórmula: Capital $C = 500$, taxa $i = 12\% = 0,12$ e tempo $t = 21$ anos.
+
+$ M = 500 dot (1 + 0,12)^(21) $
+$ M = 500 dot (1,12)^(21) $
+
+Como o enunciado fornece a aproximação $1,12^10 = 3,10$, devemos manipular o expoente $21$ para utilizar esse valor. Escrevemos $(1,12)^21$ como o produto de $(1,12)^1$ por $(1,12)^20$:
+
+$ M &= 500 dot (1,12)^1 dot (1,12)^(2 dot 10) \
+  M &= 500 dot 1,12 dot [(1,12)^10]^2 $
+
+Substituindo a aproximação dada:
+
+$ M &= 500 dot 1,12 dot (3,10)^2 $
+
+Primeiro, calculamos o quadrado de $3,10$ e o produto inicial de $500$ por $1,12$:
+
+$ 3,1^2 = 9,61 $
+$ 500 dot 1,12 = 560 $
+
+Agora, realizamos a multiplicação final:
+
+$ M &= 560 dot 9,61 = 5381,60 $
+
+#pad(y: 5pt)[
+  #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+    *Resposta: (E) R\$ 5.381,60*
+  ]
+]
+  ],
 )
 
 #questao(
@@ -915,7 +964,30 @@
     [15],
   )],
   assunto: "Trigonometria",
-  gabarito_explicacao: none,
+  gabarito_letra: "E",
+  gabarito_explicacao: [
+    situação que pode ser representada por um triângulo retângulo, onde a escada corresponde à hipotenusa ($x$) e a distância do pé da escada ao muro corresponde ao cateto oposto ao ângulo de $30degree$ ($3$ m).
+
+$ "sen"(theta) = "cateto oposto" / "hipotenusa" $
+
+Aplicando os valores fornecidos na fórmula:
+$ "sen"(30degree) = 3 / x $
+
+Sabendo que $"sen"(30degree) = 1/2$, resolve-se a equação para encontrar o comprimento da escada:
+$ 1 / 2 = 3 / x arrow.double x = 6 "metros" $
+
+Para calcular o número de degraus, deve-se primeiro converter a medida da escada para a mesma unidade da distância entre os degraus (centímetros):
+$ x = 6 "m" = 600 "cm" $
+
+Por fim, divide-se o comprimento total pela distância entre os degraus:
+$ "Quantidade" = 600 / 40 = 60 / 4 = 15 "degraus" $
+
+#pad(y: 5pt)[
+  #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+    *Resposta: (E) 15*
+  ]
+]
+  ],
 )
 
 \
