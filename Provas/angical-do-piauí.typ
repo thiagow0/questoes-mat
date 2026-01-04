@@ -1,5 +1,6 @@
 #import "lib.typ": questao, idx
 #import "@preview/cetz:0.4.2": canvas, draw
+#import "@preview/cetz-plot:0.1.3": plot
 
 = ANGICAL DO PIAUÍ
 
@@ -23,7 +24,73 @@
     [Se $x_1$ e $x_2$ são raízes da equação $ x^2 - 4x + 5 = 0, $ então $1/x_1 + 1/x_2 = 4/5$.],
   )],
   assunto: "Aritmética e álgebra",
-  gabarito_explicacao: none,
+  gabarito_letra: "B",
+  gabarito_explicacao: [
+    Análise da alternativa (A)
+    
+    A afirmação diz que a equação $2^x = x^2$ possui 3 soluções reais. Observando as funções, podemos identificar facilmente as soluções inteiras positivas $x=2$ (pois $2^2 = 4$ e $2^2=4$) e $x=4$ (pois $2^4 = 16$ e $4^2 = 16$).
+    
+    Para investigar a terceira solução, analisamos o comportamento gráfico das funções para $x < 0$. A função exponencial $f(x) = 2^x$ é estritamente positiva e tende a zero quando $x$ tende a menos infinito.
+    
+    #align(center)[
+      #canvas({
+        import draw: *
+        
+        plot.plot(
+          size: (8, 5),
+          axis-style: "school-book",
+          x-tick-step: 1,
+          y-tick-step: 4,
+          x-label: $x$,
+          y-label: $y$,
+          name: "meu_plot",
+          {
+            plot.add(
+              domain: (-2, 5),
+              x => calc.pow(x, 2),
+              style: (stroke: red + 2pt),
+            )
+            
+            plot.add(
+              domain: (-2, 5),
+              x => calc.pow(2, x),
+              style: (stroke: blue + 2pt),
+            )
+            
+            plot.add(((2, 4), (4, 16)), mark: "o", mark-size: .15, style: (stroke: none, fill: black))
+          },
+        )
+      })
+    ]
+    
+    Já a função quadrática $g(x) = x^2$ descreve uma parábola que tende a mais infinito quando $x$ tende a menos infinito. Como ambas são funções contínuas e $f(0) > g(0)$ enquanto para um $x$ suficientemente negativo $g(x) > f(x)$, pelo Teorema do Valor Intermediário, deve haver um ponto de intersecção no intervalo negativo. Portanto, a afirmação é *verdadeira*.
+    
+    #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
+      *Teorema do Valor Intermediário:*
+      Se $f$ é uma função contínua em $[a, b]$ e $k$ é um número entre $f(a)$ e $f(b)$, então existe pelo menos um número $c$ em $(a, b)$ tal que $f(c) = k$. No contexto de equações, usamos isso para garantir que os gráficos se cruzam.
+    ]
+    
+    Análise da alternativa (B)
+    
+    A proposição afirma que se $x, y in ZZ_+$ e $x+y+x y = 34$, então $x+y=11$. Utilizaremos o método de prova por contradição. Supomos que a premissa e a conclusão sejam simultaneamente verdadeiras.
+    
+    Temos o sistema:
+    $ cases(x + y + x y = 34, x + y = 11) $
+    
+    Substituindo o valor de $x+y$ na primeira equação:
+    $ 11 + x y = 34 arrow.double x y = 23 $
+    
+    Sabemos que 23 é um número primo e que $x$ e $y$ são inteiros positivos. Portanto, os únicos fatores possíveis são 1 e 23. Sem perda de generalidade, assumimos $x = 1$ e $y = 23$. Ao testarmos a soma com esses valores, obtemos $x + y = 1 + 23 = 24$.
+    
+    Isso gera uma contradição com a hipótese inicial de que $x + y = 11$. Logo, a implicação é falsa. Esta é a alternativa *incorreta*.
+    
+    #pad(y: 10pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: Alternativa (B)*
+      ]
+    ]
+  
+  ],
 )
 
 #questao(
@@ -36,7 +103,32 @@
     [20 litros de água.],
   )],
   assunto: "Aritmética e álgebra",
-  gabarito_explicacao: none,
+  gabarito_letra: "D",
+  gabarito_explicacao: [
+    O objetivo é alcançar uma concentração de $1/5$ de limão e $4/5$ de água. Como estamos apenas acrescentando volume à mistura original, a quantidade absoluta de concentrado não se altera.
+    
+    Seja $V_f$ o volume final da mistura. A razão do concentrado para o total deve ser $1/5$.
+    
+    $ "Concentrado" / "Total Final" = 1/5 $
+    
+    Substituindo o valor fixo do concentrado:
+    $ 5 / V_f = 1/5 $
+    
+    Resolvendo para $V_f$:
+    $ V_f = 5 dot 5 = 25 "litros" $
+    
+    O volume a ser acrescentado é a diferença entre o volume final e o inicial.
+    
+    $ V_"adicionado" & = V_f - V_"inicial" & = 25 - 10 = 15 "litros" $
+    
+    Como a quantidade de limão se manteve fixa, os 15 litros adicionados foram de água.
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (D) 15 litros de água.*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -49,7 +141,40 @@
     [60 dias],
   )],
   assunto: "Aritmética e álgebra",
-  gabarito_explicacao: none,
+  gabarito_letra: "A",
+  gabarito_explicacao: [
+    #align(center)[
+      #table(
+        columns: 4,
+        align: center + horizon,
+        stroke: none,
+        table.header(
+          [*Dias* \ (Incógnita)], [*Operários* \ (Inversa)], [*Horas/dia* \ (Inversa)], [*Geladeiras* \ (Direta)]
+        ),
+        table.hline(),
+        [$30$ #sym.arrow.t], [$2500$ #sym.arrow.b], [$8$ #sym.arrow.b], [$500$ #sym.arrow.t],
+        [$x$], [$1200$], [$10$], [$450$],
+      )
+    ]
+    
+    $ 30/x = 1200/2500 dot 10/8 dot 500/450 $
+    
+    Simplificando e substituindo na equação:
+    $ 30/x & = 12/25 dot 5/4 dot 10/9 = (12 dot 5 dot 10) / (25 dot 4 dot 9) = 600 / 900 $
+    
+    $
+      30/x & = 2/3 \
+        2x & = 30 dot 3 \
+        2x & = 90 \
+         x & = 45
+    $
+    
+    #pad(y: 10pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (A) 45 dias*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -62,7 +187,21 @@
     [R\$ 135,87],
   )],
   assunto: "Matemática financeira",
-  gabarito_explicacao: none,
+  gabarito_letra: "C",
+  gabarito_explicacao: [
+    $ P_"livro" & = 83 + (83 dot 10/100) = 83 + 8,30 = 91,30 $
+    
+    $ P_"ebook" & = 42 dot 93/100 = 3906 / 100 = 39,06 $
+    
+    Somando os valores encontrados:
+    $ "Total" & = 91,30 + 39,06 = 130,36 $
+    
+    #pad(y: 10pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (c) R\$ 130,36*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -83,7 +222,68 @@
     [I, II, III],
   )],
   assunto: "Aritmética e álgebra",
-  gabarito_explicacao: none,
+  gabarito_letra: "E",
+  gabarito_explicacao: [
+    Afirmativa I
+    
+    A expressão é $sqrt(123456^2 + 123456 + 123457)$.
+    Para facilitar o cálculo, fazemos a substituição de variável:
+    Seja $a = 123456$. Consequentemente, $123457 = a + 1$.
+    
+    Substituindo na expressão original:
+    $ sqrt(a^2 + a + (a + 1)) = sqrt(a^2 + 2a + 1) $
+    
+    Reconhecemos o trinômio quadrado perfeito dentro da raiz:
+    $ sqrt((a + 1)^2) = a + 1 $
+    
+    Voltando ao valor original:
+    $ a + 1 = 123456 + 1 = 123457 $
+    
+    A igualdade $123457 = 123457$ é verdadeira.
+    
+    Afirmativa II
+    
+    Temos que $x + y = 3$ e $x y = 3$. Queremos verificar se $x^3 + y^3 = 0$.
+    
+    #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
+      *Identidade Cúbica:* \
+      Podemos isolar a soma de cubos a partir do cubo da soma:
+      $ x^3 + y^3 = (x + y)^3 - 3 x y (x + y) $
+    ]
+    
+    Substituindo os valores dados ($x+y=3$ e $x y=3$):
+    $
+      x^3 + y^3 & = (3)^3 - 3 dot (3) dot (3) \
+      x^3 + y^3 & = 27 - 27 \
+      x^3 + y^3 & = 0
+    $
+    
+    A afirmativa é verdadeira.
+    
+    Afirmativa III
+    
+    A expressão é $sqrt(4 + 4 root(3, 2) + root(3, 4)) + sqrt(4 - 4 root(3, 2) + root(3, 4)) = 4$.
+    
+    Vamos analisar os termos dentro das raízes quadradas, definindo $a = 2$ e $b = root(3, 2)$.
+    Note que $a^2 = 4$, $b^2 = (root(3, 2))^2 = root(3, 4)$ e $2a b = 2 dot 2 dot root(3, 2) = 4 root(3, 2)$.
+    
+    Substituindo na expressão original:
+    $ sqrt((2 + root(3, 2))^2) + sqrt((2 - root(3, 2))^2) $
+    
+    Cancelando a raiz quadrada com o expoente (o módulo é desnecessário no segundo termo pois $2 > root(3, 2)$):
+    $ (2 + root(3, 2)) + (2 - root(3, 2)) $
+    
+    Simplificando:
+    $ 2 + 2 + root(3, 2) - root(3, 2) = 4 $
+    
+    A afirmativa é verdadeira.
+    
+    #pad(y: 10pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (E) I, II, III*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -96,7 +296,81 @@
     [$72 pi sqrt(3) "cm"^3$],
   )],
   assunto: "Geometria espacial",
-  gabarito_explicacao: none,
+  gabarito_letra: "A",
+  gabarito_explicacao: [
+    
+    #align(center)[
+      #canvas(length: 0.7cm, {
+        import draw: *
+        
+        let diametro = 6.0
+        let r = diametro / 2.0
+        
+        let h = (diametro * calc.sqrt(3)) / 2.0
+        
+        let y_scale = 0.3
+        let ry = r * y_scale
+        
+        let offset_x = 8.0
+        
+        let apex = (0, h)
+        let base_esq = (-r, 0)
+        let base_dir = (r, 0)
+        
+        arc((r, 0), start: 0deg, stop: 180deg, radius: (r, ry), stroke: (dash: "dashed"))
+        
+        arc((-r, 0), start: 180deg, stop: 360deg, radius: (r, ry))
+        
+        line(base_esq, apex, base_dir, stroke: 1pt)
+        
+        let y_cota = -1.5
+        line((-r, y_cota), (r, y_cota), mark: (start: "|", end: "|"))
+        content((0, y_cota), text(size: 0.9em)[$6$], anchor: "south", padding: 0.2)
+        content((0, -2.5), [Cone Equilátero], anchor: "north")
+        
+        let D = (offset_x, 0)
+        let A = (offset_x - r, 0)
+        let B = (offset_x + r, 0)
+        let C = (offset_x, h)
+        
+        line(A, C, B, close: true, stroke: 1pt)
+        
+        line(C, D, stroke: (dash: "dashed"))
+        
+        let s = 0.4
+        line((offset_x, s), (offset_x - s, s), (offset_x - s, 0), stroke: 0.5pt)
+        circle((offset_x - s / 2, s / 2), radius: 0.04, fill: black)
+        
+        content((offset_x, h / 2), text(size: 1.1em)[$h$], anchor: "east", padding: 0.2)
+        content((offset_x, 0), text(size: 0.9em)[$6$], anchor: "north", padding: 0.2)
+        
+        content((offset_x, -2.5), [Seção Meridiana], anchor: "north")
+      })
+    ]
+    
+    O problema informa que o lado do triângulo (seção meridiana) é $6$ cm. Logo, temos:
+    $ g = 6 "cm" $
+    $ 2r = 6 arrow.double r = 3 "cm" $
+    
+    Para encontrar a altura ($h$), aplicamos o Teorema de Pitágoras no triângulo formado pela altura, raio e geratriz:
+    $ h^2 + r^2 = g^2 $
+    $ h^2 + 3^2 = 6^2 $
+    $ h^2 = 36 - 9 $
+    $ h = sqrt(27) = 3 sqrt(3) "cm" $
+    
+    Calculamos o volume:
+    $ V = (pi dot 3^2 dot 3 sqrt(3)) / 3 $
+    
+    Simplificando:
+    $ V = pi dot 9 dot sqrt(3) $
+    $ V = 9 pi sqrt(3) "cm"^3 $
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (A)*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -163,7 +437,24 @@
     [3],
   )],
   assunto: "Geometria espacial",
-  gabarito_explicacao: none,
+  gabarito_letra: "B",
+  gabarito_explicacao: [
+    
+    Primeiro, determinamos o volume do cilindro com raio $r$ e altura $h$:
+    $ V_("cil") = pi r^2 h $
+    
+    Em seguida, calculamos o volume do cone. Observando a figura, o cone possui raio $r$ e altura $h/2$:
+    $ V_("cone") = 1/3 pi r^2 (h/2) = (pi r^2 h) / 6 $
+    
+    O problema pede a razão entre o volume do cilindro e o volume do cone:
+    $ "Razão" = V_("cil") / V_("cone") = (pi r^2 h) / ((pi r^2 h) / 6) = pi r^2 h dot 6 / (pi r^2 h) = 6 $
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (B) 6*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -210,7 +501,111 @@
     [$6 "cm"^2$ e $(8 + 4 sqrt(3)) "cm"$],
   )],
   assunto: "Geometria plana",
-  gabarito_explicacao: none,
+  gabarito_letra: "C",
+  gabarito_explicacao: [
+    
+    #align(center)[
+      #canvas(length: 1cm, {
+        import draw: *
+        
+        let right-angle(origin, p1, p2, size: 0.3) = {
+          let v1 = (p1.at(0) - origin.at(0), p1.at(1) - origin.at(1))
+          let v2 = (p2.at(0) - origin.at(0), p2.at(1) - origin.at(1))
+          
+          let len1 = calc.sqrt(calc.pow(v1.at(0), 2) + calc.pow(v1.at(1), 2))
+          let len2 = calc.sqrt(calc.pow(v2.at(0), 2) + calc.pow(v2.at(1), 2))
+          let u1 = (v1.at(0) / len1 * size, v1.at(1) / len1 * size)
+          let u2 = (v2.at(0) / len2 * size, v2.at(1) / len2 * size)
+          
+          let pa = (origin.at(0) + u1.at(0), origin.at(1) + u1.at(1))
+          let pb = (origin.at(0) + u2.at(0), origin.at(1) + u2.at(1))
+          let pc = (pa.at(0) + u2.at(0), pa.at(1) + u2.at(1))
+          
+          line(origin, pa, pc, pb, close: true, fill: gray.lighten(70%), stroke: (
+            thickness: 1pt,
+            paint: gray.darken(30%),
+          ))
+        }
+        
+        let mark-angle(origin, start-pt, end-pt, radius: 0.8, label: none) = {
+          let a1 = calc.atan2(start-pt.at(0) - origin.at(0), start-pt.at(1) - origin.at(1))
+          let a2 = calc.atan2(end-pt.at(0) - origin.at(0), end-pt.at(1) - origin.at(1))
+          
+          arc(origin, start: a1, stop: a2, radius: radius, mode: "PIE", fill: gray.lighten(70%), stroke: (
+            thickness: 1pt,
+            paint: gray.darken(30%),
+          ))
+          
+          if label != none {
+            let mid-angle = (a1 + a2) / 2
+            
+            let dist = radius + 0.3
+            let lx = origin.at(0) + dist * calc.cos(mid-angle)
+            let ly = origin.at(1) + dist * calc.sin(mid-angle)
+            content((lx, ly), label)
+          }
+        }
+        
+        let A = (0, 0)
+        let B = (8, 0)
+        let O = (4, 0)
+        let sqrt3 = calc.sqrt(3)
+        let C = (2, 2 * sqrt3)
+        let P = (5, sqrt3)
+        
+        let main-stroke = (paint: gray.darken(30%), thickness: 1.5pt)
+        
+        mark-angle((1, 0), B, (2, 1.7), radius: 1, label: text(size: 0.8em)[$60 degree$])
+        
+        right-angle(C, A, B, size: 0.4)
+        right-angle(P, C, O, size: 0.3)
+        
+        line(A, B, C, close: true, stroke: main-stroke)
+        line(C, O, stroke: main-stroke)
+        line(O, P, stroke: (paint: gray.darken(30%), dash: "dashed", thickness: 1.5pt))
+        
+        let dot(p, label-text, anchor-pos, color: gray.darken(30%), fill-color: gray.darken(30%)) = {
+          circle(p, radius: 0.08, fill: fill-color, stroke: none)
+          content(p, text(fill: color, size: 1.1em)[#label-text], anchor: anchor-pos, padding: 0.2)
+        }
+        
+        dot(A, "A", "north-east")
+        dot(B, "B", "north-west")
+        dot(C, "C", "south")
+        dot(O, "O", "north")
+      })
+    ]
+    
+    Cálculo do lado $C B$ no triângulo $A B C$:
+    
+    $ "sen"(60 degree) = (C B) / (A B) $
+    $ sqrt(3) / 2 = (C B) / 8 arrow.double C B = 4 sqrt(3) "cm" $
+    
+    Para o triângulo $C O B$, temos os lados $O C = O B = r = 4$ cm e a base $C B = 4 sqrt(3)$ cm.
+    
+    O perímetro é a soma dos lados do triângulo $C O B$:
+    $
+      P & = O C + O B + C B \
+        & = 4 + 4 + 4 sqrt(3) \
+        & = 8 + 4 sqrt(3) \
+        & = 4 (2 + sqrt(3)) "cm"
+    $
+    
+    Para calcular a área, precisamos da altura ($h$) relativa à base $C B$.
+    Sabendo que a soma dos ângulos internos é $180degree$, no triângulo $A B C$ temos $hat(B) = 30degree$.
+    Projetando a altura de $O$ sobre a base $C B$, temos:
+    $ h = O B dot "sen"(30degree) = 4 dot 1/2 = 2 "cm" $
+    
+    Calculando a área:
+    $ A & = ("Base" dot "Altura") / 2 = (4 sqrt(3) dot 2) / 2 = 4 sqrt(3) "cm"^2 $
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (C)*
+      ]
+    ]
+  
+  ],
 )
 
 #questao(
@@ -224,7 +619,50 @@
     [$(1 - sqrt(5))/2$],
   )],
   assunto: "Trigonometria",
-  gabarito_explicacao: none,
+  gabarito_letra: "D",
+  gabarito_explicacao: [
+    Sabemos que a cotangente é a razão entre o cosseno e o seno. Substituindo na equação inicial:
+    $ sin x = (cos x) / (sin x) => sin^2 x = cos x $
+    
+    Para prosseguir, precisamos deixar a equação em função de apenas uma variável. Utilizamos a identidade trigonométrica fundamental.
+    
+    #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
+      *Relação Fundamental:*
+      $ sin^2 x + cos^2 x = 1 arrow.double sin^2 x = 1 - cos^2 x $
+    ]
+    
+    Substituindo $sin^2 x$ na equação anterior:
+    $ 1 - cos^2 x = cos x $
+    
+    Reorganizando os termos para formar uma equação do segundo grau:
+    $ cos^2 x + cos x - 1 = 0 $
+    
+    Chamando $cos x$ de $y$, temos $y^2 + y - 1 = 0$. Calculamos o discriminante ($Delta$):
+    $
+      Delta = b^2 - 4 a c \
+      Delta = 1^2 - 4(1)(-1) \
+      Delta = 1 + 4 = 5
+    $
+    
+    As raízes são dadas por:
+    $ y = (-1 plus.minus sqrt(5)) / 2 $
+    
+    Agora, analisamos a validade das raízes.
+    Sabemos que a imagem da função cosseno é limitada ao intervalo $[-1, 1]$.
+    
+    A primeira raiz, $y_1 = (-1 - sqrt(5)) / 2$, é aproximadamente $-1,618$. Como é menor que $-1$, esta solução é descartada.
+    
+    A segunda raiz, $y_2 = (-1 + sqrt(5)) / 2$, é aproximadamente $0,618$. Como está dentro do intervalo permitido, esta é a solução válida.
+    
+    Logo:
+    $ cos x = (sqrt(5) - 1) / 2 $
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (D)*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -238,7 +676,40 @@
     [2],
   )],
   assunto: "Aritmética e álgebra",
-  gabarito_explicacao: none,
+  gabarito_letra: "A",
+  gabarito_explicacao: [
+    Inicialmente, manipulamos a segunda equação do sistema, realizando o mínimo múltiplo comum (MMC) das frações.
+    
+    $ 1/x + 1/y + 1/z = (x y + x z + y z) / (x y z) $
+    
+    Substituindo pelos valores fornecidos no sistema ($1/x + 1/y + 1/z = 1$ e $x y + x z + y z = 27$):
+    
+    $ 1 = 27 / (x y z) arrow.double x y z = 27 $
+    
+    Agora possuímos a soma das raízes ($x+y+z=9$), a soma do produto das raízes duas a duas ($x y+x z+y z=27$) e o produto das raízes ($x y z=27$). Para encontrar os valores de $x, y$ e $z$, utilizamos as Relações de Girard para montar uma equação do 3º grau.
+    
+    Adotando $a=1$, temos os coeficientes:
+    $ -b = 9 arrow.double b = -9 $
+    $ c = 27 $
+    $ -d = 27 arrow.double d = -27 $
+    
+    A equação característica é:
+    $ k^3 - 9k^2 + 27k - 27 = 0 $
+    
+    Observa-se que essa expressão corresponde ao desenvolvimento do cubo da diferença $(a-b)^3 = a^3 - 3a^2b + 3a b^2 - b^3$.
+    
+    $ (k - 3)^3 = 0 $
+    
+    Portanto, a única solução é $k = 3$, o que implica que $x = y = z = 3$. Logo:
+    
+    $ x dot y - z = 3 dot 3 - 3 = 9 - 3 = 6 $
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (A) 6*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -261,7 +732,49 @@
     [11],
   )],
   assunto: "Sequências e progressões",
-  gabarito_explicacao: none,
+  gabarito_letra: "A",
+  gabarito_explicacao: [
+    *Item 1 - Falso*
+    A palavra BRASILEIRA possui 10 letras, com repetições das letras A (2), I (2) e R (2). As consoantes são B, C, L, S, R, R. Para contar os anagramas que não começam por vogal, dividimos em dois casos: começar por consoante sem repetição (B, L, S) ou começar pela consoante repetida (R).
+    
+    Caso 1 (B, L, S): Temos 3 opções iniciais. Restam 9 letras com permutações de repetição para A, I, R.
+    $ 3 dot 9! / (2! 2! 2!) = 3 dot 362.880 / 8 = 136.080 $
+    
+    Caso 2 (R): Fixando um R no início, restam 9 letras com permutações de repetição para A, I (o outro R já não é par repetido na contagem).
+    $ 9! / (2! 2!) = 362.880 / 4 = 90.720 $
+    
+    Total de anagramas: $136.080 + 90.720 = 226.800$. O valor difere de 211.680.
+    
+    *Item 2 - Verdadeiro*
+    Trata-se de um arranjo simples, pois a ordem da escolha define o destino (lugares diferentes). Escolhem-se 3 pessoas dentre 10.
+    $ 10 dot 9 dot 8 = 720 $
+    
+    *Item 4 - Falso*
+    #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
+      *Teorema da Matriz Inversa:*
+      Uma matriz quadrada $A$ é invertível se, e somente se, seu determinante for *diferente* de zero ($det(A) != 0$).
+    ]
+    A afirmação diz que o determinante é nulo, o que contradiz a definição.
+    
+    *Item 8 - Falso*
+    Dada uma matriz $X$ quadrada de ordem $n=3$ e $det(X) = 4$, calcula-se $det(2X)$.
+    
+    Se $A$ é uma matriz quadrada de ordem $n$ e $k$ é um escalar real, então:
+    $ det(k dot A) = k^n dot det(A) $
+    
+    Aplicando a propriedade:
+    $ det(2X) = 2^3 dot det(X) = 8 dot 4 = 32 $
+    O valor difere de 8.
+    
+    *Conclusão*
+    Apenas o item 2 é verdadeiro.
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (A) 2*
+      ]
+    ]
+  ],
 )
 
 #questao(
@@ -289,7 +802,45 @@
     [${m in RR; m < 0 "ou" m > 3/4}$],
   )],
   assunto: "Geometria analítica",
-  gabarito_explicacao: none,
+  gabarito_letra: "C",
+  gabarito_explicacao: [
+    Sendo $a, b, c$ termos em PA, podemos escrevê-los em função do termo central $b$ e da razão $r$:
+    $ a = b - r, quad b = b, quad c = b + r $
+    
+    Sabendo que a soma é 15:
+    $ (b - r) + b + (b + r) = 15 arrow.double 3b = 15 arrow.double b = 5 $
+    
+    Os termos da PA são $(5-r, 5, 5+r)$. Adicionando os valores 1, 4 e 19 respectivamente, obtém-se uma PG:
+    $
+      a_1 & = (5-r) + 1 = 6-r \
+      a_2 & = 5 + 4 = 9 \
+      a_3 & = (5+r) + 19 = 24+r
+    $
+    
+    Aplicando a propriedade da média geométrica:
+    $
+      9^2 = (6-r)(24+r) \
+      81 = 144 + 6r - 24r - r^2 \
+      81 = 144 - 18r - r^2 \
+      r^2 + 18r - 63 = 0
+    $
+    
+    Resolvendo a equação quadrática, as raízes são $r = 3$ e $r = -21$. Verifica-se a validade das raízes considerando que $a, b, c$ devem ser positivos:
+    
+    Para $r = -21$: $c = 5 + (-21) = -16$ (Inválido).
+    
+    Para $r = 3$: $a = 2, b = 5, c = 8$ (Válido).
+    
+    Com $r=3$, a PG formada é $(3, 9, 27)$. Temos o primeiro termo $a_1 = 3$ e a razão $q = 3$.
+    Calcula-se a soma dos 100 primeiros termos:
+    $ S_100 = (3 dot (3^100 - 1)) / (3 - 1) = (3 (3^100 - 1)) / 2 $
+    
+    #pad(y: 5pt)[
+      #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+        *Resposta: (C)* $S_100 = frac(3(3^100-1), 2)$
+      ]
+    ]
+  ],
 )
 
 #questao(
