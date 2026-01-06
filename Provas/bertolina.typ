@@ -272,7 +272,7 @@
 )
 
 #questao(
-  [Seja #text(size: fonte-mat)[$A = mat(x, 4; 0, x)$] uma matriz real e $A^t$ sua transposta. Se $A + A^t$ é uma matriz não invertível, então:],
+  [Seja #text(size: fonte-mat)[$A = mat(x, 4; 0, x)$] uma matriz real e $A^t$ sua #idx(("transposta")). Se $A + A^t$ é uma matriz não invertível, então:],
   [#enum(
     spacing: 12pt,
     [$x = plus.minus 2$],
@@ -283,14 +283,14 @@
   )],
   gabarito_letra: [A],
   gabarito_explicacao: [
-    Dada a matriz $A = mat(x, 4; 0, x)$, determinamos sua transposta:
+    Dada a matriz $A = mat(x, 4; 0, x)$, determinamos sua #idx(("transposta")):
     $A^t = mat(x, 0; 4, x)$
     
     Calculamos a matriz soma $S = A + A^t$:
     $ S = mat(x, 4; 0, x) + mat(x, 0; 4, x) = mat(2x, 4; 4, 2x) $
     
     #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
-      Uma matriz quadrada é *não invertível* (ou singular) se, e somente se, o seu determinante for igual a zero.
+      Uma #idx(("matriz", "quadrada")) é *não invertível* (ou singular) se, e somente se, o seu determinante for igual a zero.
     ]
     
     Aplicando a definição ao determinante da matriz soma:

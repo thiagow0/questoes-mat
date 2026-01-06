@@ -665,7 +665,7 @@
     Para encontrar o ângulo do setor circular equivalente à superfície lateral do  #idx(("cone")), precisamos primeiro da medida da geratriz ($g$).
     
     
-    Dado altura $h=12$ cm e raio $r=5$ cm, aplicamos o Teorema de Pitágoras:
+    Dado altura $h=12$ cm e raio $r=5$ cm, aplicamos o #idx(("Teorema", "de Pitágoras")):
     $
       g^2 & = 12^2 + 5^2 \
       g^2 & = 144 + 25 \

@@ -461,7 +461,7 @@
     1. A projeção de $A D$, que mede $4$ cm.
     2. O restante, que forma a base do triângulo retângulo à direita: $9 - 4 = 5$ cm.
     
-    Aplicamos o Teorema de Pitágoras nesse triângulo (hipotenusa $sqrt(34)$ e base $5$):
+    Aplicamos o #idx(("Teorema", "de Pitágoras")) nesse triângulo (hipotenusa $sqrt(34)$ e base $5$):
     
     #align(right)[#image("Imagens/r-questão27.png", width: 28%)]
     #v(-3.5cm)

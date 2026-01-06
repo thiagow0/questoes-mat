@@ -112,7 +112,7 @@
   gabarito_explicacao: [
     Em um quadrado inscrito em uma circunferência, a diagonal do quadrado ($d$) coincide com o diâmetro da circunferência. Sabendo que o diâmetro mede 5 cm, temos $d = 5$.
     
-    A relação entre a área ($A$) do quadrado e sua diagonal é derivada do Teorema de Pitágoras ($l^2 + l^2 = d^2$):
+    A relação entre a área ($A$) do quadrado e sua diagonal é derivada do #idx(("Teorema", "de Pitágoras")) ($l^2 + l^2 = d^2$):
     
     #align(center)[#block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
       $ A = d^2 / 2 $
@@ -330,7 +330,7 @@
 )
 
 #questao(
-  [Uma matriz quadrada de ordem n é tal que cada elemento a n p é igual a:
+  [Uma #idx(("matriz", "quadrada")) de ordem n é tal que cada elemento a n p é igual a:
     $-> n, "se" n < 2$;
     $-> n - 1, "se" n = 2$;
     $-> a_(n-2 p) + a_(n-1 p), "se" n > 2$.
@@ -356,7 +356,7 @@
       
       #block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow), width: 100%)[
         Propriedade dos Determinantes: \
-        Se uma matriz quadrada possui duas linhas (ou colunas) iguais, seu determinante é nulo.
+        Se uma #idx(("matriz", "quadrada")) possui duas linhas (ou colunas) iguais, seu determinante é nulo.
       ]
     
     Como a linha 1 é igual à linha 2 ($L_1 = L_2$), o determinante é zero.

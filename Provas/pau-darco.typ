@@ -50,9 +50,9 @@
 )
 
 #questao(
-  [Seja $X$ uma matriz quadrada de ordem 4 tal que $3.X = X^2$. Se $X$ é inversível, então o determinante de $X^t$ é igual a:
+  [Seja $X$ uma #idx(("matriz", "quadrada")) de ordem 4 tal que $3.X = X^2$. Se $X$ é inversível, então o determinante de $X^t$ é igual a:
     
-    Obs.: $X^t$ denota a transposta da matriz $X$.],
+    Obs.: $X^t$ denota a #idx(("transposta")) da matriz $X$.],
   [#enum(
     [64],
     [81],

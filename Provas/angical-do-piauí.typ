@@ -63,10 +63,10 @@
       })
     ]
     
-    Já a função quadrática $g(x) = x^2$ descreve uma parábola que tende a mais infinito quando $x$ tende a menos infinito. Como ambas são funções contínuas e $f(0) > g(0)$ enquanto para um $x$ suficientemente negativo $g(x) > f(x)$, pelo Teorema do Valor Intermediário, deve haver um ponto de intersecção no intervalo negativo. Portanto, a afirmação é *verdadeira*.
+    Já a função quadrática $g(x) = x^2$ descreve uma parábola que tende a mais infinito quando $x$ tende a menos infinito. Como ambas são funções contínuas e $f(0) > g(0)$ enquanto para um $x$ suficientemente negativo $g(x) > f(x)$, pelo #idx(("Teorema", "valor intermediário")), deve haver um ponto de intersecção no intervalo negativo. Portanto, a afirmação é *verdadeira*.
     
     #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
-      *Teorema do Valor Intermediário:*
+      *#idx(("Teorema", "valor intermediário")):*
       Se $f$ é uma função contínua em $[a, b]$ e $k$ é um número entre $f(a)$ e $f(b)$, então existe pelo menos um número $c$ em $(a, b)$ tal que $f(c) = k$. No contexto de equações, usamos isso para garantir que os gráficos se cruzam.
     ]
     
@@ -352,7 +352,7 @@
     $ g = 6 "cm" $
     $ 2r = 6 arrow.double r = 3 "cm" $
     
-    Para encontrar a altura ($h$), aplicamos o Teorema de Pitágoras no triângulo formado pela altura, raio e geratriz:
+    Para encontrar a altura ($h$), aplicamos o #idx(("Teorema", "de Pitágoras")) no triângulo formado pela altura, raio e geratriz:
     $ h^2 + r^2 = g^2 $
     $ h^2 + 3^2 = 6^2 $
     $ h^2 = 36 - 9 $
@@ -686,7 +686,7 @@
     
     $ 1 = 27 / (x y z) arrow.double x y z = 27 $
     
-    Agora possuímos a soma das raízes ($x+y+z=9$), a soma do produto das raízes duas a duas ($x y+x z+y z=27$) e o produto das raízes ($x y z=27$). Para encontrar os valores de $x, y$ e $z$, utilizamos as Relações de Girard para montar uma equação do 3º grau.
+    Agora possuímos a soma das raízes ($x+y+z=9$), a soma do produto das raízes duas a duas ($x y+x z+y z=27$) e o produto das raízes ($x y z=27$). Para encontrar os valores de $x, y$ e $z$, utilizamos as #idx(("Relações", "de Girard")) para montar uma equação do 3º grau.
     
     Adotando $a=1$, temos os coeficientes:
     $ -b = 9 arrow.double b = -9 $
@@ -721,7 +721,7 @@
     
     4 - Se uma matriz é invertível, então seu determinante é nulo.
     
-    8 - Se X é uma matriz quadrada de ordem 3 e det(X) = 4, então det(2X) = 8.
+    8 - Se X é uma #idx(("matriz", "quadrada")) de ordem 3 e det(X) = 4, então det(2X) = 8.
     
     Qual o somatório dos itens verdadeiros:],
   [#enum(
@@ -752,14 +752,14 @@
     *Item 4 - Falso*
     #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
       *Teorema da Matriz Inversa:*
-      Uma matriz quadrada $A$ é invertível se, e somente se, seu determinante for *diferente* de zero ($det(A) != 0$).
+      Uma #idx(("matriz", "quadrada")) $A$ é invertível se, e somente se, seu determinante for *diferente* de zero ($det(A) != 0$).
     ]
     A afirmação diz que o determinante é nulo, o que contradiz a definição.
     
     *Item 8 - Falso*
     Dada uma matriz $X$ quadrada de ordem $n=3$ e $det(X) = 4$, calcula-se $det(2X)$.
     
-    Se $A$ é uma matriz quadrada de ordem $n$ e $k$ é um escalar real, então:
+    Se $A$ é uma #idx(("matriz", "quadrada")) de ordem $n$ e $k$ é um escalar real, então:
     $ det(k dot A) = k^n dot det(A) $
     
     Aplicando a propriedade:

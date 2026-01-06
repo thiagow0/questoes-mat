@@ -1133,7 +1133,7 @@
        h & = 2 "cm"
     $
     
-    Cálculo de BD (Teorema de Pitágoras)
+    Cálculo de BD (#idx(("Teorema", "de Pitágoras")))
     
     Agora focamos no triângulo retângulo $A B D$. Temos a hipotenusa $A B = 6$ e o cateto $A D = 2$. Queremos encontrar o cateto $B D$.
     
@@ -1483,7 +1483,7 @@
   
   gabarito_explicacao: [
     
-    O sólido gerado pela rotação de um triângulo retângulo em torno de sua hipotenusa é composto por *dois cones* unidos pela mesma base circular. Sejam os catetos $b = 6$ cm e $c = 8$ cm. Primeiro, calculamos a hipotenusa ($a$) pelo Teorema de Pitágoras (triângulo pitagórico 3-4-5 ampliado):
+    O sólido gerado pela rotação de um triângulo retângulo em torno de sua hipotenusa é composto por *dois cones* unidos pela mesma base circular. Sejam os catetos $b = 6$ cm e $c = 8$ cm. Primeiro, calculamos a hipotenusa ($a$) pelo #idx(("Teorema", "de Pitágoras")) (triângulo pitagórico 3-4-5 ampliado):
     $ a^2 = 6^2 + 8^2 arrow.double a = sqrt(36 + 64) = 10 "cm" $
     
     O raio da base dos cones ($r$) corresponde à altura relativa à hipotenusa do triângulo original. Usamos a #text(fill: rgb(0, 0, 255), weight: "bold")[#link("https://www.obaricentrodamente.com/2015/04/relacoes-metricas-no-triangulo-retangulo.html")[#underline[#idx(("relação", "métrica"))]]] $a dot r = b dot c$:

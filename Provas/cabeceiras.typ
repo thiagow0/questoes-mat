@@ -230,7 +230,7 @@
     [As retas transversais devem ser paralelas entre si.],
   )],
   gabarito_explicacao: [
-    Teorema de Tales: Trata de um feixe de retas *paralelas* cortadas por transversais. O item D é o que melhor descreve essa condição geral.
+    #idx(("Teorema", "de Tales")): Trata de um feixe de retas *paralelas* cortadas por transversais. O item D é o que melhor descreve essa condição geral.
     #pad(y: 5pt)[
       #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
         *Resposta: (D)*
@@ -348,7 +348,7 @@
     [O sistema deve ter exatamente três equações.],
   )],
   gabarito_explicacao: [
-    Para ser aplicada, o sistema deve ter o mesmo número de equações e incógnitas (matriz quadrada com determinante não nulo).
+    Para ser aplicada, o sistema deve ter o mesmo número de equações e incógnitas (#idx(("matriz", "quadrada")) com determinante não nulo).
     #pad(y: 5pt)[
       #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
         *Resposta: (C)*
