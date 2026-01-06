@@ -246,7 +246,7 @@
     Temos que $x + y = 3$ e $x y = 3$. Queremos verificar se $x^3 + y^3 = 0$.
     
     #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
-      *Identidade Cúbica:* \
+      *Identidade cúbica:* \
       Podemos isolar a soma de cubos a partir do cubo da soma:
       $ x^3 + y^3 = (x + y)^3 - 3 x y (x + y) $
     ]
@@ -523,7 +523,7 @@
           
           line(origin, pa, pc, pb, close: true, fill: gray.lighten(70%), stroke: (
             thickness: 1pt,
-            paint: gray.darken(30%),
+            paint: gray.darken(10%),
           ))
         }
         
@@ -553,20 +553,17 @@
         let C = (2, 2 * sqrt3)
         let P = (5, sqrt3)
         
-        let main-stroke = (paint: gray.darken(30%), thickness: 1.5pt)
-        
         mark-angle((1, 0), B, (2, 1.7), radius: 1, label: text(size: 0.8em)[$60 degree$])
         
         right-angle(C, A, B, size: 0.4)
         right-angle(P, C, O, size: 0.3)
         
-        line(A, B, C, close: true, stroke: main-stroke)
-        line(C, O, stroke: main-stroke)
-        line(O, P, stroke: (paint: gray.darken(30%), dash: "dashed", thickness: 1.5pt))
+        line(A, B, C, close: true)
+        line(C, O)
+        line(O, P, stroke: (dash: "dashed", thickness: 1.5pt))
         
-        let dot(p, label-text, anchor-pos, color: gray.darken(30%), fill-color: gray.darken(30%)) = {
-          circle(p, radius: 0.08, fill: fill-color, stroke: none)
-          content(p, text(fill: color, size: 1.1em)[#label-text], anchor: anchor-pos, padding: 0.2)
+        let dot(p, label-text, anchor-pos) = {
+          content(p, text(size: 1em)[#label-text], anchor: anchor-pos, padding: 0.2)
         }
         
         dot(A, "A", "north-east")
@@ -751,7 +748,7 @@
     
     *Item 4 - Falso*
     #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
-      *Teorema da Matriz Inversa:*
+      *Teorema da matriz inversa:*
       Uma matriz quadrada $A$ é invertível se, e somente se, seu determinante for *diferente* de zero ($det(A) != 0$).
     ]
     A afirmação diz que o determinante é nulo, o que contradiz a definição.
@@ -787,9 +784,44 @@
     [$(3(3^101 - 1))/4$],
     [$(3(3^99 - 1))/2$],
   )],
-  assunto: "placeholder",
-  gabarito_letra: none,
-  gabarito_explicacao: none,
+  assunto: "Sequências e progressões",
+  gabarito_letra: "C",
+  gabarito_explicacao: [
+    Temos três números positivos $a, b, c$ em Progressão Aritmética (PA) com soma 15.
+
+Escrevendo em função do termo central $b$ e da razão $r$:
+$ (b-r, b, b+r) $
+
+Da soma dos termos:
+$ (b-r) + b + (b+r) = 15 arrow.double 3b = 15 arrow.double b = 5 $
+
+Portanto, a PA é $(5-r, 5, 5+r)$.
+
+Somando-se 1, 4 e 19 aos termos, obtemos uma Progressão Geométrica (PG) $(6-r, 9, 24+r)$.
+
+Propriedade da média geométrica: Em uma PG de três termos $(x, y, z)$, o quadrado do termo central é igual ao produto dos extremos: $y^2 = x dot z$. Aplicando a propriedade:
+$ 9^2 = (6-r)(24+r) $
+$ 81 = 144 + 6r - 24r - r^2 $
+$ 81 = 144 - 18r - r^2 $
+$ r^2 + 18r - 63 = 0 $
+
+Resolvendo a equação quadrática, encontramos as raízes $r = 3$ e $r = -21$.O enunciado diz que $a, b, c$ são positivos. Se $r = -21$, teríamos $c = 5 + (-21) = -16$ (Inválido). Logo, a razão da PA é $r = 3$.
+
+Substituindo $r=3$ na PG $(6-r, 9, 24+r)$:
+$ (3, 9, 27) $
+Temos o primeiro termo $a_1 = 3$ e a razão $q = 3$.
+
+A fórmula da soma dos $n$ primeiros termos é $S_n = (a_1 (q^n - 1)) / (q - 1)$.
+Para $n = 100$:
+
+$ S_(100) = (3 dot (3^(100) - 1)) / (3 - 1)  (3(3^(100) - 1)) / 2 $
+
+#pad(y: 5pt)[
+  #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+    *Resposta: (C)*
+  ]
+]
+  ],
 )
 
 #questao(

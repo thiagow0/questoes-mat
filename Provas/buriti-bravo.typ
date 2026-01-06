@@ -168,7 +168,7 @@ Portanto, o ângulo externo é maior que os internos não adjacentes, tornando a
 )
 
 #questao(
-  [Qual o resto da divisão de $P(x) = x^100 - 2x^51 + 1$ por $x^2 - 1$?],
+  [Qual o resto da divisão de $ P(x) = x^100 - 2x^51 + 1 $ por $x^2 - 1$?],
   [#enum(
     [$-2x + 2$],
     [$-4x + 2$],
@@ -177,8 +177,37 @@ Portanto, o ângulo externo é maior que os internos não adjacentes, tornando a
     [$x - 2$],
   )],
   assunto: "Polinômios",
-  gabarito_letra: none,
-  gabarito_explicacao: none,
+  gabarito_letra: "A",
+  gabarito_explicacao: [
+    Pelo algoritmo da divisão, o grau do resto $R(x)$ deve ser menor que o grau do divisor. Como o divisor $x^2 - 1$ possui grau 2, o resto será, no máximo, de grau 1. Assim, define-se $R(x) = a x + b$.
+
+Inicialmente, determinam-se as raízes do divisor:
+$ x^2 - 1 = 0 arrow.double x = 1 "ou" x = -1 $
+
+Avalia-se o polinômio $P(x)$ nessas raízes:
+$ P(1) &= 1^100 - 2(1)^51 + 1 = 1 - 2 + 1 = 0 \
+  P(-1) &= (-1)^100 - 2(-1)^51 + 1 = 1 - 2(-1) + 1 = 4 $
+
+Sabendo que $P(x) = (x^2 - 1)Q(x) + R(x)$, ao substituir as raízes, o termo que multiplica $Q(x)$ se anula. Logo, $P(x) = R(x)$ para $x=1$ e $x=-1$. Monta-se o seguinte sistema:
+$ cases(
+  a(1) + b = 0,
+  a(-1) + b = 4
+) arrow.double cases(
+  a + b = 0,
+  -a + b = 4
+) $
+
+Somando-se as duas equações, obtém-se $2b = 4$, resultando em $b = 2$. Substituindo este valor na primeira equação ($a + 2 = 0$), encontra-se $a = -2$.
+
+Portanto, a expressão do resto é:
+$ R(x) = -2x + 2 $
+
+#pad(y: 5pt)[
+  #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+    *Resposta: (A) $-2x+2$*
+  ]
+]
+  ],
 )
 
 #questao(
@@ -205,8 +234,27 @@ Portanto, o ângulo externo é maior que os internos não adjacentes, tornando a
     [$ 3/5 $],
   )],
   assunto: "Geometria analítica",
-  gabarito_letra: none,
-  gabarito_explicacao: none,
+  gabarito_letra: "D",
+  gabarito_explicacao: [
+    #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
+  A distância $d$ de um ponto $P(x_0, y_0)$ à reta geral $A x + B y + C = 0$ é dada por:
+  $ d = (|A x_0 + B y_0 + C|) / (sqrt(A^2 + B^2)) $
+]
+
+Dados o ponto $P(3, 4)$ e a reta $6x - 8y + 5 = 0$, substituem-se os valores na fórmula:
+
+$ d = (|6(3) - 8(4) + 5|) / (sqrt(6^2 + (-8)^2)) $
+
+Calculando o numerador e o denominador:
+
+$ d = (|18 - 32 + 5|) / (sqrt(36 + 64)) = (|-14 + 5|) / (sqrt(100)) = (|-9|) / 10 = 9 / 10 $
+
+#pad(y: 5pt)[
+  #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+    *Resposta: (D) $9/10$*
+  ]
+]
+  ],
 )
 
 #questao(
@@ -219,8 +267,31 @@ Portanto, o ângulo externo é maior que os internos não adjacentes, tornando a
     [9],
   )],
   assunto: "Funções",
-  gabarito_letra: none,
-  gabarito_explicacao: none,
+  gabarito_letra: "E",
+  gabarito_explicacao: [
+    Para uma função quadrática com concavidade voltada para cima ($a > 0$), os valores da função são negativos ($f(x) < 0$) estritamente no intervalo entre as raízes reais.
+
+Para resolver a inequação $x^2 + 2x - 120 < 0$, primeiramente determinam-se as raízes da equação associada através do discriminante ($Delta$):
+$ x^2 + 2x - 120 = 0 \
+  Delta = 2^2 - 4 dot 1 dot (-120) = 4 + 480 = 484 $
+
+Aplicando a fórmula quadrática para encontrar as raízes:
+$ x = (-2 plus.minus sqrt(484))/2 = (-2 plus.minus 22)/2 $
+
+Calculando $x_1$ e $x_2$:
+$ x_1 = 10  " e "  x_2 = -12 $
+
+Como o coeficiente $a$ é positivo, a parábola é voltada para cima. Logo, a função é negativa entre as raízes:
+$ -12 < x < 10 $
+
+O enunciado pede apenas as soluções inteiras e positivas. Os números inteiros positivos são o conjunto ${1, 2, 3, 4, 5, 6, 7, 8, 9}$.
+
+#pad(y: 5pt)[
+  #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+    *Resposta: (E) 9*
+  ]
+]
+  ],
 )
 
 #questao(
@@ -248,8 +319,27 @@ Portanto, o ângulo externo é maior que os internos não adjacentes, tornando a
     [-1],
   )],
   assunto: "Álgebra linear",
-  gabarito_letra: none,
-  gabarito_explicacao: none,
+  gabarito_letra: "B",
+  gabarito_explicacao: [
+    #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
+  Para uma matriz $A = mat(a, b; c, d)$, sua inversa é dada por $A^(-1) = 1/(det(A)) mat(d, -b; -c, a)$, onde $det(A) = a d - b c$.
+]
+
+Calculando o determinante da matriz $A = mat(3, 5; 4, 7)$:
+$ det(A) = (3 dot 7) - (5 dot 4) = 21 - 20 = 1 $
+
+Como $B = A^(-1)$, aplicamos a fórmula da inversa. Como o determinante é 1, basta trocar os elementos da diagonal principal e inverter o sinal dos elementos da diagonal secundária:
+$ B = 1/1 mat(7, -5; -4, 3) = mat(7, -5; -4, 3) $
+
+A soma dos elementos da matriz $B$ é:
+$ S = 7 + (-5) + (-4) + 3 = 7 - 5 - 4 + 3 = 1 $
+
+#pad(y: 5pt)[
+  #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
+    *Resposta: (B) 1*
+  ]
+]
+  ],
 )
 
 #questao(

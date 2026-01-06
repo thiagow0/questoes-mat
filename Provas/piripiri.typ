@@ -501,23 +501,18 @@
     Verificamos a quantidade de fatores 2 na decomposição de $12!$:
     $ 12! = 12 dot 11 dot 10 dot 9 dot 8 dot 7 dot 6 dot 5 dot 4 dot 3 dot 2 dot 1 $
     Contando os expoentes de 2:
-    - 12 ($2^2$)
-    - 10 ($2^1$)
-    - 8 ($2^3$)
-    - 6 ($2^1$)
-    - 4 ($2^2$)
-    - 2 ($2^1$)
+    $12 -> 2^2$, $10 -> 2^1$, $8 -> 2^3$, $6 -> 2^1$, $4 -> 2^2$, $2 -> 2^1$.
     
     Soma: $2+1+3+1+2+1 = 10$. Exatamente $2^10$, como dado no enunciado. Logo, $m = 12$.
     
     Analisando $n!$:
     O maior primo é 7. Como 11 não aparece, $n < 11$. Testamos $n=10$:
     Fatores de 2 em $10!$:
-    - 10 ($2^1$)
-    - 8 ($2^3$)
-    - 6 ($2^1$)
-    - 4 ($2^2$)
-    - 2 ($2^1$)
+    $10 -> 2^1$,
+    $8 -> 2^3$,
+    $6 -> 2^1$,
+    $4 -> 2^2$,
+    $2 -> 2^1$.
     
     Soma: $1+3+1+2+1 = 8$. Exatamente $2^8$, como dado. Logo, $n = 10$. Logo,
     $ m dot n = 12 dot 10 = 120 $
@@ -609,8 +604,8 @@
         let A = (9.0, 0.0)
         let C = (0.0, 6.0)
         
-        line(B, C, A, close: true, stroke: 2pt)
-        line(C, D, stroke: 2pt)
+        line(B, C, A, close: true, stroke: 1pt)
+        line(C, D, stroke: 1pt)
         
         let s = 0.5
         line((0, s), (s, s), (s, 0), stroke: 1.5pt)
@@ -619,7 +614,6 @@
         let s_c = 0.5
         let k_cb = s_c / calc.sqrt(16 + 36)
         let k_ca = s_c / calc.sqrt(81 + 36)
-        
         let p1 = (C.at(0) - 4 * k_cb, C.at(1) - 6 * k_cb)
         let p3 = (C.at(0) + 9 * k_ca, C.at(1) - 6 * k_ca)
         let p2 = (p1.at(0) + (p3.at(0) - C.at(0)), p1.at(1) + (p3.at(1) - C.at(1)))
@@ -629,10 +623,8 @@
         
         content(B, [$B$], anchor: "north-east", padding: 0.2)
         content(A, [$A$], anchor: "north-west", padding: 0.2)
-        
         content(D, [$D$], anchor: "north", padding: 0.2)
         content(C, [$C$], anchor: "south", padding: 0.2)
-        
         content((-2.0, 0.0), [$4$], anchor: "north", padding: 0.2)
         content((4.5, 0.0), [$9$], anchor: "north", padding: 0.2)
         content((0.0, 3.0), [$h$], anchor: "west", padding: 0.2)
@@ -804,10 +796,9 @@
     Equação: $log_x 5 + log_5 x = 10/3$
     Condições de existência: $x > 0$ e $x != 1$.
     
-    #align(center)[#block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
-      *Mudança de Base* \
-      $ log_a b = 1 / (log_b a) $
-    ]]
+    Mudança de Base:
+    
+    $ log_a b = 1 / (log_b a) $
     
     Substituímos $log_x 5 = 1 / (log_5 x)$. Chamando $y = log_5 x$:
     $ 1/y + y = 10/3 $

@@ -265,7 +265,9 @@
   [Analise as afirmações seguintes sobre números racionais.
     
     I. Se $0 < a/b < c/d$, então $(a/b)^2 < (c/d)^2$.
+
     II. Se $a/b < 0 < c/d$, então $c/d + a/b > 0$.
+    
     III. Toda fração da forma $a/b$ é irredutível.
     
     Quais estão incorretas?],

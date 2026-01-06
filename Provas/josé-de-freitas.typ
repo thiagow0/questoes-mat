@@ -824,9 +824,6 @@
       )
     ]
     
-    - *Horas:* Se aumentamos as horas de trabalho, precisamos de menos máquinas. (Grandeza Inversa)
-    - *Livros:* Se aumentamos a produção de livros, precisamos de mais máquinas. (Grandeza Direta )
-    
     Montando a equação:
     $ 12/x = 10/8 dot 240/500 $
     

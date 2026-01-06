@@ -391,7 +391,7 @@
     [1500],
   )],
   gabarito_explicacao: [
-    #columns(2)[
+    #columns(1)[
       
       Desejamos calcular o valor de $E$ para $a = 2023$:
       $ E = (6a^3 + 18a^2 - 24a - 72) / (9a^2 + 9a - 54) $
@@ -426,8 +426,7 @@
         E & = 2/3 dot (2023 + 2) \
         E & = 2/3 dot 2025 \
         E & = 2 dot (2025 / 3) \
-        E & = 2 dot 675 \
-        E & = 1350
+        E & = 2 dot 675 = 1350
       $
       
       #pad(y: 5pt)[
@@ -450,11 +449,9 @@
     [Infinitas],
   )],
   gabarito_explicacao: [
-    #block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow), width: 100%)[
-      *Condição de Existência:* \
+    Condição de Existência: \
       Como o resultado de um módulo é sempre não negativo ($|u| >= 0$), o lado direito da equação deve satisfazer:
       $ 3x + 1 >= 0 arrow.double 3x >= -1 arrow.double x >= -1/3 $
-    ]
     
     Para resolver a equação modular $|A| = B$, analisamos dois casos: $A = B$ ou $A = -B$.
     
@@ -556,7 +553,7 @@
   gabarito_explicacao: [
     
     #block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow), width: 100%)[
-      Diagonal do Paralelepípedo: \
+      Diagonal do paralelepípedo: \
       $ D = sqrt(a^2 + b^2 + c^2) $
     ]
     
