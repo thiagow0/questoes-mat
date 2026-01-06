@@ -23,7 +23,9 @@
     [21],
     [7],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para que um número seja um cubo perfeito, os expoentes de seus fatores primos devem ser múltiplos de 3.
     
@@ -61,7 +63,9 @@
     [$32sqrt(2)$],
     [$40 + 15sqrt(2)$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Temos os seguintes dados:
     1. $x y = 12$
@@ -99,7 +103,9 @@
     [1012],
     [1006],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -113,7 +119,9 @@
     [um múltiplo de 5.],
     [um cubo perfeito.],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Sejam $c$ o número de saques certos e $e$ o número de saques errados. Temos o seguinte sistema:
     
@@ -152,7 +160,9 @@
     [15],
     [14],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     O número é $83A 9 1 B$.
     
@@ -199,7 +209,9 @@
     [5150],
     [5200],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     A sequência é $(1, 3, 6, 10, 15, 21, ...)$.
     Trata-se da sequência dos números triangulares, onde o termo $n$ é a soma dos inteiros de 1 até $n$:
@@ -230,7 +242,9 @@
     [171],
     [187],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     O número é $1,7111...$. Decompomos em parte exata e parte periódica:
     $ 1,7111... = 1,7 + 0,0111... $
@@ -270,7 +284,9 @@
     [um aumento de 5%.],
     [um desconto de 6,5%.],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Supondo que o valor inicial do produto seja *R\$ 100,00*.
     
@@ -305,7 +321,9 @@
     [R\$ 8100,00],
     [R\$ 8300,00],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para calcular o montante acumulado (Valor Futuro) com depósitos mensais constantes, utilizamos a fórmula da série uniforme de pagamentos:
     
@@ -356,7 +374,9 @@
     [$4^20$],
     [$2^80$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para cada uma das 40 questões, existem 4 possibilidades de escolha. Aplicando o Princípio Fundamental da Contagem, multiplicamos as possibilidades para cada questão:
     
@@ -384,7 +404,9 @@
     [2880],
     [14400],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     O problema pede para organizar 5 moças ($M$) e 4 rapazes ($R$) em uma fila, de modo que as moças permaneçam sempre juntas.
     
@@ -422,7 +444,9 @@
     [1,65 m],
     [1,66 m],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Calculamos a altura média considerando o número de homens e mulheres como pesos.
     
@@ -460,7 +484,9 @@
     [Em todo triângulo, cada lado é menor que o módulo da diferença dos outros dois lados.],
     [Por um ponto passa uma única paralela a uma reta dada.],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Analisamos a condição de existência de um triângulo (Desigualdade Triangular).
     
@@ -536,9 +562,9 @@
     [120 m],
     [140 m],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [E],
-  
   gabarito_explicacao: [
     
     #align(center)[
@@ -620,7 +646,9 @@
     [15 minutos],
     [10 minutos],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     A função que descreve o movimento é $f(t) = 50 + 46 sin((pi t)/15)$.
     No instante inicial $t=0$, a altura é:
@@ -660,7 +688,9 @@
     [$108degree 27'$],
     [$105degree 25'$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para encontrar o ângulo do setor circular equivalente à superfície lateral do cone, precisamos primeiro da medida da geratriz ($g$).
     
@@ -713,7 +743,9 @@
     [(-1, -2)],
     [(2, -4)],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para encontrar o ponto simétrico da origem em relação ao centro da circunferência, primeiro determinamos as coordenadas do centro completando os quadrados na equação geral:
     $ x^2 + y^2 + 2x - 4y - 4^4 = 0 $

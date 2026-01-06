@@ -20,6 +20,9 @@
     [natural ímpar.],
     [natural par.],
   )],
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     A divisão de um número racional ($30$) por outro número racional (a dízima periódica $0,121212...$) resulta sempre em um número racional.
     
@@ -41,7 +44,9 @@
     [45 dias.],
     [71 dias.],
     [23 dias.],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Total de aulas é $134$. Assistiu 2 aulas. Restam $134 - 2 = 132$ aulas.
     
@@ -67,6 +72,9 @@
     [Hugo tem menos de 13 figurinhas.],
     [Hugo tem menos de 19 figurinhas.],
   )],
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Sejam $G$ (Gabriel), $H$ (Hugo) e $V$ (Vitor).
     $ V = 48 $
@@ -97,6 +105,9 @@
     [Treze brasileirenses optaram apenas pela estrada.],
     [Quarenta e dois brasileirenses optaram apenas pela estrada.],
   )],
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     
     Total de moradores opinantes: $125 - 18 "não opinaram" = 107$.
@@ -132,6 +143,9 @@
     [Sete por cento das pessoas que apresentaram problemas respiratórias neste período eram crianças.],
     [Vinte e cinco por cento das pessoas que apresentaram problemas respiratórias neste período eram crianças.],
   )],
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     
     Cálculo do total de pessoas com problemas respiratórios (20% do total):
@@ -160,6 +174,9 @@
     [Lucas deixou de ganhar R\$ 22.050,00 de juros.],
     [Lucas ganhou R\$ 15.450,00 a mais de juros.],
   )],
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Cálculo do rendimento que Lucas obteve emprestando o dinheiro ($6\%$ a.a. por 2 anos, juros compostos):
     $
@@ -193,6 +210,9 @@
     [Ele poderá formar essas duplas de 328 maneiras diferentes.],
     [Ele poderá formar essas duplas de 97 maneiras diferentes.],
   )],
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     A questão pede a formação de duplas. Pela resolução apresentada, calcula-se a combinação de 35 alunos (vôlei de praia) tomados 2 a 2.
     $ C_(35, 2) = (35 dot 34) / 2 = 35 dot 17 = 595 $
@@ -214,6 +234,9 @@
     [$x = (- 6, 2)$],
     [$x = (0, -2)$],
   )],
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Igualando as funções para encontrar o ponto de interseção:
     $ f(x) = g(x) arrow.double x + 2 = 3x + 6 $
@@ -245,6 +268,9 @@
     [30],
     [31],
   )],
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Princípio da Casa dos Pombos.
     O número máximo de dias em um mês é 31. Para garantir (ter certeza absoluta) que pelo menos dois alunos façam aniversário no mesmo dia, precisamos de $n + 1$ alunos, ou seja, $31 + 1 = 32$.
@@ -270,6 +296,9 @@
     [3],
     [4],
   )],
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Matriz $ M = mat(1, 1, 1; 0, 2, 1; 1, 1, 1). $
     Observa-se que a primeira linha (1, 1, 1) é igual à terceira linha (1, 1, 1).
@@ -292,6 +321,9 @@
     [1],
     [2],
   )],
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Substituindo $x = pi/2$:
     $ 6x = 6(pi/2) = 3pi arrow cos(3pi) = -1 $
@@ -318,6 +350,9 @@
     [10 m],
     [12 m],
   )],
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Área do trapézio: $A = ((B+b)h) / 2$.
     $
@@ -344,6 +379,9 @@
     [13],
     [15],
   )],
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Os pontos $A(1,1)$, $B(x,1)$ e $C(1,y)$ formam um triângulo retângulo com catetos medindo $a = x-1$ e $b = y-1$.
     
@@ -373,6 +411,9 @@
     [$cos 200 degree > sin 300 degree$],
     [$sin 30 degree < cos 210 degree$],
   )],
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Analisando a alternativa E:
     $ sin(30 degree) < cos(210 degree) $
@@ -396,7 +437,9 @@
     [$y(x) = tg(x^2)$],
     [$y(x) = tg^2(x)$],
     [$y(x) = "arcsec"(x)$],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     A função inversa da secante ($sec x$) é o arco secante ($"arcsec" x$).
     
@@ -416,7 +459,9 @@
     [2],
     [3],
     [infinito],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Queremos que $(n^2 + 1) / (n + 1)$ seja inteiro.
     Realizando a divisão polinomial:
@@ -448,7 +493,9 @@
     [22],
     [23],
     [31],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para saber o número de algarismos de $16^16$, calculamos seu logaritmo na base 10.
     Dado: $log 2 = 0,3$.

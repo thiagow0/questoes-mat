@@ -573,7 +573,9 @@
     [$1200 dot (1,08^x - 1)$],
     [$1200 + 96x$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -587,7 +589,9 @@
     [7%],
     [6%],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -602,7 +606,9 @@
     [4,20%],
     [3,80%],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -616,7 +622,9 @@
     [$log_(1,2) 2$ meses],
     [$log_(1,12) 2$ meses],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -630,7 +638,9 @@
     [20%],
     [12%],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -644,7 +654,9 @@
     [Taxas proporcionais não são equivalentes.],
     [São mais vantajosas no longo prazo.],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -658,7 +670,9 @@
     [22],
     [24],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -672,7 +686,9 @@
     [$f^(-1)(x) = 2x - 1$],
     [$f^(-1)(x) = (4x+1)/(x-2)$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -686,7 +702,9 @@
     [100],
     [32],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -700,7 +718,9 @@
     [$1$ e $3$],
     [$1 plus.minus 3i$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -714,7 +734,9 @@
     [$1$],
     [$1 + sqrt(2)$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -728,7 +750,9 @@
     [$2x - y + 12 = 0$],
     [$2x + y - 12 = 0$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -742,7 +766,9 @@
     [$120/119$],
     [$120/144$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -756,7 +782,9 @@
     [343/8],
     [1002/5],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -770,7 +798,9 @@
     [3/2],
     [1],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -784,7 +814,9 @@
     [$x - 5y + 5 = 0$],
     [$x + 2y - 5 = 0$],
   )],
-  
+      
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -808,7 +840,9 @@
     [8 máquinas; 120 dias],
     [2 máquinas; 30 dias],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para resolver o problema, analisamos as grandezas em relação ao número de máquinas (que é a incógnita $x$):
     
@@ -866,7 +900,9 @@
     [$15 051$],
     [$- 15 096$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -880,7 +916,9 @@
     [7%],
     [6%],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Primeiro, identificamos que o aumento foi de *R\$ 100,00* ($1.350 - 1.250$). Precisamos descobrir qual porcentagem esse valor representa em relação ao valor original ($1.250$).
     
@@ -976,7 +1014,9 @@
     [$3(2 + sqrt(2))$],
     [$3(4 - 3sqrt(2))$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     #align(center)[#image("Imagens/questão4.png", width: 30%)]
     
@@ -1103,7 +1143,9 @@
     [$4sqrt(3)$],
     [$3sqrt(2)$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     #align(center)[#image("Imagens/r-questão5.png", width: 40%)]
     
@@ -1165,7 +1207,9 @@
     [30 cm],
     [20 cm],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     A base média ($M$) é dada por $M = (B + b)/2$, onde $B$ é a base maior e $b$ a menor.
     Temos que $M = 40$ e $b = 3/5 B$.
@@ -1205,7 +1249,9 @@
     [${y in RR \/ y >= 6}$],
     [${y in RR \/ y >= 7}$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Dada a função $f(x) = |x-3| + x + 2$, precisamos determinar o seu conjunto imagem.
     
@@ -1264,7 +1310,9 @@
     [$0 < k < 4$],
     [$-4 < k < 2$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para a equação $(k-3)x^2 - (4k-5)x + (k+2) = 0$, identificamos os coeficientes:
     $ a = k-3, quad b = -(4k-5), quad c = k+2 $
@@ -1323,7 +1371,9 @@
     [$2x - 3$],
     [$2x - 2$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     O Teorema do Resto afirma que o resto da divisão de um polinômio $P(x)$ por um binômio $(x-a)$ é igual a $P(a)$.
     
@@ -1397,7 +1447,9 @@
     [$1/2 + i dot sqrt(3)/2$],
     [$1/2 - i dot sqrt(3)/2$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     
     Para calcular $z^300$ dado $z = -1/2 + i sqrt(3)/2$, utilizamos a forma trigonométrica e a Primeira Fórmula de De Moivre. Um número complexo é escrito como $z = |z|(cos theta + i sin theta)$. Calculando o módulo $|z|$ e o argumento $theta$:
@@ -1445,7 +1497,9 @@
     [$9pi "cm"^3$],
     [$6pi "cm"^3$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     
     Para encontrar o volume da cunha, primeiro analisamos a proporção do ângulo dado em relação a uma volta completa ($360 degree$). Dado que o ângulo diedro é de $45 degree$:
@@ -1477,7 +1531,9 @@
     [$76,8pi "cm"^3$],
     [$160pi "cm"^3$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     
     O sólido gerado pela rotação de um triângulo retângulo em torno de sua hipotenusa é composto por *dois cones* unidos pela mesma base circular. Sejam os catetos $b = 6$ cm e $c = 8$ cm. Primeiro, calculamos a hipotenusa ($a$) pelo Teorema de Pitágoras (triângulo pitagórico 3-4-5 ampliado):
@@ -1528,7 +1584,9 @@
     [81],
     [50],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Temos disponíveis: *6 Homens* e *5 Mulheres*.
     Queremos formar comissões de *6 pessoas* com *pelo menos 4 mulheres*. Como a ordem da escolha não altera a comissão (ex: $M_1 M_2 = M_2 M_1$), utilizamos *Combinação*.
@@ -1576,7 +1634,9 @@
     [$2/3$],
     [$3/2$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     
     Para solucionar a questão sem efetuar multiplicações extensas, utiliza-se a substituição de variáveis (álgebra). Define-se $a = 2024$. Observam-se as seguintes relações com os demais números:
@@ -1620,7 +1680,9 @@
     [6],
     [10],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     
     Dada a equação:
@@ -1664,7 +1726,9 @@
     [Duas retas paralelas.],
     [Uma elipse.],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1678,7 +1742,9 @@
     [14,6 m],
     [29,3 m],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     
     Para encontrar a altura máxima atingida pela escada, precisamos calcular a altura do triângulo formado pela escada ($x$) e somá-la à altura da laje onde ela está apoiada. Utilizamos a razão trigonométrica do seno, pois temos a hipotenusa (comprimento da escada) e queremos o cateto oposto (altura vertical).
@@ -1725,7 +1791,9 @@
     [0],
     [$sqrt(25)$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1752,7 +1820,9 @@
     [58%],
     [62%],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1766,7 +1836,9 @@
     [25 dias],
     [24 dias],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1791,7 +1863,9 @@
     [R\$ 2340,00],
     [R\$ 2368,00],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1805,7 +1879,9 @@
     [2],
     [3],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1827,7 +1903,9 @@
     [Nenhuma proposição é verdadeira.],
     [II e III são as únicas proposições verdadeiras.],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1841,7 +1919,9 @@
     [$3^(n+7)$],
     [$50.n^(2n)$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1855,7 +1935,9 @@
     [2021],
     [3046],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1869,7 +1951,9 @@
     [Um número par.],
     [Um número irracional.],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1889,7 +1973,9 @@
     [84 cm],
     [85 cm],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1905,7 +1991,9 @@
     [14 km],
     [15 km],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1919,7 +2007,9 @@
     [R\$ 6.200,00],
     [R\$ 7.700,00],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1933,7 +2023,9 @@
     [14],
     [9],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1947,7 +2039,9 @@
     [60],
     [65],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1961,7 +2055,9 @@
     [3],
     [4],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1975,7 +2071,9 @@
     [$cos (8) > 0$],
     [$cos (4) < 0$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -1989,7 +2087,9 @@
     [têm máximo divisor comum igual a 3.],
     [são múltiplos consecutivos de 3.],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -2003,7 +2103,9 @@
     [715],
     [781],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -2017,7 +2119,9 @@
     [512],
     [255],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 

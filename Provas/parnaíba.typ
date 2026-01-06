@@ -205,9 +205,13 @@
   [Em relação a temática retas, julgue as afirmativas a seguir como verdadeiras ou falsas e assinale a alternativa que contém a sequência correta.
     
     I. Retas concorrentes não possuem um ponto em comum
+
     II. Um segmento de reta é limitado por dois pontos da reta
+
     III. As retas podem estar em duas posições: Horizontal e Vertical
+
     IV. Retas perpendiculares formam um ponto em comum, o qual forma um ângulo reto
+    
     V. Retas transversais possuem todos os pontos em comum],
   [#enum(
     [V-F-F-V-V],

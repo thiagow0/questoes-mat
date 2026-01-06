@@ -20,7 +20,9 @@
     [$(1,2)^t - (1,15)^t = 0,036$],
     [$(1,2)^t + (1,15)^t = 0,045$],
     [$(1,02)^t - (1,015)^t = 0,036$],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Desejamos encontrar o tempo $t$ tal que a diferença entre o montante à taxa de $2\%$ ($M_1$) e o montante à taxa de $1,5\%$ ($M_2$) seja de R\$ 361,33. O capital inicial é $C = 8.000$.
     
@@ -55,7 +57,9 @@
     [R\$ 1.080,00],
     [R\$ 1.050,00],
     [R\$ 1.000,00],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Preço original $P = 1.500$.
     
@@ -85,7 +89,9 @@
     [$A in ZZ, B in RR - QQ, C in RR - QQ, D in NN, E in ZZ$],
     [$A in ZZ, B in QQ, C in RR - QQ, D in QQ, E in NN$],
     [$A in RR - QQ, B in RR - QQ, C in RR - QQ, D in ZZ, E in NN$],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Analisando os números:
     
@@ -117,7 +123,9 @@
     [80.000],
     [96.000],
     [120.000],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     #align(center)[
       #table(
@@ -155,7 +163,9 @@
     [$(x+4)^2 + (y-2)^2 = 50$],
     [$(x-4)^2 + (y+2)^2 = 50$],
     [$(x-2)^2 + (y+1)^2 = 100$],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Primeiro, encontramos o centro e o raio da circunferência original completando os quadrados:
     $
@@ -187,7 +197,9 @@
     [Quociente $2x^2 + x - 1$; resto $2x + 4$.],
     [Quociente $2x^2 - x - 2$; resto $0$.],
     [Quociente $2x^2 - x$; resto $x + 4$.],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Efetuando a divisão de $P(x) = 2x^4 - 3x^3 + 5x^2 - x + 4$ por $D(x) = x^2 - x + 2$ pelo método da chave:
     
@@ -240,7 +252,9 @@
     [$z = 2 - i$],
     [$z = -1 + 2i$],
     [$z = 5/3 - i$],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Seja $z = x + y i$. Substituindo na equação $(1+i)z + (2-i)overline(z) = 5+3i$:
     $
@@ -275,7 +289,9 @@
     [600],
     [720],
     [3.600],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para calcular de quantas maneiras A e B *não* ficam juntos, subtraímos o total de casos onde eles ficam juntos do total de permutações circulares.
     
@@ -306,7 +322,9 @@
     [$A B C D$ é cíclico (os quatro vértices pertencem a uma mesma circunferência).],
     [As diagonais $A C$ e $B D$ têm o mesmo comprimento.],
     [Existe uma circunferência tangente aos quatro lados de $A B C D$.],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     A condição dada ($B C + D A = A B + C D$) refere-se à propriedade dos quadriláteros circunscritíveis.
     
@@ -331,7 +349,9 @@
     [6],
     [7],
     [8],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Como $D E \/\/ B C$, aplicamos o Teorema de Tales:
     $ (A D) / (D B) = (A E) / (E C) $
@@ -360,7 +380,9 @@
     [-- 1],
     [0],
     [3],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Resolvendo a inequação utilizando a diferença de quadrados ($a^2-b^2 = (a-b)(a+b)$):
     $
@@ -389,7 +411,9 @@
     [1200],
     [1350],
     [1500],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     #columns(1)[
       
@@ -447,7 +471,9 @@
     [Duas],
     [Três],
     [Infinitas],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Condição de Existência: \
       Como o resultado de um módulo é sempre não negativo ($|u| >= 0$), o lado direito da equação deve satisfazer:
@@ -490,7 +516,9 @@
     [$-1/2$],
     [$-1/4$],
     [$-3/4$],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Sendo $B = A^(-1)$ e $A = mat(3, 2; 1, 2)$.
     Calculamos o determinante de A: $det(A) = 3(2) - 2(1) = 4$.
@@ -523,7 +551,9 @@
     [8 m],
     [12 m],
     [15 m],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Volume do cone $V = 1/3 pi r^2 h$. Temos $V = 36pi$ e $r = 3$.
     
@@ -549,7 +579,9 @@
     [$10 sqrt(2)$],
     [$sqrt(218)$],
     [$sqrt(244)$],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     
     #block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow), width: 100%)[

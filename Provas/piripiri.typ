@@ -28,7 +28,8 @@
     [A proposição X é equivalente a $p <-> q$.],
     [A proposição X é equivalente a $~[p and (~q)]$.],
     [A proposição X é verdadeira somente quando p e q são ambas verdadeiras.],
-  )],
+  )],  
+  assunto: "placeholder",
   gabarito_letra: "D",
   gabarito_explicacao: [
     Usando equivalências lógicas, sabemos que a *contrapositiva* $~q -> ~p$ é equivalente a $p -> q$.
@@ -59,7 +60,8 @@
     [Se um número não é múltiplo de 4, então ele é par.],
     [Se um número é múltiplo de 4, então ele não é par.],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: "B",
   gabarito_explicacao: [
     Proposição: "Se um número é múltiplo de 4, então ele é par" ($p -> q$). A contrapositiva é dada por $~q -> ~p$: "Se não é $q$, então não é $p$".
@@ -94,7 +96,8 @@
     [0,42],
     [0,34],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: "E",
   gabarito_explicacao: [
     #align(center)[#block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
@@ -133,7 +136,8 @@
     [2],
     [1],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [C],
   gabarito_explicacao: [
     O termo médio entre 2º e 6º é o $a_4$. Logo, $a_4 = 24$. O produto $a_3 dot a_7 = 2304$. Em uma PG, $a_4 = a_1 q^3$. O produto $a_3 dot a_7 = (a_1 q^2) dot (a_1 q^6) = a_1^2 q^8$.
@@ -165,7 +169,8 @@
     [32 meses],
     [36 meses],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [C],
   gabarito_explicacao: [
     Diferença de juros:
@@ -193,7 +198,8 @@
     [7,0],
     [7,2],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [D],
   gabarito_explicacao: [
     Total de participantes: 500 homens ($H$) + 200 mulheres ($M$) = 700 pessoas.
@@ -228,7 +234,8 @@
     [Salomão e André juntos receberam o dobro de Thiago.],
     [A menor quantia ficou com Thiago.],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [A],
   gabarito_explicacao: [
     Divisão proporcional às notas (10, 8, 9) e inversamente às faltas (2, 4, 3).
@@ -271,7 +278,8 @@
     [R\$ 285,00],
     [R\$ 296,00],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [B],
   gabarito_explicacao: [
     Volume total de areia: $16 m^3$.
@@ -312,7 +320,8 @@
     [Apenas III é falsa.],
     [Todas as afirmações são falsas.],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [C],
   gabarito_explicacao: [
     I. Falso. Se $c < 0$, a desigualdade inverte. (Ex: $2 > 1$ e $c = -1 => -2 < -1$).
@@ -343,7 +352,8 @@
     [2],
     [3],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [C],
   gabarito_explicacao: [
     A equação $a^2 + b^2 + c^2 - 2a + 6b - 4c + 14 = 0$ pode ser rearranjada completando quadrados:
@@ -378,7 +388,8 @@
     [$pi$],
     [$2/3 pi$],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [A],
   
   gabarito_explicacao: [
@@ -411,7 +422,8 @@
     [$n x^2 + m x + 1 = 0$],
     [$n x^2 - m x + 1 = 0$],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [E],
   gabarito_explicacao: [
     Equação original: $x^2 - m x + n = 0$ com raízes $p, q$.
@@ -446,7 +458,8 @@
     [12],
     [17],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [B],
   
   gabarito_explicacao: [
@@ -494,7 +507,8 @@
     [120],
     [77],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [D],
   gabarito_explicacao: [
     O maior primo presente na fatoração é o 11. Isso indica que $m$ deve ser pelo menos 11. Como o primo 13 não aparece, $m < 13$. Logo, $m$ pode ser 11 ou 12.
@@ -534,7 +548,8 @@
     [12],
     [15],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [D],
   gabarito_explicacao: [
     #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
@@ -565,7 +580,8 @@
     [125,6 m],
     [50,2 m],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [A],
   gabarito_explicacao: [
     O comprimento de uma volta completa é o perímetro da circunferência:
@@ -591,7 +607,8 @@
     [7 m],
     [8 m],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [C],
   gabarito_explicacao: [
     
@@ -666,7 +683,8 @@
     [$y = 4/3 x - 7/3$],
     [$3x + 4y - 25 = 0$],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [E],
   gabarito_explicacao: [
     Primeiro, encontramos o ponto de interseção das retas $r$ e $s$:
@@ -721,7 +739,8 @@
     [4],
     [−3],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [B],
   gabarito_explicacao: [
     $a_4 = 20$ e $S_6 = 126$
@@ -761,7 +780,8 @@
     [$90 pi$],
     [$54 pi$],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [B],
   gabarito_explicacao: [
     Volume do Cilindro:
@@ -790,7 +810,8 @@
     [Três],
     [Infinitas],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [C],
   gabarito_explicacao: [
     Equação: $log_x 5 + log_5 x = 10/3$

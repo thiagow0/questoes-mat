@@ -16,6 +16,9 @@
   [O valor de #text(size: fonte-mat)[$(2023^2 - 4) / (2023^2 + 2023 - 2)$] é igual a:],
   
   [#enum(spacing: 12pt, [$2021/2022$], [$2022/2023$], [$2021/2023$], [$2023/2022$], [$2023/2021$])],
+
+  assunto: "placeholder",
+  gabarito_letra: none,
   
   gabarito_explicacao: [
     
@@ -60,6 +63,9 @@
     [16],
   )],
   
+  assunto: "placeholder",
+  gabarito_letra: none,
+
   gabarito_explicacao: [
     Dada a equação $sqrt(4x+4) = x+1$, simplifica-se o radical fatorando o termo interno:
     $ sqrt(4(x+1)) = x+1 arrow.double 2sqrt(x+1) = x+1 $
@@ -105,7 +111,9 @@
     [$RR_+$],
     [$RR_-$],
   )],
-  
+   
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     
     Dada a função:
@@ -156,6 +164,8 @@
     [7],
   )],
   
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para resolver a equação $|2x - 4| = 10$, aplicamos a definição de módulo, o que nos leva a dois casos possíveis:
     
@@ -195,7 +205,9 @@
     [32],
     [16],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Temos uma PG onde o primeiro termo é $a_1 = 8$ e o quarto termo é $a_4 = 1$. Utilizamos a fórmula do termo geral $a_n = a_1 dot q^(n-1)$. Para $n=4$:
     
@@ -230,7 +242,9 @@
     [7],
     [8],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para resolver a inequação $x^2 - 3x - 40 < 0$, determinamos primeiro as raízes da equação quadrática associada:
     
@@ -286,7 +300,9 @@
     [498],
     [500],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Seja $x$ o número de ingressos vendidos. *Custos Fixos:* Somamos os gastos com banda, decoração e segurança.
     $ C_F = 10.000 + 3.600 + 1.200 = 14.800 $
@@ -332,7 +348,9 @@
     [$2 + sqrt(3)$],
     [4],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Dada a expressão para $x - y = 30^degree$:
     $ (sin x + cos y)^2 + (cos x - sin y)^2 $
@@ -373,7 +391,9 @@
     [320],
     [720],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     O problema pede comissões de 4 pessoas com *no máximo 1 homem*. Temos um grupo de 6 homens e 6 mulheres. Isso resulta em dois casos possíveis:
     
@@ -451,7 +471,9 @@
     [20 cm],
     [25 cm],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para encontrar o perímetro do triângulo $A B D$, precisamos determinar as medidas dos seus lados: $A D$, $A B$ e $B D$.
     Sabemos que $A D = 4$ cm. Resta encontrar $A B$ e $B D$.
@@ -555,7 +577,9 @@
     [4],
     [3],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     A reta forma um ângulo de $45 degree$ com o eixo horizontal. Isso implica que o coeficiente angular ($m$) é igual à tangente desse ângulo:
     $ m = tan(45 degree) = 1 $
@@ -587,7 +611,9 @@
     [$85 "cm"^2$],
     [$90 "cm"^2$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para encontrar a área total, primeiro precisamos determinar a medida da aresta ($a$) do cubo, utilizando a diagonal dada ($D = 6$).
     
@@ -641,36 +667,35 @@
     [Tito rodou em média 6,8 quilômetros com um litro de etanol.],
     [Tito gastou R\$ 0,62 para rodar um quilômetro com gasolina.],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para verificar as alternativas, precisamos calcular a quantidade de litros abastecidos e o consumo médio (km/l) para cada tipo de combustível.
     
-    Dados da Gasolina
-    - Distância: 304 km
-    - Preço: R\$ 5,45 / litro
-    - Custo Total: R\$ 174,40
+    Dados da Gasolina: Distância: 304 km; Preço: R\$ 5,45 / litro; Custo Total: R\$ 174,40.
     
-    *Cálculo dos Litros:*
+    Cálculo dos Litros:
     $ "Litros" = "Custo Total" / "Preço Unitário" = (174,40) / (5,45) = 32 "litros" $
     
-    *Cálculo do Consumo Médio:*
+    Cálculo do Consumo Médio:
     $ "Média" = "Distância" / "Litros" = 304 / 32 = 9,5 "km/l" $
     
-    Dados do Etanol
-    - Distância: 238 km
-    - Preço: R\$ 4,35 / litro
-    - Custo Total: R\$ 152,25
+    Dados do Etanol: Distância: 238 km; Preço: R\$ 4,35 / litro; Custo Total: R\$ 152,25.
     
-    *Cálculo dos Litros:*
+    Cálculo dos Litros:
     $ "Litros" = (152,25) / (4,35) = 35 "litros" $
     
-    *Cálculo do Consumo Médio:*
+    Cálculo do Consumo Médio:
     $ "Média" = 238 / 35 = 6,8 "km/l" $
     
-    - *(A)* Incorreto. Foram 32 litros, não 31.
-    - *(B)* Incorreto. Foram 35 litros, não 33.
-    - *(C)* Incorreto. A média foi 9,5 km/l, não 9.
-    - *(D) Correto.* O consumo médio com etanol foi exatamente 6,8 km/l.
+  *(A)* Incorreto. Foram 32 litros, não 31.
+    
+  *(B)* Incorreto. Foram 35 litros, não 33.
+
+*(C)* Incorreto. A média foi 9,5 km/l, não 9.
+
+*(D) Correto.* O consumo médio com etanol foi exatamente 6,8 km/l.
     
     #pad(y: 10pt)[
       #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
@@ -777,7 +802,9 @@
     [$72degree$],
     [$76degree$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     A soma de todos os arcos da circunferência é igual a $360degree$. Portanto:
     
@@ -830,7 +857,9 @@
     [$3x + 6$],
     [$4x - 7$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Primeiro, organizamos o dividendo $D(x)$ em ordem decrescente de grau:
     $ D(x) = 2x^4 - 4x^3 - x^2 + 3x $
@@ -898,7 +927,9 @@
     [$2 + i$],
     [1],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     
     #align(center)[#block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
@@ -953,7 +984,9 @@
     [560],
     [562],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Sejam $A$, $B$ e $C$ as quantidades iniciais de bonecas de Ana, Bruna e Cecília, respectivamente.
     
