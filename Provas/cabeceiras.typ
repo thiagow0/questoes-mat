@@ -21,7 +21,9 @@
     [Números naturais.],
     [Números irracionais.],
     [Números  #idx(("complexos")).],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     O conjunto numérico que contém todos os números que não podem ser representados como uma fração e não possuem representação decimal periódica é o conjunto dos *números irracionais* ($RR without QQ$).
     
@@ -41,7 +43,9 @@
     [Área = (n \* lado) / apótema],
     [Área = (n \* lado) / raio],
     [Área = (n \* raio) / apótema],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para um polígono regular, a fórmula correta da área envolve o perímetro (ou número de lados e medida do lado) e o apótema.
     
@@ -66,7 +70,9 @@
     [Todos os lados são congruentes.],
     [Todos os lados são retos.],
     [Todos os ângulos internos são iguais.],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para que um polígono seja classificado como côncavo, ele deve possuir pelo menos um ângulo interno maior que $180 degree$. Isso garante a formação de um "buraco" característico desse tipo de polígono.
     
@@ -86,7 +92,9 @@
     [A medida de cada ângulo interno é igual ao número de lados.],
     [A medida de cada ângulo interno é o dobro do número de lados.],
     [A medida de cada ângulo interno é independente do número de lados.],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Quanto *mais lados* o polígono possui, *maior* é a medida do seu ângulo interno.
     #pad(y: 5pt)[
@@ -105,7 +113,9 @@
     [Ângulo central = 180° / raio],
     [Ângulo central = 180° / perímetro],
     [Ângulo central = 360° / diâmetro],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Considerando a circunferência inteira, a relação de proporção é:
     $ "Ângulo central" / (360 degree) = "Comp. do arco" / "Perímetro da circunferência" $
@@ -133,7 +143,9 @@
     [Os catetos são os lados não perpendiculares e a hipotenusa é a base.],
     [Os catetos são os ângulos agudos e a hipotenusa é a hipotenusa.],
     [Os catetos são os ângulos retos e a hipotenusa é a base.],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Em um triângulo retângulo:
     
@@ -157,7 +169,9 @@
     [x = 4],
     [x = 9],
     [x = 11],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Dada a equação $|x - 2| = 7$.
     Utilizando a definição de módulo, temos dois casos:
@@ -185,7 +199,9 @@
     [x > 1],
     [x > 2/3],
     [x > ½],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     $
       2x + x & < 3 - 5 \
@@ -209,7 +225,9 @@
     [Quadrado],
     [Retângulo],
     [Hexágono],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Teorema da Bissetriz Interna: É aplicado em *triângulos*, relacionando os lados adjacentes aos segmentos formados na base.
     #pad(y: 5pt)[
@@ -228,9 +246,11 @@
     [As retas transversais devem ser perpendiculares às retas paralelas.],
     [As retas transversais devem ser concorrentes entre si.],
     [As retas transversais devem ser paralelas entre si.],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
-    Teorema de Tales: Trata de um feixe de retas *paralelas* cortadas por transversais. O item D é o que melhor descreve essa condição geral.
+    #idx(("Teorema", "de Tales")): Trata de um feixe de retas *paralelas* cortadas por transversais. O item D é o que melhor descreve essa condição geral.
     #pad(y: 5pt)[
       #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
         *Resposta: (D)*
@@ -247,7 +267,9 @@
     [10 cm],
     [12 cm],
     [14 cm],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     A diagonal ($d$) mede 10 cm. Considerando o triângulo retângulo formado pelos lados ($l$) e a diagonal:
     $
@@ -275,7 +297,9 @@
     [O ângulo oposto à hipotenusa é menor que os outros dois.],
     [O ângulo oposto à hipotenusa é reto.],
     [Não há relação definida entre os ângulos.],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     A relação "o quadrado da hipotenusa é igual à soma dos quadrados dos catetos" é válida exclusivamente quando o triângulo for retângulo (possui um ângulo reto).
     
@@ -295,7 +319,9 @@
     [7],
     [8],
     [9],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para catetos medindo 3 e 4, a hipotenusa é calculada por:
     $
@@ -321,7 +347,9 @@
     [$a_n = 1 + 4n$],
     [$a_n = 1 + 2n$],
     [$a_n = -3 + 6n$],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     $ (-3, 1, 5, 9, ...) $
     Temos $a_1 = -3$ e a razão $r = 4$.
@@ -346,9 +374,11 @@
     [O sistema deve ter um número igual de equações e incógnitas.],
     [O sistema deve ser linear #idx(("homogêneo")).],
     [O sistema deve ter exatamente três equações.],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
-    Para ser aplicada, o sistema deve ter o mesmo número de equações e incógnitas (matriz quadrada com determinante não nulo).
+    Para ser aplicada, o sistema deve ter o mesmo número de equações e incógnitas (#idx(("matriz", "quadrada")) com determinante não nulo).
     #pad(y: 5pt)[
       #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
         *Resposta: (C)*
@@ -365,7 +395,9 @@
     [Calcular a ordem da matriz associada ao sistema.],
     [Calcular o determinante de matrizes de ordem 2 e ordem 3.],
     [Resolver sistemas com mais de três incógnitas.],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     É utilizada especificamente para calcular o determinante de matrizes de ordem 3. Não é válida para ordens superiores ($>= 4$).
     #pad(y: 5pt)[
@@ -384,7 +416,9 @@
     [180],
     [210],
     [240],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Como a ordem não importa, utiliza-se combinação simples:
     $ C_10^3 = (10 dot 9 dot 8) / (3 dot 2 dot 1) = 720 / 6 = 120 $

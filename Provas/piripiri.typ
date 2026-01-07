@@ -28,7 +28,8 @@
     [A proposição X é equivalente a $p <-> q$.],
     [A proposição X é equivalente a $~[p and (~q)]$.],
     [A proposição X é verdadeira somente quando p e q são ambas verdadeiras.],
-  )],
+  )],  
+  assunto: "placeholder",
   gabarito_letra: "D",
   gabarito_explicacao: [
     Usando equivalências lógicas, sabemos que a *#idx(("contrapositiva"))* $~q -> ~p$ é equivalente a $p -> q$.
@@ -59,7 +60,8 @@
     [Se um número não é múltiplo de 4, então ele é par.],
     [Se um número é múltiplo de 4, então ele não é par.],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: "B",
   gabarito_explicacao: [
     Proposição: "Se um número é múltiplo de 4, então ele é par" ($p -> q$). A contrapositiva é dada por $~q -> ~p$: "Se não é $q$, então não é $p$".
@@ -94,7 +96,8 @@
     [0,42],
     [0,34],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: "E",
   gabarito_explicacao: [
     #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
@@ -135,7 +138,8 @@
     [2],
     [1],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [C],
   gabarito_explicacao: [
     O termo médio entre 2º e 6º é o $a_4$. Logo, $a_4 = 24$. O produto $a_3 dot a_7 = 2304$. Em uma PG, $a_4 = a_1 q^3$. O produto $a_3 dot a_7 = (a_1 q^2) dot (a_1 q^6) = a_1^2 q^8$.
@@ -167,7 +171,8 @@
     [32 meses],
     [36 meses],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [C],
   gabarito_explicacao: [
     Diferença de juros:
@@ -195,7 +200,8 @@
     [7,0],
     [7,2],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [D],
   gabarito_explicacao: [
     Total de participantes: 500 homens ($H$) + 200 mulheres ($M$) = 700 pessoas.
@@ -230,7 +236,8 @@
     [Salomão e André juntos receberam o dobro de Thiago.],
     [A menor quantia ficou com Thiago.],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [A],
   gabarito_explicacao: [
     Divisão proporcional às notas (10, 8, 9) e inversamente às faltas (2, 4, 3).
@@ -273,7 +280,8 @@
     [R\$ 285,00],
     [R\$ 296,00],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [B],
   gabarito_explicacao: [
     Volume total de areia: $16 m^3$.
@@ -314,7 +322,8 @@
     [Apenas III é falsa.],
     [Todas as afirmações são falsas.],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [C],
   gabarito_explicacao: [
     I. Falso. Se $c < 0$, a desigualdade inverte. (Ex: $2 > 1$ e $c = -1 => -2 < -1$).
@@ -345,7 +354,8 @@
     [2],
     [3],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [C],
   gabarito_explicacao: [
     A equação $a^2 + b^2 + c^2 - 2a + 6b - 4c + 14 = 0$ pode ser rearranjada completando quadrados:
@@ -380,7 +390,8 @@
     [$pi$],
     [$2/3 pi$],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [A],
   
   gabarito_explicacao: [
@@ -413,7 +424,8 @@
     [$n x^2 + m x + 1 = 0$],
     [$n x^2 - m x + 1 = 0$],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [E],
   gabarito_explicacao: [
     Equação original: $x^2 - m x + n = 0$ com raízes $p, q$. #idx(("Relações", "de Girard")): $p + q = m$ e $p q = n$.
@@ -447,7 +459,8 @@
     [12],
     [17],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [B],
   
   gabarito_explicacao: [
@@ -495,30 +508,26 @@
     [120],
     [77],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [D],
   gabarito_explicacao: [
     O maior primo presente na fatoração é o 11. Isso indica que $m$ deve ser pelo menos 11. Como o primo 13 não aparece, $m < 13$. Logo, $m$ pode ser 11 ou 12.
     Verificamos a quantidade de fatores 2 na decomposição de $12!$:
     $ 12! = 12 dot 11 dot 10 dot 9 dot 8 dot 7 dot 6 dot 5 dot 4 dot 3 dot 2 dot 1 $
     Contando os expoentes de 2:
-    - 12 ($2^2$)
-    - 10 ($2^1$)
-    - 8 ($2^3$)
-    - 6 ($2^1$)
-    - 4 ($2^2$)
-    - 2 ($2^1$)
+    $12 -> 2^2$, $10 -> 2^1$, $8 -> 2^3$, $6 -> 2^1$, $4 -> 2^2$, $2 -> 2^1$.
     
     Soma: $2+1+3+1+2+1 = 10$. Exatamente $2^10$, como dado no enunciado. Logo, $m = 12$.
     
     Analisando $n!$:
     O maior primo é 7. Como 11 não aparece, $n < 11$. Testamos $n=10$:
     Fatores de 2 em $10!$:
-    - 10 ($2^1$)
-    - 8 ($2^3$)
-    - 6 ($2^1$)
-    - 4 ($2^2$)
-    - 2 ($2^1$)
+    $10 -> 2^1$,
+    $8 -> 2^3$,
+    $6 -> 2^1$,
+    $4 -> 2^2$,
+    $2 -> 2^1$.
     
     Soma: $1+3+1+2+1 = 8$. Exatamente $2^8$, como dado. Logo, $n = 10$. Logo,
     $ m dot n = 12 dot 10 = 120 $
@@ -540,7 +549,8 @@
     [12],
     [15],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [D],
   gabarito_explicacao: [
     #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
@@ -571,7 +581,8 @@
     [125,6 m],
     [50,2 m],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [A],
   gabarito_explicacao: [
     O comprimento de uma volta completa é o perímetro da circunferência:
@@ -597,7 +608,8 @@
     [7 m],
     [8 m],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [C],
   gabarito_explicacao: [
     
@@ -610,8 +622,8 @@
         let A = (9.0, 0.0)
         let C = (0.0, 6.0)
         
-        line(B, C, A, close: true, stroke: 2pt)
-        line(C, D, stroke: 2pt)
+        line(B, C, A, close: true, stroke: 1pt)
+        line(C, D, stroke: 1pt)
         
         let s = 0.5
         line((0, s), (s, s), (s, 0), stroke: 1.5pt)
@@ -620,7 +632,6 @@
         let s_c = 0.5
         let k_cb = s_c / calc.sqrt(16 + 36)
         let k_ca = s_c / calc.sqrt(81 + 36)
-        
         let p1 = (C.at(0) - 4 * k_cb, C.at(1) - 6 * k_cb)
         let p3 = (C.at(0) + 9 * k_ca, C.at(1) - 6 * k_ca)
         let p2 = (p1.at(0) + (p3.at(0) - C.at(0)), p1.at(1) + (p3.at(1) - C.at(1)))
@@ -630,10 +641,8 @@
         
         content(B, [$B$], anchor: "north-east", padding: 0.2)
         content(A, [$A$], anchor: "north-west", padding: 0.2)
-        
         content(D, [$D$], anchor: "north", padding: 0.2)
         content(C, [$C$], anchor: "south", padding: 0.2)
-        
         content((-2.0, 0.0), [$4$], anchor: "north", padding: 0.2)
         content((4.5, 0.0), [$9$], anchor: "north", padding: 0.2)
         content((0.0, 3.0), [$h$], anchor: "west", padding: 0.2)
@@ -675,7 +684,8 @@
     [$y = 4/3 x - 7/3$],
     [$3x + 4y - 25 = 0$],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [E],
   gabarito_explicacao: [
     Primeiro, encontramos o ponto de interseção das retas $r$ e $s$:
@@ -730,7 +740,8 @@
     [4],
     [−3],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [B],
   gabarito_explicacao: [
     $a_4 = 20$ e $S_6 = 126$
@@ -770,7 +781,8 @@
     [$90 pi$],
     [$54 pi$],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [B],
   gabarito_explicacao: [
     Volume do  #idx(("Cilindro")):
@@ -799,16 +811,16 @@
     [Três],
     [Infinitas],
   )],
-  
+    
+  assunto: "placeholder",
   gabarito_letra: [C],
   gabarito_explicacao: [
     Equação: $log_x 5 + log_5 x = 10/3$
     Condições de existência: $x > 0$ e $x != 1$.
     
-    #align(center)[#block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
-      *Mudança de Base* \
-      $ log_a b = 1 / (log_b a) $
-    ]]
+    Mudança de Base:
+    
+    $ log_a b = 1 / (log_b a) $
     
     Substituímos $log_x 5 = 1 / (log_5 x)$. Chamando $y = log_5 x$:
     $ 1/y + y = 10/3 $

@@ -20,10 +20,9 @@
     [5,5],
     [6,0],
     [6,5],
-  )],
-  
+  )],  
+  assunto: "placeholder",
   gabarito_letra: [C],
-  
   gabarito_explicacao: [
     Substituindo na fórmula:
     $ "Média" & = (2 dot 5 + 3 dot 4 + 4 dot 7) / 9 = (10 + 12 + 28) / 9 = 50 / 9 $
@@ -47,7 +46,8 @@
     [72],
     [48],
     [42],
-  )],
+  )],  
+  assunto: "placeholder",
   gabarito_letra: [E],
   gabarito_explicacao: [
     $ 28/100 dot 150 $
@@ -115,7 +115,8 @@
     [85 m],
     [91 m],
     [97 m],
-  )],
+  )],  
+  assunto: "placeholder",
   gabarito_letra: [D],
   gabarito_explicacao: [
     Primeiro, calculamos a razão de proporcionalidade com os valores conhecidos (20 m e 28 m):
@@ -197,7 +198,8 @@
     [ $(5+2sqrt(3))/3$],
     [ $(3+2sqrt(3))/2$],
     [ $(3+2sqrt(3))/5$],
-  )],
+  )],  
+  assunto: "placeholder",
   gabarito_letra: [A],
   gabarito_explicacao: [
     
@@ -272,7 +274,7 @@
 )
 
 #questao(
-  [Seja #text(size: fonte-mat)[$A = mat(x, 4; 0, x)$] uma matriz real e $A^t$ sua transposta. Se $A + A^t$ é uma matriz não invertível, então:],
+  [Seja #text(size: fonte-mat)[$A = mat(x, 4; 0, x)$] uma matriz real e $A^t$ sua #idx(("transposta")). Se $A + A^t$ é uma matriz não invertível, então:],
   [#enum(
     spacing: 12pt,
     [$x = plus.minus 2$],
@@ -280,17 +282,18 @@
     [$x = plus.minus 3$],
     [$x = plus.minus 1/2$],
     [$x = plus.minus 1/3$],
-  )],
+  )],  
+  assunto: "placeholder",
   gabarito_letra: [A],
   gabarito_explicacao: [
-    Dada a matriz $A = mat(x, 4; 0, x)$, determinamos sua transposta:
+    Dada a matriz $A = mat(x, 4; 0, x)$, determinamos sua #idx(("transposta")):
     $A^t = mat(x, 0; 4, x)$
     
     Calculamos a matriz soma $S = A + A^t$:
     $ S = mat(x, 4; 0, x) + mat(x, 0; 4, x) = mat(2x, 4; 4, 2x) $
     
     #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
-      Uma matriz quadrada é *não invertível* (ou singular) se, e somente se, o seu determinante for igual a zero.
+      Uma #idx(("matriz", "quadrada")) é *não invertível* (ou singular) se, e somente se, o seu determinante for igual a zero.
     ]
     
     Aplicando a definição ao determinante da matriz soma:
@@ -323,7 +326,8 @@
     [144],
     [169],
     [196],
-  )],
+  )],  
+  assunto: "placeholder",
   gabarito_letra: [B],
   gabarito_explicacao: [
     #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
@@ -375,7 +379,8 @@
     [7/5],
     [5/7],
     [3/7],
-  )],
+  )],  
+  assunto: "placeholder",
   gabarito_letra: [D],
   gabarito_explicacao: [
     Dada a equação inicial:
@@ -413,7 +418,8 @@
     [2],
     [-2],
     [3],
-  )],
+  )],  
+  assunto: "placeholder",
   gabarito_letra: [B],
   gabarito_explicacao: [
     Primeiro, igualamos os denominadores. Note que $x^2 - 2x = x(x-2)$. Realizando a soma das frações no lado direito:
@@ -527,7 +533,8 @@
     [$ 396 pi med c m^3 $],
     [$ 412 pi med c m^3 $],
     [$ 432 pi med c m^3 $],
-  )],
+  )],  
+  assunto: "placeholder",
   gabarito_letra: [C],
   gabarito_explicacao: [
     
@@ -570,7 +577,8 @@
     [1],
     [#text(size: fonte-mat)[$1/5$]],
     [#text(size: fonte-mat)[$1/25$]],
-  )],
+  )],  
+  assunto: "placeholder",
   gabarito_letra: [E],
   gabarito_explicacao: [
     $ 25^(n+2) = (5^2)^(n+2) = 5^(2n+4) $
@@ -605,7 +613,8 @@
     [60],
     [126],
     [210],
-  )],
+  )],  
+  assunto: "placeholder",
   gabarito_letra: [E],
   gabarito_explicacao: [
     Calculando $C_(10, 6)$ (escolha do grupo do Nordeste):
@@ -634,7 +643,8 @@
     [11],
     [8],
     [7],
-  )],
+  )],  
+  assunto: "placeholder",
   gabarito_letra: [C],
   gabarito_explicacao: [
     $ 2^(1/2) dot (2^(1/2))^2 dot (2^(1/2))^3 dots (2^(1/2))^n = 2^(33) $
@@ -679,6 +689,7 @@
     [Nunca],
   )],
   gabarito_letra: [A],
+  assunto: "placeholder",
   gabarito_explicacao: [
     #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
       *Condição para SPI (Sistema Possível e Indeterminado):* \
@@ -797,6 +808,7 @@
     [1 cm],
   )],
   gabarito_letra: [A],
+  assunto: "placeholder",
   gabarito_explicacao: [
     Sendo a aresta $a = 7$ cm:
     $ V_"total" = 7^3 = 7 dot 7 dot 7 = 343 "cm"^3 $
@@ -829,7 +841,8 @@
     [62],
     [63],
     [64],
-  )],
+  )],  
+  assunto: "placeholder",
   gabarito_letra: [C],
   gabarito_explicacao: [
     Transformando o decimal $0,0625$ em fração:

@@ -315,7 +315,7 @@
     Encontrando o valor de $a$:
     $ a = 21 - 2(6) = 21 - 12 = 9 $
     
-    As dimensões são $9$ e $6$. Para encontrar a diagonal ($d$), aplicamos o Teorema de Pitágoras:
+    As dimensões são $9$ e $6$. Para encontrar a diagonal ($d$), aplicamos o #idx(("Teorema", "de Pitágoras")):
     $
       d & = sqrt(a^2 + b^2) \
       d & = sqrt(9^2 + 6^2) \
@@ -399,7 +399,7 @@
 )
 
 #questao(
-  [Seja M uma matriz quadrada de ordem 4 inversível. Se $M^3 + 3M^2 = 0$, qual o valor do determinante de M?],
+  [Seja M uma #idx(("matriz", "quadrada")) de ordem 4 inversível. Se $M^3 + 3M^2 = 0$, qual o valor do determinante de M?],
   
   [#enum(
     [27],
@@ -415,7 +415,7 @@
     Dada a equação matricial $M^3 + 3M^2 = 0$, isolamos o termo cúbico:
     $ M^3 = -3M^2 $
     
-    Aplicamos o determinante em ambos os lados, lembrando que $M$ é uma matriz quadrada de ordem $n=4$:
+    Aplicamos o determinante em ambos os lados, lembrando que $M$ é uma #idx(("matriz", "quadrada")) de ordem $n=4$:
     
     $ det(M^3) = det(-3M^2) $
     
@@ -742,6 +742,8 @@
     [30],
     [31],
   )],
+
+  assunto: "placeholder",
   
   gabarito_letra: "C",
   

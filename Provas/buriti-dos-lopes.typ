@@ -21,8 +21,9 @@
     [4],
     [3],
     [2],
-  )],
-  
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Primeiro, convertemos a área ocupada por uma pessoa de $c m^2$ para $m^2$, sabendo que $1 m^2 = 10.000 c m^2$:
     
@@ -52,8 +53,9 @@
     [$2^10$],
     [$20^2$],
     [$2^20$],
-  )],
-  
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para cada uma das 10 perguntas, existem exatamente 2 possibilidades de resposta ("sim" ou "não"). Pelo Princípio Fundamental da Contagem, multiplicamos as possibilidades para cada evento independente.
     
@@ -77,7 +79,9 @@
     [$23/7$],
     [$31/4$],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: none,
 )
 
@@ -108,11 +112,12 @@
     [$12, 25 "cm"^2$],
     [$12, 5 "cm"^2$],
   )],
-  
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Em um quadrado inscrito em uma circunferência, a diagonal do quadrado ($d$) coincide com o diâmetro da circunferência. Sabendo que o diâmetro mede 5 cm, temos $d = 5$.
     
-    A relação entre a área ($A$) do quadrado e sua diagonal é derivada do Teorema de Pitágoras ($l^2 + l^2 = d^2$):
+    A relação entre a área ($A$) do quadrado e sua diagonal é derivada do #idx(("Teorema", "de Pitágoras")) ($l^2 + l^2 = d^2$):
     
     #align(center)[#block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
       $ A = d^2 / 2 $
@@ -139,7 +144,9 @@
     [22 cm],
     [24 cm],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     #block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow), width: 100%)[
       *Lei dos Cossenos:* \
@@ -178,7 +185,9 @@
     [10 m],
     [12 m],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Para encontrar a altura ($h$), utilizamos a fórmula da área do trapézio, onde $B$ é a base maior e $b$ a base menor.
     
@@ -214,7 +223,9 @@
     [7],
     [6],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Dada a PG $(4, 20, dots, 312500)$, primeiramente determinamos a razão ($q$):
     $ q = a_2 / a_1 = 20 / 4 = 5 $
@@ -258,7 +269,9 @@
     [15],
     [-12],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Os coeficientes $a, b, c$ formam uma Progressão Geométrica (PG) de razão $q = -2$.
     Também sabemos que a soma dos coeficientes é $15$ ($a + b + c = 15$).
@@ -300,7 +313,9 @@
     [7],
     [8],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     
     $ log_2 16 + log_12 1728 $
@@ -330,7 +345,7 @@
 )
 
 #questao(
-  [Uma matriz quadrada de ordem n é tal que cada elemento a n p é igual a:
+  [Uma #idx(("matriz", "quadrada")) de ordem n é tal que cada elemento a n p é igual a:
     $-> n, "se" n < 2$;
     $-> n - 1, "se" n = 2$;
     $-> a_(n-2 p) + a_(n-1 p), "se" n > 2$.
@@ -342,7 +357,9 @@
     [3],
     [4],
     [Nulo],
-  )],
+  )],  
+  assunto: "placeholder",
+  gabarito_letra: none,
   
   gabarito_explicacao: [
     Analisamos a formação dos elementos da matriz baseada nas linhas ($n$ representa o índice da linha neste contexto da resolução):
@@ -356,7 +373,7 @@
       
       #block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow), width: 100%)[
         Propriedade dos Determinantes: \
-        Se uma matriz quadrada possui duas linhas (ou colunas) iguais, seu determinante é nulo.
+        Se uma #idx(("matriz", "quadrada")) possui duas linhas (ou colunas) iguais, seu determinante é nulo.
       ]
     
     Como a linha 1 é igual à linha 2 ($L_1 = L_2$), o determinante é zero.
@@ -379,7 +396,9 @@
     [é onde valor da imagem será sempre o mesmo, independentemente do valor da variável.],
     [é uma função cujo domínio é um conjunto vazio.],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     A #idx(("função", "identidade")) é aquela que associa cada elemento do seu domínio ao próprio elemento na imagem.
     Matematicamente, é definida por:
@@ -410,7 +429,9 @@
     [$3sqrt(5)$],
     [8],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     Substituímos a coordenada $y = -5$ na equação da reta:
     $
@@ -459,7 +480,9 @@
     [a diferença entre o somatório dos pontos médios da amostra e suas médias aritméticas.],
     [a soma dos pontos médios da amostra.],
   )],
-  
+    
+  assunto: "placeholder",
+  gabarito_letra: none,
   gabarito_explicacao: [
     A questão solicita a definição do desvio padrão.
     Em estatística, a *#idx(("variância"))* ($sigma^2$ ou $S^2$) é a média dos quadrados dos desvios. O *desvio padrão* ($sigma$ ou $S$) é definido como a raiz quadrada da #idx(("variância")), trazida para a mesma unidade de medida dos dados originais.
