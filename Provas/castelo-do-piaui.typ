@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 #import "@preview/cetz:0.4.2": canvas, draw
 
 = CASTELO DO PIAUÍ
@@ -311,7 +311,7 @@
 )
 
 #questao(
-  [Investindo, mensalmente, R\$ 100 reais a uma taxa de juros compostos de 0,5% ao mês, durante 5 anos, qual o montante que se obtém?
+  [Investindo, mensalmente, R\$ 100 reais a uma taxa de #idx(("juros", "compostos")) de 0,5% ao mês, durante 5 anos, qual o montante que se obtém?
     Se necessário use $1,005^60 = 1,35$.],
   
   [#enum(
@@ -458,7 +458,7 @@
     
     Total de pessoas: $18 + 22 = 40$.
     
-    Montando a média ponderada ($overline(x)$):
+    Montando a #idx(("média", "ponderada")) ($overline(x)$):
     $
       overline(x) & = (18 dot 1,68 + 22 dot 1,61) / 40 \
       overline(x) & = (30,24 + 35,42) / 40 \
@@ -679,7 +679,7 @@
 )
 
 #questao(
-  [Um cone circular reto tem 12 cm de altura e 5 cm de raio. Qual a medida do ângulo central do setor circular equivalente à superfície lateral do cone?],
+  [Um  #idx(("cone")) circular reto tem 12 cm de altura e 5 cm de raio. Qual a medida do ângulo central do setor circular equivalente à superfície lateral do  #idx(("cone"))?],
   
   [#enum(
     [$138degree 27'$],
@@ -692,17 +692,17 @@
   assunto: "placeholder",
   gabarito_letra: none,
   gabarito_explicacao: [
-    Para encontrar o ângulo do setor circular equivalente à superfície lateral do cone, precisamos primeiro da medida da geratriz ($g$).
+    Para encontrar o ângulo do setor circular equivalente à superfície lateral do  #idx(("cone")), precisamos primeiro da medida da geratriz ($g$).
     
     
-    Dado altura $h=12$ cm e raio $r=5$ cm, aplicamos o Teorema de Pitágoras:
+    Dado altura $h=12$ cm e raio $r=5$ cm, aplicamos o #idx(("Teorema", "de Pitágoras")):
     $
       g^2 & = 12^2 + 5^2 \
       g^2 & = 144 + 25 \
       g^2 & = 169 arrow.double g = 13 "cm"
     $
     
-    Ao planificar a lateral do cone, obtemos um setor circular onde o raio do setor é a geratriz do cone ($R = g = 13$). O comprimento do arco é o perímetro da base do cone ($C = 2 pi r = 10 pi$).
+    Ao planificar a lateral do  #idx(("cone")), obtemos um setor circular onde o raio do setor é a geratriz do  #idx(("cone")) ($R = g = 13$). O comprimento do arco é o perímetro da base do  #idx(("cone")) ($C = 2 pi r = 10 pi$).
     
     #align(center)[#block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
       O ângulo em radianos é a razão entre o arco e o raio: $theta = "Arco" / "Raio"$

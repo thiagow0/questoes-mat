@@ -1,4 +1,4 @@
-#import "lib.typ": questao
+#import "lib.typ": questao, idx
 #import "@preview/cetz:0.4.2": canvas, draw
 #import "@preview/cetz-plot:0.1.3": plot
 
@@ -63,10 +63,10 @@
       })
     ]
     
-    Já a função quadrática $g(x) = x^2$ descreve uma parábola que tende a mais infinito quando $x$ tende a menos infinito. Como ambas são funções contínuas e $f(0) > g(0)$ enquanto para um $x$ suficientemente negativo $g(x) > f(x)$, pelo Teorema do Valor Intermediário, deve haver um ponto de intersecção no intervalo negativo. Portanto, a afirmação é *verdadeira*.
+    Já a função quadrática $g(x) = x^2$ descreve uma parábola que tende a mais infinito quando $x$ tende a menos infinito. Como ambas são funções contínuas e $f(0) > g(0)$ enquanto para um $x$ suficientemente negativo $g(x) > f(x)$, pelo #idx(("Teorema", "valor intermediário")), deve haver um ponto de intersecção no intervalo negativo. Portanto, a afirmação é *verdadeira*.
     
     #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
-      *Teorema do Valor Intermediário:*
+      *#idx(("Teorema", "valor intermediário")):*
       Se $f$ é uma função contínua em $[a, b]$ e $k$ é um número entre $f(a)$ e $f(b)$, então existe pelo menos um número $c$ em $(a, b)$ tal que $f(c) = k$. No contexto de equações, usamos isso para garantir que os gráficos se cruzam.
     ]
     
@@ -287,7 +287,7 @@
 )
 
 #questao(
-  [A seção meridiana de um cone equilátero é um triângulo de lado 6 cm. Qual o volume desse cone?],
+  [A seção meridiana de um  #idx(("cone"))  #idx(("equilátero")) é um triângulo de lado 6 cm. Qual o volume desse  #idx(("cone"))?],
   [#enum(
     [$9 pi sqrt(3) "cm"^3$],
     [$12 pi sqrt(3) "cm"^3$],
@@ -352,7 +352,7 @@
     $ g = 6 "cm" $
     $ 2r = 6 arrow.double r = 3 "cm" $
     
-    Para encontrar a altura ($h$), aplicamos o Teorema de Pitágoras no triângulo formado pela altura, raio e geratriz:
+    Para encontrar a altura ($h$), aplicamos o #idx(("Teorema", "de Pitágoras")) no triângulo formado pela altura, raio e geratriz:
     $ h^2 + r^2 = g^2 $
     $ h^2 + 3^2 = 6^2 $
     $ h^2 = 36 - 9 $
@@ -374,7 +374,7 @@
 )
 
 #questao(
-  [Qual a razão entre o volume do cilindro e do cone indicados na figura abaixo?
+  [Qual a razão entre o volume do  #idx(("cilindro")) e do  #idx(("cone")) indicados na figura abaixo?
     
     #align(center)[
       #canvas(length: 0.9cm, {
@@ -683,7 +683,7 @@
     
     $ 1 = 27 / (x y z) arrow.double x y z = 27 $
     
-    Agora possuímos a soma das raízes ($x+y+z=9$), a soma do produto das raízes duas a duas ($x y+x z+y z=27$) e o produto das raízes ($x y z=27$). Para encontrar os valores de $x, y$ e $z$, utilizamos as Relações de Girard para montar uma equação do 3º grau.
+    Agora possuímos a soma das raízes ($x+y+z=9$), a soma do produto das raízes duas a duas ($x y+x z+y z=27$) e o produto das raízes ($x y z=27$). Para encontrar os valores de $x, y$ e $z$, utilizamos as #idx(("Relações", "de Girard")) para montar uma equação do 3º grau.
     
     Adotando $a=1$, temos os coeficientes:
     $ -b = 9 arrow.double b = -9 $
@@ -718,7 +718,7 @@
     
     4 - Se uma matriz é invertível, então seu determinante é nulo.
     
-    8 - Se X é uma matriz quadrada de ordem 3 e det(X) = 4, então det(2X) = 8.
+    8 - Se X é uma #idx(("matriz", "quadrada")) de ordem 3 e det(X) = 4, então det(2X) = 8.
     
     Qual o somatório dos itens verdadeiros:],
   [#enum(
@@ -748,15 +748,15 @@
     
     *Item 4 - Falso*
     #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
-      *Teorema da matriz inversa:*
-      Uma matriz quadrada $A$ é invertível se, e somente se, seu determinante for *diferente* de zero ($det(A) != 0$).
+      *Teorema da Matriz Inversa:*
+      Uma #idx(("matriz", "quadrada")) $A$ é invertível se, e somente se, seu determinante for *diferente* de zero ($det(A) != 0$).
     ]
     A afirmação diz que o determinante é nulo, o que contradiz a definição.
     
     *Item 8 - Falso*
     Dada uma matriz $X$ quadrada de ordem $n=3$ e $det(X) = 4$, calcula-se $det(2X)$.
     
-    Se $A$ é uma matriz quadrada de ordem $n$ e $k$ é um escalar real, então:
+    Se $A$ é uma #idx(("matriz", "quadrada")) de ordem $n$ e $k$ é um escalar real, então:
     $ det(k dot A) = k^n dot det(A) $
     
     Aplicando a propriedade:
@@ -878,13 +878,13 @@ $ S_(100) = (3 dot (3^(100) - 1)) / (3 - 1)  (3(3^(100) - 1)) / 2 $
 #questao(
   [Analise as afirmações abaixo:
     
-    ( ) $x^2/25 + y^2/9 = 1$, no plano cartesiano, é a equação de uma elipse com excentricidade 0,8.
+    ( ) $x^2/25 + y^2/9 = 1$, no plano cartesiano, é a equação de uma #idx(("elipse")) com excentricidade 0,8.
     
     ( ) No plano cartesiano, a equação $|3x - 2y| = 6$ representa um par de retas paralelas.
     
     ( ) Se $a$ e $b$ são inteiros consecutivos, então $a^2 + b^2 + (a b)^2$ é um quadrado perfeito.
     
-    ( ) A equação $x^2 - y^2 = 1$, no plano cartesiano, representa uma hipérbole equilátera.
+    ( ) A equação $x^2 - y^2 = 1$, no plano cartesiano, representa uma #idx(("hipérbole")) equilátera.
     
     Colocando V para verdadeiro e F para falso, temos a seguinte sequência:],
   [#enum(
@@ -974,7 +974,7 @@ $ M &= 560 dot 9,61 = 5381,60 $
 )
 
 #questao(
-  [Existe uma escala chamada pH cujo valor indica se um meio está ácido ou básico. O pH é definido como o cologaritmo da concentração hidrogeniônica em mol/litro, isto é pH = colog [H+]. Sabendo que uma solução de ácido acético tem pH = 5, qual é a sua concentração hidrogeniônica em mol/litro?],
+  [Existe uma escala chamada pH cujo valor indica se um meio está ácido ou básico. O pH é definido como o #idx(("cologaritmo")) da concentração hidrogeniônica em mol/litro, isto é pH = colog [H+]. Sabendo que uma solução de ácido acético tem pH = 5, qual é a sua concentração hidrogeniônica em mol/litro?],
   [#enum(
     [$10^(-5)$],
     [$10^5$],
@@ -1206,7 +1206,7 @@ $ "Quantidade" = 600 / 40 = 60 / 4 = 15 "degraus" $
 )
 
 #questao(
-  [A poupança rende juros compostos, em uma média de 0,5 % ao mês. Como não cobra impostos sobre seus rendimentos, ainda é a queridinha dos brasileiros. Richardson investiu R\$ 5.000,00 na caderneta de poupança. Qual o menor número inteiro de meses que o valor investido deverá ficar aplicado para que ele possa resgatar R\$ 15.000,00?
+  [A poupança rende #idx(("juros", "compostos")), em uma média de 0,5 % ao mês. Como não cobra impostos sobre seus rendimentos, ainda é a queridinha dos brasileiros. Richardson investiu R\$ 5.000,00 na caderneta de poupança. Qual o menor número inteiro de meses que o valor investido deverá ficar aplicado para que ele possa resgatar R\$ 15.000,00?
     
     Admita que, no período considerado, Richardson não fez depósitos nem saques nessa caderneta de poupança e use, se necessário, $"log"3 = 0,48$ e $"log"1,005 = 0,002$.],
   
@@ -1226,9 +1226,9 @@ $ "Quantidade" = 600 / 40 = 60 / 4 = 15 "degraus" $
     
     Montante ($M$) = $15.000$.
     
-    Dados de logaritmo: $log 3 = 0,48$ e $log 1,005 = 0,002$.
+    Dados de #idx(("logaritmo")): $log 3 = 0,48$ e $log 1,005 = 0,002$.
     
-    Utilizamos a fórmula do montante de juros compostos:
+    Utilizamos a fórmula do montante de #idx(("juros", "compostos")):
     
     #align(center)[#block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
       $ M = C dot (1 + i)^t $
@@ -1241,7 +1241,7 @@ $ "Quantidade" = 600 / 40 = 60 / 4 = 15 "degraus" $
                3 & = 1,005^t
     $
     
-    Aplicando logaritmo em ambos os lados:
+    Aplicando #idx(("logaritmo")) em ambos os lados:
     $
       log 3 & = log (1,005^t) \
       log 3 & = t dot log 1,005
@@ -1554,7 +1554,7 @@ $ "Quantidade" = 600 / 40 = 60 / 4 = 15 "degraus" $
 )
 
 #questao(
-  [Uma esfera foi inscrita em um cubo de aresta 4 cm. Qual a razão entre as áreas da superfície do cubo e da superfície esférica? Em seus cálculos use $pi = 3,14$.],
+  [Uma  #idx(("esfera")) foi inscrita em um cubo de aresta 4 cm. Qual a razão entre as áreas da superfície do cubo e da superfície esférica? Em seus cálculos use $pi = 3,14$.],
   
   [#enum(
     [2,87],
@@ -1566,11 +1566,11 @@ $ "Quantidade" = 600 / 40 = 60 / 4 = 15 "degraus" $
   assunto: "Geometria espacial",
   gabarito_explicacao: [
     Dados: aresta do cubo $a = 4 "cm"$.
-    Como a esfera está inscrita, seu diâmetro é igual à aresta do cubo. Logo, o raio $r = 2 "cm"$.
+    Como a  #idx(("esfera")) está inscrita, seu diâmetro é igual à aresta do cubo. Logo, o raio $r = 2 "cm"$.
     
-    Área da superfície da esfera:
+    Área da superfície da  #idx(("esfera")):
     $
-      A_("esfera") & = 4 pi r^2 \
+      A_#idx(("esfera")) & = 4 pi r^2 \
                    & = 4 dot 3,14 dot 2^2 \
                    & = 16 dot 3,14 = 50,24 "cm"^2
     $
@@ -1581,7 +1581,7 @@ $ "Quantidade" = 600 / 40 = 60 / 4 = 15 "degraus" $
                  & = 6 dot 4^2 = 6 dot 16 = 96 "cm"^2
     $
     
-    $ R = A_("cubo") / A_("esfera") = 96 / (50,24) approx 1,91 $
+    $ R = A_("cubo") / A_#idx(("esfera")) = 96 / (50,24) approx 1,91 $
     
     #pad(y: 5pt)[
       #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
@@ -1664,7 +1664,7 @@ $ "Quantidade" = 600 / 40 = 60 / 4 = 15 "degraus" $
 )
 
 #questao(
-  [O sistema seguinte é homogêneo.
+  [O sistema seguinte é #idx(("homogêneo")).
     
     $
       cases(
@@ -1686,7 +1686,7 @@ $ "Quantidade" = 600 / 40 = 60 / 4 = 15 "degraus" $
   assunto: "Álgebra linear",
   gabarito_explicacao: [
     #align(center)[#block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
-      Um sistema linear é homogêneo quando todos os seus termos independentes (aqueles após o sinal de igualdade) são nulos.
+      Um sistema linear é #idx(("homogêneo")) quando todos os seus termos independentes (aqueles após o sinal de igualdade) são nulos.
     ]]
     
     Igualando os termos independentes a zero, temos o seguinte sistema:

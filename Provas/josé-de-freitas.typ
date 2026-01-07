@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 
 #import "@preview/cetz:0.4.2": canvas, draw
 
@@ -70,7 +70,7 @@
 )
 
 #questao(
-  [Um capital C foi aplicado a uma taxa de juros compostos de 20\% ao ano. Esse capital triplicará seu valor em, aproximadamente:],
+  [Um capital C foi aplicado a uma taxa de #idx(("juros", "compostos")) de 20\% ao ano. Esse capital triplicará seu valor em, aproximadamente:],
   [#enum(
     [4 anos],
     [5 anos],
@@ -231,11 +231,11 @@
 #questao(
   [O coeficiente de variação é uma razão entre:],
   [#enum(
-    [A média aritmética e a mediana],
+    [A média aritmética e a #idx(("mediana"))],
     [O desvio padrão e a média aritmética],
-    [A moda e a média aritmética],
+    [A moda e a #idx(("média", "aritmética"))],
     [O desvio padrão e a moda],
-    [A moda e a mediana],
+    [A moda e a #idx(("mediana"))],
   )],
   assunto: "placeholder",
   gabarito_letra: none,
@@ -243,7 +243,7 @@
 )
 
 #questao(
-  [Assinale a alternativa que melhor descreve uma função identidade],
+  [Assinale a alternativa que melhor descreve uma #idx(("função", "identidade"))],
   [#enum(
     [é uma função que dá como imagem de cada elemento o próprio elemento],
     [é quando o conjunto imagem coincide com o contradomínio da função],
@@ -322,7 +322,7 @@
 )
 
 #questao(
-  [Na figura abaixo temos um círculo inscrito em um triângulo isósceles de base BC, com todas as medidas em centímetros. Qual a área do triângulo AMN, sabendo que a reta $t$ é paralela ao lado BC do triângulo ABC?
+  [Na figura abaixo temos um círculo inscrito em um triângulo  #idx(("isósceles")) de base BC, com todas as medidas em centímetros. Qual a área do triângulo AMN, sabendo que a reta $t$ é paralela ao lado BC do triângulo ABC?
     
     #align(center)[
       #canvas(length: 0.9cm, {
@@ -384,7 +384,7 @@
 )
 
 #questao(
-  [Uma pirâmide regular de base quadrada tem volume igual a $96 "cm"^3$. Sabe-se que a área da base é igual ao dobro da área de uma das faces laterais. Qual a medida da altura dessa pirâmide, em centímetros?],
+  [Uma #idx(("pirâmide")) #idx(("regular")) de base quadrada tem volume igual a $96 "cm"^3$. Sabe-se que a área da base é igual ao dobro da área de uma das faces laterais. Qual a medida da altura dessa #idx(("pirâmide")), em centímetros?],
   [#enum(
     [6],
     [8],
@@ -484,7 +484,7 @@
 )
 
 #questao(
-  [Na escola A de José de Freitas trabalham 3 professores de Geografia e 4 de Biologia. Na escola B trabalham 6 professores de Geografia e 2 de Biologia. Uma dessas escolas é escolhida ao acaso e nela é escolhido um professor, também ao acaso. Se o professor escolhido foi de Biologia, qual a probabilidade de que tenha vindo da escola A?],
+  [Na escola A de José de Freitas trabalham 3 professores de Geografia e 4 de Biologia. Na escola B trabalham 6 professores de Geografia e 2 de Biologia. Uma dessas escolas é escolhida ao acaso e nela é escolhido um professor, também ao acaso. Se o professor escolhido foi de Biologia, qual a #idx(("probabilidade")) de que tenha vindo da escola A?],
   [#enum(
     [$3/7$],
     [$3/14$],
@@ -564,7 +564,7 @@
 \
 
 #questao(
-  [Uma instituição bancária oferece uma aplicação financeira em regime de juros compostos à taxa de 8% ao ano. Se você deposita nesse banco R\$ 1 200,00 nessa aplicação, ao final de $x$ anos, os juros obtidos por você serão em reais, relativo a esse depósito, de:],
+  [Uma instituição bancária oferece uma aplicação financeira em regime de #idx(("juros", "compostos")) à taxa de 8% ao ano. Se você deposita nesse banco R\$ 1 200,00 nessa aplicação, ao final de $x$ anos, os juros obtidos por você serão em reais, relativo a esse depósito, de:],
   
   [#enum(
     [$1200 dot (1,08^x)$],
@@ -596,7 +596,7 @@
 )
 
 #questao(
-  [Miguel possui os capitais de R\$ 300,00, R\$ 400,00 e R\$ 500,00 que serão aplicados no regime de juros simples durante o mesmo tempo às taxas mensais de 2%, 3% e 5% respectivamente.
+  [Miguel possui os capitais de R\$ 300,00, R\$ 400,00 e R\$ 500,00 que serão aplicados no regime de #idx(("juros", "simples")) durante o mesmo tempo às taxas mensais de 2%, 3% e 5% respectivamente.
     A taxa média mensal de aplicação destes capitais é, aproximadamente:],
   
   [#enum(
@@ -613,7 +613,7 @@
 )
 
 #questao(
-  [Considere que uma pessoa física adquiri uma dívida hipotética com uma instituição financeira, e que essa mesma instituição cobra juros compostos de 12% ao mês. Em quanto tempo essa dívida irá dobrar de valor?],
+  [Considere que uma pessoa física adquiri uma dívida hipotética com uma instituição financeira, e que essa mesma instituição cobra #idx(("juros", "compostos")) de 12% ao mês. Em quanto tempo essa dívida irá dobrar de valor?],
   
   [#enum(
     [$log_(12) 2$ meses],
@@ -629,7 +629,7 @@
 )
 
 #questao(
-  [A taxa mensal proporcional, em regime de juros compostos, à taxa de 21% ao bimestre, é:],
+  [A taxa mensal proporcional, em regime de #idx(("juros", "compostos")), à taxa de 21% ao bimestre, é:],
   
   [#enum(
     [10%],
@@ -645,7 +645,7 @@
 )
 
 #questao(
-  [Numa aplicação financeira no regime de juros compostos, NÃO é verdade que:],
+  [Numa aplicação financeira no regime de #idx(("juros", "compostos")), NÃO é verdade que:],
   
   [#enum(
     [Os juros são crescentes.],
@@ -677,7 +677,7 @@
 )
 
 #questao(
-  [Considere a função $f: RR -> RR$, definida por $f(x) = (2x+1)/(x-4)$, para todo $x$ real e $x != 4$. A sua função inversa $f^(-1)$ é definida por:],
+  [Considere a função $f: RR -> RR$, definida por $f(x) = (2x+1)/(x-4)$, para todo $x$ real e $x != 4$. A sua #idx(("função", "inversa")) $f^(-1)$ é definida por:],
   
   [#enum(
     [$f^(-1)(x) = (-2x-1)/(x-4)$],
@@ -709,7 +709,7 @@
 )
 
 #questao(
-  [As raízes da equação do 2º grau $x^2 - 4x + 5 = 0$ no conjunto dos números complexos são:],
+  [As raízes da equação do 2º grau $x^2 - 4x + 5 = 0$ no conjunto dos números  #idx(("complexos")) são:],
   
   [#enum(
     [$4 plus.minus i$],
@@ -725,7 +725,7 @@
 )
 
 #questao(
-  [O módulo do número complexo $z = (1+i)/(1-i)$ é:],
+  [O módulo do número  #idx(("complexo")) $z = (1+i)/(1-i)$ é:],
   
   [#enum(
     [$sqrt(2)$],
@@ -759,7 +759,7 @@
 #questao(
   [Sabendo que $x$ é um arco do quarto quadrante, calcule $(2tan x)/(1-tan^2 x)$ quando $cos x = 12/13$.],
   
-  [#enum(
+  [#enum(spacing: 12pt,
     [$-120/119$],
     [$144/119$],
     [$-144/119$],
@@ -773,7 +773,7 @@
 )
 
 #questao(
-  [Calcule a área do triângulo ABC, sendo que A coincide com o vértice da parábola $y = x^2 + x - 12$, e B e C são pontos onde esta parábola encontra o eixo dos x.],
+  [Calcule a área do triângulo ABC, sendo que A coincide com o vértice da #idx(("parábola")) $y = x^2 + x - 12$, e B e C são pontos onde esta #idx(("parábola")) encontra o eixo dos x.],
   
   [#enum(
     [235/4],
@@ -1172,7 +1172,7 @@
        h & = 2 "cm"
     $
     
-    Cálculo de BD (Teorema de Pitágoras)
+    Cálculo de BD (#idx(("Teorema", "de Pitágoras")))
     
     Agora focamos no triângulo retângulo $A B D$. Temos a hipotenusa $A B = 6$ e o cateto $A D = 2$. Queremos encontrar o cateto $B D$.
     
@@ -1324,7 +1324,7 @@
       _Nota:_ Se $a$ e $c$ têm sinais opostos, então $Delta = b^2 - 4a c$ será sempre positivo (pois $-4a c$ fica positivo), garantindo a existência de raízes reais.
     ]
     
-    Sejam $x_1$ e $x_2$ as raízes. Pela relação de Girard, o produto é dado por:
+    Sejam $x_1$ e $x_2$ as raízes. Pelas #idx(("relações", "de Girard")), o produto é dado por:
     $ x_1 dot x_2 = c/a $
     
     Para que tenham sinais contrários, o produto deve ser menor que zero:
@@ -1375,7 +1375,7 @@
   assunto: "placeholder",
   gabarito_letra: none,
   gabarito_explicacao: [
-    O Teorema do Resto afirma que o resto da divisão de um polinômio $P(x)$ por um binômio $(x-a)$ é igual a $P(a)$.
+    O #idx(("Teorema", "do resto")) afirma que o resto da divisão de um polinômio $P(x)$ por um binômio $(x-a)$ é igual a $P(a)$.
     
     Do enunciado, temos:
     - $P(x)$ dividido por $(x-3)$ deixa resto $4 arrow.double P(3) = 4$.
@@ -1452,7 +1452,7 @@
   gabarito_letra: none,
   gabarito_explicacao: [
     
-    Para calcular $z^300$ dado $z = -1/2 + i sqrt(3)/2$, utilizamos a forma trigonométrica e a Primeira Fórmula de De Moivre. Um número complexo é escrito como $z = |z|(cos theta + i sin theta)$. Calculando o módulo $|z|$ e o argumento $theta$:
+    Para calcular $z^300$ dado $z = -1/2 + i sqrt(3)/2$, utilizamos a forma trigonométrica e a Primeira Fórmula de De Moivre. Um número  #idx(("complexo")) é escrito como $z = |z|(cos theta + i sin theta)$. Calculando o módulo $|z|$ e o argumento $theta$:
     $ |z| = sqrt((-1/2)^2 + (sqrt(3)/2)^2) = sqrt(1/4 + 3/4) = 1 $
     
     Identificando o ângulo (Argumento):
@@ -1487,7 +1487,7 @@
 )
 
 #questao(
-  [Cunha esférica é o sólido obtido de uma rotação incompleta de um semicírculo em torno de um eixo que contém o seu diâmetro. O volume de uma cunha esférica é proporcional ao ângulo da rotação que a gerou.
+  [#idx(("Cunha esférica")) é o sólido obtido de uma rotação incompleta de um semicírculo em torno de um eixo que contém o seu diâmetro. O volume de uma cunha esférica é proporcional ao ângulo da rotação que a gerou.
     Qual é o volume de uma cunha esférica de raio 6 cm e ângulo diedro de $45degree$?],
   
   [#enum(
@@ -1505,13 +1505,13 @@
     Para encontrar o volume da cunha, primeiro analisamos a proporção do ângulo dado em relação a uma volta completa ($360 degree$). Dado que o ângulo diedro é de $45 degree$:
     $ (360 degree) / (45 degree) = 8 $
     
-    Isso significa que a cunha representa a *oitava parte* ($1/8$) do volume total da esfera. A fórmula do volume da esfera é $V = 4/3 pi r^3$. Com raio $r = 6 "cm"$:
+    Isso significa que a cunha representa a *oitava parte* ($1/8$) do volume total da  #idx(("esfera")). A fórmula do volume da  #idx(("esfera")) é $V = 4/3 pi r^3$. Com raio $r = 6 "cm"$:
     
-    $ V_("esfera") & = 4/3 pi dot (6)^3 = 4/3 pi dot 216 = 4 pi dot (216/3) = 4 pi dot 72 = 288 pi "cm"^3 $
+    $ V_#idx(("esfera")) & = 4/3 pi dot (6)^3 = 4/3 pi dot 216 = 4 pi dot (216/3) = 4 pi dot 72 = 288 pi "cm"^3 $
     
     Dividimos o volume total por 8:
     
-    $ V_("cunha") & = V_("esfera") / 8 = (288 pi) / 8 = 36 pi "cm"^3 $
+    $ V_("cunha") & = V_#idx(("esfera")) / 8 = (288 pi) / 8 = 36 pi "cm"^3 $
     
     #pad(y: 10pt)[
       #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
@@ -1536,17 +1536,17 @@
   gabarito_letra: none,
   gabarito_explicacao: [
     
-    O sólido gerado pela rotação de um triângulo retângulo em torno de sua hipotenusa é composto por *dois cones* unidos pela mesma base circular. Sejam os catetos $b = 6$ cm e $c = 8$ cm. Primeiro, calculamos a hipotenusa ($a$) pelo Teorema de Pitágoras (triângulo pitagórico 3-4-5 ampliado):
+    O sólido gerado pela rotação de um triângulo retângulo em torno de sua hipotenusa é composto por *dois cones* unidos pela mesma base circular. Sejam os catetos $b = 6$ cm e $c = 8$ cm. Primeiro, calculamos a hipotenusa ($a$) pelo #idx(("Teorema", "de Pitágoras")) (triângulo pitagórico 3-4-5 ampliado):
     $ a^2 = 6^2 + 8^2 arrow.double a = sqrt(36 + 64) = 10 "cm" $
     
-    O raio da base dos cones ($r$) corresponde à altura relativa à hipotenusa do triângulo original. Usamos a #text(fill: rgb(0, 0, 255), weight: "bold")[#link("https://www.obaricentrodamente.com/2015/04/relacoes-metricas-no-triangulo-retangulo.html")[#underline[relação métrica]]] $a dot r = b dot c$:
+    O raio da base dos cones ($r$) corresponde à altura relativa à hipotenusa do triângulo original. Usamos a #text(fill: rgb(0, 0, 255), weight: "bold")[#link("https://www.obaricentrodamente.com/2015/04/relacoes-metricas-no-triangulo-retangulo.html")[#underline[#idx(("relação", "métrica"))]]] $a dot r = b dot c$:
     $
       10 dot r & = 6 dot 8 \
           10 r & = 48 \
              r & = 4,8 "cm"
     $
     
-    Também podemos determinar as alturas individuais de cada cone ($h_1$ e $h_2$) pelas projeções dos catetos na hipotenusa:
+    Também podemos determinar as alturas individuais de cada  #idx(("cone")) ($h_1$ e $h_2$) pelas projeções dos catetos na hipotenusa:
     $ c^2 = a dot h_1 arrow.double 64 = 10 h_1 arrow.double h_1 = 6,4 $
     $ b^2 = a dot h_2 arrow.double 36 = 10 h_2 arrow.double h_2 = 3,6 $
     #text(size: 0.8em, style: "italic")[(Note que $h_1 + h_2 = 10$)]
@@ -1688,7 +1688,7 @@
     Dada a equação:
     $ (a-2)^4 + (b+3)^2 + (c-5)^6 = 0 $
     
-    Observa-se que os expoentes de todas as parcelas são números pares ($4, 2$ e $6$). No conjunto dos números reais, qualquer termo elevado a um expoente par é sempre *maior ou igual a zero* (não negativo). Para que a soma de números não negativos resulte em zero, é condição necessária e suficiente que *cada uma das parcelas seja igual a zero*.
+    Observa-se que os expoentes de todas as parcelas são números pares ($4, 2$ e $6$). No conjunto dos números reais, qualquer termo elevado a um expoente par é sempre maior ou igual a zero (não negativo). Para que a soma de números não negativos resulte em zero, é condição necessária e suficiente que cada uma das parcelas seja igual a zero.
     
     Portanto, igualamos cada base a zero:
     
@@ -1720,11 +1720,11 @@
   [O que representa no plano cartesiano a equação $x^2 - y^2 + 3x + y + 2 = 0$?],
   
   [#enum(
-    [Uma hipérbole.],
-    [Uma parábola.],
+    [Uma #idx(("hipérbole")).],
+    [Uma #idx(("parábola")).],
     [Duas retas concorrentes.],
     [Duas retas paralelas.],
-    [Uma elipse.],
+    [Uma #idx(("elipse")).],
   )],
     
   assunto: "placeholder",

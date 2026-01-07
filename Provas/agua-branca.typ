@@ -1,4 +1,4 @@
-#import "lib.typ": questao
+#import "lib.typ": questao, idx
 #import "@preview/cetz:0.4.2": canvas, draw
 
 = ÁGUA BRANCA
@@ -31,7 +31,7 @@
     $ x^2 - 4 = 3x - 5 $
     $ x^2 - 3x + 1 = 0 $
     
-    Considerando $a$ e $b$ (ou $x_1$ e $x_2$) como as raízes da equação, utilizamos as Relações de Girard para determinar a soma ($S$) e o produto ($P$):
+    Considerando $a$ e $b$ (ou $x_1$ e $x_2$) como as raízes da equação, utilizamos as #idx(("relações", "de Girard")) para determinar a soma ($S$) e o produto ($P$):
     
     #align(center)[
       #block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
@@ -315,7 +315,7 @@
     Encontrando o valor de $a$:
     $ a = 21 - 2(6) = 21 - 12 = 9 $
     
-    As dimensões são $9$ e $6$. Para encontrar a diagonal ($d$), aplicamos o Teorema de Pitágoras:
+    As dimensões são $9$ e $6$. Para encontrar a diagonal ($d$), aplicamos o #idx(("Teorema", "de Pitágoras")):
     $
       d & = sqrt(a^2 + b^2) \
       d & = sqrt(9^2 + 6^2) \
@@ -374,7 +374,7 @@
     
     De acordo com o enunciado, o perímetro e as relações fornecem que $c + d = 37$.
     
-    Pelo *Teorema da Bissetriz Interna*:
+    Pelo #idx(("Teorema", "da Bissetriz", "Interna")):
     $ (B S) / (B A) = (S C) / (A C) arrow.double 10 / c = d / 30 arrow.double c dot d = 300 $
     
     Temos um sistema de soma e produto:
@@ -399,7 +399,7 @@
 )
 
 #questao(
-  [Seja M uma matriz quadrada de ordem 4 inversível. Se $M^3 + 3M^2 = 0$, qual o valor do determinante de M?],
+  [Seja M uma #idx(("matriz", "quadrada")) de ordem 4 inversível. Se $M^3 + 3M^2 = 0$, qual o valor do determinante de M?],
   
   [#enum(
     [27],
@@ -415,7 +415,7 @@
     Dada a equação matricial $M^3 + 3M^2 = 0$, isolamos o termo cúbico:
     $ M^3 = -3M^2 $
     
-    Aplicamos o determinante em ambos os lados, lembrando que $M$ é uma matriz quadrada de ordem $n=4$:
+    Aplicamos o determinante em ambos os lados, lembrando que $M$ é uma #idx(("matriz", "quadrada")) de ordem $n=4$:
     
     $ det(M^3) = det(-3M^2) $
     
@@ -446,7 +446,7 @@
 )
 
 #questao(
-  [Uma pirâmide quadrangular regular tem aresta da base igual a 24 cm e volume igual a 3072 $c m^3$. Qual a medida da área total dessa pirâmide?],
+  [Uma #idx(("pirâmide")) quadrangular #idx(("regular")) tem aresta da base igual a 24 cm e volume igual a 3072 $c m^3$. Qual a medida da área total dessa #idx(("pirâmide"))?],
   
   [#enum(
     [$576 "cm"^2$],
@@ -467,7 +467,7 @@
     $ 3072 = 192 h arrow.double h = 16 "cm" $
     
     
-    Formamos um triângulo retângulo com a altura ($h$), o apótema da base ($m = l/2 = 12$) e o apótema da pirâmide ($g$).
+    Formamos um triângulo retângulo com a altura ($h$), o apótema da base ($m = l/2 = 12$) e o apótema da #idx(("pirâmide")) ($g$).
     $ g^2 = h^2 + m^2 arrow.double g^2 = 16^2 + 12^2 $
     $ g^2 = 256 + 144 = 400 arrow.double g = 20 "cm" $
     
@@ -486,7 +486,7 @@
 )
 
 #questao(
-  [Ana Vitória fez uma aplicação na caderneta de poupança de R\$ 2.000,00 em regime de juros compostos, com rendimentos de 6% ao ano. Qual é, aproximadamente, o tempo necessário, em anos, para que essa quantia triplique de valor?
+  [Ana Vitória fez uma aplicação na caderneta de poupança de R\$ 2.000,00 em regime de #idx(("juros", "compostos")), com rendimentos de 6% ao ano. Qual é, aproximadamente, o tempo necessário, em anos, para que essa quantia triplique de valor?
     
     Observação: Se necessário use $"log"_10 3 = 0,477$ e $"log"_10 1,06 = 0,025$.],
   
@@ -502,11 +502,11 @@
   
   gabarito_explicacao: [
     Capital inicial $C = 2000$, Montante $M = 6000$ (triplo), taxa $i = 0,06$.
-    Fórmula dos juros compostos: $M = C (1+i)^t$.
+    Fórmula dos #idx(("juros", "compostos")): $M = C (1+i)^t$.
     
     $ 6000 = 2000 dot (1,06)^t arrow.double 3 = (1,06)^t $
     
-    Aplicando logaritmo em ambos os lados e usando os dados fornecidos ($log 3 approx 0,477$ e $log 1,06 approx 0,025$):
+    Aplicando #idx(("logaritmo")) em ambos os lados e usando os dados fornecidos ($log 3 approx 0,477$ e $log 1,06 approx 0,025$):
     $ log 3 = t dot log(1, 06) $
     $ 0,477 = t dot 0,025 $
     
@@ -651,7 +651,7 @@
   gabarito_letra: "B",
   
   gabarito_explicacao: [
-    Pelo Teorema do Resto:
+    Pelo #idx(("Teorema", "do resto")):
     
     Resto da divisão por $x+1$ é 4 $arrow.double P(-1) = 4$.
     
@@ -689,7 +689,7 @@
 )
 
 #questao(
-  [Qual o módulo do número complexo $ z = (2 + i) dot 3 - 2 dot (1 - 2i) - i? $],
+  [Qual o módulo do número  #idx(("complexo")) $ z = (2 + i) dot 3 - 2 dot (1 - 2i) - i? $],
   
   [#enum(
     [$3sqrt(7)$],

@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 #import "@preview/cetz:0.4.2": canvas, draw
 
 = BURITI DOS LOPES
@@ -117,7 +117,7 @@
   gabarito_explicacao: [
     Em um quadrado inscrito em uma circunferência, a diagonal do quadrado ($d$) coincide com o diâmetro da circunferência. Sabendo que o diâmetro mede 5 cm, temos $d = 5$.
     
-    A relação entre a área ($A$) do quadrado e sua diagonal é derivada do Teorema de Pitágoras ($l^2 + l^2 = d^2$):
+    A relação entre a área ($A$) do quadrado e sua diagonal é derivada do #idx(("Teorema", "de Pitágoras")) ($l^2 + l^2 = d^2$):
     
     #align(center)[#block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
       $ A = d^2 / 2 $
@@ -135,7 +135,7 @@
 )
 
 #questao(
-  [Em um triângulo escaleno ABC com lados $A B = x$, $A C = 15 "cm"$, $B C = 20 "cm"$ e o ângulo de $C = 60degree$, qual o valor de X?],
+  [Em um triângulo  #idx(("escaleno")) ABC com lados $A B = x$, $A C = 15 "cm"$, $B C = 20 "cm"$ e o ângulo de $C = 60degree$, qual o valor de X?],
   
   [#enum(
     [12 cm],
@@ -320,7 +320,7 @@
     
     $ log_2 16 + log_12 1728 $
     
-    Resolvendo separadamente cada logaritmo:
+    Resolvendo separadamente cada #idx(("logaritmo")):
     
     $ log_2 16 = x arrow.double 2^x = 16 arrow.double 2^x = 2^4 arrow.double x = 4 $
     
@@ -345,7 +345,7 @@
 )
 
 #questao(
-  [Uma matriz quadrada de ordem n é tal que cada elemento a n p é igual a:
+  [Uma #idx(("matriz", "quadrada")) de ordem n é tal que cada elemento a n p é igual a:
     $-> n, "se" n < 2$;
     $-> n - 1, "se" n = 2$;
     $-> a_(n-2 p) + a_(n-1 p), "se" n > 2$.
@@ -373,7 +373,7 @@
       
       #block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow), width: 100%)[
         Propriedade dos Determinantes: \
-        Se uma matriz quadrada possui duas linhas (ou colunas) iguais, seu determinante é nulo.
+        Se uma #idx(("matriz", "quadrada")) possui duas linhas (ou colunas) iguais, seu determinante é nulo.
       ]
     
     Como a linha 1 é igual à linha 2 ($L_1 = L_2$), o determinante é zero.
@@ -387,7 +387,7 @@
 )
 
 #questao(
-  [Assinale a alternativa que melhor descreve uma função identidade],
+  [Assinale a alternativa que melhor descreve uma #idx(("função", "identidade"))],
   
   [#enum(
     [é uma função que dá como imagem de cada elemento o próprio elemento.],
@@ -400,7 +400,7 @@
   assunto: "placeholder",
   gabarito_letra: none,
   gabarito_explicacao: [
-    A função identidade é aquela que associa cada elemento do seu domínio ao próprio elemento na imagem.
+    A #idx(("função", "identidade")) é aquela que associa cada elemento do seu domínio ao próprio elemento na imagem.
     Matematicamente, é definida por:
     
     #align(center)[
@@ -474,8 +474,8 @@
   [O desvio padrão de uma amostra é],
   
   [#enum(
-    [o quadrado do somatório da média aritmética da amostra.],
-    [a raiz quadrada da variância amostral.],
+    [o quadrado do somatório da #idx(("média", "aritmética")) da amostra.],
+    [a raiz quadrada da #idx(("variância")) amostral.],
     [o somatório do valor médio das diferenças quadradas da média da amostra.],
     [a diferença entre o somatório dos pontos médios da amostra e suas médias aritméticas.],
     [a soma dos pontos médios da amostra.],
@@ -485,15 +485,15 @@
   gabarito_letra: none,
   gabarito_explicacao: [
     A questão solicita a definição do desvio padrão.
-    Em estatística, a *variância* ($sigma^2$ ou $S^2$) é a média dos quadrados dos desvios. O *desvio padrão* ($sigma$ ou $S$) é definido como a raiz quadrada da variância, trazida para a mesma unidade de medida dos dados originais.
+    Em estatística, a *#idx(("variância"))* ($sigma^2$ ou $S^2$) é a média dos quadrados dos desvios. O *desvio padrão* ($sigma$ ou $S$) é definido como a raiz quadrada da #idx(("variância")), trazida para a mesma unidade de medida dos dados originais.
     
     #align(center)[
-      $ "Desvio Padrão" = sqrt("Variância") $
+      $ #idx(("desvio padrão")) = sqrt(#idx(("variância"))) $
     ]
     
     #pad(y: 5pt)[
       #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
-        *Resposta: (B) a raiz quadrada da variância amostral.*
+        *Resposta: (B) a raiz quadrada da #idx(("variância")) amostral.*
       ]
     ]
   ],

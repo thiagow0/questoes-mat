@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 #import "@preview/cetz:0.4.2": angle, canvas, draw
 
 = LIMA CAMPOS - MA
@@ -100,9 +100,13 @@
   [Dê o somatório das afirmativas que estiverem corretas.
     
     (01) $sin 2pi - sec (4pi)/3 - "cossec" (5pi)/6 = 1$.
+
     (02) Se $sin 10degree = 17/100$ então o valor de $sec 80degree = 100/17$.
+
     (04) $sin(x) dot sec(x) + cos(x) dot "cossec"(x) = sec(x) dot "cossec"(x)$.
+
     (08) $tg(x) + "cotg"(x) = sec(x) dot "cossec"(x)$.
+    
     (16) Não existe $x$ para o qual se tenha $sin(x) dot cos(x) = 1$.],
   [#enum(
     [24],
@@ -246,7 +250,7 @@
 )
 
 #questao(
-  [O complexo $z = (1 - i)^16$ é igual a:],
+  [O  #idx(("complexo")) $z = (1 - i)^16$ é igual a:],
   [#enum(
     [$z = 256 i$],
     [$z = -256 i$],
@@ -263,9 +267,9 @@
   [A equação $(x-3)^2/25 + (y-4)^2/9 = 0$ representa:],
   [#enum(
     [Um par de retas paralelas.],
-    [Uma elipse.],
-    [Uma hipérbole.],
-    [Uma parábola.],
+    [Uma #idx(("elipse")).],
+    [Uma #idx(("hipérbole")).],
+    [Uma #idx(("parábola")).],
     [Um ponto.],
   )],
   assunto: "placeholder",

@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 #import "@preview/cetz:0.4.2": canvas, draw
 
 = PIRIPIRI
@@ -32,7 +32,7 @@
   assunto: "placeholder",
   gabarito_letra: "D",
   gabarito_explicacao: [
-    Usando equivalências lógicas, sabemos que a *contrapositiva* $~q -> ~p$ é equivalente a $p -> q$.
+    Usando equivalências lógicas, sabemos que a *#idx(("contrapositiva"))* $~q -> ~p$ é equivalente a $p -> q$.
     Logo, a expressão torna-se:
     
     $ (p -> q) and (p -> q) arrow.l.r.double p -> q $
@@ -88,7 +88,7 @@
     - A máquina 2 produz 35% das peças e 3% delas são defeituosas.
     - A máquina 3 produz 25% das peças e 5% delas são defeituosas.
     
-    Se uma peça é selecionada aleatoriamente e constatada como defeituosa, qual a probabilidade de que ela tenha sido produzida pela máquina 2?],
+    Se uma peça é selecionada aleatoriamente e constatada como defeituosa, qual a #idx(("probabilidade")) de que ela tenha sido produzida pela máquina 2?],
   [#enum(
     [0,58],
     [0,54],
@@ -100,9 +100,11 @@
   assunto: "placeholder",
   gabarito_letra: "E",
   gabarito_explicacao: [
-    #align(center)[#block(fill: luma(240), inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
-      $P(A|B) = (P(B|A) P(A)) / P(B)$
-    ]]
+    #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
+      *#idx(("Teorema", "de Bayes"))*
+
+      $ P(A|B) = (P(B|A) P(A)) / P(B) $
+    ]
     
     Probabilidades das máquinas ($M$) e defeitos ($D$):
     
@@ -112,10 +114,10 @@
     
     $P(M_3) = 0,25$, $P(D|M_3) = 0,05 => P(M_3 inter D) = 0,0125$
     
-    Probabilidade total de defeito:
+    #idx(("Probabilidade")) total de defeito:
     $ P(D) = 0,008 + 0,0105 + 0,0125 = 0,031 $
     
-    Calculando a probabilidade de ser da máquina 2, dado que tem defeito:
+    Calculando a #idx(("probabilidade")) de ser da máquina 2, dado que tem defeito:
     $ P(M_2|D) = (P(M_2 inter D)) / (P(D)) = (0,0105) / (0,0310) = 105 / 310 approx 0,34 $
     
     #pad(y: 5pt)[
@@ -161,7 +163,7 @@
 )
 
 #questao(
-  [Um investidor aplicou R\$ 15.000,00 a juros simples por um certo tempo, a uma taxa de 1,5% ao mês. Ele percebeu que, se a taxa tivesse sido 0,9 ponto percentual menor ao mês, o juro total teria sido R\$ 4.050,00 menor. O tempo dessa aplicação é igual a:],
+  [Um investidor aplicou R\$ 15.000,00 a #idx(("juros", "simples")) por um certo tempo, a uma taxa de 1,5% ao mês. Ele percebeu que, se a taxa tivesse sido 0,9 ponto percentual menor ao mês, o juro total teria sido R\$ 4.050,00 menor. O tempo dessa aplicação é igual a:],
   [#enum(
     [25 meses],
     [27 meses],
@@ -190,7 +192,7 @@
 )
 
 #questao(
-  [Em um concurso participaram 500 homens e 200 mulheres. Na prova de conhecimentos gerais a média aritmética foi 5,0. Considerando-se apenas os homens, essa média foi de 4,2. Qual o valor da média das mulheres nessa prova?],
+  [Em um concurso participaram 500 homens e 200 mulheres. Na prova de conhecimentos gerais a #idx(("média", "aritmética")) foi 5,0. Considerando-se apenas os homens, essa média foi de 4,2. Qual o valor da média das mulheres nessa prova?],
   [#enum(
     [5,0],
     [5,8],
@@ -426,8 +428,7 @@
   assunto: "placeholder",
   gabarito_letra: [E],
   gabarito_explicacao: [
-    Equação original: $x^2 - m x + n = 0$ com raízes $p, q$.
-    Relações de Girard: $p + q = m$ e $p q = n$.
+    Equação original: $x^2 - m x + n = 0$ com raízes $p, q$. #idx(("Relações", "de Girard")): $p + q = m$ e $p q = n$.
     
     Nova equação com raízes $1/p$ e $1/q$:
     
@@ -540,7 +541,7 @@
 )
 
 #questao(
-  [Um artesão quer recortar uma placa metálica na forma de um polígono regular onde cada ângulo interno mede 150°. Quantos lados tem esse polígono?],
+  [Um artesão quer recortar uma placa metálica na forma de um polígono #idx(("regular")) onde cada ângulo interno mede 150°. Quantos lados tem esse polígono?],
   [#enum(
     [8],
     [9],
@@ -649,7 +650,7 @@
     ]
     
     #block(fill: luma(240), inset: 10pt, width: 100%, radius: 4pt, stroke: (left: 2pt + yellow))[
-      *Relação Métrica* \
+      *#idx(("Relação", "métrica"))* \
       A altura ao quadrado é igual ao produto das projeções dos catetos sobre a hipotenusa:
       $ h^2 = m dot n $
     ]
@@ -772,7 +773,7 @@
 )
 
 #questao(
-  [Uma fábrica produz uma vela composta por duas partes: a base é um sólido cilíndrico de raio $r = 3$ cm e altura $h_1 = 6$ cm. Sobre essa base, a vela tem um tampo em forma de cone reto de base coincidindo com a base superior do cilindro e altura $h_2 = 4$ cm, ou seja, a vela inteira tem formato de um cilindro com um cone no topo. Considerando que a cera preenche completamente essas duas peças, qual é o volume total de cera (em $c m^3$) usado para fabricar uma vela completa?],
+  [Uma fábrica produz uma vela composta por duas partes: a base é um sólido cilíndrico de raio $r = 3$ cm e altura $h_1 = 6$ cm. Sobre essa base, a vela tem um tampo em forma de  #idx(("cone")) reto de base coincidindo com a base superior do  #idx(("cilindro")) e altura $h_2 = 4$ cm, ou seja, a vela inteira tem formato de um  #idx(("cilindro")) com um  #idx(("cone")) no topo. Considerando que a cera preenche completamente essas duas peças, qual é o volume total de cera (em $c m^3$) usado para fabricar uma vela completa?],
   [#enum(
     [$60 pi$],
     [$66 pi$],
@@ -784,11 +785,11 @@
   assunto: "placeholder",
   gabarito_letra: [B],
   gabarito_explicacao: [
-    Volume do Cilindro:
+    Volume do  #idx(("Cilindro")):
     $ V_"c" = pi r^2 h = pi dot 3^2 dot 6 = 54pi "cm"^3 $
     
-    Volume do Cone:
-    $ V_"cone" = 1/3 pi r^2 h = 1/3 pi dot 3^2 dot 4 = 12pi "cm"^3 $
+    Volume do #idx(("Cone")):
+    $ V_#idx(("cone")) = 1/3 pi r^2 h = 1/3 pi dot 3^2 dot 4 = 12pi "cm"^3 $
     
     Volume Total:
     $ V_T = 54pi + 12pi = 66pi "cm"^3 $

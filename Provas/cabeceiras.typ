@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 
 
 = CABECEIRAS DO PIAUÍ - PI
@@ -20,7 +20,7 @@
     [Números inteiros.],
     [Números naturais.],
     [Números irracionais.],
-    [Números complexos.],
+    [Números  #idx(("complexos")).],
   )],  
   assunto: "placeholder",
   gabarito_letra: none,
@@ -218,7 +218,7 @@
 )
 
 #questao(
-  [O Teorema da Bissetriz Interna é aplicado em qual tipo de figura geométrica?],
+  [O #idx(("Teorema", "da Bissetriz", "Interna")) é aplicado em qual tipo de figura geométrica?],
   [#enum(
     [Círculo],
     [Triângulo],
@@ -229,7 +229,7 @@
   assunto: "placeholder",
   gabarito_letra: none,
   gabarito_explicacao: [
-    *Teorema da Bissetriz Interna:* É aplicado em *triângulos*, relacionando os lados adjacentes aos segmentos formados na base.
+    Teorema da Bissetriz Interna: É aplicado em *triângulos*, relacionando os lados adjacentes aos segmentos formados na base.
     #pad(y: 5pt)[
       #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
         *Resposta: (B)*
@@ -239,7 +239,7 @@
 )
 
 #questao(
-  [No Teorema de Tales, qual é a condição para que três retas paralelas cortem um feixe de retas transversais?],
+  [No #idx(("Teorema", "de Tales")), qual é a condição para que três retas paralelas cortem um feixe de retas transversais?],
   [#enum(
     [As retas paralelas devem ser equidistantes.],
     [As retas paralelas devem formar um ângulo reto.],
@@ -250,7 +250,7 @@
   assunto: "placeholder",
   gabarito_letra: none,
   gabarito_explicacao: [
-    *Teorema de Tales:* Trata de um feixe de retas *paralelas* cortadas por transversais. O item D é o que melhor descreve essa condição geral.
+    #idx(("Teorema", "de Tales")): Trata de um feixe de retas *paralelas* cortadas por transversais. O item D é o que melhor descreve essa condição geral.
     #pad(y: 5pt)[
       #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
         *Resposta: (D)*
@@ -372,13 +372,13 @@
     [O sistema deve ter exatamente duas equações.],
     [O sistema deve ter mais de duas incógnitas.],
     [O sistema deve ter um número igual de equações e incógnitas.],
-    [O sistema deve ser linear homogêneo.],
+    [O sistema deve ser linear #idx(("homogêneo")).],
     [O sistema deve ter exatamente três equações.],
   )],  
   assunto: "placeholder",
   gabarito_letra: none,
   gabarito_explicacao: [
-    Para ser aplicada, o sistema deve ter o mesmo número de equações e incógnitas (matriz quadrada com determinante não nulo).
+    Para ser aplicada, o sistema deve ter o mesmo número de equações e incógnitas (#idx(("matriz", "quadrada")) com determinante não nulo).
     #pad(y: 5pt)[
       #rect(stroke: 1pt, radius: 4pt, inset: 10pt)[
         *Resposta: (C)*
@@ -390,7 +390,7 @@
 #questao(
   [Qual o principal uso da aplicação da regra de Sarrus na resolução de sistemas lineares?],
   [#enum(
-    [Encontrar a matriz inversa do sistema.],
+    [Encontrar a #idx(("matriz", "inversa")) do sistema.],
     [Determinar o número de soluções do sistema.],
     [Calcular a ordem da matriz associada ao sistema.],
     [Calcular o determinante de matrizes de ordem 2 e ordem 3.],

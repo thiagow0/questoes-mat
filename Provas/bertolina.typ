@@ -1,4 +1,4 @@
-#import "lib.typ": fonte-mat, questao
+#import "lib.typ": fonte-mat, questao, idx
 
 #import "@preview/cetz:0.4.2": canvas, draw
 
@@ -152,7 +152,7 @@
 )
 
 #questao(
-  [Na figura seguinte o triângulo ABC é equilátero e DEFG é um quadrado de lado igual a 1 cm. O lado desse triângulo mede em centímetros:
+  [Na figura seguinte o triângulo ABC é  #idx(("equilátero")) e DEFG é um quadrado de lado igual a 1 cm. O lado desse triângulo mede em centímetros:
     
     #align(center)[
       
@@ -246,7 +246,7 @@
       })
     ]
     
-    Como o triângulo $A B C$ é equilátero, todos os seus ângulos internos medem $60 degree$. Portanto, $hat(A) = hat(B) = 60 degree$.
+    Como o triângulo $A B C$ é  #idx(("equilátero")), todos os seus ângulos internos medem $60 degree$. Portanto, $hat(A) = hat(B) = 60 degree$.
     
     Considerando o triângulo retângulo $F E B$ (no canto direito): O ângulo $hat(B) = 60 degree$; O cateto oposto $F E$ é o lado do quadrado, logo $F E = 1$; O cateto adjacente é o segmento $E B$, que chamaremos de $x$.
     
@@ -274,7 +274,7 @@
 )
 
 #questao(
-  [Seja #text(size: fonte-mat)[$A = mat(x, 4; 0, x)$] uma matriz real e $A^t$ sua transposta. Se $A + A^t$ é uma matriz não invertível, então:],
+  [Seja #text(size: fonte-mat)[$A = mat(x, 4; 0, x)$] uma matriz real e $A^t$ sua #idx(("transposta")). Se $A + A^t$ é uma matriz não invertível, então:],
   [#enum(
     spacing: 12pt,
     [$x = plus.minus 2$],
@@ -286,14 +286,14 @@
   assunto: "placeholder",
   gabarito_letra: [A],
   gabarito_explicacao: [
-    Dada a matriz $A = mat(x, 4; 0, x)$, determinamos sua transposta:
+    Dada a matriz $A = mat(x, 4; 0, x)$, determinamos sua #idx(("transposta")):
     $A^t = mat(x, 0; 4, x)$
     
     Calculamos a matriz soma $S = A + A^t$:
     $ S = mat(x, 4; 0, x) + mat(x, 0; 4, x) = mat(2x, 4; 4, 2x) $
     
     #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
-      Uma matriz quadrada é *não invertível* (ou singular) se, e somente se, o seu determinante for igual a zero.
+      Uma #idx(("matriz", "quadrada")) é *não invertível* (ou singular) se, e somente se, o seu determinante for igual a zero.
     ]
     
     Aplicando a definição ao determinante da matriz soma:
@@ -331,7 +331,7 @@
   gabarito_letra: [B],
   gabarito_explicacao: [
     #block(fill: luma(240), width: 100%, inset: 10pt, radius: 4pt, stroke: (left: 2pt + yellow))[
-      *Relações de Girard (Grau 3)*
+      *#idx(("Relações", "de Girard", "(Grau 3)"))*
       
       Sejam $x_1, x_2, x_3$ as raízes do polinômio $a x^3 + b x^2 + c x + d = 0$. Temos:
       $ x_1 + x_2 + x_3 = -b/a $
@@ -454,7 +454,7 @@
 )
 
 #questao(
-  [Qual o volume do cilindro abaixo, sabendo que sua seção meridiana é um retângulo de área 132 $c m^2$?
+  [Qual o volume do  #idx(("cilindro")) abaixo, sabendo que sua seção meridiana é um retângulo de área 132 $c m^2$?
     
     #align(center)[
       #canvas(length: 0.7cm, {
@@ -542,7 +542,7 @@
     Sabendo que a área da seção é $132 "cm"^2$:
     $ 12 dot h = 132 arrow.double h = 132 / 12 = 11 "cm" $
     
-    A fórmula do volume do cilindro é $V = pi r^2 h$. Substituindo os valores encontrados:
+    A fórmula do volume do  #idx(("cilindro")) é $V = pi r^2 h$. Substituindo os valores encontrados:
     $ V & = pi dot 6^2 dot 11 = pi dot 36 dot 11 = 396 pi "cm"^3 $
     
     #pad(y: 5pt)[
@@ -557,10 +557,10 @@
   [
     Considere a equação abaixo: $ y^2/9 - x^2/27 = 1. $ Podemos afirmar que essa equação expressa o lugar geométrico de uma],
   [#enum(
-    [elipse, com focos em (-6, 0) e (6, 0).],
-    [hipérbole, com vértices em (-3, 0) e (3, 0).],
-    [elipse, com eixo maior igual a 6.],
-    [hipérbole, com focos em (0, -6) e (0, 6).],
+    [#idx(("elipse")), com focos em (-6, 0) e (6, 0).],
+    [#idx(("hipérbole")), com vértices em (-3, 0) e (3, 0).],
+    [#idx(("elipse")), com eixo maior igual a 6.],
+    [#idx(("hipérbole")), com focos em (0, -6) e (0, 6).],
     [circunferência de raio 1.],
   )],
   assunto: "placeholder",

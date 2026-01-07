@@ -1,4 +1,4 @@
-#import "lib.typ": arc, questao
+#import "lib.typ": arc, questao, idx
 #import "@preview/cetz:0.4.2": canvas, draw
 
 = COLÔNIA DO GURGUÉIA
@@ -326,7 +326,7 @@
 )
 
 #questao(
-  [O conjunto A possui 3 elementos, e o conjunto B, 8 elementos. Quantas funções injetivas $f:A arrow B$ existem?],
+  [O conjunto A possui 3 elementos, e o conjunto B, 8 elementos. Quantas funções #idx(("injetivas")) $f:A arrow B$ existem?],
   [#enum(
     [456],
     [336],

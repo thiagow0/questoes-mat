@@ -1,5 +1,5 @@
 
-#import "lib.typ": questao
+#import "lib.typ": questao, idx
 
 = ANTÔNIO ALMEIDA
 \
@@ -244,7 +244,7 @@
   )],
   assunto: "Geometria plana",
   gabarito_explicacao: [
-    Pelo Teorema da Bissetriz Interna, os segmentos determinados no lado oposto são proporcionais aos lados adjacentes:
+    Pelo #idx(("Teorema", "da Bissetriz", "Interna")), os segmentos determinados no lado oposto são proporcionais aos lados adjacentes:
     
     $ x / 10 = y / 14 $
     
@@ -354,7 +354,7 @@
 )
 
 #questao(
-  [Um prisma reto de base hexagonal regular tem aresta da base 2 cm e altura 5 cm. O volume exato do sólido, em cm³, é:],
+  [Um prisma reto de base hexagonal #idx(("regular")) tem aresta da base 2 cm e altura 5 cm. O volume exato do sólido, em cm³, é:],
   [#enum(
     [$24 sqrt(3)$],
     [$30 sqrt(3)$],
